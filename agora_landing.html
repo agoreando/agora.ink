@@ -45,18 +45,18 @@
     <div class="menuNavegacion__home"><a href="index.html"><i class="icon-a icono--menu"></i></a></div>
     <div class="menuNavegacionVertical__items">
       <ul class="menuNavegacionVertical--ul">
+        <li><a href="#agora"><i class="icon-agora icono--menu"></i></a></li>
         <li><a href="#alfa"><i class="icon-alfa icono--menu"></i></a></li>
-        <li><a href="#alfa"><img class="icono--menu" src="images/alfa.svg"/></a></li>
-        <li><a href="#descubre"><img class="icono--menu" src="images/descubre.svg"/></a></li>
-        <li><a href="#explora"><img class="icono--menu" src="images/explorar.svg"/></a></li>
-        <li><a href="#comunica"><img class="icono--menu" src="images/com.svg"/></a></li>
-        <li><a href="#crea"><img class="icono--menu" src="images/crea.svg"/></a></li>
-        <li><a href="#facebook"><i class="icon-facebook icono--menu"></i></a></li>
-        <li><a href="#gotoAgora"><img class="icono--menu" src="images/go.svg"/></a></li>
-        <li><a href="#equipo"><img class="icono--menu" src="images/equipo.svg"/></a></li>
+        <li><a href="#descubre"><i class="icon-descubre icono--menu"></i></a></li>
+        <li><a href="#explora"><i class="icon-explora icono--menu"></i></a></li>
+        <li><a href="#comunica"><i class="icon-comunica icono--menu"></i></a></li>
+        <li><a href="#crea"><i class="icon-crea icono--menu"></i></a></li>
+        <li><a href="#boletos"><i class="icon-boletos icono--menu"></i></a></li>
+        <li><a href="#gotoAgora"><i class="icon-go icono--menu"></i></a></li>
+        <li><a href="#equipo"><i class="icon-equipo icono--menu"></i></a></li>
       </ul>
     </div>
-    <div class="menuNavegacionVertical__back"><a href="#inicio"><img class="icono--back" src="images/back.svg"/></a></div>
+    <div class="menuNavegacionVertical__back"><a href="#inicio"><i class="icon-back icono--back" src="images/back.svg"></i></a></div>
   </nav>
   <nav class="menuNavegacionApaisado">
     <div><i class="icon-a"></i></div>
@@ -70,7 +70,7 @@
       <h1 class="inicio--titulo">
         	Comunica <span class="weight300">tu </span>Evento.</h1>
       <p class="inicio--texto weight300"><strong>Encuentra </strong>el próximo concierto <strong>cerca de ti </strong>o los <strong>horarios </strong>de la obra a la que deseas asistir; <strong>crea </strong>el espacio para el evento que organizas y has que <strong>todos lo vean.</strong></p>
-      <div class="linea"></div><a class="boton naranja" href="#">Explorar</a>
+      <div class="linea"></div><a class="boton naranja" href="index.html">Explorar</a>
     </div>
   </section>
   <!--SECCIÓN ágora-->
@@ -133,33 +133,25 @@
       <p class="informacion--seccion">Así los organizadores tienen la libertad de subir a la plataforma todos sus eventos sin restricción alguna en cantidad o información.</p>
     </div>
   </section>
-  <!--SECCIÓN FACEBOOK-->
-  <section class="seccion facebook" id="facebook">
-    <div class="facebook__titulo">
-      <div class="moduloIzq">
-        <h2 class="nombre--seccion"><span class="small">Integra</span><strong> ágora </strong><span class="small">a tu</span></h2>
-        <h2 class="nombre--seccion"><strong>Página</strong><span class="small">de</span><strong> Facebook</strong></h2>
-      </div>
-      <div class="moduloDer"></div>
+  <!--SECCIÓN Boletos-->
+  <section class="boletos flexBox__Row" id="boletos">
+    <div class="boletos__titulo"></div>
+    <div class="moduloIzq">
+      <h2 class="nombre--seccion"><span class="small">a un click de tus</span><strong> boletos</strong></h2>
+      <p class="informacion--seccion">Dirige a tus usuarios hacia la plataforma que utilizas, y en donde ellos podran adquirir los accesos de tu evento.</p>
+      <p class="informacion--seccion">Al crear el espacio de tu evento, ágora te permite ingresar el link que te proproporciona tu servicio de boletaje, o la dirección del sitio web donde pueden encontrarlos.</p>
     </div>
-    <div class="flexBox facebook__intro">
-      <div class="moduloIzq">
-        <p> <span>ágora </span>crea para ti una nueva sección en tu página de Facebook, así los Usuarios pueden navegar fácilmente a través de tus eventos.</p>
-      </div>
-      <div class="moduloDer"></div>
-    </div>
-    <div class="flexBox facebook__info">
-      <div class="moduloIzq"></div>
-      <div class="moduloDer">
-        <p>Una Plataforma Diseñada para ti.</p>
-        <p>Conéctate y comunícale tu evento a miles de millones de usuarios.</p>
-        <p>Nunca había sido tan fácil destacar eventos en Facebook.</p>
-      </div>
+    <div class="moduloDer"></div>
+  </section>
+  <section class="boletos flexBox__Row" id="boletos">
+    <div class="moduloIzq"> </div>
+    <div class="moduloDer">
+      <p class="informacion--seccion">La plataforma te permite también indicarle a tus usuarios si  el acceso a tu evento no tiene un precio</p>
     </div>
   </section>
   <!--SECCIÓN go to ágora-->
   <section class="goToAgora flexBox__Column" id="gotoAgora"><img class="agora--imagen imagen-fluida" src="images/agora.svg"/>
-    <div class="boton blanco" href="#">Explorar</div>
+    <div class="boton blanco" href="index.html">Explorar</div>
   </section>
   <!--SECCIÓN EQUIPO-->
   <section class="equipo flexBox__Row" id="equipo">
@@ -200,9 +192,9 @@
   </section>
   <!--SECCIÓN PIE-->
   <section class="pie">
-    <p class="pie__dReservados">
-       2017 <i class="icon-registrado"></i></p>
-    <div class="pie__logo">ágora</div><i class="pie__redesSociales icon-facebook"></i>
+    <p class="pie__dReservados">DR | 2017 <i class="icon-registrado"></i></p>
+    <div class="pie__logo">ágora</div>
+    <div class="pie__redesSociales"><i class="pie__redesSociales--icono icon-facebook"></i><i class="pie__redesSociales--icono icon-twitter"></i><i class="pie__redesSociales--icono icon-pinterest"></i><i class="pie__redesSociales--icono icon-whatsapp"></i><i class="pie__redesSociales--icono icon-youtube"></i></div>
   </section>
   <!--div
   div

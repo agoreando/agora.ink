@@ -54,17 +54,17 @@ body
 			a(href="index.html"): i.icon-a.icono--menu
 		div.menuNavegacionVertical__items
 			ul.menuNavegacionVertical--ul
+				li: a(href="#agora"): i.icon-agora.icono--menu
 				li: a(href="#alfa"): i.icon-alfa.icono--menu
-				li: a(href="#alfa"): img.icono--menu(src="images/alfa.svg")
-				li: a(href="#descubre"): img.icono--menu(src="images/descubre.svg")
-				li: a(href="#explora"): img.icono--menu(src="images/explorar.svg")
-				li: a(href="#comunica"): img.icono--menu(src="images/com.svg")
-				li: a(href="#crea"): img.icono--menu(src="images/crea.svg")
-				li: a(href="#facebook"): i.icon-facebook.icono--menu
-				li: a(href="#gotoAgora"): img.icono--menu(src="images/go.svg")
-				li: a(href="#equipo"): img.icono--menu(src="images/equipo.svg")
+				li: a(href="#descubre"): i.icon-descubre.icono--menu
+				li: a(href="#explora"): i.icon-explora.icono--menu
+				li: a(href="#comunica"): i.icon-comunica.icono--menu
+				li: a(href="#crea"): i.icon-crea.icono--menu
+				li: a(href="#boletos"): i.icon-boletos.icono--menu
+				li: a(href="#gotoAgora"): i.icon-go.icono--menu
+				li: a(href="#equipo"): i.icon-equipo.icono--menu
 		div.menuNavegacionVertical__back
-			a(href="#inicio"): img.icono--back(src="images/back.svg")
+			a(href="#inicio"): i.icon-back.icono--back(src="images/back.svg")
 
 	nav.menuNavegacionApaisado
 		div: i.icon-a
@@ -90,7 +90,7 @@ body
 				| el espacio para el evento que organizas y has que 
 				strong todos lo vean.
 			div.linea
-			a.boton.naranja(href="#") Explorar
+			a.boton.naranja(href="index.html") Explorar
 
 	//SECCIÓN ágora
 	section#agora.agora.flexBox__Column
@@ -160,37 +160,27 @@ body
 			p.informacion--seccion La plataforma está dirigida para todos los eventos, por eso utiliza una interfaz intuitiva que permite crear un nuevo evento, modificar su información, cancelar o eliminar y notificarlo a los usuarios.
 			p.informacion--seccion Así los organizadores tienen la libertad de subir a la plataforma todos sus eventos sin restricción alguna en cantidad o información.
 
-	//SECCIÓN FACEBOOK
-	section.seccion#facebook.facebook
-		div.facebook__titulo
+	//SECCIÓN Boletos
+	section#boletos.boletos.flexBox__Row
+			div.boletos__titulo
 			div.moduloIzq
 				h2.nombre--seccion
-					span.small Integra
-					strong  ágora 
-					span.small a tu
-				h2.nombre--seccion
-					strong Página
-					span.small de
-					strong  Facebook
-			div.moduloDer
-		div.flexBox.facebook__intro
-			div.moduloIzq
-				p 
-					span ágora 
-					|crea para ti una nueva sección en tu página de Facebook, así los Usuarios pueden navegar fácilmente a través de tus eventos.
+					span.small a un click de tus
+					strong  boletos
+				p.informacion--seccion Dirige a tus usuarios hacia la plataforma que utilizas, y en donde ellos podran adquirir los accesos de tu evento.
+
+				p.informacion--seccion Al crear el espacio de tu evento, ágora te permite ingresar el link que te proproporciona tu servicio de boletaje, o la dirección del sitio web donde pueden encontrarlos.
 			div.moduloDer
 
-		div.flexBox.facebook__info
-			div.moduloIzq
+	section#boletos.boletos.flexBox__Row
+			div.moduloIzq 
 			div.moduloDer
-				p Una Plataforma Diseñada para ti.
-				p Conéctate y comunícale tu evento a miles de millones de usuarios.
-				p Nunca había sido tan fácil destacar eventos en Facebook.
+				p.informacion--seccion La plataforma te permite también indicarle a tus usuarios si  el acceso a tu evento no tiene un precio
 			
 	//SECCIÓN go to ágora
 	section#gotoAgora.goToAgora.flexBox__Column
 		img.agora--imagen.imagen-fluida(src="images/agora.svg")
-		div(href="#").boton.blanco Explorar
+		div(href="index.html").boton.blanco Explorar
 
 	//SECCIÓN EQUIPO
 	section#equipo.equipo.flexBox__Row
@@ -227,11 +217,15 @@ body
 
 	//SECCIÓN PIE
 	section.pie
-		p.pie__dReservados 
-			| 2017 
+		p.pie__dReservados DR | 2017 
 			i.icon-registrado
 		div.pie__logo ágora
-		i.pie__redesSociales.icon-facebook
+		div.pie__redesSociales
+			i.pie__redesSociales--icono.icon-facebook
+			i.pie__redesSociales--icono.icon-twitter
+			i.pie__redesSociales--icono.icon-pinterest
+			i.pie__redesSociales--icono.icon-whatsapp
+			i.pie__redesSociales--icono.icon-youtube
 
 	//div
 		div

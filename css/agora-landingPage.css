@@ -39,13 +39,19 @@
 	margin: 1rem 0;
 }
 
-.icono--menu {
+.icono--menu, .icono--back  {
 	color: var(--profundo);
 	width: 2rem;
 }
 
-.icono--back {
-	width: 1.25rem;
+.icono--menu:focus, .icono--menu:hover {
+	color: var(--anaranjado);
+}
+
+.icono--back:focus, .icono--back:hover {
+	font-weight: 500;
+	color: var(--anaranjado);
+
 }
 
 .menuNavegacionApaisado {
@@ -204,20 +210,20 @@
 	}
 
 /* ======== Facebook ======== */
-	.facebook {
+	.boletos {
 		background-color: var(--blanco);
 		
 	}
 	
-	.facebook__titulo{
+	.boletos__titulo{
 		
 	}
 
-	.facebook__intro{
+	.boletos__intro{
 
 	}
 
-	.facebook__info{
+	.boletos__info{
 
 	}	
 
@@ -288,9 +294,9 @@
 	.pie {
 		color: var(--claro);
 		background-color: var(--profundo);
-		padding: .5rem;
+		padding: 1rem;
 		display: flex;
-		justify-content: space-between;
+		justify-content: center;
 		align-items: center;
 	}
 	
@@ -302,13 +308,18 @@
 	}
 
 	.pie__logo{
-		width: 40%;
+		width: 60%;
 		text-align: center;
 	}
 
 	.pie__redesSociales{
 		width: 20%;
 		text-align: right;
+	}
+		
+	.pie__redesSociales--icono {
+		text-align: center;
+		margin: 0 .25rem;
 	}
 
 
@@ -423,12 +434,12 @@
 	}
 
 	.agora, .inicio, .alfa, .descubre, 
-	.explora, .comunica, .crea, .facebook, 
+	.explora, .comunica, .crea, .boletos, 
 	.gotoAgora, .equipo, .pie {
 		width: calc(100% - 3rem);
 	}
 	
-	.descubre, .explora, .comunica, .crea {
+	.descubre, .explora, .comunica, .crea, .boletos {
 		height: 80vh;
 	}
 
