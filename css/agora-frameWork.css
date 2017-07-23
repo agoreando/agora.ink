@@ -1,0 +1,28 @@
+*{
+	/*border: 1px orange dashed;*/
+	--navy: rgba(0, 7, 36, 1);
+	--anaranjado: #e62117;
+	--blanco: rgba(255, 255, 255, 1);
+	--ahuesado: rgba(242, 243, 248, 1);
+	--marfil: rgba(237, 239, 244, 1);
+	--claro: rgba(224, 224, 224, 1);
+	--tenue: rgba(129, 129, 129, 1);
+	--gris: rgba(101, 101, 101, 1);
+	--a: rgba(96, 96, 96, 1);
+	--b: rgba(59, 59, 59, 1);
+	--oxford: rgba(38, 38, 38, 1);
+	--profundo:rgba(23, 23, 23, 1);
+} 
+
+.weight100 {
+	font-weight: 100;
+}
+
+.weight300 {
+	font-weight: 300;
+}
+
+.imagen-fluida {
+  max-width: 100%;
+  height: auto;
+}
