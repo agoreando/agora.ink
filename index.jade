@@ -50,6 +50,9 @@ head
 	//Style Modal
 	link(rel="stylesheet" href="css/modal.css")
 
+	//Agora FrameWork
+	link(rel="stylesheet" href="css/agora-frameWork.css")
+
 	
 
 body
@@ -67,7 +70,7 @@ body
 				li: a(href="#"): i.icon-a.icono--menu
 				
 		div.menuNavegacionVertical__back
-			a(href="#inicio"): img.icono--back(src="images/back.svg")
+			a(href="#inicio"): i.icon-back.icono--back
 
 	nav.menuNavegacionApaisado
 		div: i.icon-a
@@ -83,196 +86,20 @@ body
 			
 			//Tarjeta
 			div.tarjeta
-				div.tarjeta__imagen
-					img.imagen-fluida(src="images/1.jpg")
+				div.tarjeta__contenedor
+					div.tarjeta__imagen
+						img.imagen__evento.imagen-fluida(src="images/1.jpg")
 
-				div.tarjeta__informacion
-					h5.tituloEvento Catrinas 
-					p.fechaEvento 29 Oct 2016 a las 19:00 hrs
-					p.sedeEvento La Pergola
-					small.tipoEvento Exposición
-					div.organizadorEvento
-						img.organizadorEvento__imgPerfil.imagen-fluida(src="images/luna.png")
-						div.organizadorEvento__nombre Aula Clavijero
+					div.tarjeta__informacion
+						p.tipoEvento Exposición
+						P.tituloEvento Este Es el que Trabaja 
+						p
+							span.fechaEvento 29 Oct 2016 
+							small &middot
+							span.horaEvento 19:00 hrs
+						p.sedeEvento La Pergola
+						div.organizadorEvento
+							img.organizadorEvento__imgPerfil.imagen-fluida(src="images/luna.png")
+							div.organizadorEvento__nombre Aula Clavijero
 
-			div.tarjeta
-				div.tarjeta__imagen
-					img.imagen-fluida(src="images/2.png")
-
-				div.tarjeta__informacion
-					h5.tituloEvento Catrinas
-					p.fechaEvento 29 Oct 2016 a las 19:00 hrs
-					p.sedeEvento La Pergola
-					small.tipoEvento Exposición
-					div.organizadorEvento
-						img.organizadorEvento__imgPerfil.imagen-fluida(src="images/luna.png")
-						div.organizadorEvento__nombre Aula Clavijero
 			
-			div.tarjeta
-				div.tarjeta__imagen
-					img.imagen-fluida(src="images/3.jpg")
-
-				div.tarjeta__informacion
-					h5.tituloEvento Catrinas
-					p.fechaEvento 29 Oct 2016 a las 19:00 hrs
-					p.sedeEvento La Pergola
-					small.tipoEvento Exposición
-					div.organizadorEvento
-						img.organizadorEvento__imgPerfil.imagen-fluida(src="images/luna.png")
-						div.organizadorEvento__nombre Aula Clavijero
-
-			div.tarjeta
-				div.tarjeta__imagen
-					img.imagen-fluida(src="images/4.jpg")
-
-				div.tarjeta__informacion
-					h5.tituloEvento Catrinas
-					p.fechaEvento 29 Oct 2016 a las 19:00 hrs
-					p.sedeEvento La Pergola
-					small.tipoEvento Exposición
-					div.organizadorEvento
-						img.organizadorEvento__imgPerfil.imagen-fluida(src="images/luna.png")
-						div.organizadorEvento__nombre Aula Clavijero
-
-			div.tarjeta
-				div.tarjeta__imagen
-					img.imagen-fluida(src="images/5.jpg")
-
-				div.tarjeta__informacion
-					h5.tituloEvento Catrinas
-					p.fechaEvento 29 Oct 2016 a las 19:00 hrs
-					p.sedeEvento La Pergola
-					small.tipoEvento Exposición
-					div.organizadorEvento
-						img.organizadorEvento__imgPerfil.imagen-fluida(src="images/luna.png")
-						div.organizadorEvento__nombre Aula Clavijero
-			
-			div.tarjeta
-				div.tarjeta__imagen
-					img.imagen-fluida(src="images/1.jpg")
-
-				div.tarjeta__informacion
-					h5.tituloEvento Catrinas 
-					p.fechaEvento 29 Oct 2016 a las 19:00 hrs
-					p.sedeEvento La Pergola
-					small.tipoEvento Exposición
-					div.organizadorEvento
-						img.organizadorEvento__imgPerfil.imagen-fluida(src="images/luna.png")
-						div.organizadorEvento__nombre Aula Clavijero
-
-			div.tarjeta
-				div.tarjeta__imagen
-					img.imagen-fluida(src="images/2.png")
-
-				div.tarjeta__informacion
-					h5.tituloEvento Catrinas
-					p.fechaEvento 29 Oct 2016 a las 19:00 hrs
-					p.sedeEvento La Pergola
-					small.tipoEvento Exposición
-					div.organizadorEvento
-						img.organizadorEvento__imgPerfil.imagen-fluida(src="images/luna.png")
-						div.organizadorEvento__nombre Aula Clavijero
-			
-			div.tarjeta
-				div.tarjeta__imagen
-					img.imagen-fluida(src="images/3.jpg")
-
-				div.tarjeta__informacion
-					h5.tituloEvento Catrinas
-					p.fechaEvento 29 Oct 2016 a las 19:00 hrs
-					p.sedeEvento La Pergola
-					small.tipoEvento Exposición
-					div.organizadorEvento
-						img.organizadorEvento__imgPerfil.imagen-fluida(src="images/luna.png")
-						div.organizadorEvento__nombre Aula Clavijero
-
-			div.tarjeta
-				div.tarjeta__imagen
-					img.imagen-fluida(src="images/4.jpg")
-
-				div.tarjeta__informacion
-					h5.tituloEvento Catrinas
-					p.fechaEvento 29 Oct 2016 a las 19:00 hrs
-					p.sedeEvento La Pergola
-					small.tipoEvento Exposición
-					div.organizadorEvento
-						img.organizadorEvento__imgPerfil.imagen-fluida(src="images/luna.png")
-						div.organizadorEvento__nombre Aula Clavijero
-
-			div.tarjeta
-				div.tarjeta__imagen
-					img.imagen-fluida(src="images/5.jpg")
-
-				div.tarjeta__informacion
-					h5.tituloEvento Catrinas
-					p.fechaEvento 29 Oct 2016 a las 19:00 hrs
-					p.sedeEvento La Pergola
-					small.tipoEvento Exposición
-					div.organizadorEvento
-						img.organizadorEvento__imgPerfil.imagen-fluida(src="images/luna.png")
-						div.organizadorEvento__nombre Aula Clavijero
-
-			div.tarjeta
-				div.tarjeta__imagen
-					img.imagen-fluida(src="images/1.jpg")
-
-				div.tarjeta__informacion
-					h5.tituloEvento Catrinas 
-					p.fechaEvento 29 Oct 2016 a las 19:00 hrs
-					p.sedeEvento La Pergola
-					small.tipoEvento Exposición
-					div.organizadorEvento
-						img.organizadorEvento__imgPerfil.imagen-fluida(src="images/luna.png")
-						div.organizadorEvento__nombre Aula Clavijero
-
-			div.tarjeta
-				div.tarjeta__imagen
-					img.imagen-fluida(src="images/2.png")
-
-				div.tarjeta__informacion
-					h5.tituloEvento Catrinas
-					p.fechaEvento 29 Oct 2016 a las 19:00 hrs
-					p.sedeEvento La Pergola
-					small.tipoEvento Exposición
-					div.organizadorEvento
-						img.organizadorEvento__imgPerfil.imagen-fluida(src="images/luna.png")
-						div.organizadorEvento__nombre Aula Clavijero
-			
-			div.tarjeta
-				div.tarjeta__imagen
-					img.imagen-fluida(src="images/3.jpg")
-
-				div.tarjeta__informacion
-					h5.tituloEvento Catrinas
-					p.fechaEvento 29 Oct 2016 a las 19:00 hrs
-					p.sedeEvento La Pergola
-					small.tipoEvento Exposición
-					div.organizadorEvento
-						img.organizadorEvento__imgPerfil.imagen-fluida(src="images/luna.png")
-						div.organizadorEvento__nombre Aula Clavijero
-
-			div.tarjeta
-				div.tarjeta__imagen
-					img.imagen-fluida(src="images/4.jpg")
-
-				div.tarjeta__informacion
-					h5.tituloEvento Catrinas
-					p.fechaEvento 29 Oct 2016 a las 19:00 hrs
-					p.sedeEvento La Pergola
-					small.tipoEvento Exposición
-					div.organizadorEvento
-						img.organizadorEvento__imgPerfil.imagen-fluida(src="images/luna.png")
-						div.organizadorEvento__nombre Aula Clavijero
-
-			div.tarjeta
-				div.tarjeta__imagen
-					img.imagen-fluida(src="images/5.jpg")
-
-				div.tarjeta__informacion
-					h5.tituloEvento Catrinas
-					p.fechaEvento 29 Oct 2016 a las 19:00 hrs
-					p.sedeEvento La Pergola
-					small.tipoEvento Exposición
-					div.organizadorEvento
-						img.organizadorEvento__imgPerfil.imagen-fluida(src="images/luna.png")
-						div.organizadorEvento__nombre Aula Clavijero

@@ -12,6 +12,7 @@
 	--b: rgba(59, 59, 59, 1);
 	--oxford: rgba(38, 38, 38, 1);
 	--profundo:rgba(23, 23, 23, 1);
+	--ahuesadoTransparente: rgba(242, 243, 248, .5);
 } 
 
 .weight100 {

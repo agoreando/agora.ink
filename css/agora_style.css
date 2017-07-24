@@ -7,51 +7,95 @@
 }
 
 
-/* ======== Tarjetas ======== */
-.contenedorTarjetasEventos{
-	
+/*////////////////  MENU  ////////////////*/
+
+.menuNavegacionApaisado {
+	background-color: var(--blanco);
+	color: var(--blanco);
+	border-bottom: 1px solid var(--ahuesado);
 }
 
-.columnaTarjetas{}
+/*////////////////   TARJETAS  ////////////////*/
 
-.tarjeta {
-  position: relative;
-  display: flex;
-  flex-flow: column;
-  background-color: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  margin: .5rem 0;
+.tarjeta__contenedor {
+	position: relative;
+	display: flex;
+	flex-flow: column;
+	background-color: #fff;
+	border-radius: 0.25rem;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	margin: .5rem 0;
+	padding: .5rem;
 }
 
-.tarjeta__imagen{}
+.tarjeta__contenedor:hover{
+	animation: back 0.25s linear forwards;
+}
 
-.tarjeta_informacion{}
+.tarjeta__imagen{
+}
 
-.tituloEvento{}
 
-.fechaEvento{}
 
-.sedeEvento{}
 
-.tipoEvento{}
+.imagen__evento{
+	border-radius: 4px;
+}
+
+.tarjeta_informacion{
+
+}
+
+.tipoEvento{
+	font-size: 60%;
+	color: var(--tenue);
+	text-align: right;
+	margin: .5rem .5rem 0 0rem;
+}
+
+.tituloEvento{
+	font-weight: 500;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow: ellipsis;
+    color: var(--gris);
+    font-size: 80%;
+    line-height: 1;
+}
+
+.fechaEvento, .horaEvento, .sedeEvento{
+	font-size: 70%;
+	font-weight: 300;
+	line-height: 1;
+}
+
+.sedeEvento{
+	margin-bottom: .5rem;
+}
 
 .organizadorEvento{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	border-top: 1px solid var(--ahuesadoTransparente);
+    padding: .5rem 0 0 0;
+    margin-top: 1rem;
 }
 
 .organizadorEvento__imgPerfil{
 	border-radius: 40%;
-	width: 10%;
+	width: 1.5rem;
+	height: 1.5rem;
+	overflow: hidden;
 }
 
 .organizadorEvento__nombre{
 	width: 90%;
 	padding-left: 1rem;
+	color: var(--gris);
+	font-size: 70%;
+	line-height: 1;
 }
 
 
@@ -63,13 +107,24 @@
 
 /*////////////////  MEDIA QUERIS COLUMNAS ////////////////*/
 		
-		.columnaTarjetas /*xs*/ {
-			-webkit-column-count:1;
-			-moz-column-count:1;
-			column-count:1;
-			-webkit-column-gap:.2rem;
-			-moz-column-gap:.2rem;
-			column-gap:.2rem;
+	/*@media (max-width:575px) xs*/
+		.contenedorTarjetasEventos{
+			width: 100%;
+		    height: calc(100vh - 2rem);
+		    position: absolute;
+		    margin: 0;
+		    left: 0;
+		    bottom: 0;
+		    padding: 1rem;
+		}
+
+		.columnaTarjetas {
+			-webkit-column-count:2;
+			-moz-column-count:2;
+			column-count:2;
+			-webkit-column-gap:.5rem;
+			-moz-column-gap:.5rem;
+			column-gap:.5rem;
 		}
 
 		.tarjeta {
@@ -161,3 +216,14 @@
 	}
 
 /*////////////////  ANIMACIONES ////////////////*/
+
+@keyframes back {
+		0% {
+		    background-color: var(--blanco);
+		 }
+		  
+		 100% {
+		    background-color: var(--ahuesadoTransparente);
+		 }
+		
+	}

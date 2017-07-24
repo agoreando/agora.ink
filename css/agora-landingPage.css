@@ -62,7 +62,8 @@
 	justify-content: space-between;
 	align-items: center;
 	background-color: var(--anaranjado);
-	color: var(--blanco);	
+	color: var(--blanco);
+	z-index: 8;	
 }
 
 
