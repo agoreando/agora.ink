@@ -103,10 +103,10 @@
 
 .tituloEvento{
 	font-weight: 500;
-	overflow:hidden;
+	/*overflow:hidden;
 	white-space:nowrap;
-	text-overflow: ellipsis;
-    color: var(--gris);
+	text-overflow: ellipsis;*/
+    color: var(--oxford);
     font-size: 80%;
     line-height: 1;
 }
@@ -125,8 +125,8 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border-top: 1px solid var(--ahuesadoTransparente);
-    padding: .5rem 0 0 0;
+	border-top: 1px solid var(--marfil);
+    padding: 1rem 0 .5rem 0;
     margin-top: 1rem;
 }
 
