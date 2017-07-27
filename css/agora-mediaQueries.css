@@ -1,0 +1,415 @@
+/*////////////////  MEDIA QUERIES ////////////////*/
+
+/*@ media min-width:0px a max-width:575 xs*/ 
+
+
+/*////---- P L A T A F O R M A ----\\\\*/
+	
+	.contenedorTarjetasEventos{
+			width: 100%;
+		    height: calc(100vh - 2rem);
+		    position: absolute;
+		    margin: 0;
+		    left: 0;
+		    bottom: 0;
+		    padding: 1rem;
+		}
+
+		.columnaTarjetas {
+			-webkit-column-count:2;
+			-moz-column-count:2;
+			column-count:2;
+			-webkit-column-gap:.5rem;
+			-moz-column-gap:.5rem;
+			column-gap:.5rem;
+		}
+
+		.tarjeta {
+			display:inline-block;
+			width:100%
+		}
+		
+	/* Menu Navegación */
+		.menuNavegacionVertical {
+			display: none;
+		}
+
+		.menuNavegacionApaisado {
+			display: flex;
+		}
+
+
+		.imagen-fluida {
+		  max-width: 100%;
+		  height: auto;
+		}
+
+/*////---- L A N D I N G - P A G E  ----\\\\*/
+
+	.flexBox__Column {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-flow: column;
+			padding: 2rem .5rem;
+	}
+
+	.flexBox__Row {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-flow: column;
+			padding: 2rem .5rem;
+	}
+	
+	.inicio, .agora, .alfa, .descubre, 
+	.explora, .comunica, .crea, .boletos, 
+	.gotoAgora, .equipo, .pie {
+		width: 100%;
+	}
+	
+	.descubre, .explora, .comunica, .crea, .boletos {
+		height: 80%;
+	}
+
+
+	.moduloIzq {
+		width: 100%;
+		text-align: center;	
+	}
+
+	.moduloDer{
+		width: 100%;
+		text-align: center;
+	}	
+
+	/* Inicio*/
+	.inicio {
+		height: 100%;
+		margin-top: 2rem;
+	}
+	
+	.inicio_imagen {
+		display: none;
+	}
+
+	.inicio__informacion {	
+		align-items: center;
+		padding: 0;
+	}
+
+	.inicio--titulo {
+		font-size: 2rem;
+		font-weight: 400;
+		line-height: 1.1;
+	}
+
+	.inicio--texto {
+		font-size: 80%;
+		margin-top: 1rem;
+	}
+	
+	/* ágora */
+	.agora--imagen {
+		margin: .5rem;
+		width: 90%;
+	}
+	
+	.agora--texto {
+		margin: .5rem;
+		font-size: 1rem;
+		font-weight: 400;
+		line-height: 1.1;
+	}
+
+	/* Equipo */
+	.equipo__perfil {
+		justify-content: space-between;
+	}
+
+	.equipo__perfil {
+		width: 100%;
+	}
+	
+	/* Pie */
+	.pie {
+		display: flex;
+		flex-flow: column;
+		justify-content: center;
+		align-items: center;
+		padding: .5rem;
+	}
+
+	.pie__dReservados{
+		width: 80%;
+		text-align: center;
+		display: none;
+	}
+
+	.pie__logo{
+		width: 80%;
+	}
+
+	.pie__redesSociales{
+		width: 80%;
+		text-align: center;
+	}
+
+/*sm*/
+@media (min-width:576px)  {
+
+/*////---- P L A T A F O R M A ----\\\\*/
+
+	.columnaTarjetas {
+			-webkit-column-count:3;
+			-moz-column-count:3;
+			column-count:3;
+			-webkit-column-gap:.5rem;
+			-moz-column-gap:.5rem;
+			column-gap:.5rem;
+		}
+
+		.tarjeta {
+			display:inline-block;
+			width:100%
+		}
+
+/*////---- L A N D I N G - P A G E  ----\\\\*/
+	
+	/**Inicio*/
+	.inicio__informacion {	
+		padding: 0 1rem;
+	}
+
+	/*ágora*/
+	.agora--imagen {
+		margin: 2rem;
+		width: 80%;
+	}
+	
+	.agora--texto {
+		margin: 1rem;
+		font-size: 1.5rem;
+	}
+
+	/* Pie */
+
+	.pie {
+		flex-flow: row;
+		justify-content: center;
+		align-items: center;
+		padding: 1rem;	
+	}
+
+	.pie__dReservados{
+		width: 20%;
+		text-align: left;
+		display: initial;
+	}
+
+	.pie__logo{
+		width: 50%;
+	}
+
+	.pie__redesSociales{
+		width: 30%;
+		text-align: right;
+	}
+}
+
+/*md*/
+@media (min-width:768px)  {
+
+/*////---- P L A T A F O R M A ----\\\\*//*Cambio pPosición del Menú*/
+	.contenedorTarjetasEventos{
+			width: calc(100% - 3rem);
+		    height: 100vh;
+		    position: absolute;
+		    margin: 0;
+		    left: 0;
+		    bottom: initial;
+		    padding: 1rem;
+		}
+
+		.columnaTarjetas {
+			-webkit-column-count:4;
+			-moz-column-count:4;
+			column-count:4;
+			-webkit-column-gap:.5rem;
+			-moz-column-gap:.5rem;
+			column-gap:.5rem;
+		}
+
+		.tarjeta {
+			display:inline-block;
+			width:100%
+		}
+	
+	/* Menú Navegación */
+		.menuNavegacionVertical {
+			display: flex;
+		}
+
+		.menuNavegacionApaisado {
+			display: none;
+		}
+
+/*////---- L A N D I N G - P A G E  ----\\\\*/
+	
+	
+
+	.inicio, .agora, .alfa, .descubre, 
+	.explora, .comunica, .crea, .boletos, 
+	.gotoAgora, .equipo, .pie {
+		width: calc(100% - 3rem);
+	}
+	
+	.descubre, .explora, .comunica, .crea, .boletos {
+		height: 80vh;
+	}
+	
+	/**Inicio*/
+	.inicio__informacion {	
+		padding: 0 3rem;
+	}
+
+	/* ágora */
+	.agora--imagen {
+		margin: 2rem;
+		width: 75%;
+	}
+	
+	.agora--texto {
+		margin: 1rem;
+		font-size: 2.5rem;
+		font-weight: 400;
+		line-height: 1.1;
+	}
+
+	/* Equipo */
+	.equipo__perfil {
+		width: 30%;
+	}
+
+	/* Pie */
+
+	.pie {
+		flex-flow: row;
+		justify-content: center;
+		align-items: center;
+		padding: 1rem;	
+	}
+
+	.pie__dReservados{
+		width: 20%;
+		text-align: left;
+	}
+
+	.pie__logo{
+		width: 50%;
+	}
+
+	.pie__redesSociales{
+		width: 30%;
+		text-align: right;
+	}
+}
+
+/*lg*/
+@media (min-width:992px)   {
+
+/*////---- P L A T A F O R M A ----\\\\*/
+	.columnaTarjetas {
+			-webkit-column-count:4;
+			-moz-column-count:4;
+			column-count:4;
+			-webkit-column-gap:.75rem;
+			-moz-column-gap:.75rem;
+			column-gap:.75rem;
+		}
+		
+		.tarjeta {
+			display:inline-block;
+			width:100%
+		}
+
+/*////---- L A N D I N G - P A G E  ----\\\\*/
+	.flexBox__Column {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-flow: column;
+			padding: 2rem 4rem;
+	}
+
+	.flexBox__Row {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-flow: row;
+			padding: 2rem 4rem;
+	}
+	
+	.flexBox {
+		flex-flow: row;
+	}
+
+	.moduloIzq {
+		width: 50%;
+		text-align: right;	
+	}
+
+	.moduloDer{
+		width: 50%;
+		text-align: left;
+	}
+
+	/* Inicio*/
+		.inicio {
+			height: 100vh;
+			margin: 0;
+		}
+
+		.inicio__imagen {
+			display: inline;
+		}
+
+		.inicio__informacion {	
+			align-items: flex-start;
+				
+		}
+		
+		.inicio--titulo {
+			font-size: 3.5rem;
+			font-weight: 400;
+			line-height: 1.1;
+		}
+
+		.inicio--texto {
+			margin: .5rem 0;
+			font-size: 1rem;
+		}
+}
+
+/*xl*/
+@media (min-width:1200px)   {
+
+/*////---- P L A T A F O R M A ----\\\\*/
+	.columnaTarjetas {
+			-webkit-column-count:5;
+			-moz-column-count:5;
+			column-count:5;
+			-webkit-column-gap: 1rem;
+			-moz-column-gap: 1rem;
+			column-gap: 1rem;
+		}
+		
+		.tarjeta {
+			display:inline-block;
+			width:100%
+		}
+
+/*////---- L A N D I N G - P A G E  ----\\\\*/
+	
+	
+}

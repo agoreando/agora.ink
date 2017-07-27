@@ -11,66 +11,11 @@
 	display: inline-block;
 }
 
-
-
-
-/* ======== Menu de Navegación ======== */
-.menuNavegacionVertical {
-	position: fixed;
-	right: 0;
-	width: 3rem;
-	height: 100vh;
-	padding: 1rem 0 .5rem 0;
-	flex-flow: column;
-	justify-content: space-between;
-	align-items: center;
-	background-color: var(--blanco);
-	color: var(--profundo);	
-	text-align: center;
-	border-left: 1px var(--claro) solid;
-}
-
-.menuNavegacionVertical--ul {
-	list-style: none;
-	padding: 0;
-}
-
-.menuNavegacionVertical--ul li {
-	margin: 1rem 0;
-}
-
-.icono--menu, .icono--back  {
-	color: var(--profundo);
-	width: 2rem;
-}
-
-.icono--menu:focus, .icono--menu:hover {
-	color: var(--anaranjado);
-}
-
-.icono--back:focus, .icono--back:hover {
-	font-weight: 500;
-	color: var(--anaranjado);
-
-}
-
-.menuNavegacionApaisado {
-	position: fixed;
-	width: 100%;
-	height: 2rem;
-	padding: 0 1rem;
-	justify-content: space-between;
-	align-items: center;
-	background-color: var(--anaranjado);
-	color: var(--blanco);
-	z-index: 8;	
-}
-
-
 /* ======== Inicio ======== */
 	.inicio {
-		height: 100vh;
 		color: var(--profundo);
+		background-color: var(--ahuesado);
+
 	}
 
 	.inicio__imagen {	
@@ -84,16 +29,7 @@
 		align-items: flex-start;		
 	}
 	
-	.inicio--titulo {
-		font-size: 3.5rem;
-		font-weight: 400;
-		line-height: 1.1;
-	}
-
-	.inicio--texto {
-		margin: .5rem 0;
-	}
-
+	
 	.linea {
 		margin: 1rem 0;
 		background-color: var(--claro);
@@ -129,20 +65,6 @@
 		color: var(--blanco);
 		text-align: center;
 	}
-
-	.agora--imagen {
-		margin: 2rem;
-		width: 75%;
-	}
-	
-	.agora--texto {
-		margin: 1rem;
-		font-size: 2.5rem;
-		font-weight: 400;
-		line-height: 1.1;
-	}
- 
-	
 
 
 /* ======== Alfa ======== */
@@ -190,6 +112,7 @@
 	.informacion--seccion{
 		font-weight: 300;
 		margin: 0 0 1rem 0;
+		font-size: 90%;
 	}
 
 /* ======== Comunica ======== */
@@ -210,7 +133,7 @@
 
 	}
 
-/* ======== Facebook ======== */
+/* ======== Boletos ======== */
 	.boletos {
 		background-color: var(--blanco);
 		
@@ -295,17 +218,12 @@
 	.pie {
 		color: var(--claro);
 		background-color: var(--profundo);
-		padding: 1rem;
-		display: flex;
-		justify-content: center;
-		align-items: center;
 	}
 	
 	.pie__dReservados{
 		font-size: 50%;
 		font-weight: 400;
 		width: 20%;
-		text-align: left;
 	}
 
 	.pie__logo{
@@ -315,149 +233,15 @@
 
 	.pie__redesSociales{
 		width: 30%;
-		text-align: right;
+		
 	}
 		
 	.pie__redesSociales--icono {
 		text-align: center;
 		margin: 0 .25rem;
+		font-size: 80%;
 	}
 
 
 
 
-/*////////////////  MEDIA QUERIS COLUMNAS ////////////////*/
-
-/*xs*/ 
-	.flexBox__Column {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			flex-flow: column;
-			padding: 2rem 4rem;
-	}
-
-	.flexBox__Row {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			flex-flow: column;
-			padding: 2rem 4rem;
-	}
-
-	.moduloIzq {
-		width: 100%;
-		text-align: center;	
-	}
-
-	.moduloDer{
-		width: 100%;
-		text-align: center;
-	}
-	
-
-	/* Menu Navegación */
-	.menuNavegacionVertical {
-		display: none;
-	}
-
-	.menuNavegacionApaisado {
-		display: flex;
-	}
-	
-
-	/* Inicio*/
-	.inicio__informacion {	
-		align-items: center;		
-	}
-
-	/* Equipo */
-	.equipo__perfil {
-		justify-content: space-between;
-	}
-
-	.equipo__perfil {
-		width: 100%;
-	}
-
-/*sm*/
-@media (min-width:576px)  {
-
-	
-
-}
-
-/*md*/
-@media (min-width:768px)  {
-	.flexBox__Column {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			flex-flow: column;
-			padding: 2rem 4rem;
-	}
-
-	.flexBox__Row {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			flex-flow: row;
-			padding: 2rem 4rem;
-	}
-
-	.agora, .inicio, .alfa, .descubre, 
-	.explora, .comunica, .crea, .boletos, 
-	.gotoAgora, .equipo, .pie {
-		width: calc(100% - 3rem);
-	}
-	
-	.descubre, .explora, .comunica, .crea, .boletos {
-		height: 80vh;
-	}
-
-  	.flexBox {
-		flex-flow: row;
-	}
-
-	.moduloIzq {
-		width: 50%;
-		text-align: right;	
-	}
-
-	.moduloDer{
-		width: 50%;
-		text-align: left;
-	}
-	
-
-	/* Menú Navegación */
-	.menuNavegacionVertical {
-		display: flex;
-	}
-
-	.menuNavegacionApaisado {
-		display: none;
-	}
-	
-
-	/* Inicio*/
-	.inicio__informacion {	
-		align-items: flex-start;		
-	}
-
-
-	/* Equipo */
-	.equipo__perfil {
-		width: 30%;
-	}
-}
-
-/*lg*/
-@media (min-width:992px)   {
-
-}
-
-/*xl*/
-@media (min-width:1200px)   {
-	
-}
