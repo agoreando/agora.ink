@@ -8,11 +8,11 @@
 	.contenedorTarjetasEventos{
 			width: 100%;
 		    height: calc(100vh - 2rem);
-		    position: absolute;
-		    margin: 0;
+		    position: relative;
+		    margin-top: 2rem;
 		    left: 0;
 		    bottom: 0;
-		    padding: 1rem;
+		    padding: 0 1rem;
 		}
 
 		.columnaTarjetas {
@@ -27,6 +27,10 @@
 		.tarjeta {
 			display:inline-block;
 			width:100%
+		}
+
+		.fechaEvento, .horaEvento, .sedeEvento {
+			font-size: 50%;
 		}
 		
 	/* Menu Navegación */
@@ -244,7 +248,11 @@
 			display:inline-block;
 			width:100%
 		}
-	
+
+		.fechaEvento, .horaEvento, .sedeEvento {
+			font-size: 70%;
+		}
+
 	/* Menú Navegación */
 		.menuNavegacionVertical {
 			display: flex;
@@ -253,6 +261,8 @@
 		.menuNavegacionApaisado {
 			display: none;
 		}
+	
+	
 
 /*////---- L A N D I N G - P A G E  ----\\\\*/
 	

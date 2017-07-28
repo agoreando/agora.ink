@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
 
 /* ---- ESTRUCTURA ---- */
-
-
-
-
 .cubo {
 	width: 4rem;
 	height: 4rem;
@@ -14,8 +10,6 @@
 /* ======== Inicio ======== */
 	.inicio {
 		color: var(--profundo);
-		background-color: var(--ahuesado);
-
 	}
 
 	.inicio__imagen {	
