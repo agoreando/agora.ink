@@ -23,7 +23,24 @@
 	font-weight: 300;
 }
 
+.weight400 {
+	font-weight: 400;
+}
+
 .imagen-fluida {
   max-width: 100%;
   height: auto;
+}
+
+.flexRow {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.flexColumn {
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
 }

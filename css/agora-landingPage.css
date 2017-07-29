@@ -66,6 +66,7 @@
 		text-align: center;
 		background-color: var(--oxford);
 		color: var(--ahuesado);
+		padding: 1rem;
 	}
 
 
@@ -81,17 +82,17 @@
 		background-color: var(--marfil);
 	}
 	
-	.nombre--seccion{
+	.nombre__seccion {
 		font-weight: 300;
 		margin: 0 0 .5rem 0;
 	}
 
-	.subNombre--seccion{
+	.subNombre__seccion {
 		font-weight: 400;
 		margin: 0 0 1rem 0;
 	}
 
-	.items--seccion{
+	.items__seccion {
 		margin: .5rem 0 0 0; 
 		font-weight: 200;
 		font-size: 1.25rem;
@@ -103,7 +104,7 @@
 		color: var(--oxford);
 	}
 
-	.informacion--seccion{
+	.informacion__seccion {
 		font-weight: 300;
 		margin: 0 0 1rem 0;
 		font-size: 90%;
@@ -182,16 +183,30 @@
 		align-items: center;
 		text-align: center;
 		flex-flow: column;
-		margin: 2rem;
+		padding: 2rem 0;
 	}
 
-	.equipo__imagen {
-		width: 12rem;
-		height: 12rem;
-		border-radius: 50%;
-		background-color: var(--ahuesado);
+	.equipo__marcoImagen {
+		width: 90%;
 	}
 	
+	.equipo__imagen{
+		width: 100%;
+		height: auto;/*
+		border-radius: 4px;
+		background-color: var(--ahuesado);*/
+	}
+
+	.nombre__integrante {
+		margin: 1rem 0 0 0;
+	}
+
+	.descripcion__integrante{
+		font-weight: 300;
+		margin: .5rem 0;
+		padding: 0 1rem 0 1rem;
+	}
+
 	.equipo__tags {
 		display: flex;
 		flex-flow: row;

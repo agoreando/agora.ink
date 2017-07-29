@@ -121,109 +121,128 @@ body
 			strong alrededor
 
 	//SECCIÓN ALFA
-	section#alfa.flexBox__Row.alfa
+	section#alfa.alfa.flexRow
 		div
 			h4 Fase Alfa +
 
 	//SECCIÓN DESCUBRE
 	section#descubre.descubre.flexBox__Row
 		div.descubre__info.moduloIzq
-			h2.nombre--seccion Descubre
-			p.informacion--seccion ágora te muestra las actividades culturales y de entretenimiento a realizarse, dejando atrás la forma aburrida de buscar entre carteleras con eventos atrasados.
+			h2.nombre__seccion Descubre
+			p.informacion__seccion ágora te muestra las actividades culturales y de entretenimiento a realizarse, dejando atrás la forma aburrida de buscar entre carteleras con eventos atrasados.
 		div.descubre__imagen.moduloDer
 
 	//SECCIÓN EXPLORA
 	section#explora.explora.flexBox__Row
 		div.explora__imagen.moduloIzq
 		div.explora__info.moduloDer
-			h2.nombre--seccion 
+			h2.nombre__seccion 
 				| Explora
 				sup: i.icon-info
-			p.subNombre--seccion: em Tres modos de exploración
+			p.subnombre__seccion: em Tres modos de exploración
 
 			div
-				p.items--seccion.icon-buscar Buscar 
-				p.informacion--seccion Encuentra eventos mediante la barra de búsqueda utilizando palabras claves, perfecto para cuando buscas algo específico.
+				p.items__seccion.icon-buscar Buscar 
+				p.informacion__seccion Encuentra eventos mediante la barra de búsqueda utilizando palabras claves, perfecto para cuando buscas algo específico.
 			
 			div
-				p.items--seccion.icon-categorias Categorías
-				p.informacion--seccion Funciona como un índice general para navegar entre los tipos de eventos y encontrar así lo que buscas.
+				p.items__seccion.icon-categorias Categorías
+				p.informacion__seccion Funciona como un índice general para navegar entre los tipos de eventos y encontrar así lo que buscas.
 			
 			div
-				p.items--seccion.icon-fecha Ciudad y Fecha
-				p.informacion--seccion Muestra los eventos filtrados por la localización (ciudad, sede) y fecha en que se realizan.
+				p.items__seccion.icon-fecha Ciudad y Fecha
+				p.informacion__seccion Muestra los eventos filtrados por la localización (ciudad, sede) y fecha en que se realizan.
 		
 	//SECCIÓN COMUNICA
 	section#comunica.comunica.flexBox__Row
 		div.comunica__info.moduloIzq 
-			h2.nombre--seccion Comunica
-			p.informacion--seccion Diseñamos el espacio estupendo para tú evento, enfocando ágora para ofrecerte una plataforma especializada en difundir tu evento, en la cual podrás conectar con tus próximos asistentes.
+			h2.nombre__seccion Comunica
+			p.informacion__seccion Diseñamos el espacio estupendo para tú evento, enfocando ágora para ofrecerte una plataforma especializada en difundir tu evento, en la cual podrás conectar con tus próximos asistentes.
 		div.comunica__imagen.moduloDer
 
 	//SECCIÓN CREA
 	section#crea.crea.flexBox__Row
 		div.crea__imagen.moduloIzq
 		div.crea__info.moduloDer
-			h2.nombre--seccion 
+			h2.nombre__seccion 
 				| Crea
 				sup: i.icon-info
-			p.informacion--seccion La plataforma está dirigida para todos los eventos, por eso utiliza una interfaz intuitiva que permite crear un nuevo evento, modificar su información, cancelar o eliminar y notificarlo a los usuarios.
-			p.informacion--seccion Así los organizadores tienen la libertad de subir a la plataforma todos sus eventos sin restricción alguna en cantidad o información.
+			p.informacion__seccion La plataforma está dirigida para todos los eventos, por eso utiliza una interfaz intuitiva que permite crear un nuevo evento, modificar su información, cancelar o eliminar y notificarlo a los usuarios.
+			p.informacion__seccion Así los organizadores tienen la libertad de subir a la plataforma todos sus eventos sin restricción alguna en cantidad o información.
 
 	//SECCIÓN Boletos
 	section#boletos.boletos.flexBox__Row
 			div.boletos__titulo
 			div.moduloIzq
-				h2.nombre--seccion
+				h2.nombre__seccion
 					span.small a un click de tus
 					strong  boletos
-				p.informacion--seccion Dirige a tus usuarios hacia la plataforma que utilizas, y en donde ellos podran adquirir los accesos de tu evento.
+				p.informacion__seccion Dirige a tus usuarios hacia la plataforma que utilizas, y en donde ellos podran adquirir los accesos de tu evento.
 
-				p.informacion--seccion Al crear el espacio de tu evento, ágora te permite ingresar el link que te proproporciona tu servicio de boletaje, o la dirección del sitio web donde pueden encontrarlos.
+				p.informacion__seccion Al crear el espacio de tu evento, ágora te permite ingresar el link que te proproporciona tu servicio de boletaje, o la dirección del sitio web donde pueden encontrarlos.
 			div.moduloDer
 
 	section#boletos.boletos.flexBox__Row
 			div.moduloIzq 
 			div.moduloDer
-				p.informacion--seccion La plataforma te permite también indicarle a tus usuarios si  el acceso a tu evento no tiene un precio
+				p.informacion__seccion La plataforma te permite también indicarle a tus usuarios si  el acceso a tu evento no tiene un precio
 			
 	//SECCIÓN go to ágora
 	section#gotoAgora.goToAgora.flexBox__Column
 		img.agora--imagen.imagen-fluida(src="images/agora.svg")
 		div(href="index.html").boton.blanco Explorar
 
-	//SECCIÓN EQUIPO
-	section#equipo.equipo.flexBox__Row
-		div.equipo__perfil
-			div.equipo__imagen
-			h3.weight300 Desarrolladora(o)
-			p.weight300 Reseña
-			div.equipo__tags
-				div.tag CSS
-				div.tag Data Base
+	//SECCIÓN Equipo
+	section#equipo.equipo.flexBox__Column
+		h2
+			span.weight100 ágora 
+			span.weight300 team
+		div.equipo__tarjetas
+			
+			div.equipo__perfil
+				div.equipo__marcoImagen
+					img.equipo__imagen(src="images/perfil_integrante.svg")
+				h3.nombre__integrante 
+							span.weight400 Socio 
+							span.weight100 Desarrollador
 
-		div.equipo__perfil
-			div.equipo__imagen
-			h3.weight300 Ingrid
-			p.weight300 Reseña
-			div.equipo__tags
-				div.tag Public Relation
-				div.tag Comunnity Manager
+				p.descripcion__integrante Reseña
+				div.equipo__tags
+					div.tag CSS
+					div.tag Data Base
 
-		div.equipo__perfil
-			div.equipo__imagen
-			h3.weight300 Kalollero
-			p.weight300 Loco, Gitano, Soñador & Startopero; con estudios en Imagología y Diseño. Un publicista art nouvo de épocas contemporaneas, experto en Vampiras Modernas.
-			div.equipo__tags
-				div.tag UX Desing
-				div.tag HTML
-				div.tag FrontEnd
-				div.tag CSS
-				div.tag Advertising
-				div.tag JavaScript
-				div.tag Desing
-				div.tag Prototyping
-				div.tag UI Desing
+			div.equipo__perfil
+				div.equipo__marcoImagen
+					img.equipo__imagen(src="images/perfil_integrante.svg")
+				h3.nombre__integrante 
+							span.weight400 Ingrid 
+							span.weight100 Rguez
+
+
+				p.descripcion__integrante Reseña
+				div.equipo__tags
+					div.tag Public Relation
+					div.tag Comunnity Manager
+
+			div.equipo__perfil
+				div.equipo__marcoImagen
+					img.equipo__imagen(src="images/perfil_integrante.svg")
+				h3.nombre__integrante 
+							span.weight400 Kalóllero 
+							span.weight100 Marro.on
+
+
+				p.descripcion__integrante Loco, Gitano, Soñador & Startopero; con estudios en Imagología y Diseño. Un publicista art nouvo de épocas contemporaneas, experto en Vampiras Modernas.
+				div.equipo__tags
+					div.tag UX Desing
+					div.tag HTML
+					div.tag FrontEnd
+					div.tag CSS
+					div.tag Advertising
+					div.tag JavaScript
+					div.tag Desing
+					div.tag Prototyping
+					div.tag UI Desing
 
 	//SECCIÓN PIE
 	section.pie

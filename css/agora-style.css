@@ -84,8 +84,6 @@
 }
 
 
-
-
 .imagen__evento{
 	border-radius: 4px;
 }
@@ -140,7 +138,6 @@
 	width: 90%;
 	padding-left: 1rem;
 	color: var(--gris);
-	font-size: 70%;
 	line-height: 1;
 }
 

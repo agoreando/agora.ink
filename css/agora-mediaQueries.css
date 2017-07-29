@@ -7,7 +7,7 @@
 	
 	.contenedorTarjetasEventos{
 			width: 100%;
-		    height: calc(100vh - 2rem);
+		    height: 100%;
 		    position: relative;
 		    margin-top: 2rem;
 		    left: 0;
@@ -29,7 +29,8 @@
 			width:100%
 		}
 
-		.fechaEvento, .horaEvento, .sedeEvento {
+		.fechaEvento, .punto, .horaEvento, .sedeEvento, .organizadorEvento {
+			display: none;
 			font-size: 50%;
 		}
 		
@@ -55,7 +56,7 @@
 			justify-content: center;
 			align-items: center;
 			flex-flow: column;
-			padding: 2rem .5rem;
+			padding: 2rem 1rem;
 	}
 
 	.flexBox__Row {
@@ -63,7 +64,7 @@
 			justify-content: center;
 			align-items: center;
 			flex-flow: column;
-			padding: 2rem .5rem;
+			padding: 2rem 1rem;
 	}
 	
 	.inicio, .agora, .alfa, .descubre, 
@@ -127,6 +128,13 @@
 	}
 
 	/* Equipo */
+	.equipo__tarjetas {
+		display: flex;
+		flex-flow: column;
+		justify-content: flex-start;
+		align-items: center;
+	}
+
 	.equipo__perfil {
 		justify-content: space-between;
 	}
@@ -179,7 +187,15 @@
 		}
 
 /*////---- L A N D I N G - P A G E  ----\\\\*/
-	
+	.flexBox__Column {
+			padding: 2rem;
+	}
+
+	.flexBox__Row {
+			padding: 2rem;
+	}
+
+
 	/**Inicio*/
 	.inicio__informacion {	
 		padding: 0 1rem;
@@ -228,7 +244,7 @@
 	.contenedorTarjetasEventos{
 			width: calc(100% - 3rem);
 		    height: 100vh;
-		    position: absolute;
+		    position: relative;
 		    margin: 0;
 		    left: 0;
 		    bottom: initial;
@@ -249,9 +265,21 @@
 			width:100%
 		}
 
-		.fechaEvento, .horaEvento, .sedeEvento {
+		.fechaEvento, .punto, .horaEvento{
+			display: inline-block;
+			font-size: 70%
+		}
+
+		.sedeEvento {
+			display: block;
 			font-size: 70%;
 		}
+		
+		.organizadorEvento {
+			display: flex;
+			font-size: 70%;
+		}
+
 
 	/* Menú Navegación */
 		.menuNavegacionVertical {
@@ -265,9 +293,6 @@
 	
 
 /*////---- L A N D I N G - P A G E  ----\\\\*/
-	
-	
-
 	.inicio, .agora, .alfa, .descubre, 
 	.explora, .comunica, .crea, .boletos, 
 	.gotoAgora, .equipo, .pie {
@@ -296,10 +321,7 @@
 		line-height: 1.1;
 	}
 
-	/* Equipo */
-	.equipo__perfil {
-		width: 30%;
-	}
+	
 
 	/* Pie */
 
@@ -307,7 +329,7 @@
 		flex-flow: row;
 		justify-content: center;
 		align-items: center;
-		padding: 1rem;	
+		padding: 1rem 2rem;	
 	}
 
 	.pie__dReservados{
@@ -341,6 +363,11 @@
 		.tarjeta {
 			display:inline-block;
 			width:100%
+		}
+		
+		.organizadorEvento {
+			display: flex;
+			font-size: 80%;
 		}
 
 /*////---- L A N D I N G - P A G E  ----\\\\*/
@@ -398,6 +425,17 @@
 		.inicio--texto {
 			margin: .5rem 0;
 			font-size: 1rem;
+		}
+
+	/* Equipo */
+		.equipo__tarjetas {
+			flex-flow: row;
+			justify-content: center;
+			align-items: flex-start;
+		}
+
+		.equipo__perfil {
+			width: 33.33%;
 		}
 }
 
