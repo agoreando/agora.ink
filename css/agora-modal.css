@@ -1,0 +1,151 @@
+.contenedor__modal {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+  	z-index: 29;
+  	overflow-y: auto;
+  	background: rgba(0, 0, 0, 0.88);
+  	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-flow: column;
+	padding: 2rem;
+}
+
+.imagenEvento__modal{
+	background-color: rgba(0, 0, 0, 0.88); /*rgba(12, 12, 12, 1);*/
+	text-align: center;
+}
+
+.informacionEvento__modal{
+	background-color: rgba(251,251,251,1);
+	text-align: left;
+	color: #2b2b2b;
+}
+
+.tipoEvento__modal {
+	text-align: right;
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+.nombreEvento__modal {
+	margin: .5rem 0rem;
+}
+
+.fechaEvento__modal {
+	font-size: .9rem;
+	    font-weight: 500;
+	    opacity: .6;
+	    letter-spacing: 1px;
+}
+
+.horaEvento__modal {
+	font-size: .9rem;
+	    font-weight: 500;
+	    opacity: .6;
+	    letter-spacing: 1px;
+}
+
+.descripcionEvento__modal {}
+
+.accesoEvento__modal {}
+
+.sedeEvento__modal {}
+
+.direccionEvento__modal {}
+
+.ciudadEvento__modal {}
+
+.organizador__modal {}
+
+.organizadorEventoImgPerfil__modal {
+	width: 2rem;
+	height: 2rem;
+}
+
+.organizadorEventoNombre__modal
+
+.redesSociales
+				
+.icon-
+
+
+/*////////////////  MEDIA QUERIES ////////////////*/
+
+/*@ media min-width:0px a max-width:575 xs*/ 
+
+
+/*////---- M O D A L ----\\\\*/
+
+	.contenedor__modal {
+		
+	}
+	
+	.imagenEvento__modal {
+		height: auto;
+		width: 80%;
+	}
+
+	.cartel__modal {
+		max-width: 100%;
+	    height: auto;
+	    border-radius: 4px 4px 0px 0px;
+	}
+	
+	.informacionEvento__modal {
+		height: auto;
+		width: 80%;
+	}
+
+/*sm*/
+@media (min-width:576px)  {
+
+/*////---- M O D A L ----\\\\*/
+
+}
+
+/*md*/
+@media (min-width:768px)  {
+
+/*////---- M O D A L ----\\\\*//*Cambio pPosición del Menú*/	
+
+}
+
+/*lg*/
+@media (min-width:992px)   {
+
+/*////---- M O D A L ----\\\\*/
+
+	.contenedor__modal {
+		flex-flow: row;
+	}
+	
+	.imagenEvento__modal {
+		height: 90%;
+		width: 45%;
+		text-align: right;
+	}
+				
+	.cartel__modal {
+		max-height: 100%;
+	    width: auto;
+	    border-radius: 4px 0px 0px 4px;
+	}
+
+	.informacionEvento__modal {
+		height: 90%;
+		width: 45%;
+	}
+}
+
+/*xl*/
+@media (min-width:1200px)   {
+
+/*////---- M O D A L ----\\\\*/
+	
+	
+	
+}

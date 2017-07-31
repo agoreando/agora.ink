@@ -41,23 +41,45 @@ head
 	//Normalize
 	link(href="css/normalize.css" rel="stylesheet")
 
-	//Agora Style
-	link(rel="stylesheet" href="css/agora-style.css")
-
-	//Style Modal
-	link(rel="stylesheet" href="css/modal.css")
+	//Style modal
+	link(rel="stylesheet" href="css/agora-modal.css")
 
 	//Agora FrameWork
 	link(rel="stylesheet" href="css/agora-frameWork.css")
 
 	//Agora Media Queris
-	link(rel="stylesheet" href="css/agora-mediaQueries.css")
+	//- link(rel="stylesheet" href="css/agora-mediaQueries.css")
 
 	
 
 body
 
 	div.contenedor__modal
-		div.imagen__eventoModal
-			img.
-		div.informacion__eventoModal
+		div.imagenEvento__modal
+			img.cartel__modal(src="images/2.jpg")
+		div.informacionEvento__modal
+			p.tipoEvento__modal Feria
+			p.nombreEvento__modal Feria Nacional del Libro Infantil y Juvenil 2017
+			p.fechaEvento__modal
+				span 21 de Julio 2017
+				span &nbsp al &nbsp
+				span 30 de Julio 2017
+			p.horaEvento__modal
+				span 10:00 hrs
+				span &nbsp a &nbsp
+				span 20:00 hrs
+			div.descripcionEvento__modal Descripción del Evento
+			div.accesoEvento__modal Acceso Libre
+			p.sedeEvento__modal Colegio Preparatorio de Xalapa
+			p.direccionEvento__modal Dirección de la Sede
+			p.ciudadEvento__modal Xalapa~Enríquez
+			div.organizador__modal
+				img.organizadorEventoImgPerfil__modal(src="images/luna.png")
+				p.organizadorEventoNombre__modal Instituto Veracruzano de Cultura | IVEC
+			div.redesSociales__modal
+				a(href=""): i.icon-
+				a(href=""): i.icon-
+				a(href=""): i.icon-
+				a(href=""): i.icon-
+				a(href=""): i.icon-
+
