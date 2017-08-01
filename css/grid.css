@@ -1,0 +1,39 @@
+.contenedor__modal{
+		display: grid;
+		grid-template-columns: 2rem auto 2rem;
+		grid-template-rows: 2rem 1fr 1fr 2rem;
+	}
+
+.imagenEvento__modal {
+	grid-row:2 / 3;
+	grid-column: 2 / 3;
+	margin: 0;
+}
+
+.informacionEvento__modal{
+	grid-row: 3 / 4;
+	grid-column: 2 / 3;	
+	margin: 0;
+}
+
+
+@media (min-width:768px)  {
+
+/*////---- M O D A L ----\\\\*//*Cambio pPosición del Menú*/	
+
+	.contenedor__modal{
+		grid-template-columns: 2rem 1fr 1fr 2rem;
+		grid-template-rows: 2rem auto 2rem;
+	}
+
+	.imagenEvento__modal {
+		grid-row: 2 / 3;
+		grid-column: 2 / 3;
+
+	}
+
+	.informacionEvento__modal {
+		grid-row: 2 / 3;
+		grid-column: 3 / 4;
+	}
+}

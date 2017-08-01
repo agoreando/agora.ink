@@ -1,28 +1,37 @@
-.contenedor__modal {
+.contenedor {
 	position: fixed;
 	width: 100%;
+	height: auto;
 	top: 0;
 	left: 0;
   	z-index: 29;
   	overflow-y: auto;
   	background: rgba(0, 0, 0, 0.88);
-  	height: 100%;
-	display: flex;
+	/*display: flex;
 	align-items: center;
 	justify-content: center;
-	flex-flow: column;
-	padding: 2rem;
+	flex-flow: column;*/
+	padding: 1rem;
+}
+
+.contenedor__modal {
+	width: 100%;
+	height: 100%;
 }
 
 .imagenEvento__modal{
 	background-color: rgba(0, 0, 0, 0.88); /*rgba(12, 12, 12, 1);*/
-	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-flow: column;
 }
 
 .informacionEvento__modal{
 	background-color: rgba(251,251,251,1);
 	text-align: left;
 	color: #2b2b2b;
+	padding: 1rem 2rem;
 }
 
 .tipoEvento__modal {
@@ -37,16 +46,16 @@
 
 .fechaEvento__modal {
 	font-size: .9rem;
-	    font-weight: 500;
-	    opacity: .6;
-	    letter-spacing: 1px;
+    font-weight: 500;
+    opacity: .6;
+    letter-spacing: 1px;
 }
 
 .horaEvento__modal {
 	font-size: .9rem;
-	    font-weight: 500;
-	    opacity: .6;
-	    letter-spacing: 1px;
+    font-weight: 500;
+    opacity: .6;
+    letter-spacing: 1px;
 }
 
 .descripcionEvento__modal {}
@@ -66,12 +75,139 @@
 	height: 2rem;
 }
 
-.organizadorEventoNombre__modal
+.organizadorEventoNombre__modal{}
 
-.redesSociales
+.redesSociales__modal{
+	text-align: center;
+}
 				
-.icon-
+.icono-modal {
+	color: var(--claro);
+}
 
+.icono-modal:hover, .icono-modal:focus  {
+	color: var(--oxford);
+}
+
+		[data-tooltip], .tooltip {
+		  position: relative;
+		  cursor: pointer;
+		}
+
+		[data-tooltip]:before,
+		[data-tooltip]:after,
+		.tooltip:before,
+		.tooltip:after {
+		  position: absolute;
+		  visibility: hidden;
+		  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+		  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+		  opacity: 0;
+		  -webkit-transition: 
+		      opacity 0.2s ease-in-out,
+		        visibility 0.2s ease-in-out,
+		        -webkit-transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24);
+		    -moz-transition:    
+		        opacity 0.2s ease-in-out,
+		        visibility 0.2s ease-in-out,
+		        -moz-transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24);
+		    transition:         
+		        opacity 0.2s ease-in-out,
+		        visibility 0.2s ease-in-out,
+		        transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24);
+		  -webkit-transform: translate3d(0, 0, 0);
+		  -moz-transform:    translate3d(0, 0, 0);
+		  transform:         translate3d(0, 0, 0);
+		  pointer-events: none;
+		}
+
+		/* Show the entire tooltip on hover and focus */
+		[data-tooltip]:hover:before,
+		[data-tooltip]:hover:after,
+		[data-tooltip]:focus:before,
+		[data-tooltip]:focus:after,
+		.tooltip:hover:before,
+		.tooltip:hover:after,
+		.tooltip:focus:before,
+		.tooltip:focus:after {
+		  visibility: visible;
+		  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+		  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+		  opacity: 1;
+		}
+
+		/* Base styles for the tooltip's directional arrow */
+		.tooltip:before,
+		[data-tooltip]:before {
+		  z-index: 1001;
+		  border: 6px solid transparent;
+		  background: transparent;
+		  content: "";
+		}
+
+		/* Base styles for the tooltip's content area */
+		.tooltip:after,
+		[data-tooltip]:after {
+		  z-index: 1000;
+		  padding: 8px;
+		  width: 160px;
+		  background-color: #000;
+		  background-color: hsla(0, 0%, 20%, 0.9);
+		  color: #fff;
+		  content: attr(data-tooltip);
+		  font-size: 14px;
+		  line-height: 1.2;
+		}
+
+		/* Directions */
+
+		/* Top (default) */
+		[data-tooltip]:before,
+		[data-tooltip]:after,
+		.tooltip:before,
+		.tooltip:after,
+		.tooltip-top:before,
+		.tooltip-top:after {
+		  bottom: 100%;
+		  left: 50%;
+		}
+
+		[data-tooltip]:before,
+		.tooltip:before,
+		.tooltip-top:before {
+		  margin-left: -6px;
+		  margin-bottom: -12px;
+		  border-top-color: #000;
+		  border-top-color: hsla(0, 0%, 20%, 0.9);
+		}
+
+		/* Horizontally align top/bottom tooltips */
+		[data-tooltip]:after,
+		.tooltip:after,
+		.tooltip-top:after {
+		  margin-left: -80px;
+		}
+
+		[data-tooltip]:hover:before,
+		[data-tooltip]:hover:after,
+		[data-tooltip]:focus:before,
+		[data-tooltip]:focus:after,
+		.tooltip:hover:before,
+		.tooltip:hover:after,
+		.tooltip:focus:before,
+		.tooltip:focus:after,
+		.tooltip-top:hover:before,
+		.tooltip-top:hover:after,
+		.tooltip-top:focus:before,
+		.tooltip-top:focus:after {
+		  -webkit-transform: translateY(-12px);
+		  -moz-transform:    translateY(-12px);
+		  transform:         translateY(-12px); 
+		}	
+
+.cerrar {
+	
+}	
 
 /*////////////////  MEDIA QUERIES ////////////////*/
 
@@ -85,8 +221,8 @@
 	}
 	
 	.imagenEvento__modal {
-		height: auto;
-		width: 80%;
+		/*height: auto;
+		width: 80%;*/
 	}
 
 	.cartel__modal {
@@ -96,8 +232,8 @@
 	}
 	
 	.informacionEvento__modal {
-		height: auto;
-		width: 80%;
+		/*height: auto;
+		width: 80%;*/
 	}
 
 /*sm*/
@@ -111,7 +247,10 @@
 @media (min-width:768px)  {
 
 /*////---- M O D A L ----\\\\*//*Cambio pPosición del Menú*/	
-
+	.contenedor {
+		width: 100%;
+		height: 100%;
+	}
 }
 
 /*lg*/
@@ -120,13 +259,14 @@
 /*////---- M O D A L ----\\\\*/
 
 	.contenedor__modal {
-		flex-flow: row;
+		/*flex-flow: row;
+		position: fixed;*/
 	}
 	
 	.imagenEvento__modal {
-		height: 90%;
-		width: 45%;
-		text-align: right;
+		/*height: 95%;
+		width: 45%;*/
+		text-align: center;
 	}
 				
 	.cartel__modal {
@@ -136,8 +276,8 @@
 	}
 
 	.informacionEvento__modal {
-		height: 90%;
-		width: 45%;
+		/*height: 95%;
+		width: 45%;*/
 	}
 }
 
