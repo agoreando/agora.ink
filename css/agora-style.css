@@ -22,6 +22,7 @@
 	color: var(--profundo);	
 	text-align: center;
 	border-left: 1px var(--claro) solid;
+	top: 0;
 }
 
 .menuNavegacionVertical--ul {

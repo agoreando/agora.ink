@@ -1,8 +1,8 @@
 .contenedor__modal{
-		display: grid;
-		grid-template-columns: 2rem auto 2rem;
-		grid-template-rows: 2rem 1fr 1fr 2rem;
-	}
+	display: grid;
+	grid-template-columns: 2rem auto 2rem;
+	grid-template-rows: 2rem 1fr 1fr 2rem;
+}
 
 .imagenEvento__modal {
 	grid-row:2 / 3;
@@ -16,6 +16,56 @@
 	margin: 0;
 }
 
+
+.equipo__tarjetas{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+}
+
+
+.jose{
+	grid-column: 1;
+	grid-row: 1;
+}
+
+.ingrid{
+	grid-column: 1;
+	grid-row: 2;
+}
+
+.kalollero{
+	grid-column: 1;
+	grid-row: 3;
+}
+
+.equipo__perfil{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+}
+
+.equipo__marcoImagen{
+	grid-column: 1;
+	grid-row: 1;
+}
+
+.informacion__integrante {
+	grid-column: 2;
+	grid-row: 1;
+}
+
+
+
+.tags__integrante{
+	grid-column: 3;
+	grid-row: 1;
+}
+
+.redes__integrante{
+	grid-column: 3;
+	grid-row: 1;
+}
 
 @media (min-width:768px)  {
 
@@ -35,5 +85,36 @@
 	.informacionEvento__modal {
 		grid-row: 2 / 3;
 		grid-column: 3 / 4;
+	}
+
+
+
+
+	.equipo__tarjetas{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr;
+	}
+
+
+	.jose{
+		grid-row: 1;
+		grid-column: 1;
+	}
+
+
+
+	.ingrid{
+		grid-row: 1;
+		grid-column: 2;
+	}
+
+	.kalollero{
+		grid-row: 1;
+		grid-column: 3;
+	}
+
+	.equipo__perfil{
+		display: flex;
 	}
 }

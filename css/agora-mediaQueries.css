@@ -138,10 +138,6 @@
 	.equipo__perfil {
 		justify-content: space-between;
 	}
-
-	.equipo__perfil {
-		width: 100%;
-	}
 	
 	/* Pie */
 	.pie {
@@ -433,7 +429,7 @@
 		}
 
 		.equipo__perfil {
-			width: 33.33%;
+			
 		}
 }
 

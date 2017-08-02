@@ -207,7 +207,7 @@
 		padding: 0 1rem 0 1rem;
 	}
 
-	.equipo__tags {
+	.tags__integrante {
 		display: flex;
 		flex-flow: row;
 		flex-wrap: wrap;
