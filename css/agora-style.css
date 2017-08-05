@@ -99,6 +99,44 @@
 	font-weight: 500;
 }
 
+.none {
+	display: none;
+}
+
+.modal-active{
+	overflow: hidden;
+}
+
+.cerrar {
+	position: fixed;
+    top: 0;
+    right: 3rem;
+    z-index: 41;
+	width: 1.75rem;
+	height: 1.75rem;
+    color: white;
+    background-color: var(--profundo);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+    font-size: 50%;
+    margin: 0;
+}
+
+.modal__enviaTuEvento{
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	overflow-y: auto;
+	background-color: var(--blanco);
+	z-index: 40;
+}
+
 /*////////////////  ANIMACIONES ////////////////*/
 
 @keyframes back {

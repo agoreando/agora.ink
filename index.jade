@@ -75,10 +75,16 @@ body#inicio
 
 	//Modal 
 	div.modalTarjetas
-
+	
+	div#modal__enviaTuEvento.none
+		div#cerrar__bannerEnviaTuEvento.cerrar
+			i.icon-cerrar
+		embed.modal__enviaTuEvento(src="subeTuEvento.html")
+	
 	//Banner
 	div.banner__enviaTuEvento.flexRow
-		a.banner__enviaTuEvento--texto(href="subeTuEvento.html") Conoce como subir tu Evento +
+		div#banner__enviaTuEvento.banner__enviaTuEvento--texto Conoce como subir tu Evento +
+	
 			
 	//Back
 	a.back.flexRow(href="#inicio"): i.icon-back.icono--menu
@@ -168,5 +174,20 @@ body#inicio
 						div.organizadorEvento
 							img.organizadorEvento__imgPerfil.imagen-fluida(src="images/luna.png")
 							div.organizadorEvento__nombre Instituto Veracruzano de Cultura | IVEC
+	
+	
 
-						
+
+	script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+
+	script(type='text/javascript').
+		$('#banner__enviaTuEvento').click(function(){
+			console.log('hoola mundo');
+		  	$('#modal__enviaTuEvento').removeClass('none').addClass('.modal__enviaTuEvento');
+		  	$('body').addClass('modal-active');
+		});
+
+		$('#cerrar__bannerEnviaTuEvento').click(function(){
+		 	$('#modal__enviaTuEvento').removeClass('.modal__enviaTuEvento').addClass('none');
+		  	$('body').removeAttr('class');
+		});

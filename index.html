@@ -64,8 +64,14 @@
   </nav>
   <!--Modal -->
   <div class="modalTarjetas"></div>
+  <div class="none" id="modal__enviaTuEvento">
+    <div class="cerrar" id="cerrar__bannerEnviaTuEvento"><i class="icon-cerrar"></i></div>
+    <embed class="modal__enviaTuEvento" src="subeTuEvento.html"/>
+  </div>
   <!--Banner-->
-  <div class="banner__enviaTuEvento flexRow"><a class="banner__enviaTuEvento--texto" href="subeTuEvento.html">Conoce como subir tu Evento +</a></div>
+  <div class="banner__enviaTuEvento flexRow">
+    <div class="banner__enviaTuEvento--texto" id="banner__enviaTuEvento">Conoce como subir tu Evento +</div>
+  </div>
   <!--Back--><a class="back flexRow" href="#inicio"><i class="icon-back icono--menu"></i></a>
   <!--Contenedor Tarjetas-->
   <div class="contenedorTarjetasEventos">
@@ -141,4 +147,17 @@
       </div>
     </div>
   </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    $('#banner__enviaTuEvento').click(function(){
+    	console.log('hoola mundo');
+      	$('#modal__enviaTuEvento').removeClass('none').addClass('.modal__enviaTuEvento');
+      	$('body').addClass('modal-active');
+    });
+    
+    $('#cerrar__bannerEnviaTuEvento').click(function(){
+     	$('#modal__enviaTuEvento').removeClass('.modal__enviaTuEvento').addClass('none');
+      	$('body').removeAttr('class');
+    });
+  </script>
 </body>
