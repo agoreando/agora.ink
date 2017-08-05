@@ -30,7 +30,7 @@ head
 		Facebook:   https://www.facebook.com/agoraink
 		//////////////////////////////////////////////////////
 
-	title ágora | Descubre el próximo concierto cerca de ti o los horarios de la obra a la que deseas asistir; crea el espacio para el evento que organizas y que todos lo vean
+	title ágora | Modal
 	
 	//Icono Pestaña
 	link(rel="icon" type="image/png" href="images/icon.png")
@@ -44,8 +44,8 @@ head
 	//Style modal
 	link(rel="stylesheet" href="css/agora-modal.css")
 
-	//Agora FrameWork
-	link(rel="stylesheet" href="css/agora-frameWork.css")
+	//- //Agora FrameWork
+	//- link(rel="stylesheet" href="css/agora-frameWork.css")
 
 	//Agora Media Queris
 	//- link(rel="stylesheet" href="css/agora-mediaQueries.css")
@@ -85,10 +85,17 @@ body
 				a.tooltip-top(href="" data-tooltip="Tooltip Teléfono"): i.icon-telefono.icono-modal
 				a.tooltip-top(href="" data-tooltip="Tooltip Dirección"): i.icon-direccion.icono-modal
 		div.cerrar
-			a(href="index.html") x
+			a(href="index.html"): i.icon-cerrar
+
+		div.menu__imagenes
+			div.compartir
+				i.icon-compartir
+			div
+				i.anterior.icon-anterior
+				i.siguiente.icon-siguiente
 		
 	
 
 
-	div.fond
+	div.fondoignorar
 		img.imagen_fondo(src="images/1.jpg")
