@@ -37,6 +37,9 @@ head
 	
 	//Icon Font
 	link(href="https://file.myfontastic.com/q2AGPeQ9fwKP9wnDdWcPfW/icons.css" rel="stylesheet")
+	
+	//Roboto Font
+	link(href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet")
 
 	//Normalize
 	link(href="css/normalize.css" rel="stylesheet")
@@ -44,18 +47,12 @@ head
 	//Agora Style
 	link(rel="stylesheet" href="css/agora-style.css")
 
-	//Style modal
-	link(rel="stylesheet" href="css/agora-modal.css")
-
-	//Agora FrameWork
-	link(rel="stylesheet" href="css/agora-frameWork.css")
-
 	//Agora Media Queris
 	link(rel="stylesheet" href="css/agora-mediaQueries.css")
 
 	
 
-body
+body#inicio
 
 	//Barra de Navegación
 	nav.menuNavegacionVertical
@@ -69,16 +66,22 @@ body
 				li: a(href="#"): i.icon-a.icono--menu
 				li: a(href="#"): i.icon-a.icono--menu
 				
-		div.menuNavegacionVertical__back
-			a(href="#inicio"): i.icon-back.icono--back
+		div.menuNavegacionVertical__alfa
+			a(href="agora_landing.html"): i.icon-alfa.icono--menu
 
 	nav.menuNavegacionApaisado
 		div: i.icon-a
-		div: i.icon-menu
+		div: i.icon-menu.icono--menu
 
 	//Modal 
 	div.modalTarjetas
 
+	//Banner
+	div.banner__enviaTuEvento.flexRow
+		a.banner__enviaTuEvento--texto(href="subeTuEvento.html") Conoce como subir tu Evento +
+			
+	//Back
+	a.back.flexRow(href="#inicio"): i.icon-back.icono--menu
 
 	//Contenedor Tarjetas
 	div.contenedorTarjetasEventos

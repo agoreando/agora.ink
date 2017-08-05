@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+html(lang="es")
+head
+	meta(charset="UTF-8")
+	meta(http-equiv="X-UA-Compatible" content="IE=edge")
+	meta(name="description" content="agora")
+	meta(name="keywords" content="agora")
+	meta(name="author" content="agora ink")
+	meta(name="viewport" content="width=device-width, initial-scale=1.0")
+	
+	//Facebook and Twitter
+	meta(property="og:title" content="ágora")
+	meta(property="og:image" content="")
+	meta(property="og:url" content="")
+	meta(property="og:site_name" content="ágora")
+	meta(property="og:description" content="Descubre el próximo concierto cerca de ti o los horarios de la obra a la que deseas asistir; crea el espacio para el evento que organizas y que todos lo vean.")
+	meta(name="twitter:title" content="ágora")
+	meta(name="twitter:image" content="")
+	meta(name="twitter:url" content="")
+	meta(property="og:site_name" content="ágora")
+	meta(property="twitter:description" content="Descubre el próximo concierto cerca de ti o los horarios de la obra a la que deseas asistir; crea el espacio para el evento que organizas y que todos lo vean.")
+	
+	// 
+		//////////////////////////////////////////////////////
+		ágora ~ Todos los Eventos, un mismo Lugar
+		Diseño y Desarrollo by kalollero Marro.on 
+    
+		Website:    http://agoraink.com
+		Email:      agoreando@outlook.com
+		Facebook:   https://www.facebook.com/agoraink
+		//////////////////////////////////////////////////////
+
+	title ágora | Sube Tu Evento
+	
+	//Icono Pestaña
+	link(rel="icon" type="image/png" href="images/icon.png")
+	
+	//Icon Font
+	link(href="https://file.myfontastic.com/q2AGPeQ9fwKP9wnDdWcPfW/icons.css" rel="stylesheet")
+
+	//Normalize
+	link(href="css/normalize.css" rel="stylesheet")
+
+	//Roboto Font
+	link(href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet")
+
+	//Agora Media Queris
+	link(rel="stylesheet" href="css/agora-mediaQueries.css")
+	
+	//Landing Page
+	link(rel="stylesheet" href="css/agora-subeTuEvento.css")
+
+
+body#inicio
+	
+	//- //Barra de Navegación
+	//- nav.menuNavegacionVertical
+	//- 	div.menuNavegacion__home
+	//- 		a(href="index.html"): i.icon-a.icono--menu
+	//- 	div.menuNavegacionVertical__items
+	//- 		ul.menuNavegacionVertical--ul
+	//- 			li: a(href="#agora"): i.icon-agora.icono--menu
+	//- 			li: a(href="#alfa"): i.icon-alfa.icono--menu
+	//- 			li: a(href="#descubre"): i.icon-descubre.icono--menu
+	//- 			li: a(href="#explora"): i.icon-explora.icono--menu
+	//- 			li: a(href="#comunica"): i.icon-comunica.icono--menu
+	//- 			li: a(href="#crea"): i.icon-crea.icono--menu
+	//- 			li: a(href="#boletos"): i.icon-boletos.icono--menu
+	//- 			li: a(href="#gotoAgora"): i.icon-go.icono--menu
+	//- 			li: a(href="#equipo"): i.icon-equipo.icono--menu
+	//- 	div.menuNavegacionVertical__back
+	//- 		a(href="#inicio"): i.icon-back.icono--back
+
+			
+
+	//- nav.menuNavegacionApaisado
+	//- 	div: i.icon-a
+	//- 	div: i.icon-menu
+	
+	//Back
+	a.volver.flexRow(href="#inicio"): i.icon-back.icono--menu
+
+	//SECCIÓN INICIO 
+	section#inicio.inicio.flexBox__Row
+		div.inicio__informacion
+			h1.inicio--titulo 	
+				| Comunica 
+				span.weight300 tu 
+				| Evento.
+			p.inicio--texto.weight300
+				strong crea 
+				| el espacio para el evento que organizas y has que 
+				strong todos lo vean.
+			div.linea
+
+
+	//SECCIÓN FORMAS
+	section#formas.formas.flexBox__Row
+		div.formas__imagen.moduloIzq
+		div.formas__info.moduloDer
+			h2.nombre__seccion Descubre
+			p.informacion__seccion ágora te muestra las actividades culturales y de entretenimiento a realizarse, dejando atrás la forma aburrida de buscar entre carteleras con eventos atrasados.
+			
+		
+	//SECCIÓN ENVÍA
+	section#comunica.comunica.flexBox__Row
+		div.comunica__info.moduloIzq 
+			h2.nombre__seccion Envía
+			p.informacion__seccion Destaca la información importante y exhibe la imagen gráfica para atraer mas usuarios.
+			p.informacion__seccion Envía todos tus eventos que estén próximos a suceder.
+		div.comunica__imagen.moduloDer
+
+	//SECCIÓN TIEMPOS
+	section#tiempos.tiempos.flexBox__Row
+		div.tiempos__imagen.moduloIzq
+		div.tiempos__info.moduloDer
+			h2.nombre__seccion 
+			p.informacion__seccion Los Eventos se aprueban y muestran en la plataforma en un plazo de 24 horas.
+			p.informacion__seccion Algunos eventos demoran más en la fase de revisión, esto no significa que no se vayan a subir y aprobar.
+
+	//SECCIÓN PIE
+	section.pie.pie--subirTuEvento
+		div.pie__logo ágora

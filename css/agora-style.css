@@ -1,67 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700');
-
 *{
-	font-family: "Roboto", sans-serif;
 	/*border: 1px orange dashed;*/
 }
 
 
 /*////////////////  MENU  ////////////////*/
-
-.menuNavegacionVertical {
-	position: fixed;
-	right: 0;
-	width: 3rem;
-	height: 100vh;
-	padding: 1rem 0 .5rem 0;
-	flex-flow: column;
-	justify-content: space-between;
-	align-items: center;
-	background-color: var(--blanco);
-	color: var(--profundo);	
-	text-align: center;
-	border-left: 1px var(--claro) solid;
-	top: 0;
-}
-
-.menuNavegacionVertical--ul {
-	list-style: none;
-	padding: 0;
-}
-
-.menuNavegacionVertical--ul li {
-	margin: 1rem 0;
-}
-
-.icono--menu, .icono--back  {
-	color: var(--profundo);
-	width: 2rem;
-}
-
-.icono--menu:focus, .icono--menu:hover {
-	color: var(--anaranjado);
-}
-
-.icono--back:focus, .icono--back:hover {
-	font-weight: 500;
-	color: var(--anaranjado);
-
-}
-
-.menuNavegacionApaisado {
-	position: fixed;
-	width: 100%;
-	height: 2rem;
-	padding: 0 1rem;
-	justify-content: space-between;
-	align-items: center;
-	background-color: var(--blanco);
-	color: var(--blanco);
-	z-index: 8;	
-	border-bottom: 1px solid var(--ahuesado);
-	top: 0;
-}
 
 /*////////////////   TARJETAS  ////////////////*/
 
@@ -86,12 +28,10 @@
 
 
 .imagen__evento{
-	border-radius: 4px;
+	border-radius: 2px;
 }
 
-.tarjeta_informacion{
-
-}
+.tarjeta_informacion{}
 
 .tipoEvento{
 	font-size: 60%;
@@ -102,9 +42,6 @@
 
 .tituloEvento{
 	font-weight: 500;
-	/*overflow:hidden;
-	white-space:nowrap;
-	text-overflow: ellipsis;*/
     color: var(--oxford);
     font-size: 80%;
     line-height: 1;
@@ -143,6 +80,24 @@
 }
 
 
+/*//////////////// AGREGAR EVENTO ////////////////*/
+
+.banner__enviaTuEvento{
+	width: 100%;
+	height: 2rem;
+	background-color: var(--ahuesadoTransparente);
+}
+
+.banner__enviaTuEvento--texto{
+	color: var(--tenue);
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.banner__enviaTuEvento--texto:hover {
+	color: var(--profundo);
+	font-weight: 500;
+}
 
 /*////////////////  ANIMACIONES ////////////////*/
 
@@ -156,3 +111,9 @@
 		 }
 		
 	}
+
+
+
+
+
+

@@ -20,6 +20,20 @@ body {
   margin: 0;
   font-size: 18px;
   font-family: "Roboto", sans-serif;
+  --navy: rgba(0, 7, 36, 1);
+  --anaranjado: #e62117;
+  --blanco: rgba(255, 255, 255, 1);
+  --ahuesado: rgba(242, 243, 248, 1);
+  --marfil: rgba(237, 239, 244, 1);
+  --claro: rgba(224, 224, 224, 1);
+  --tenue: rgba(129, 129, 129, 1);
+  --gris: rgba(101, 101, 101, 1);
+  --a: rgba(96, 96, 96, 1);
+  --b: rgba(59, 59, 59, 1);
+  --oxford: rgba(38, 38, 38, 1);
+  --profundo:rgba(23, 23, 23, 1);
+  --ahuesadoTransparente: rgba(237, 239, 244, .5);
+  --tenueTransparente: rgba(129, 129, 129, .5);
 }
 
 
@@ -344,8 +358,90 @@ figure {
 }
 
 
-/* ================================= 
-Inicia Bootstrap inialización
-=================================
-*/
+/* ================================
+Inicia inialización
+=================================*/
 
+.imagen-fluida {
+  max-width: 100%;
+  height: auto;
+}
+
+.flexRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexColumn {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*////////////////  MENU  ////////////////*/
+
+.menuNavegacionVertical {
+  position: fixed;
+  right: 0;
+  width: 3rem;
+  height: 100vh;
+  padding: 1rem 0 .5rem 0;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--blanco);
+  color: var(--profundo); 
+  text-align: center;
+  border-left: 1px var(--claro) solid;
+  top: 0;
+}
+
+.menuNavegacionVertical--ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menuNavegacionVertical--ul li {
+  margin: 1rem 0;
+}
+
+.icono--menu, .icono--back  {
+  color: var(--profundo);
+  width: 2rem;
+}
+
+.back{
+  background-color: var(--blanco);
+  color: var(--oxford);
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  line-height: 1;
+  box-shadow: 0 1px 1px var(--tenueTransparente);   
+  position: fixed;
+  bottom: .5rem; 
+  right: 3.75rem;
+  z-index: 8;
+  text-align: center;
+}
+
+.icono--menu:focus, .icono--menu:hover {
+  color: var(--anaranjado);
+}
+
+.menuNavegacionApaisado {
+  position: fixed;
+  width: 100%;
+  height: 2rem;
+  padding: 0 1rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--blanco);
+  color: var(--oxford);
+  z-index: 8; 
+  border-bottom: 1px solid var(--ahuesado);
+  top: 0;
+  line-height: 1;
+}

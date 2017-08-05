@@ -38,16 +38,26 @@
 		.menuNavegacionVertical {
 			display: none;
 		}
+		
+		.back {
+			display: none;
+		}
 
 		.menuNavegacionApaisado {
 			display: flex;
 		}
 
-
 		.imagen-fluida {
 		  max-width: 100%;
 		  height: auto;
 		}
+
+/*////---- S U B E - T U  - E V E N T O  ----\\\\*/
+
+	.formas, .sube, .tiempos, .pie--subirTuEvento {
+		width: 100%;
+		height: 80%;
+	}
 
 /*////---- L A N D I N G - P A G E  ----\\\\*/
 
@@ -282,10 +292,19 @@
 			display: flex;
 		}
 
+		.back{
+			display: flex;
+		}
+
 		.menuNavegacionApaisado {
 			display: none;
 		}
 	
+/*////---- S U B E - T U  - E V E N T O  ----\\\\*/
+	.formas, .sube, .tiempos {
+		height: 80vh;
+	}
+
 /*////---- L A N D I N G - P A G E  ----\\\\*/
 	.inicio, .agora, .alfa, .descubre, 
 	.explora, .comunica, .crea, .boletos, 
@@ -323,7 +342,7 @@
 		flex-flow: row;
 		justify-content: center;
 		align-items: center;
-		padding: 1rem 2rem;	
+		padding: .5rem;	
 	}
 
 	.pie__dReservados{
