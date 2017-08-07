@@ -20,7 +20,7 @@
 }
 
 .tarjeta__contenedor:hover{
-	animation: back 0.25s linear forwards;
+	animation: fondoTarjetaContenedor 0.25s linear forwards;
 }
 
 .tarjeta__imagen{
@@ -28,7 +28,6 @@
 
 
 .imagen__evento{
-	border-radius: 2px;
 }
 
 .tarjeta_informacion{}
@@ -61,8 +60,8 @@
 	justify-content: center;
 	align-items: center;
 	border-top: 1px solid var(--marfil);
-    padding: 1rem 0 .5rem 0;
-    margin-top: 1rem;
+    padding: .5rem 0;
+    margin-top: .5rem;
 }
 
 .organizadorEvento__imgPerfil{
@@ -86,42 +85,37 @@
 	width: 100%;
 	height: 2rem;
 	background-color: var(--ahuesadoTransparente);
-}
-
-.banner__enviaTuEvento--texto{
+	border: 0;
 	color: var(--tenue);
     font-weight: 300;
     letter-spacing: 2px;
+    font-size: 1rem;
+    line-height: 1;
 }
 
-.banner__enviaTuEvento--texto:hover {
-	color: var(--profundo);
-	font-weight: 500;
-}
-
-.none {
-	display: none;
-}
-
-.modal-active{
-	overflow: hidden;
-}
+.banner__enviaTuEvento:focus, .banner__enviaTuEvento:hover{
+	color: var(--tenue);
+  	text-decoration: none;
+  	background-color: var(--ahuesado);
+  	font-weight: bolder;
+  	outline: 0;
+ }
 
 .cerrar {
 	position: fixed;
-    top: 0;
-    right: 3rem;
+    top: 2rem;
+    right: 2rem;
     z-index: 41;
-	width: 1.75rem;
-	height: 1.75rem;
-    color: white;
-    background-color: var(--profundo);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    line-height: 1;
+	border: 0;
+    color: var(--claro);
+    background-color: transparent;
     font-size: 50%;
-    margin: 0;
+    font-size: 1.5rem;  
+}
+
+.cerrar:focus, .cerrar:hover {
+	text-decoration: none;
+  	outline: 0;
 }
 
 .modal__enviaTuEvento{
@@ -139,7 +133,7 @@
 
 /*////////////////  ANIMACIONES ////////////////*/
 
-@keyframes back {
+@keyframes fondoTarjetaContenedor {
 		0% {
 		    background-color: var(--blanco);
 		 }

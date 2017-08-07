@@ -382,6 +382,14 @@ Inicia inialización
   align-items: center;
 }
 
+.displayNone {
+  display: none;
+}
+
+.modal-active{
+  overflow: hidden;
+}
+
 /*////////////////  MENU  ////////////////*/
 
 .menuNavegacionVertical {

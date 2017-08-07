@@ -63,15 +63,16 @@
     <div><i class="icon-menu icono--menu"></i></div>
   </nav>
   <!--Modal -->
-  <div class="modalTarjetas"></div>
-  <div class="none" id="modal__enviaTuEvento">
-    <div class="cerrar" id="cerrar__bannerEnviaTuEvento"><i class="icon-cerrar"></i></div>
+  <div class="modalTarjetas displayNone" id="modal">
+    <button class="cerrar" id="close__modal"><i class="icon-cerrar"></i></button>
+    <embed class="modal__enviaTuEvento" src="modal.html"/>
+  </div>
+  <!--Banner y Modal Subir Tu Evento-->
+  <div class="displayNone" id="modal__enviaTuEvento">
+    <button class="cerrar" id="cerrar__bannerEnviaTuEvento"><i class="icon-cerrar"></i></button>
     <embed class="modal__enviaTuEvento" src="subeTuEvento.html"/>
   </div>
-  <!--Banner-->
-  <div class="banner__enviaTuEvento flexRow">
-    <div class="banner__enviaTuEvento--texto" id="banner__enviaTuEvento">Conoce como subir tu Evento +</div>
-  </div>
+  <button class="banner__enviaTuEvento" id="banner__enviaTuEvento">Conoce como subir tu Evento +</button>
   <!--Back--><a class="back flexRow" href="#inicio"><i class="icon-back icono--menu"></i></a>
   <!--Contenedor Tarjetas-->
   <div class="contenedorTarjetasEventos">
@@ -131,7 +132,7 @@
           </div>
         </div>
       </div>
-      <div class="tarjeta">
+      <div class="tarjeta" id="tarjeta">
         <div class="tarjeta__contenedor">
           <div class="tarjeta__imagen"><img class="imagen__evento imagen-fluida" src="images/5.jpg"/></div>
           <div class="tarjeta__informacion">
@@ -150,13 +151,23 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript">
     $('#banner__enviaTuEvento').click(function(){
-    	console.log('hoola mundo');
-      	$('#modal__enviaTuEvento').removeClass('none').addClass('.modal__enviaTuEvento');
+      	$('#modal__enviaTuEvento').removeClass('displayNone').addClass('modal__enviaTuEvento');
       	$('body').addClass('modal-active');
     });
     
     $('#cerrar__bannerEnviaTuEvento').click(function(){
-     	$('#modal__enviaTuEvento').removeClass('.modal__enviaTuEvento').addClass('none');
+     	$('#modal__enviaTuEvento').removeClass('modal__enviaTuEvento').addClass('displayNone');
+      	$('body').removeAttr('class');
+    });
+    
+    
+    $('#tarjeta').click(function(){
+      	$('#modal').removeClass('displayNone').addClass('modal__enviaTuEvento');
+      	$('body').addClass('modal-active');
+    });
+    
+    $('#close__modal').click(function(){
+     	$('#modal').removeClass('modal__enviaTuEvento').addClass('displayNone');
       	$('body').removeAttr('class');
     });
   </script>

@@ -10,7 +10,7 @@ body{
 	left: 0;
   	z-index: 29;
   	overflow-y: auto;
-  	background: var(--ahuesado);
+  	background: var(--ahuesadoTransparente);
 	display: grid;
 	padding: 2rem;
 }

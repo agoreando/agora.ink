@@ -74,16 +74,19 @@ body#inicio
 		div: i.icon-menu.icono--menu
 
 	//Modal 
-	div.modalTarjetas
+	div#modal.modalTarjetas.displayNone
+		button#close__modal.cerrar
+			i.icon-cerrar
+		embed.modal__enviaTuEvento(src="modal.html")
 	
-	div#modal__enviaTuEvento.none
-		div#cerrar__bannerEnviaTuEvento.cerrar
+	//Banner y Modal Subir Tu Evento
+	div#modal__enviaTuEvento.displayNone
+		button#cerrar__bannerEnviaTuEvento.cerrar
 			i.icon-cerrar
 		embed.modal__enviaTuEvento(src="subeTuEvento.html")
 	
-	//Banner
-	div.banner__enviaTuEvento.flexRow
-		div#banner__enviaTuEvento.banner__enviaTuEvento--texto Conoce como subir tu Evento +
+	
+	button#banner__enviaTuEvento.banner__enviaTuEvento Conoce como subir tu Evento +
 	
 			
 	//Back
@@ -158,7 +161,7 @@ body#inicio
 							img.organizadorEvento__imgPerfil.imagen-fluida(src="images/luna.png")
 							div.organizadorEvento__nombre Dirección de Cultura, Educación y Deporte Xalapa
 
-			div.tarjeta
+			div#tarjeta.tarjeta
 				div.tarjeta__contenedor
 					div.tarjeta__imagen
 						img.imagen__evento.imagen-fluida(src="images/5.jpg")
@@ -182,12 +185,22 @@ body#inicio
 
 	script(type='text/javascript').
 		$('#banner__enviaTuEvento').click(function(){
-			console.log('hoola mundo');
-		  	$('#modal__enviaTuEvento').removeClass('none').addClass('.modal__enviaTuEvento');
+		  	$('#modal__enviaTuEvento').removeClass('displayNone').addClass('modal__enviaTuEvento');
 		  	$('body').addClass('modal-active');
 		});
 
 		$('#cerrar__bannerEnviaTuEvento').click(function(){
-		 	$('#modal__enviaTuEvento').removeClass('.modal__enviaTuEvento').addClass('none');
+		 	$('#modal__enviaTuEvento').removeClass('modal__enviaTuEvento').addClass('displayNone');
+		  	$('body').removeAttr('class');
+		});
+
+
+		$('#tarjeta').click(function(){
+		  	$('#modal').removeClass('displayNone').addClass('modal__enviaTuEvento');
+		  	$('body').addClass('modal-active');
+		});
+
+		$('#close__modal').click(function(){
+		 	$('#modal').removeClass('modal__enviaTuEvento').addClass('displayNone');
 		  	$('body').removeAttr('class');
 		});

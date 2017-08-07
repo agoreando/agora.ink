@@ -368,9 +368,9 @@
 			-webkit-column-count:4;
 			-moz-column-count:4;
 			column-count:4;
-			-webkit-column-gap:.75rem;
-			-moz-column-gap:.75rem;
-			column-gap:.75rem;
+			-webkit-column-gap:.5rem;
+			-moz-column-gap:.5rem;
+			column-gap:.5rem;
 		}
 		
 		.tarjeta {
@@ -460,9 +460,9 @@
 			-webkit-column-count:5;
 			-moz-column-count:5;
 			column-count:5;
-			-webkit-column-gap: 1rem;
-			-moz-column-gap: 1rem;
-			column-gap: 1rem;
+			-webkit-column-gap: .25rem;
+			-moz-column-gap: .25rem;
+			column-gap: .25rem;
 		}
 		
 		.tarjeta {
