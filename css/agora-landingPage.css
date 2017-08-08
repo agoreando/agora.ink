@@ -178,11 +178,11 @@
 	}
 	
 	.equipo__perfil {
-		display: flex;
+		/*display: flex;
 		justify-content: center;
 		align-items: center;
 		text-align: center;
-		flex-flow: column;
+		flex-flow: column;*//*beta del grid.css*/
 		padding: 2rem 0;
 	}
 

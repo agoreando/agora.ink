@@ -1,94 +1,79 @@
-.contenedor__modal{
-	display: grid;
-	grid-template-columns: 2rem auto 2rem;
-	grid-template-rows: 2rem 1fr 1fr 2rem;
-}
-
-.imagenEvento__modal {
-	grid-row:2 / 3;
-	grid-column: 2 / 3;
-	margin: 0;
-}
-
-.informacionEvento__modal{
-	grid-row: 3 / 4;
-	grid-column: 2 / 3;	
-	margin: 0;
-}
-
-
-.equipo__tarjetas{
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: 1fr 1fr 1fr;
-}
-
-
-.jose{
-	grid-column: 1;
-	grid-row: 1;
-}
-
-.ingrid{
-	grid-column: 1;
-	grid-row: 2;
-}
-
-.kalollero{
-	grid-column: 1;
-	grid-row: 3;
-}
-
-.equipo__perfil{
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 1fr;
-}
-
-.equipo__marcoImagen{
-	grid-column: 1;
-	grid-row: 1;
-}
-
-.informacion__integrante {
-	grid-column: 2;
-	grid-row: 1;
-}
 
 
 
-.tags__integrante{
-	grid-column: 3;
-	grid-row: 1;
-}
 
-.redes__integrante{
-	grid-column: 3;
-	grid-row: 1;
-}
+
+
+
+
+
+
+
+
+/*////////////////  MEDIA QUERIES ////////////////*/
+
+/*@ media min-width:0px a max-width:575 xs*/ 
+	.equipo__tarjetas{
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+	}
+
+	.jose{
+		grid-column: 1;
+		grid-row: 1;
+	}
+
+	.ingrid{
+		grid-column: 1;
+		grid-row: 2;
+	}
+
+	.kalollero{
+		grid-column: 1;
+		grid-row: 3;
+	}
+	
+	.equipo__perfil{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+	}
+
+		.equipo__marcoImagen{
+			grid-column: 1/2;
+			grid-row: 1/5;
+			background: antiquewhite;
+			display: flex;
+		}
+		
+		.nombre__integrante {
+			grid-column: 2/3;
+			grid-row: 1/2;
+			background: blue;
+		}
+
+		.descripcion__integrante {
+			grid-column: 2/4;
+			grid-row: 2/4;
+			background: red;
+		}
+
+		.tags__integrante{
+			grid-column: 2/4;
+			grid-row: 4;
+			background: orange;
+		}
+
+		.redesSociales__integrante{
+			grid-column: 3/4;
+			grid-row: 1/2;
+			background: purple;
+		}
 
 @media (min-width:768px)  {
 
-/*////---- M O D A L ----\\\\*//*Cambio pPosición del Menú*/	
-
-	.contenedor__modal{
-		grid-template-columns: 2rem 1fr 1fr 2rem;
-		grid-template-rows: 2rem auto 2rem;
-	}
-
-	.imagenEvento__modal {
-		grid-row: 2 / 3;
-		grid-column: 2 / 3;
-
-	}
-
-	.informacionEvento__modal {
-		grid-row: 2 / 3;
-		grid-column: 3 / 4;
-	}
-
-
-
+/*////---- M O D A L ----\\\\*//*Cambio de Posición del Menú*/	
 
 	.equipo__tarjetas{
 		display: grid;
@@ -103,7 +88,6 @@
 	}
 
 
-
 	.ingrid{
 		grid-row: 1;
 		grid-column: 2;
@@ -115,6 +99,39 @@
 	}
 
 	.equipo__perfil{
-		display: flex;
+		display: grid;
+		grid-template-columns: auto;
+		grid-template-rows: auto auto auto auto auto auto;
 	}
+
+		.equipo__marcoImagen{
+			grid-column: 1;
+			grid-row: 1;
+			background: antiquewhite;
+			display: flex;
+		}
+		
+		.nombre__integrante {
+			grid-column: 1;
+			grid-row: 2;
+			background: blue;
+		}
+
+		.descripcion__integrante {
+			grid-column: 1;
+			grid-row: 3;
+			background: red;
+		}
+
+		.tags__integrante{
+			grid-column: 1;
+			grid-row: 4;
+			background: orange;
+		}
+
+		.redesSociales__integrante{
+			grid-column: 1;
+			grid-row: 5;
+			background: purple;
+		}
 }

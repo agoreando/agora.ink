@@ -35,6 +35,7 @@ body {
   --profundo:rgba(23, 23, 23, 1);
   --ahuesadoTransparente: rgba(237, 239, 244, .5);
   --tenueTransparente: rgba(129, 129, 129, .5);
+  --profundoTransparente: rgba(23, 23, 23, .5);
   /*--sombra*/
 }
 
