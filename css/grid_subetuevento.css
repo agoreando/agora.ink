@@ -1,125 +1,113 @@
 /*////////////////  MEDIA QUERIES ////////////////*/
 
 /*@ media min-width:0px a max-width:575 xs*/ 
-	.equipo__tarjetas{
+	.formas__mediosDeComunicacion{
 		display: grid;
 		grid-template-columns: 1fr;
 		grid-template-rows: 1fr 1fr 1fr;
 	}
 
-	.jose{
+	.correoWeb{
 		grid-column: 1;
 		grid-row: 1;
 	}
 
-	.ingrid{
+	.facebook{
 		grid-column: 1;
 		grid-row: 2;
 	}
 
-	.kalollero{
+	.formulario{
 		grid-column: 1;
 		grid-row: 3;
 	}
 	
-	.equipo__perfil{
+	.medioDeComunicacion{
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 		grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 	}
 
-		.equipo__marcoImagen{
+		.imagen__medio{
 			grid-column: 1/2;
 			grid-row: 1/5;
 			background: antiquewhite;
 			display: flex;
 		}
 		
-		.nombre__integrante {
+		.nombre__medio {
 			grid-column: 2/3;
 			grid-row: 1/2;
 			background: blue;
 		}
 
-		.descripcion__integrante {
+		.descripcion__medio{
 			grid-column: 2/4;
 			grid-row: 2/4;
 			background: red;
 		}
 
-		.tags__integrante{
+		.boton__medio{
 			grid-column: 2/4;
 			grid-row: 4;
 			background: orange;
-		}
-
-		.redesSociales__integrante{
-			grid-column: 3/4;
-			grid-row: 1/2;
-			background: purple;
 		}
 
 @media (min-width:768px)  {
 
 /*////---- M O D A L ----\\\\*//*Cambio de Posición del Menú*/	
 
-	.equipo__tarjetas{
+	.formas__mediosDeComunicacion{
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 		grid-template-rows: 1fr;
 	}
 
 
-	.jose{
+	.correoWeb{
 		grid-row: 1;
 		grid-column: 1;
 	}
 
 
-	.ingrid{
+	.facebook{
 		grid-row: 1;
 		grid-column: 2;
 	}
 
-	.kalollero{
+	.formulario{
 		grid-row: 1;
 		grid-column: 3;
 	}
 
-	.equipo__perfil{
+	.medioDeComunicacion{
 		display: grid;
 		grid-template-columns: auto;
 		grid-template-rows: auto auto auto auto auto auto;
 	}
 
-		.equipo__marcoImagen{
+		.imagen__medio{
 			grid-column: 1;
 			grid-row: 1;
 			background: antiquewhite;
 			display: flex;
 		}
 		
-		.nombre__integrante {
+		.nombre__medio {
 			grid-column: 1;
 			grid-row: 2;
 			background: blue;
 		}
 
-		.descripcion__integrante {
+		.descripcion__medio {
 			grid-column: 1;
 			grid-row: 3;
 			background: red;
 		}
 
-		.tags__integrante{
+		.boton__medio{
 			grid-column: 1;
 			grid-row: 4;
 			background: orange;
-		}
-
-		.redesSociales__integrante{
-			grid-column: 1;
-			grid-row: 5;
-			background: purple;
 		}
 }

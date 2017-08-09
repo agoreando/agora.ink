@@ -50,8 +50,11 @@ head
 	//Landing Page
 	link(rel="stylesheet" href="css/agora-subeTuEvento.css")
 
+	//Agora Media Queris
+	link(rel="stylesheet" href="css/grid_subetuevento.css")
 
-body#inicio
+
+body
 	
 	//- //Barra de Navegación
 	//- nav.menuNavegacionVertical
@@ -95,11 +98,25 @@ div.contenedor
 
 
 	//SECCIÓN FORMAS
-	section#formas.formas.flexBox__Row
-		div.formas__imagen.moduloIzq
-		div.formas__info.moduloDer
-			h2.nombre__seccion Descubre
-			p.informacion__seccion ágora te muestra las actividades culturales y de entretenimiento a realizarse, dejando atrás la forma aburrida de buscar entre carteleras con eventos atrasados.
+	section#formas.formas
+		div.formas__mediosDeComunicacion
+			div.correoWeb.medioDeComunicacion
+				img.imagen-fluida.imagen__medio(src="images/luna.png")
+				h5.nombre__medio Correo Web
+				p.descripcion__medio Descripción de el medio para enviar la información de tu o tus eventos
+				button.boton__medio MOSTRAR
+					
+			div.facebook.medioDeComunicacion
+				img.imagen-fluida.imagen__medio(src="images/luna.png")
+				h5.nombre__medio Facebook
+				p.descripcion__medio Descripción de el medio para enviar la información de tu o tus eventos
+				button.boton__medio MOSTRAR
+
+			div.formulario.medioDeComunicacion
+				img.imagen-fluida.imagen__medio(src="images/luna.png")
+				h5.nombre__medio Formulario
+				p.descripcion__medio Descripción de el medio para enviar la información de tu o tus eventos
+				button.boton__medio MOSTRAR
 			
 		
 	//SECCIÓN ENVÍA
