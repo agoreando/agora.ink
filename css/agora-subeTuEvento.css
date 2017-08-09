@@ -10,7 +10,11 @@ body {
 .contenedor {
 	height: 100%;
 	width: 90%;
-	background-color: var(--blanco);
+	background-image: url(../images/subeTuEvento.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center center;
 	display: flex;
 	justify-content: center;
 	align-content: center;
