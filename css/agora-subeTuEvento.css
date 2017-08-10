@@ -10,11 +10,7 @@ body {
 .contenedor {
 	height: 100%;
 	width: 90%;
-	background-image: url(../images/subeTuEvento.jpg);
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-	background-position: center center;
+	background-color: var(--tenueTransparente);
 	display: flex;
 	justify-content: center;
 	align-content: center;
@@ -23,8 +19,16 @@ body {
 
 /*///////// INICIO /////////*/
 .inicio {
-	height: 100vh;
-	
+	background-image: url(../images/subeTuEvento_blur_8.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center center;
+	margin-top: 0;
+}
+
+.inicio--titulo {
+	color: var(--blanco)
 }
 
 .linea {
@@ -34,19 +38,13 @@ body {
 	width: 100%;
 }
 
-
-/*///////// FORMAS /////////*/
-.formas {
-		background-color: var(--marfil);
-	}
-
-.formas_mediosDeComunicacion {
-	
+.inicio--texto {
+	color: var(--blanco)
 }
 
 /*///////// SUBE /////////*/
 .sube {
-	background-color: var(--blanco);
+	background-color: var(--marfil);
 }
 
 .nombre__seccion {
@@ -71,6 +69,17 @@ body {
 	margin: 0 0 1rem 0;
 	font-size: 90%;
 }
+
+/*///////// FORMAS /////////*/
+.formas {
+		background-color: var(--blanco);
+	}
+
+.formas_mediosDeComunicacion {
+	
+}
+
+
 
 /*///////// TIEMPOS /////////*/
 .tiempos {
@@ -108,4 +117,24 @@ body {
   right: 1rem;
   z-index: 8;
   text-align: center;
+}
+
+
+/*////////////////  MEDIA QUERIES ////////////////*/
+
+/*@ media min-width:0px a max-width:575 xs*/ 
+	
+
+@media (min-width:768px)  {
+
+/*////---- M O D A L ----\\\\*//*Cambio de Posición del Menú*/	
+
+	.inicio--titulo {
+		font-size: 5rem;
+	}
+
+	
+	.inicio--texto {
+		font-size: 2rem;
+	}
 }

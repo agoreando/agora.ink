@@ -50,10 +50,6 @@ head
 	//Landing Page
 	link(rel="stylesheet" href="css/agora-subeTuEvento.css")
 
-	//Agora Media Queris
-	link(rel="stylesheet" href="css/grid_subetuevento.css")
-
-
 body
 	
 	//- //Barra de Navegación
@@ -90,42 +86,46 @@ div.contenedor
 				| Comunica 
 				span.weight300 tu 
 				| Evento.
-			p.inicio--texto.weight300
+			div.linea
+			p.inicio--texto
 				strong crea 
 				| el espacio para el evento que organizas y has que 
 				strong todos lo vean.
-			div.linea
+			
 
 
-	//SECCIÓN FORMAS
-	section#formas.formas
-		div.formas__mediosDeComunicacion
-			div.correoWeb.medioDeComunicacion
-				img.imagen-fluida.imagen__medio(src="images/luna.png")
-				h5.nombre__medio Correo Web
-				p.descripcion__medio Descripción de el medio para enviar la información de tu o tus eventos
-				button.boton__medio MOSTRAR
-					
-			div.facebook.medioDeComunicacion
-				img.imagen-fluida.imagen__medio(src="images/luna.png")
-				h5.nombre__medio Facebook
-				p.descripcion__medio Descripción de el medio para enviar la información de tu o tus eventos
-				button.boton__medio MOSTRAR
-
-			div.formulario.medioDeComunicacion
-				img.imagen-fluida.imagen__medio(src="images/luna.png")
-				h5.nombre__medio Formulario
-				p.descripcion__medio Descripción de el medio para enviar la información de tu o tus eventos
-				button.boton__medio MOSTRAR
+	
 			
 		
 	//SECCIÓN ENVÍA
 	section#sube.sube.flexBox__Row
 		div.sube__info.moduloIzq 
 			h2.nombre__seccion Envía
-			p.informacion__seccion Destaca la información importante y exhibe la imagen gráfica para atraer mas usuarios.
-			p.informacion__seccion Envía todos tus eventos que estén próximos a suceder.
+			p.informacion__seccion Destaca la información importante de forma detallada
+			p.informacion__seccion Envía todos tus eventos que estén próximos a suceder
 		div.sube__imagen.moduloDer
+
+	//SECCIÓN FORMAS
+	section#formas.formas
+		p Diseñamos tres formas para subir tu evento y así puedas elegir la que más te acomoda
+		div.formas__mediosDeComunicacion
+			div.correoWeb.medioDeComunicacion
+				img.imagen-fluida.imagen__medio(src="images/correo.svg")
+				h5.nombre__medio Correo Web
+				p.descripcion__medio Descripción de el medio para enviar la información de tu o tus eventos
+				button.boton__medio MOSTRAR
+					
+			div.facebook.medioDeComunicacion
+				img.imagen-fluida.imagen__medio(src="images/facebook.svg")
+				h5.nombre__medio Facebook
+				p.descripcion__medio Descripción de el medio para enviar la información de tu o tus eventos
+				button.boton__medio MOSTRAR
+
+			div.formulario.medioDeComunicacion
+				img.imagen-fluida.imagen__medio(src="images/formulario.svg")
+				h5.nombre__medio Formulario
+				p.descripcion__medio Descripción de el medio para enviar la información de tu o tus eventos
+				button.boton__medio MOSTRAR
 
 	//SECCIÓN TIEMPOS
 	section#tiempos.tiempos.flexBox__Row

@@ -73,10 +73,70 @@
 
 /*////---- S U B E - T U  - E V E N T O  ----\\\\*/
 
+	.formas__mediosDeComunicacion{
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+	}
+
+	.correoWeb{
+		grid-column: 1;
+		grid-row: 1;
+	}
+
+	.facebook{
+		grid-column: 1;
+		grid-row: 2;
+	}
+
+	.formulario{
+		grid-column: 1;
+		grid-row: 3;
+	}
+	
+	.medioDeComunicacion{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+	}
+
+		.imagen__medio{
+			grid-column: 1/2;
+			grid-row: 1/5;
+			/*background: antiquewhite;*/
+			display: flex;
+		}
+		
+		.nombre__medio {
+			grid-column: 2/3;
+			grid-row: 1/2;
+			/*background: blue;*/
+		}
+
+		.descripcion__medio{
+			grid-column: 2/4;
+			grid-row: 2/4;
+			/*background: red;*/
+		}
+
+		.boton__medio{
+			grid-column: 2/4;
+			grid-row: 4;
+			/*background: orange;*/
+		}
+
 	.formas, .sube, .tiempos {
 		width: 100%;
 		height: 80%;
 	}
+
+	/*///////// INICIO /////////*/
+	/*///////// SUBE /////////*/
+	/*///////// FORMAS /////////*/
+		.medioDeComunicacion {
+			text-align: left;
+		}
+	/*///////// TIEMPOS /////////*/
 
 /*////---- L A N D I N G - P A G E  ----\\\\*/
 
@@ -142,6 +202,7 @@
 		.inicio--texto {
 			font-size: 80%;
 			margin-top: 1rem;
+			font-weight: 300;
 		}
 	
 	/* ágora */
@@ -339,9 +400,71 @@
 	}	
 	
 /*////---- S U B E - T U  - E V E N T O  ----\\\\*/
+	
+	.formas__mediosDeComunicacion{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr;
+	}
+
+
+	.correoWeb{
+		grid-row: 1;
+		grid-column: 1;
+	}
+
+
+	.facebook{
+		grid-row: 1;
+		grid-column: 2;
+	}
+
+	.formulario{
+		grid-row: 1;
+		grid-column: 3;
+	}
+
+	.medioDeComunicacion{
+		display: grid;
+		grid-template-columns: auto;
+		grid-template-rows: auto auto auto auto auto auto;
+	}
+
+		.imagen__medio{
+			grid-column: 1;
+			grid-row: 1;
+			/*background: antiquewhite;*/
+			display: flex;
+		}
+		
+		.nombre__medio {
+			grid-column: 1;
+			grid-row: 2;
+			/*background: blue;*/
+		}
+
+		.descripcion__medio {
+			grid-column: 1;
+			grid-row: 3;
+			/*background: red;*/
+		}
+
+		.boton__medio{
+			grid-column: 1;
+			grid-row: 4;
+			/*background: orange;*/
+		}
+
 	.formas, .sube, .tiempos {
 		height: 80vh;
 	}
+	/*///////// INICIO /////////*/
+	/*///////// SUBE /////////*/
+	/*///////// FORMAS /////////*/
+		.medioDeComunicacion {
+			text-align: center;
+		}
+	/*///////// TIEMPOS /////////*/
 
 /*////---- L A N D I N G - P A G E  ----\\\\*/
 	.inicio, .agora, .alfa, .descubre, 

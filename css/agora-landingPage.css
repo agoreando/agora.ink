@@ -190,11 +190,25 @@
 		width: 90%;
 	}
 	
-	.equipo__imagen{
+	.equipo__imagen {
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: ;
+		background-position: top center;
 		width: 100%;
-		height: auto;/*
-		border-radius: 4px;
-		background-color: var(--ahuesado);*/
+		height: auto;
+	}
+
+	.perfil--jose{
+		background-image: url("../images/desarrollador.jpg");
+	}
+	
+	.perfil--ingrid{
+		background-image: url("../images/ingrid.jpg");
+	}
+	
+	.perfil--kalollero{
+		background-image: url("../images/kalollero.jpg");
 	}
 
 	.nombre__integrante {
