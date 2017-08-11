@@ -187,7 +187,7 @@
 	}
 
 	.equipo__marcoImagen {
-		width: 90%;
+		padding: 0 1rem;
 	}
 	
 	.equipo__imagen {
@@ -200,15 +200,15 @@
 	}
 
 	.perfil--jose{
-		background-image: url("../images/desarrollador.jpg");
+		/*background-image: url("../images/desarrollador.jpg");*/
 	}
 	
 	.perfil--ingrid{
-		background-image: url("../images/ingrid.jpg");
+		/*background-image: url("../images/ingrid.jpg");*/
 	}
 	
 	.perfil--kalollero{
-		background-image: url("../images/kalollero.jpg");
+		/*background-image: url("../images/kalollero.jpg");*/
 	}
 
 	.nombre__integrante {
@@ -229,11 +229,11 @@
 	}
 
 	.tag {
-		padding: .25rem .5rem;
+		padding: .15rem .25rem;
 		border-radius: 4px;
 		margin: .25rem;
 		font-weight: 300;
-		font-size: .8rem;
+		font-size: 80%;
 		color: var(--profundo);
 		background-color: var(--ahuesado);
 	}

@@ -75,11 +75,17 @@ body {
 		background-color: var(--blanco);
 	}
 
-.formas_mediosDeComunicacion {
-	
+.medioDeComunicacion {
 }
 
+.imagen__medio{	
+	text-align: center;
+	padding: 0 1rem;
+}
 
+.imagen__medio > img{
+	width: 30%;	
+}
 
 /*///////// TIEMPOS /////////*/
 .tiempos {

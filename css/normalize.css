@@ -391,6 +391,18 @@ Inicia inialización
   overflow: hidden;
 }
 
+.weight100 {
+  font-weight: 100;
+}
+
+.weight300 {
+  font-weight: 300;
+}
+
+.weight400 {
+  font-weight: 400;
+}
+
 /*////////////////  MENU  ////////////////*/
 
 .menuNavegacionVertical {

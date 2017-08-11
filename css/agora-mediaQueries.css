@@ -47,11 +47,6 @@
 			display: flex;
 		}
 
-		.imagen-fluida {
-		  max-width: 100%;
-		  height: auto;
-		}
-
 /*////---- M O D A L ----\\\\*/
 	.contenedor__modal{
 	display: grid;
@@ -127,7 +122,7 @@
 
 	.formas, .sube, .tiempos {
 		width: 100%;
-		height: 80%;
+		/*height: 80%;*/
 	}
 
 	/*///////// INICIO /////////*/
@@ -162,9 +157,9 @@
 		width: 100%;
 	}
 	
-	.descubre, .explora, .comunica, .crea, .boletos {
+	/*.descubre, .explora, .comunica, .crea, .boletos {
 		height: 80%;
-	}
+	}*/
 
 
 	.moduloIzq {
@@ -228,6 +223,13 @@
 
 	.equipo__perfil {
 		/*justify-content: space-between;*/
+	}
+
+	.equipo__imagen {
+	}
+
+	.descripcion__integrante {
+		font-size: 80%;
 	}
 	
 	/* Pie */
@@ -456,7 +458,7 @@
 		}
 
 	.formas, .sube, .tiempos {
-		height: 80vh;
+		/*height: 80vh;*/
 	}
 	/*///////// INICIO /////////*/
 	/*///////// SUBE /////////*/
@@ -473,9 +475,9 @@
 		width: calc(100% - 3rem);
 	}
 	
-	.descubre, .explora, .comunica, .crea, .boletos {
+	/*.descubre, .explora, .comunica, .crea, .boletos {
 		height: 80vh;
-	}
+	}*/
 	
 	/*Inicio*/
 		.inicio {
