@@ -7,142 +7,141 @@
 
 /*////////////////   TARJETAS  ////////////////*/
 
-.tarjeta__contenedor {
-	position: relative;
-	display: flex;
-	flex-flow: column;
-	background-color: #fff;
-	border-radius: 0.25rem;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	margin: .5rem 0;
-	padding: .5rem;
-}
+	.tarjeta__contenedor {
+		position: relative;
+		display: flex;
+		flex-flow: column;
+		background-color: #fff;
+		border-radius: 0.25rem;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		margin: .5rem 0;
+		padding: .5rem;
+	}
 
-.tarjeta__contenedor:hover{
-	animation: fondoTarjetaContenedor 0.25s linear forwards;
-}
+	.tarjeta__contenedor:hover{
+		animation: fondoTarjetaContenedor 0.25s linear forwards;
+	}
 
-.tarjeta__imagen{
-}
+	.tarjeta__imagen{
+	}
 
 
-.imagen__evento{
-}
+	.imagen__evento{
+	}
 
-.tarjeta_informacion{}
+	.tarjeta_informacion{}
 
-.tipoEvento{
-	font-size: 60%;
-	color: var(--tenue);
-	text-align: right;
-	margin: .5rem 0 0 0;
-}
+	.tipoEvento{
+		font-size: 60%;
+		color: var(--tenue);
+		text-align: right;
+		margin: .5rem 0 0 0;
+	}
 
-.tituloEvento{
-	font-weight: 500;
-    color: var(--oxford);
-    font-size: 80%;
-    line-height: 1;
-}
+	.tituloEvento{
+		font-weight: 500;
+	    color: var(--oxford);
+	    font-size: 80%;
+	    line-height: 1;
+	}
 
-.fechaEvento, .horaEvento, .sedeEvento{
-	font-weight: 300;
-	line-height: 1;
-}
+	.fechaEvento, .horaEvento, .sedeEvento{
+		font-weight: 300;
+		line-height: 1;
+	}
 
-.sedeEvento{
-	margin-bottom: .5rem;
-}
+	.sedeEvento{
+		margin-bottom: .5rem;
+	}
 
-.organizadorEvento{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border-top: 1px solid var(--marfil);
-    padding: .5rem 0;
-    margin-top: .5rem;
-}
+	.organizadorEvento{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-top: 1px solid var(--marfil);
+	    padding: .5rem 0;
+	    margin-top: .5rem;
+	}
 
-.organizadorEvento__imgPerfil{
-	border-radius: 40%;
-	width: 1.5rem;
-	height: 1.5rem;
-	overflow: hidden;
-}
+	.organizadorEvento__imgPerfil{
+		border-radius: 40%;
+		width: 1.5rem;
+		height: 1.5rem;
+		overflow: hidden;
+	}
 
-.organizadorEvento__nombre{
-	width: 90%;
-	padding-left: 1rem;
-	color: var(--gris);
-	line-height: 1;
-}
-
+	.organizadorEvento__nombre{
+		width: 90%;
+		padding-left: 1rem;
+		color: var(--gris);
+		line-height: 1;
+	}
 
 /*//////////////// AGREGAR EVENTO ////////////////*/
 
-.banner__enviaTuEvento{
-	width: 100%;
-	height: 2rem;
-	background-color: var(--ahuesadoTransparente);
-	border: 0;
-	color: var(--tenue);
-    font-weight: 300;
-    letter-spacing: 2px;
-    font-size: 1rem;
-    line-height: 1;
-}
+	.banner__enviaTuEvento{
+		width: 100%;
+		height: 2rem;
+		background-color: var(--ahuesadoTransparente);
+		border: 0;
+		color: var(--tenue);
+	    font-weight: 300;
+	    letter-spacing: 2px;
+	    font-size: 1rem;
+	    line-height: 1;
+	}
 
-.banner__enviaTuEvento:focus, .banner__enviaTuEvento:hover{
-	color: var(--tenue);
-  	text-decoration: none;
-  	background-color: var(--ahuesado);
-  	font-weight: bolder;
-  	outline: 0;
- }
+	.banner__enviaTuEvento:focus, .banner__enviaTuEvento:hover{
+		color: var(--tenue);
+	  	text-decoration: none;
+	  	background-color: var(--ahuesado);
+	  	font-weight: bolder;
+	  	outline: 0;
+	 }
 
-.cerrar {
-	position: fixed;
-    top: 2rem;
-    right: 2rem;
-    z-index: 41;
-	border: 0;
-    color: var(--profundoTransparente);
-    background-color: transparent;
-    font-size: 50%;
-    font-size: 1.5rem;  
-}
+	.cerrar {
+		position: fixed;
+	    top: 2rem;
+	    right: 2rem;
+	    z-index: 41;
+		border: 0;
+	    color: var(--profundoTransparente);
+	    background-color: transparent;
+	    font-size: 50%;
+	    font-size: 1.5rem;  
+	}
 
-.cerrar:focus, .cerrar:hover {
-	text-decoration: none;
-  	outline: 0;
-}
+	.cerrar:focus, .cerrar:hover {
+		text-decoration: none;
+	  	outline: 0;
+	}
 
-.modal__enviaTuEvento{
-	display: flex;
-	flex-flow: column;
-	justify-content: center;
-	align-items: center;
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	overflow-y: auto;
-	background-color: var(--profundoTransparente);
-	z-index: 40;
-}
+	.modal__enviaTuEvento{
+		display: flex;
+		flex-flow: column;
+		justify-content: center;
+		align-items: center;
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		overflow-y: auto;
+		background-color: var(--profundoTransparente);
+		z-index: 40;
+	}
 
 /*////////////////  ANIMACIONES ////////////////*/
 
-@keyframes fondoTarjetaContenedor {
-		0% {
-		    background-color: var(--blanco);
-		 }
-		  
-		 100% {
-		    background-color: var(--ahuesadoTransparente);
-		 }
-		
-	}
+	@keyframes fondoTarjetaContenedor {
+			0% {
+			    background-color: var(--blanco);
+			 }
+			  
+			 100% {
+			    background-color: var(--ahuesadoTransparente);
+			 }
+			
+		}
 
 
 

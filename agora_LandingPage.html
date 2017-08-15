@@ -38,11 +38,15 @@
   <link href="css/normalize.css" rel="stylesheet"/>
   <!--Landing Page---->
   <link rel="stylesheet" href="css/agora-landingPage.css"/>
-  <!--Landing Page-->
-  <link rel="stylesheet" href="css/agora-style.css"/>
-  <!--Framework Agora-->
-  <link rel="stylesheet" href="css/agora-frameWork.css"/>
-  <!--Agora Media Queris---->
+  <!--Landing Page
+  link(rel="stylesheet" href="css/agora-style.css")
+  
+  -->
+  <!--Framework Agora
+  link(rel="stylesheet" href="css/agora-frameWork.css")
+  
+  -->
+  <!--Agora Media Queries-->
   <link rel="stylesheet" href="css/agora-mediaQueries.css"/>
   <!--Agora Media Queris-->
   <link rel="stylesheet" href="css/grid.css"/>
@@ -68,8 +72,22 @@
   </nav>
   <nav class="menuNavegacionApaisado">
     <div><i class="icon-a"></i></div>
-    <div><i class="icon-menu"></i></div>
   </nav>
+  <div class="botonMenu" id="botonMenu"> <span class="top"></span><span class="middle"></span><span class="bottom"></span></div>
+  <div class="menuOverlay" id="menuOverlay"> 
+    <nav class="menuOverlay--"> 
+      <ul>
+        <li><a href="#agora"><i class="icon-agora icono--menu">ágora</i></a></li>
+        <li><a href="#alfa"><i class="icon-alfa icono--menu">Fase Alfa</i></a></li>
+        <li><a href="#descubre"><i class="icon-descubre icono--menu">Descubre</i></a></li>
+        <li><a href="#explora"><i class="icon-explora icono--menu">Explora</i></a></li>
+        <li><a href="#comunica"><i class="icon-comunica icono--menu">Comunica</i></a></li>
+        <li><a href="#crea"><i class="icon-crea icono--menu">Crea</i></a></li>
+        <li><a href="#boletos"><i class="icon-boletos icono--menu">Boletos</i></a></li>
+        <li><a href="#equipo"><i class="icon-equipo icono--menu">Equipo</i></a></li>
+      </ul>
+    </nav>
+  </div>
   <!--SECCIÓN INICIO -->
   <section class="inicio flexBox__Row" id="inicio">
     <div class="inicio__imagen moduloIzq"><img class="imagen-fluida" src="images/maqueta_de_dibujo.svg"/></div>
@@ -228,5 +246,14 @@
   	div.cubo(style="background-color:rgba(59, 59, 59, 1)") 2
   	div.cubo(style="background-color:rgba(38, 38, 38, 1)") oxford
   	div.cubo(style="background-color:rgba(23, 23, 23, 1)") profundo
+  
   -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    $('#botonMenu').click(function(){
+    	$(this).toggleClass('active');
+    	$('#menuOverlay').toggleClass('open');
+    	$('body').toggleClass('modal-active');
+    });
+  </script>
 </body>

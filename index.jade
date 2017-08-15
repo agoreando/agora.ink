@@ -67,11 +67,23 @@ body#inicio
 				li: a(href="#"): i.icon-a.icono--menu
 				
 		div.menuNavegacionVertical__alfa
-			a(href="agora_landing.html"): i.icon-alfa.icono--menu
+			a(href="agora_LandingPage.html"): i.icon-alfa.icono--menu
 
 	nav.menuNavegacionApaisado
 		div: i.icon-a
-		div: i.icon-menu.icono--menu
+	div.botonMenu#botonMenu 
+		span.top
+		span.middle
+		span.bottom
+
+	div.menuOverlay#menuOverlay 
+		nav.menuOverlay-- 
+			ul
+				li: a(type="button" href="") Buscar
+				li: a(type="button" href="") Filtro
+				li: a(type="button" href="") Biblioteca
+				li: a(type="button" href="agora_LandingPage.html") Fase Alfa
+
 
 	//Modal 
 	div#modal.modalTarjetas.displayNone
@@ -184,6 +196,13 @@ body#inicio
 	script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
 
 	script(type='text/javascript').
+
+		$('#botonMenu').click(function(){
+			$(this).toggleClass('active');
+			$('#menuOverlay').toggleClass('open');
+			$('body').toggleClass('modal-active');
+		});
+
 		$('#banner__enviaTuEvento').click(function(){
 		  	$('#modal__enviaTuEvento').removeClass('displayNone').addClass('modal__enviaTuEvento');
 		  	$('body').addClass('modal-active');

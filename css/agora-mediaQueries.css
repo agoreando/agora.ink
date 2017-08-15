@@ -47,6 +47,10 @@
 			display: flex;
 		}
 
+		.botonMenu, .menuOverlay {
+			visibility: visible;
+		}
+
 /*////---- M O D A L ----\\\\*/
 	.contenedor__modal{
 	display: grid;
@@ -386,7 +390,10 @@
 		.menuNavegacionApaisado {
 			display: none;
 		}
-
+		
+		.botonMenu, .menuOverlay {
+			visibility: hidden;
+		}
 /*////---- M O D A L ----\\\\*/
 	.contenedor__modal{
 		grid-template-columns: 2rem 1fr 1fr 2rem;

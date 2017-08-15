@@ -56,12 +56,22 @@
         <li><a href="#"><i class="icon-a icono--menu"></i></a></li>
       </ul>
     </div>
-    <div class="menuNavegacionVertical__alfa"><a href="agora_landing.html"><i class="icon-alfa icono--menu"></i></a></div>
+    <div class="menuNavegacionVertical__alfa"><a href="agora_LandingPage.html"><i class="icon-alfa icono--menu"></i></a></div>
   </nav>
   <nav class="menuNavegacionApaisado">
     <div><i class="icon-a"></i></div>
-    <div><i class="icon-menu icono--menu"></i></div>
   </nav>
+  <div class="botonMenu" id="botonMenu"> <span class="top"></span><span class="middle"></span><span class="bottom"></span></div>
+  <div class="menuOverlay" id="menuOverlay"> 
+    <nav class="menuOverlay--"> 
+      <ul>
+        <li><a type="button" href="">Buscar</a></li>
+        <li><a type="button" href="">Filtro</a></li>
+        <li><a type="button" href="">Biblioteca</a></li>
+        <li><a type="button" href="agora_LandingPage.html">Fase Alfa</a></li>
+      </ul>
+    </nav>
+  </div>
   <!--Modal -->
   <div class="modalTarjetas displayNone" id="modal">
     <button class="cerrar" id="close__modal"><i class="icon-cerrar"></i></button>
@@ -150,6 +160,12 @@
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript">
+    $('#botonMenu').click(function(){
+    	$(this).toggleClass('active');
+    	$('#menuOverlay').toggleClass('open');
+    	$('body').toggleClass('modal-active');
+    });
+    
     $('#banner__enviaTuEvento').click(function(){
       	$('#modal__enviaTuEvento').removeClass('displayNone').addClass('modal__enviaTuEvento');
       	$('body').addClass('modal-active');
