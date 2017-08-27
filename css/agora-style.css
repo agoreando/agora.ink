@@ -95,8 +95,7 @@
 	.banner__enviaTuEvento:focus, .banner__enviaTuEvento:hover{
 		color: var(--tenue);
 	  	text-decoration: none;
-	  	background-color: var(--ahuesado);
-	  	font-weight: bolder;
+	  	background-color: var(--marfil);
 	  	outline: 0;
 	 }
 

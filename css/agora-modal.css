@@ -16,7 +16,7 @@ body{
 }
 
 .imagenEvento__modal{
-	background-color: var(--marfil); /*rgba(12, 12, 12, 1);*/
+	background-color: var(--ceniza);
 	display: flex;
 	justify-content: center;
 	align-content: center;
@@ -90,7 +90,7 @@ body{
 }
 
 
-.cerrar, .anterior, .siguiente, .compartir {
+.cerrar {
 	    width: 1.75rem;
    		height: 1.75rem;
 	    color: white;
@@ -103,14 +103,6 @@ body{
 	    font-size: 50%;
 	    margin: 1rem 0;
 	}
-
-.anterior, .siguiente {
-	margin: .25rem 0;
-}
-
-/*.compartir {
-	transform: rotate(-45deg);
-}*/
 
 .menu__imagenes {
 	height: 100%;

@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
 
 /* ---- ESTRUCTURA ---- */
-.cubo {
-	width: 4rem;
-	height: 4rem;
-	display: inline-block;
-}
+	.cubo {
+		width: 4rem;
+		height: 4rem;
+		display: inline-block;
+	}
 
 /* ======== Inicio ======== */
 	.inicio {
@@ -178,11 +178,6 @@
 	}
 	
 	.equipo__perfil {
-		/*display: flex;
-		justify-content: center;
-		align-items: center;
-		text-align: center;
-		flex-flow: column;*//*beta del grid.css*/
 		padding: 2rem 0;
 	}
 
@@ -200,15 +195,15 @@
 	}
 
 	.perfil--jose{
-		/*background-image: url("../images/desarrollador.jpg");*/
+		background-image: url("../images/desarrollador.jpg");
 	}
 	
 	.perfil--ingrid{
-		/*background-image: url("../images/ingrid.jpg");*/
+		background-image: url("../images/ingrid.jpg");
 	}
 	
 	.perfil--kalollero{
-		/*background-image: url("../images/kalollero.jpg");*/
+		background-image: url("../images/kalollero.jpg");
 	}
 
 	.nombre__integrante {
@@ -268,5 +263,592 @@
 	}
 
 
+/*////////////////  MEDIA QUERIES ////////////////*/
 
+/*@ media min-width:0px a max-width:575 xs*/ 
+
+
+/*////---- L A N D I N G - P A G E  ----\\\\*/
+
+	.flexBox__Column {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-flow: column;
+			padding: 2rem 1rem;
+	}
+
+	.flexBox__Row {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-flow: column;
+			padding: 2rem 1rem;
+	}
+	
+	.inicio, .agora, .alfa, .descubre, 
+	.explora, .comunica, .crea, .boletos, 
+	.gotoAgora, .equipo, .pie {
+		width: 100%;
+	}
+	
+	/*.descubre, .explora, .comunica, .crea, .boletos {
+		height: 80%;
+	}*/
+
+
+	.moduloIzq {
+		width: 100%;
+		text-align: center;	
+	}
+
+	.moduloDer{
+		width: 100%;
+		text-align: center;
+	}	
+	
+
+	/* Menu Navegación */
+		.menuNavegacionVertical {
+			display: none;
+		}
+		
+		.back {
+			display: none;
+		}
+
+		.menuNavegacionApaisado {
+			display: flex;
+		}
+
+		.botonMenu, .menuOverlay {
+			visibility: visible;
+		}
+	
+	/*Menu Apaisado*/
+		.menuNavegacionApaisado {
+	      position: fixed;
+	      width: 100%;
+	      height: 2rem;
+	      padding: 0 1rem;
+	      justify-content: space-between;
+	      align-items: center;
+	      background-color: var(--blanco);
+	      color: var(--oxford);
+	      z-index: 8; 
+	      border-bottom: 1px solid var(--ahuesado);
+	      top: 0;
+	      line-height: 1;
+	    }
+
+	    .botonMenu {
+	      position: fixed;
+	      top: 1px;
+	      right: 2%;
+	      height: 18px;
+	      width: 23px;
+	      cursor: pointer;
+	      z-index: 100;
+	      -webkit-transition: opacity .25s ease;
+	      transition: opacity .25s ease;
+	    }
+
+	    .botonMenu:hover {
+	      opacity: .7;
+	    }
+
+	    .botonMenu.active .top {
+	      -webkit-transform: translateY(10px) translateX(0) rotate(45deg);
+	              transform: translateY(10px) translateX(0) rotate(45deg);
+	      background: var(--anaranjado);
+	    }
+
+	    .botonMenu.active .middle {
+	      opacity: 0;
+	    }
+
+	    .botonMenu.active .bottom {
+	      -webkit-transform: translateY(-10px) translateX(0) rotate(-45deg);
+	              transform: translateY(-10px) translateX(0) rotate(-45deg);
+	      background: var(--anaranjado);
+	      top: 24px;
+	    }
+
+	    .botonMenu span {
+	      background: var(--anaranjado);
+	      border: none;
+	      height: 3px;
+	      width: 100%;
+	      position: absolute;
+	      top: 4px;
+	      left: 0;
+	      -webkit-transition: all .35s ease;
+	      transition: all .35s ease;
+	      cursor: pointer;
+	    }
+
+	    .botonMenu span:nth-of-type(2) {
+	    top: 12px;
+	    }
+
+	    .botonMenu span:nth-of-type(3) {
+	    top: 20px;
+	    }
+
+	    .menuOverlay {
+	      position: fixed;
+	      background-color: var(--anaranjado);
+	      left: 0;
+	      width: 100%;
+	      opacity: 1;
+	      visibility: hidden;
+	      -webkit-transition: opacity .35s, visibility .35s, width .35s;
+	      transition: opacity .35s, visibility .35s, width .35s;
+	      z-index: 8;
+	      overflow: auto;
+	      top: 2rem;
+	    }
+	
+	/* Inicio*/
+		.inicio {
+			height: 100%;
+			margin-top: 2rem;
+			text-align: center;
+		}
+		
+		.inicio_imagen {
+			display: none;
+		}
+
+		.inicio__informacion {	
+			align-items: center;
+			padding: 0;
+		}
+
+		.inicio--titulo {
+			font-size: 2rem;
+			font-weight: 400;
+			line-height: 1.1;
+		}
+
+		.inicio--texto {
+			font-size: 80%;
+			margin-top: 1rem;
+			font-weight: 300;
+		}
+	
+	/* ágora */
+		.agora--imagen {
+			margin: .5rem;
+			width: 90%;
+		}
+		
+		.agora--texto {
+			margin: .5rem;
+			font-size: 1rem;
+			font-weight: 400;
+			line-height: 1.1;
+		}
+
+	/* Equipo */
+		
+		.equipo__tarjetas{
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-template-rows: 1fr 1fr 1fr;
+		}
+
+		.jose{
+			grid-column: 1;
+			grid-row: 1;
+		}
+
+		.ingrid{
+			grid-column: 1;
+			grid-row: 2;
+		}
+
+		.kalollero{
+			grid-column: 1;
+			grid-row: 3;
+		}
+		
+		.equipo__perfil{
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+			text-align: left;
+		}
+
+			.equipo__marcoImagen{
+				grid-column: 1/2;
+				grid-row: 1/5;
+				background: antiquewhite;
+				display: flex;
+			}
+			
+			.perfil--jose img, .perfil--ingrid img, .perfil--kalollero img {
+				visibility: hidden;
+			}
+
+			.nombre__integrante {
+				grid-column: 2/3;
+				grid-row: 1/2;
+				background: blue;
+			}
+
+			.descripcion__integrante {
+				grid-column: 2/4;
+				grid-row: 2/4;
+				background: red;
+			}
+
+			.tags__integrante{
+				grid-column: 2/4;
+				grid-row: 4;
+				background: orange;
+			}
+
+			.redesSociales__integrante{
+				grid-column: 3/4;
+				grid-row: 1/2;
+				background: purple;
+			}
+	
+	/* Pie */
+		.pie {
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-template-rows: 1fr 1fr 1fr;
+			padding: .5rem;
+			text-align: center;
+		}
+
+		.pie__dReservados{
+			width: 100%;
+			grid-column: 1;
+			grid-row: 3;
+		}
+
+		.pie__logo{
+			width: 100%;
+			grid-column: 1;
+			grid-row: 1;
+		}
+
+		.pie__redesSociales{
+			width: 100%;
+			grid-column: 1;
+			grid-row: 2;
+		}
+
+/*sm*/
+@media (min-width:576px)  {
+
+/*////---- L A N D I N G - P A G E  ----\\\\*/
+	.flexBox__Column {
+			padding: 2rem;
+	}
+
+	.flexBox__Row {
+			padding: 2rem;
+	}
+
+
+	/**Inicio*/
+	.inicio__informacion {	
+		padding: 0 1rem;
+		text-align: center;
+	}
+
+	/*ágora*/
+	.agora--imagen {
+		margin: 2rem;
+		width: 80%;
+	}
+	
+	.agora--texto {
+		margin: 1rem;
+		font-size: 1.5rem;
+	}
+
+	/* Pie */
+
+	.pie {  }
+
+	.pie__dReservados{ }
+
+	.pie__logo{	}
+
+	.pie__redesSociales{  }
+}
+
+/*md*//*Cambio pPosición del Menú*/
+@media (min-width:768px)  {
+
+/*////---- L A N D I N G - P A G E  ----\\\\*/
+	.inicio, .agora, .alfa, .descubre, 
+	.explora, .comunica, .crea, .boletos, 
+	.gotoAgora, .equipo, .pie {
+		width: calc(100% - 3rem);
+	}
+	
+	.descubre, .explora, .comunica, .crea, .boletos {
+		height: 80vh;
+	}
+	
+	/* Menú Navegación */
+		.menuNavegacionVertical {
+			display: flex;
+			position: fixed;
+			right: 0;
+			width: 3rem;
+			height: 100vh;
+			padding: 1rem 0 .5rem 0;
+			flex-flow: column;
+			justify-content: space-between;
+			align-items: center;
+			background-color: var(--blanco);
+			color: var(--profundo); 
+			text-align: center;
+			border-left: 1px var(--claro) solid;
+			top: 0;
+		}
+		
+		.menuNavegacionVertical--ul {
+	      list-style: none;
+	      padding: 0;
+	    }
+
+	    .menuNavegacionVertical--ul li {
+	      margin: 1rem 0;
+	    }
+
+	    .icono--menu, .icono--back  {
+	      color: var(--profundo);
+	      width: 2rem;
+	    }
+
+		.back{
+			display: flex;
+			background-color: var(--blanco);
+			color: var(--oxford);
+			border-radius: 50%;
+			width: 2.5rem;
+			height: 2.5rem;
+			line-height: 1;
+			box-shadow: 0 1px 1px var(--tenueTransparente);   
+			position: fixed;
+			bottom: .5rem; 
+			right: 3.75rem;
+			z-index: 8;
+			text-align: center;
+		}
+		
+		.icono--menu:focus, .icono--menu:hover {
+	      color: var(--anaranjado);
+	    }
+
+		.menuNavegacionApaisado {
+			display: none;
+		}
+		
+		.botonMenu, .menuOverlay {
+			visibility: hidden;
+		}
+
+	/*Inicio*/
+		.inicio {
+			width: 100%;
+		}
+
+		.inicio__informacion {	
+			padding: 0 3rem;
+		}
+
+	/* ágora */
+		.agora--imagen {
+			margin: 2rem;
+			width: 75%;
+		}
+		
+		.agora--texto {
+			margin: 1rem;
+			font-size: 2.5rem;
+			font-weight: 400;
+			line-height: 1.1;
+		}
+	
+	/* Equipo */
+		.equipo__tarjetas {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-template-rows: 1fr;
+		}
+
+		.jose{
+			grid-row: 1;
+			grid-column: 1;
+		}
+
+
+		.ingrid{
+			grid-row: 1;
+			grid-column: 2;
+		}
+
+		.kalollero{
+			grid-row: 1;
+			grid-column: 3;
+		}
+
+		.equipo__perfil{
+			display: grid;
+			grid-template-columns: auto;
+			grid-template-rows: auto auto auto auto auto auto;
+			text-align: center;
+		}
+
+			.equipo__marcoImagen{
+				grid-column: 1;
+				grid-row: 1;
+				/*background: antiquewhite;*/
+				display: flex;
+			}
+			
+			.perfil--jose img, .perfil--ingrid img, .perfil--kalollero img {
+				visibility: visible;
+			}
+
+			.perfil--jose, .perfil--ingrid, .perfil--kalollero {
+				background-image: none;
+			}
+			
+			.nombre__integrante {
+				grid-column: 1;
+				grid-row: 2;
+				/*background: blue;*/
+			}
+
+			.descripcion__integrante {
+				grid-column: 1;
+				grid-row: 3;
+				/*background: red;*/
+			}
+
+			.tags__integrante{
+				grid-column: 1;
+				grid-row: 4;
+				/*background: orange;*/
+			}
+
+			.redesSociales__integrante{
+				grid-column: 1;
+				grid-row: 5;
+				/*background: purple;*/
+			}
+
+	/* Pie */
+		.pie {
+			display: flex;
+			flex-flow: row;
+			justify-content: center;
+			align-items: center;
+			padding: .5rem;	
+		}
+
+		.pie__dReservados{
+			width: 20%;
+			text-align: left;
+		}
+
+		.pie__logo{
+			width: 50%;
+		}
+
+		.pie__redesSociales{
+			width: 30%;
+			text-align: right;
+		}
+}
+
+/*lg*/
+@media (min-width:992px)   {
+
+/*////---- L A N D I N G - P A G E  ----\\\\*/
+	.flexBox__Column {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-flow: column;
+			padding: 2rem 4rem;
+	}
+
+	.flexBox__Row {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-flow: row;
+			padding: 2rem 4rem;
+	}
+	
+	.flexBox {
+		flex-flow: row;
+	}
+
+	.moduloIzq {
+		width: 50%;
+		text-align: right;	
+	}
+
+	.moduloDer{
+		width: 50%;
+		text-align: left;
+	}
+
+	/* Inicio*/
+		.inicio {
+			height: 100vh;
+			margin: 0;
+		}
+
+		.inicio__imagen {
+			display: inline;
+		}
+
+		.inicio__informacion {	
+			align-items: flex-start;
+				
+		}
+		
+		.inicio--titulo {
+			font-size: 3.5rem;
+			font-weight: 400;
+			line-height: 1.1;
+		}
+
+		.inicio--texto {
+			margin: .5rem 0;
+			font-size: 1rem;
+		}
+
+	/* Equipo */
+		.equipo__tarjetas {
+			flex-flow: row;
+			justify-content: center;
+			align-items: flex-start;
+		}
+
+		.equipo__perfil {
+			
+		}
+}
+
+/*xl*/
+@media (min-width:1200px)   {
+
+/*////---- L A N D I N G - P A G E  ----\\\\*/
+	
+	
+}
 

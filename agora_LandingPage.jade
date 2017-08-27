@@ -44,18 +44,6 @@ head
 	//Landing Page--
 	link(rel="stylesheet" href="css/agora-landingPage.css")
 	
-	//Landing Page
-		link(rel="stylesheet" href="css/agora-style.css")
-
-	//Framework Agora
-		link(rel="stylesheet" href="css/agora-frameWork.css")
-
-	//Agora Media Queries
-	link(rel="stylesheet" href="css/agora-mediaQueries.css")
-
-	//Agora Media Queris
-	link(rel="stylesheet" href="css/grid.css")
-	
 
 body
 	
@@ -79,22 +67,20 @@ body
 
 	nav.menuNavegacionApaisado
 		div: i.icon-a
-	div.botonMenu#botonMenu 
-		span.top
-		span.middle
-		span.bottom
-
-	div.menuOverlay#menuOverlay 
-		nav.menuOverlay-- 
-			ul
-				li: a(href="#agora"): i.icon-agora.icono--menu ágora
-				li: a(href="#alfa"): i.icon-alfa.icono--menu Fase Alfa
-				li: a(href="#descubre"): i.icon-descubre.icono--menu Descubre
-				li: a(href="#explora"): i.icon-explora.icono--menu Explora
-				li: a(href="#comunica"): i.icon-comunica.icono--menu Comunica
-				li: a(href="#crea"): i.icon-crea.icono--menu Crea
-				li: a(href="#boletos"): i.icon-boletos.icono--menu Boletos
-				li: a(href="#equipo"): i.icon-equipo.icono--menu Equipo
+		div.botonMenu#botonMenu 
+			span.top
+			span.middle
+			span.bottom
+	nav.menuOverlay
+		ul
+			li: a(href="#agora"): i.icon-agora.icono--menu ágora
+			li: a(href="#alfa"): i.icon-alfa.icono--menu Fase Alfa
+			li: a(href="#descubre"): i.icon-descubre.icono--menu Descubre
+			li: a(href="#explora"): i.icon-explora.icono--menu Explora
+			li: a(href="#comunica"): i.icon-comunica.icono--menu Comunica
+			li: a(href="#crea"): i.icon-crea.icono--menu Crea
+			li: a(href="#boletos"): i.icon-boletos.icono--menu Boletos
+			li: a(href="#equipo"): i.icon-equipo.icono--menu Equipo
 	
 	
 	//SECCIÓN INICIO 
@@ -149,12 +135,12 @@ body
 			h2.nombre__seccion Descubre
 			p.informacion__seccion ágora te muestra las actividades culturales y de entretenimiento a realizarse, dejando atrás la forma aburrida de buscar entre carteleras con eventos atrasados.
 		div.descubre__imagen.moduloDer
-			img.imagen-fluida(src="images/descubre.png")
+			img.imagen-fluida(src="images/descubre.svg")
 
 	//SECCIÓN EXPLORA
 	section#explora.explora.flexBox__Row
 		div.explora__imagen.moduloIzq
-			img.imagen-fluida(src="images/maqueta_de_dibujo.svg")
+			img.imagen-fluida(src="images/explora.svg")
 		div.explora__info.moduloDer
 			h2.nombre__seccion 
 				| Explora
@@ -179,12 +165,12 @@ body
 			h2.nombre__seccion Comunica
 			p.informacion__seccion Diseñamos el espacio estupendo para tú evento, enfocando ágora para ofrecerte una plataforma especializada en difundir tu evento, en la cual podrás conectar con tus próximos asistentes.
 		div.comunica__imagen.moduloDer
-			img.imagen-fluida(src="images/maqueta_de_dibujo.svg")
+			img.imagen-fluida(src="images/comunica.svg")
 
 	//SECCIÓN CREA
 	section#crea.crea.flexBox__Row
 		div.crea__imagen.moduloIzq
-			img.imagen-fluida(src="images/maqueta_de_dibujo.svg")
+			img.imagen-fluida(src="images/crea.svg")
 		div.crea__info.moduloDer
 			h2.nombre__seccion 
 				| Crea
@@ -205,11 +191,11 @@ body
 			div.moduloDer
 				img.imagen-fluida(src="images/boletos_01.svg")
 
-	section#boletos.boletos.flexBox__Row
-			div.moduloIzq
-				img.imagen-fluida(src="images/boletos_02.svg")
-			div.moduloDer
-				p.informacion__seccion La plataforma te permite también indicarle a tus usuarios si  el acceso a tu evento no tiene un precio
+	//- section#boletos.boletos.flexBox__Row
+	//- 		div.moduloIzq
+	//- 			img.imagen-fluida(src="images/boletos_02.svg")
+	//- 		div.moduloDer
+	//- 			p.informacion__seccion La plataforma te permite también indicarle a tus usuarios si  el acceso a tu evento no tiene un precio
 			
 	//SECCIÓN go to ágora
 	section#gotoAgora.goToAgora.flexBox__Column
@@ -302,11 +288,10 @@ body
 			div.cubo(style="background-color:rgba(23, 23, 23, 1)") profundo
 
 	script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+	script(src="js/jquery-3.2.1.slim.min.js")
 	script(type='text/javascript').
 
 		$('#botonMenu').click(function(){
 			$(this).toggleClass('active');
-			$('#menuOverlay').toggleClass('open');
-			$('body').toggleClass('modal-active');
 		});
 

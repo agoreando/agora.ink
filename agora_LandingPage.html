@@ -38,18 +38,6 @@
   <link href="css/normalize.css" rel="stylesheet"/>
   <!--Landing Page---->
   <link rel="stylesheet" href="css/agora-landingPage.css"/>
-  <!--Landing Page
-  link(rel="stylesheet" href="css/agora-style.css")
-  
-  -->
-  <!--Framework Agora
-  link(rel="stylesheet" href="css/agora-frameWork.css")
-  
-  -->
-  <!--Agora Media Queries-->
-  <link rel="stylesheet" href="css/agora-mediaQueries.css"/>
-  <!--Agora Media Queris-->
-  <link rel="stylesheet" href="css/grid.css"/>
 </head>
 <body>
   <!--Barra de Navegación-->
@@ -72,22 +60,20 @@
   </nav>
   <nav class="menuNavegacionApaisado">
     <div><i class="icon-a"></i></div>
+    <div class="botonMenu" id="botonMenu"> <span class="top"></span><span class="middle"></span><span class="bottom"></span></div>
   </nav>
-  <div class="botonMenu" id="botonMenu"> <span class="top"></span><span class="middle"></span><span class="bottom"></span></div>
-  <div class="menuOverlay" id="menuOverlay"> 
-    <nav class="menuOverlay--"> 
-      <ul>
-        <li><a href="#agora"><i class="icon-agora icono--menu">ágora</i></a></li>
-        <li><a href="#alfa"><i class="icon-alfa icono--menu">Fase Alfa</i></a></li>
-        <li><a href="#descubre"><i class="icon-descubre icono--menu">Descubre</i></a></li>
-        <li><a href="#explora"><i class="icon-explora icono--menu">Explora</i></a></li>
-        <li><a href="#comunica"><i class="icon-comunica icono--menu">Comunica</i></a></li>
-        <li><a href="#crea"><i class="icon-crea icono--menu">Crea</i></a></li>
-        <li><a href="#boletos"><i class="icon-boletos icono--menu">Boletos</i></a></li>
-        <li><a href="#equipo"><i class="icon-equipo icono--menu">Equipo</i></a></li>
-      </ul>
-    </nav>
-  </div>
+  <nav class="menuOverlay">
+    <ul>
+      <li><a href="#agora"><i class="icon-agora icono--menu">ágora</i></a></li>
+      <li><a href="#alfa"><i class="icon-alfa icono--menu">Fase Alfa</i></a></li>
+      <li><a href="#descubre"><i class="icon-descubre icono--menu">Descubre</i></a></li>
+      <li><a href="#explora"><i class="icon-explora icono--menu">Explora</i></a></li>
+      <li><a href="#comunica"><i class="icon-comunica icono--menu">Comunica</i></a></li>
+      <li><a href="#crea"><i class="icon-crea icono--menu">Crea</i></a></li>
+      <li><a href="#boletos"><i class="icon-boletos icono--menu">Boletos</i></a></li>
+      <li><a href="#equipo"><i class="icon-equipo icono--menu">Equipo</i></a></li>
+    </ul>
+  </nav>
   <!--SECCIÓN INICIO -->
   <section class="inicio flexBox__Row" id="inicio">
     <div class="inicio__imagen moduloIzq"><img class="imagen-fluida" src="images/maqueta_de_dibujo.svg"/></div>
@@ -118,11 +104,11 @@
       <h2 class="nombre__seccion">Descubre</h2>
       <p class="informacion__seccion">ágora te muestra las actividades culturales y de entretenimiento a realizarse, dejando atrás la forma aburrida de buscar entre carteleras con eventos atrasados.</p>
     </div>
-    <div class="descubre__imagen moduloDer"><img class="imagen-fluida" src="images/descubre.png"/></div>
+    <div class="descubre__imagen moduloDer"><img class="imagen-fluida" src="images/descubre.svg"/></div>
   </section>
   <!--SECCIÓN EXPLORA-->
   <section class="explora flexBox__Row" id="explora">
-    <div class="explora__imagen moduloIzq"><img class="imagen-fluida" src="images/maqueta_de_dibujo.svg"/></div>
+    <div class="explora__imagen moduloIzq"><img class="imagen-fluida" src="images/explora.svg"/></div>
     <div class="explora__info moduloDer">
       <h2 class="nombre__seccion">
          Explora<sup><i class="icon-info"></i></sup></h2>
@@ -147,11 +133,11 @@
       <h2 class="nombre__seccion">Comunica</h2>
       <p class="informacion__seccion">Diseñamos el espacio estupendo para tú evento, enfocando ágora para ofrecerte una plataforma especializada en difundir tu evento, en la cual podrás conectar con tus próximos asistentes.</p>
     </div>
-    <div class="comunica__imagen moduloDer"><img class="imagen-fluida" src="images/maqueta_de_dibujo.svg"/></div>
+    <div class="comunica__imagen moduloDer"><img class="imagen-fluida" src="images/comunica.svg"/></div>
   </section>
   <!--SECCIÓN CREA-->
   <section class="crea flexBox__Row" id="crea">
-    <div class="crea__imagen moduloIzq"><img class="imagen-fluida" src="images/maqueta_de_dibujo.svg"/></div>
+    <div class="crea__imagen moduloIzq"><img class="imagen-fluida" src="images/crea.svg"/></div>
     <div class="crea__info moduloDer">
       <h2 class="nombre__seccion">
          Crea<sup><i class="icon-info"></i></sup></h2>
@@ -168,12 +154,6 @@
       <p class="informacion__seccion">Al crear el espacio de tu evento, ágora te permite ingresar el link que te proporporciona tu servicio de boletaje, o la dirección del sitio web donde pueden encontrarlos.</p>
     </div>
     <div class="moduloDer"><img class="imagen-fluida" src="images/boletos_01.svg"/></div>
-  </section>
-  <section class="boletos flexBox__Row" id="boletos">
-    <div class="moduloIzq"><img class="imagen-fluida" src="images/boletos_02.svg"/></div>
-    <div class="moduloDer">
-      <p class="informacion__seccion">La plataforma te permite también indicarle a tus usuarios si  el acceso a tu evento no tiene un precio</p>
-    </div>
   </section>
   <!--SECCIÓN go to ágora-->
   <section class="goToAgora flexBox__Column" id="gotoAgora"><img class="agora--imagen imagen-fluida" src="images/agora.svg"/>
@@ -249,11 +229,10 @@
   
   -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/jquery-3.2.1.slim.min.js"></script>
   <script type="text/javascript">
     $('#botonMenu').click(function(){
     	$(this).toggleClass('active');
-    	$('#menuOverlay').toggleClass('open');
-    	$('body').toggleClass('modal-active');
     });
   </script>
 </body>

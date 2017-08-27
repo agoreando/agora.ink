@@ -71,13 +71,12 @@ body#inicio
 
 	nav.menuNavegacionApaisado
 		div: i.icon-a
-	div.botonMenu#botonMenu 
-		span.top
-		span.middle
-		span.bottom
+		div.botonMenu#botonMenu 
+			span.top
+			span.middle
+			span.bottom
 
-	div.menuOverlay#menuOverlay 
-		nav.menuOverlay-- 
+	nav.menuOverlay
 			ul
 				li: a(type="button" href="") Buscar
 				li: a(type="button" href="") Filtro
@@ -195,12 +194,14 @@ body#inicio
 
 	script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
 
+	script(src="js/jquery-3.2.1.slim.min.js")
+
 	script(type='text/javascript').
 
 		$('#botonMenu').click(function(){
 			$(this).toggleClass('active');
-			$('#menuOverlay').toggleClass('open');
-			$('body').toggleClass('modal-active');
+			//- $('#menuOverlay').toggleClass('open');
+			//- $('body').toggleClass('modal-active');
 		});
 
 		$('#banner__enviaTuEvento').click(function(){

@@ -19,11 +19,7 @@ body {
 
 /*///////// INICIO /////////*/
 .inicio {
-	background-image: url(../images/subeTuEvento_blur_8.jpg);
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-	background-position: center center;
+	background: var(--ceniza);
 	margin-top: 0;
 }
 
