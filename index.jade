@@ -84,12 +84,7 @@ body#inicio
 				li: a(type="button" href="agora_LandingPage.html") Fase Alfa
 
 
-	//Modal 
-	div#modal.modalTarjetas.displayNone
-		button#close__modal.cerrar
-			i.icon-cerrar
-		embed.modal__enviaTuEvento(src="modal.html")
-	
+	//Modal 	
 	//Banner y Modal Subir Tu Evento
 	div#modal__enviaTuEvento.displayNone
 		button#cerrar__bannerEnviaTuEvento.cerrar
@@ -211,16 +206,5 @@ body#inicio
 
 		$('#cerrar__bannerEnviaTuEvento').click(function(){
 		 	$('#modal__enviaTuEvento').removeClass('modal__enviaTuEvento').addClass('displayNone');
-		  	$('body').removeAttr('class');
-		});
-
-
-		$('#tarjeta').click(function(){
-		  	$('#modal').removeClass('displayNone').addClass('modal__enviaTuEvento');
-		  	$('body').addClass('modal-active');
-		});
-
-		$('#close__modal').click(function(){
-		 	$('#modal').removeClass('modal__enviaTuEvento').addClass('displayNone');
 		  	$('body').removeAttr('class');
 		});
