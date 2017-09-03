@@ -55,33 +55,37 @@ head
 body#inicio
 
 	//Barra de Navegación
-	nav.menuNavegacionVertical
+	nav.menuNavegacion
 		div.menuNavegacion__home
-			a(href="index.html"): i.icon-a.icono--menu
-		div.menuNavegacionVertical__items
-			ul.menuNavegacionVertical--ul
-				li: a(href="#"): i.icon-a.icono--menu
-				li: a(href="#"): i.icon-a.icono--menu
-				li: a(href="#"): i.icon-a.icono--menu
-				li: a(href="#"): i.icon-a.icono--menu
-				li: a(href="#"): i.icon-a.icono--menu
-				
-		div.menuNavegacionVertical__alfa
-			a(href="agora_LandingPage.html"): i.icon-alfa.icono--menu
+			a(href="index.html"): i.icon-info.icono--menu
 
-	nav.menuNavegacionApaisado
-		div: i.icon-a
-		div.botonMenu#botonMenu 
-			span.top
-			span.middle
-			span.bottom
+		div.menuNavegacion__items
+			ul.menuNavegacion--ul
+				li: a(href="#"): i.icon-descubre.icono--menu
+				li: a(href="#"): i.icon-explora.icono--menu
+				li: a(href="#"): i.icon-comunica.icono--menu
+				li: a(href="#"): i.icon-beta.icono--menu
+				li: a(href="#"): i.icon-a.icono--menu
 
-	nav.menuOverlay
-			ul
-				li: a(type="button" href="") Buscar
-				li: a(type="button" href="") Filtro
-				li: a(type="button" href="") Biblioteca
-				li: a(type="button" href="agora_LandingPage.html") Fase Alfa
+		div.menuNavegacion__botonMenu
+			div.botonMenu#botonMenu 
+				span.top
+				span.middle
+				span.bottom
+
+	div.menuNavegacion__Extendida
+		div.menuNavegacion__home
+			a(href="index.html"): i.icon-info.icono--menu
+		div.menuNavegacion__items
+			ul.menuNavegacion--ul
+				li: a(href="#"): i.icon-descubre.icono--menu Buscar
+				li: a(href="#"): i.icon-explora.icono--menu Filtro
+				li: a(href="#"): i.icon-comunica.icono--menu Biblioteca
+				li: a(href="#"): i.icon-beta.icono--menu Fase Alfa
+
+		div.menuNavegacionVertical__Terminos
+				a(href="agora_LandingPage.html") Términos & Condiciones
+
 
 
 	//Modal 	
