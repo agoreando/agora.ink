@@ -48,29 +48,29 @@
   <nav class="menuNavegacion">
     <div class="menuNavegacion__home"><a href="index.html"><i class="icon-info icono--menu"></i></a></div>
     <div class="menuNavegacion__items">
+      <p class="menuNavegacion--logo">ágora</p>
       <ul class="menuNavegacion--ul">
         <li><a href="#"><i class="icon-descubre icono--menu"></i></a></li>
         <li><a href="#"><i class="icon-explora icono--menu"></i></a></li>
         <li><a href="#"><i class="icon-comunica icono--menu"></i></a></li>
         <li><a href="#"><i class="icon-beta icono--menu"></i></a></li>
-        <li><a href="#"><i class="icon-a icono--menu"></i></a></li>
       </ul>
     </div>
-    <div class="menuNavegacion__botonMenu">
+    <div class="menuNavegacion__botonMenu" href="#menuNavegacion__Extendida">
       <div class="botonMenu" id="botonMenu"> <span class="top"></span><span class="middle"></span><span class="bottom"></span></div>
     </div>
   </nav>
   <div class="menuNavegacion__Extendida">
-    <div class="menuNavegacion__home"><a href="index.html"><i class="icon-info icono--menu"></i></a></div>
-    <div class="menuNavegacion__items">
-      <ul class="menuNavegacion--ul">
-        <li><a href="#"><i class="icon-descubre icono--menu">Buscar</i></a></li>
-        <li><a href="#"><i class="icon-explora icono--menu">Filtro</i></a></li>
-        <li><a href="#"><i class="icon-comunica icono--menu">Biblioteca</i></a></li>
-        <li><a href="#"><i class="icon-beta icono--menu">Fase Alfa</i></a></li>
+    <div class="menuNavegacionExtendida__home"><a href="index.html">ágora</a></div>
+    <div class="menuNavegacionExtendida__items">
+      <ul class="menuNavegacionExtendida--ul">
+        <li><a href="#">Buscar</a></li>
+        <li><a href="#">Filtro</a></li>
+        <li><a href="#">Biblioteca</a></li>
+        <li><a href="#">Fase Alfa</a></li>
       </ul>
     </div>
-    <div class="menuNavegacionVertical__Terminos"><a href="agora_LandingPage.html">Términos & Condiciones</a></div>
+    <div class="menuNavegacionVertical__Terminos"><a href="agora_LandingPage.html">T & C</a></div>
   </div>
   <!--Modal 	-->
   <!--Banner y Modal Subir Tu Evento-->
@@ -159,8 +159,7 @@
   <script type="text/javascript">
     $('#botonMenu').click(function(){
     	$(this).toggleClass('active');
-    	//- $('#menuOverlay').toggleClass('open');
-    	//- $('body').toggleClass('modal-active');
+    	$('.menuNavegacion__Extendida').toggleClass('extendida--activa');
     });
     
     $('#banner__enviaTuEvento').click(function(){
