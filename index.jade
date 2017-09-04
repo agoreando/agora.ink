@@ -62,43 +62,17 @@ body#inicio
 		div.menuNavegacion__items
 			p.menuNavegacion--logo ágora
 			ul.menuNavegacion--ul
-				li: a(href="#"): i.icon-descubre.icono--menu
-				li: a(href="#"): i.icon-explora.icono--menu
-				li: a(href="#"): i.icon-comunica.icono--menu
-				li: a(href="#"): i.icon-beta.icono--menu
 
-		div(href="#menuNavegacion__Extendida").menuNavegacion__botonMenu
+		div.menuNavegacion__botonMenu
 			div.botonMenu#botonMenu 
 				span.top
 				span.middle
 				span.bottom
 
-	div.menuNavegacion__Extendida
-		div.menuNavegacionExtendida__home
-			a(href="index.html") ágora
-		div.menuNavegacionExtendida__items
-			ul.menuNavegacionExtendida--ul
-				li: a(href="#") Buscar
-				li: a(href="#") Filtro
-				li: a(href="#") Biblioteca
-				li: a(href="#") Fase Alfa
+	div.menuNavegacion__Extendida--Vertical
 
-		div.menuNavegacionVertical__Terminos
-				a(href="agora_LandingPage.html") T & C
-
-
-
-	//Modal 	
-	//Banner y Modal Subir Tu Evento
-	div#modal__enviaTuEvento.displayNone
-		button#cerrar__bannerEnviaTuEvento.cerrar
-			i.icon-cerrar
-		embed.modal__enviaTuEvento(src="subeTuEvento.html")
 	
-	
-	button#banner__enviaTuEvento.banner__enviaTuEvento Conoce como subir tu Evento +
-	
-			
+		
 	//Back
 	a.back.flexRow(href="#inicio"): i.icon-back.icono--menu
 
@@ -109,86 +83,15 @@ body#inicio
 			//Tarjeta
 			div.tarjeta
 				div.tarjeta__contenedor
-					div.tarjeta__imagen
-						img.imagen__evento.imagen-fluida(src="images/1.jpg")
+					p.fechaEvento 7 Jul 2017
+					p.tituloEvento Programa Nacional de Teatro Escolar Veracruz 2017 
+					img.imagen__evento.imagen-fluida(src="images/2.jpg")
+					p.sedeEvento Convocatoria
+					div.organizadorEvento Instituto Veracruzano de Cultura | IVEC
 
-					div.tarjeta__informacion
-						p.tipoEvento Convocatoria
-						P.tituloEvento Programa Nacional de Teatro Escolar Veracruz 2017 
-						p
-							span.fechaEvento 7 Jul 2017
-						div.organizadorEvento
-							img.organizadorEvento__imgPerfil.imagen-fluida(src="images/luna.png")
-							div.organizadorEvento__nombre Instituto Veracruzano de Cultura | IVEC
+						
+							
 
-			div.tarjeta
-				div.tarjeta__contenedor
-					div.tarjeta__imagen
-						img.imagen__evento.imagen-fluida(src="images/2.jpg")
-
-					div.tarjeta__informacion
-						p.tipoEvento Feria
-						P.tituloEvento Feria Nacional del Libro Infantil y Juvenil 2017 
-						p
-							span.fechaEvento 21 Jul 2017
-							small.punto &nbsp &middot &nbsp 
-							span.horaEvento 10:00 hrs
-						p.sedeEvento Colegio Preparatorio de Xalapa
-						div.organizadorEvento
-							img.organizadorEvento__imgPerfil.imagen-fluida(src="images/luna.png")
-							div.organizadorEvento__nombre Instituto Veracruzano de Cultura | IVEC
-
-			div.tarjeta
-				div.tarjeta__contenedor
-					div.tarjeta__imagen
-						img.imagen__evento.imagen-fluida(src="images/3.jpg")
-
-					div.tarjeta__informacion
-						p.tipoEvento Curso
-						P.tituloEvento Curso de verano en parque Natura
-						p
-							span.fechaEvento 17 Jul 2017
-							small.punto &nbsp &middot &nbsp 
-							span.horaEvento 9:00 hrs
-						p.sedeEvento Parque Natura
-						div.organizadorEvento
-							img.organizadorEvento__imgPerfil.imagen-fluida(src="images/luna.png")
-							div.organizadorEvento__nombre Candaana Viajes y Campamentos
-
-			div.tarjeta
-				div.tarjeta__contenedor
-					div.tarjeta__imagen
-						img.imagen__evento.imagen-fluida(src="images/4.jpg")
-
-					div.tarjeta__informacion
-						p.tipoEvento Curso
-						P.tituloEvento Mis vacaciones en la Biblioteca
-						p
-							span.fechaEvento 24 Jul 2017
-							small.punto &nbsp &middot &nbsp 
-							span.horaEvento 8:00 hrs
-						div.organizadorEvento
-							img.organizadorEvento__imgPerfil.imagen-fluida(src="images/luna.png")
-							div.organizadorEvento__nombre Dirección de Cultura, Educación y Deporte Xalapa
-
-			div#tarjeta.tarjeta
-				div.tarjeta__contenedor
-					div.tarjeta__imagen
-						img.imagen__evento.imagen-fluida(src="images/5.jpg")
-
-					div.tarjeta__informacion
-						p.tipoEvento Ciclo de Cine
-						P.tituloEvento 62 Muestra Internacional de Cine
-						p
-							span.fechaEvento 24 Jul 2017
-							small.punto &nbsp &middot &nbsp
-							span.horaEvento 17:00 hrs
-						p.sedeEvento Ágora de la Ciudad
-						div.organizadorEvento
-							img.organizadorEvento__imgPerfil.imagen-fluida(src="images/luna.png")
-							div.organizadorEvento__nombre Instituto Veracruzano de Cultura | IVEC
-	
-	
 
 
 	script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")

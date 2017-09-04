@@ -18,34 +18,24 @@
 		padding: .5rem;
 	}
 
-	.tarjeta__contenedor:hover{
+	.tarjeta__contenedor:hover {
 		animation: fondoTarjetaContenedor 0.25s linear forwards;
 	}
-
-	.tarjeta__imagen{
-	}
-
-
-	.imagen__evento{
-	}
-
-	.tarjeta_informacion{}
-
-	.tipoEvento{
+	.tipoEvento {
 		font-size: 60%;
 		color: var(--tenue);
 		text-align: right;
 		margin: .5rem 0 0 0;
 	}
 
-	.tituloEvento{
+	.tituloEvento {
 		font-weight: 500;
 	    color: var(--oxford);
 	    font-size: 80%;
 	    line-height: 1;
 	}
 
-	.fechaEvento, .horaEvento, .sedeEvento{
+	.fechaEvento, .horaEvento, .sedeEvento {
 		font-weight: 300;
 		line-height: 1;
 	}
@@ -54,25 +44,8 @@
 		margin-bottom: .5rem;
 	}
 
-	.organizadorEvento{
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		border-top: 1px solid var(--marfil);
-	    padding: .5rem 0;
-	    margin-top: .5rem;
-	}
-
-	.organizadorEvento__imgPerfil{
-		border-radius: 40%;
-		width: 1.5rem;
-		height: 1.5rem;
-		overflow: hidden;
-	}
-
-	.organizadorEvento__nombre{
+	.organizadorEvento {
 		width: 90%;
-		padding-left: 1rem;
 		color: var(--gris);
 		line-height: 1;
 	}
