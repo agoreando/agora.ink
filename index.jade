@@ -62,16 +62,20 @@ body#inicio
 		div.menuNavegacion__items
 			p.menuNavegacion--logo ágora
 			ul.menuNavegacion--ul
+				div.wrapper
+					a(href="#nav" aria-label="Open Navigation") x
 
 		div.menuNavegacion__botonMenu
-			div.botonMenu#botonMenu 
-				span.top
-				span.middle
-				span.bottom
+			a(href="#nav" aria-label="Open Navigation")
+				div.botonMenu#botonMenu 
+					span.top
+					span.middle
+					span.bottom
 
-	div.menuNavegacion__Extendida--Vertical
+	div#nav
+		ul
+			li: a(href="")
 
-	
 		
 	//Back
 	a.back.flexRow(href="#inicio"): i.icon-back.icono--menu
@@ -102,7 +106,6 @@ body#inicio
 
 		$('#botonMenu').click(function(){
 			$(this).toggleClass('active');
-			$('.menuNavegacion__Extendida').toggleClass('extendida--activa');
 		});
 
 		$('#banner__enviaTuEvento').click(function(){

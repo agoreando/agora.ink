@@ -45,7 +45,7 @@
 	      background-color: var(--blanco);
 	      color: var(--oxford);
 	      z-index: 9; 
-	      border-bottom: 1px solid var(--ahuesado);
+	      border-bottom: 1px solid var(--claro);
 	      top: 0;
 	      line-height: 1;
 	    }
@@ -71,7 +71,7 @@
 			height: auto;
 			padding: .5rem 1rem;
 			display: flex;
-			flex-flow: column;
+			flex-flow: row;
 			justify-content: space-between;
 			align-items: flex-start;
 			background-color: var(--anaranjado);
@@ -245,23 +245,16 @@
 
 	/* Menú Navegación */
 		.menuNavegacion {
-			display: flex;
-			position: fixed;
-			right: 0;
 			width: 3rem;
 			height: 100vh;
 			padding: 1rem 0;
 			flex-flow: column;
-			justify-content: space-between;
-			align-items: center;
-			background-color: var(--blanco);
-			color: var(--profundo); 
 			text-align: center;
 			border-left: 1px var(--claro) solid;
-			top: 0;
-			z-index: 9;
+			right: 0;
 		}
 		
+
 		.menuNavegacion__home {
 			display: initial;
 		}
@@ -290,25 +283,7 @@
 	    }
 
 	/* Menú Navegación Extendida */
-		.menuNavegacion__Extendida {
-			display: flex;
-			position: fixed;
-			right: 3rem;
-			width: 16rem;
-			height: 100vh;
-			padding: 1rem 3rem;
-			flex-flow: column;
-			justify-content: space-between;
-			align-items: center;
-			text-align: center;
-			border-left: 1px var(--claro) solid;
-			top: 0;
-			z-index: 9;
-		}
-
-		.menuNavegacionExtendida__home {
-			display: initial;
-		}
+		
 
 	/*Back*/
 		.icono--back  {

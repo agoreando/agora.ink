@@ -118,4 +118,27 @@
 
 
 
+#nav {
+	padding: 20px;
+	text-align: center;
+	position: fixed;
+	height: 100%;
+	top: 0;
+	width: 16rem;
+	max-width: 400px;
+	background: rgb(255, 219, 58);
+	box-shadow: -3px 0 10px rgba(0,0,0,0.2);
+	z-index: 8;
+}
+
+#nav:not(:target) {
+	right: -16rem;
+	transition: right 1.5s;
+}
+
+#nav:target {
+	right: 3rem;
+	transition: right 1s;
+}
+
 
