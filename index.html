@@ -49,16 +49,14 @@
     <div class="menuNavegacion__home"><a href="index.html"><i class="icon-info icono--menu"></i></a></div>
     <div class="menuNavegacion__items">
       <p class="menuNavegacion--logo">ágora</p>
-      <ul class="menuNavegacion--ul">
-        <div class="wrapper"><a href="#nav" aria-label="Open Navigation">x</a></div>
-      </ul>
+      <ul class="menuNavegacion--ul"></ul>
     </div>
     <div class="menuNavegacion__botonMenu"><a href="#nav" aria-label="Open Navigation">
         <div class="botonMenu" id="botonMenu"> <span class="top"></span><span class="middle"></span><span class="bottom"></span></div></a></div>
   </nav>
-  <div id="nav">
+  <div class="menuNavegacion__Extendida" id="nav">
     <ul>
-      <li><a href=""></a></li>
+      <li><a href="">trxto</a></li>
     </ul>
   </div>
   <!--Back--><a class="back flexRow" href="#inicio"><i class="icon-back icono--menu"></i></a>
@@ -68,9 +66,10 @@
       <!--Tarjeta-->
       <div class="tarjeta">
         <div class="tarjeta__contenedor">
-          <p class="fechaEvento">7 Jul 2017</p>
-          <p class="tituloEvento">Programa Nacional de Teatro Escolar Veracruz 2017 </p><img class="imagen__evento imagen-fluida" src="images/2.jpg"/>
-          <p class="sedeEvento">Convocatoria</p>
+          <p class="fechaEvento">7 Jul 2017 </p><img class="imagenEvento imagen-fluida" src="images/2.jpg"/>
+          <p class="nombreEvento">Programa Nacional de Teatro Escolar Veracruz 2017</p>
+          <p class="descripcionEvento">Descripción</p>
+          <p class="sedeEvento">ágora de la Ciudad</p>
           <div class="organizadorEvento">Instituto Veracruzano de Cultura | IVEC</div>
         </div>
       </div>
@@ -81,7 +80,7 @@
   <script type="text/javascript">
     $('#botonMenu').click(function(){
     	$(this).toggleClass('active');
-    	$('.menuNavegacion__Extendida').toggleClass('extendida--activa');
+    	$('#nav').toggleClass('nav--activo');
     });
     
     $('#banner__enviaTuEvento').click(function(){

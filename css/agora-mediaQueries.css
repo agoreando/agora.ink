@@ -15,9 +15,9 @@
 		}
 
 		.columnaTarjetas {
-			-webkit-column-count:2;
-			-moz-column-count:2;
-			column-count:2;
+			-webkit-column-count:1;
+			-moz-column-count:1;
+			column-count:1;
 			-webkit-column-gap:.5rem;
 			-moz-column-gap:.5rem;
 			column-gap:.5rem;
@@ -27,11 +27,42 @@
 			display:inline-block;
 			width:100%
 		}
-
-		.fechaEvento, .punto, .horaEvento, .sedeEvento, .organizadorEvento {
-			display: none;
-			font-size: 50%;
+		
+		.tarjeta__contenedor {	
+			grid-template-columns: auto auto auto ;
+			grid-template-rows: auto auto auto auto auto;
 		}
+		
+		.imagenEvento {
+			grid-column: 1/2;
+			grid-row: 1/6;
+		}
+
+		.fechaEvento {
+			grid-column: 2/3;
+			grid-row: 1;
+		} 
+		
+		.nombreEvento {
+			grid-column: 2/3;
+			grid-row: 2;
+		}
+
+		.descripcionEvento{
+			grid-column: 2/3;
+			grid-row: 3;
+		}
+
+		.sedeEvento {
+			grid-column: 2/3;
+			grid-row: 4;
+		}
+
+		.organizadorEvento {
+			grid-column: 2/3;
+			grid-row: 5;
+		}
+		
 		
 	/* Menu Navegación */
 		.menuNavegacion {
@@ -65,43 +96,26 @@
 	/* Menu Navegación Extendida */
 		.menuNavegacion__Extendida {
 			position: fixed;
-			right: 0;
-			top: 2rem;
+			top: -16rem;
+			padding: 20px;
 			width: 100%;
 			height: auto;
-			padding: .5rem 1rem;
 			display: flex;
 			flex-flow: row;
 			justify-content: space-between;
 			align-items: flex-start;
 			background-color: var(--anaranjado);
 			color: var(--blanco); 
+			box-shadow: -3px 0 10px rgba(0,0,0,0.2);
 			text-align: center;
-			z-index: 9;
-			opacity: 0;
-			visibility: hidden;
-			transition: opacity 1s, visibility 1s;
+			z-index: 8;
+			transition: top 1.5s;
 		}
 
-		.extendida--activa {
-			opacity: 1;
-			visibility: visible;
-			transition: opacity 1s, visibility 1s;
+		.nav--activo {
+			top: 2rem;
+			transition: top 1s;
 		}
-		
-		.menuNavegacionExtendida__home {
-			display: none;
-		}
-
-		.menuNavegacionExtendida--ul {
-	      list-style: none;
-	      display: initial;
-	      padding: 0;
-	    }
-		
-	    .menuNavegacionExtendida--ul li {
-	      margin: 1rem 0;
-	    }
 	
 	/*BotonMenu*/
 	    .botonMenu {
@@ -135,7 +149,7 @@
 	      -webkit-transform: translateY(-10px) translateX(0) rotate(-45deg);
 	              transform: translateY(-10px) translateX(0) rotate(-45deg);
 	      background: var(--anaranjado);
-	      top: 24px;
+	      top: 22px;
 	    }
 
 	    .botonMenu span {
@@ -144,7 +158,7 @@
 	      height: 3px;
 	      width: 100%;
 	      position: absolute;
-	      top: 4px;
+	      top: 2px;
 	      left: 0;
 	      -webkit-transition: all .35s ease;
 	      transition: all .35s ease;
@@ -152,29 +166,14 @@
 	    }
 
 	    .botonMenu span:nth-of-type(2) {
-	    top: 12px;
+	    top: 10px;
 	    }
 
 	    .botonMenu span:nth-of-type(3) {
-	    top: 20px;
+	    top: 18px;
 	    }
 
-	    /*.menuOverlay {
-	      position: fixed;
-	      background-color: var(--anaranjado);
-	      left: 0;
-	      width: 100%;
-	      opacity: 1;
-	      visibility: hidden;
-	      -webkit-transition: opacity .35s, visibility .35s, width .35s;
-	      transition: opacity .35s, visibility .35s, width .35s;
-	      z-index: 8;
-	      overflow: auto;
-	      top: 2rem;
-	    }*/
-
-
-		/*Back*/
+	/*Back*/
 	    .back {
 			display: none;
 		}
@@ -184,7 +183,7 @@
 
 /*////---- P L A T A F O R M A ----\\\\*/
 
-	.columnaTarjetas {
+		.columnaTarjetas {
 			-webkit-column-count:3;
 			-moz-column-count:3;
 			column-count:3;
@@ -196,6 +195,36 @@
 		.tarjeta {
 			display:inline-block;
 			width:100%
+		}
+
+		.tarjeta__contenedor {	
+			grid-template-columns: auto auto;
+			grid-template-rows: auto auto auto auto auto auto;
+		}
+		
+		.fechaEvento {
+			grid-column: 1/2;
+			grid-row: 1;
+		} 
+		.imagenEvento {
+			grid-column: 1/3;
+			grid-row: 2;
+		}
+		.nombreEvento {
+			grid-column: 1/3;
+			grid-row: 3;
+		}
+		.descripcionEvento{
+			grid-column: 1/3;
+			grid-row: 4;
+		}
+		.sedeEvento {
+			grid-column: 1/3;
+			grid-row: 5;
+		}
+		.organizadorEvento {
+			grid-column: 1/2;
+			grid-row: 6;
 		}
 }
 
@@ -226,7 +255,7 @@
 			display:inline-block;
 			width:100%
 		}
-
+		
 		.fechaEvento, .punto, .horaEvento{
 			display: inline-block;
 			font-size: 70%
@@ -282,7 +311,24 @@
 	      color: var(--anaranjado);
 	    }
 
-	/* Menú Navegación Extendida */
+	/* Menu Navegación Extendida */
+		.menuNavegacion__Extendida {
+			top: 0;
+			width: 16rem;
+			height: 100vh;		
+			right: -16rem;
+			flex-flow: column;
+			justify-content: space-between;
+			align-items: flex-start;
+			box-shadow: -3px 0 10px rgba(0,0,0,0.2);
+			transition: right 1.5s;
+		}
+
+		.nav--activo {
+			right: 3rem;
+			transition: right 1s;
+			top: 0;
+		}
 		
 
 	/*Back*/
@@ -303,7 +349,7 @@
 			position: fixed;
 			bottom: .5rem; 
 			right: 3.75rem;
-			z-index: 8;
+			z-index: 7;
 			text-align: center;
 		}
 }

@@ -4,24 +4,35 @@
 
 /*////////////////  MENU  ////////////////*/
 
+
+
+	
+
 /*////////////////   TARJETAS  ////////////////*/
 
 	.tarjeta__contenedor {
 		position: relative;
-		display: flex;
+		/*display: flex;
 		flex-flow: column;
 		background-color: #fff;
 		border-radius: 0.25rem;
 		-webkit-box-orient: vertical;
 		-webkit-box-direction: normal;
 		margin: .5rem 0;
-		padding: .5rem;
+		padding: .5rem;*/
 	}
+	
+	.tarjeta__contenedor {
+		display: grid;		
+	}
+
 
 	.tarjeta__contenedor:hover {
 		animation: fondoTarjetaContenedor 0.25s linear forwards;
 	}
-	.tipoEvento {
+	
+
+	/*.tipoEvento {
 		font-size: 60%;
 		color: var(--tenue);
 		text-align: right;
@@ -48,7 +59,7 @@
 		width: 90%;
 		color: var(--gris);
 		line-height: 1;
-	}
+	}*/
 
 /*//////////////// AGREGAR EVENTO ////////////////*/
 
@@ -116,29 +127,5 @@
 
 
 
-
-
-#nav {
-	padding: 20px;
-	text-align: center;
-	position: fixed;
-	height: 100%;
-	top: 0;
-	width: 16rem;
-	max-width: 400px;
-	background: rgb(255, 219, 58);
-	box-shadow: -3px 0 10px rgba(0,0,0,0.2);
-	z-index: 8;
-}
-
-#nav:not(:target) {
-	right: -16rem;
-	transition: right 1.5s;
-}
-
-#nav:target {
-	right: 3rem;
-	transition: right 1s;
-}
 
 

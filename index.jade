@@ -62,8 +62,6 @@ body#inicio
 		div.menuNavegacion__items
 			p.menuNavegacion--logo ágora
 			ul.menuNavegacion--ul
-				div.wrapper
-					a(href="#nav" aria-label="Open Navigation") x
 
 		div.menuNavegacion__botonMenu
 			a(href="#nav" aria-label="Open Navigation")
@@ -72,9 +70,9 @@ body#inicio
 					span.middle
 					span.bottom
 
-	div#nav
+	div#nav.menuNavegacion__Extendida
 		ul
-			li: a(href="")
+			li: a(href="") trxto
 
 		
 	//Back
@@ -87,10 +85,11 @@ body#inicio
 			//Tarjeta
 			div.tarjeta
 				div.tarjeta__contenedor
-					p.fechaEvento 7 Jul 2017
-					p.tituloEvento Programa Nacional de Teatro Escolar Veracruz 2017 
-					img.imagen__evento.imagen-fluida(src="images/2.jpg")
-					p.sedeEvento Convocatoria
+					p.fechaEvento 7 Jul 2017 
+					img.imagenEvento.imagen-fluida(src="images/2.jpg")
+					p.nombreEvento Programa Nacional de Teatro Escolar Veracruz 2017
+					p.descripcionEvento Descripción
+					p.sedeEvento ágora de la Ciudad
 					div.organizadorEvento Instituto Veracruzano de Cultura | IVEC
 
 						
@@ -106,6 +105,7 @@ body#inicio
 
 		$('#botonMenu').click(function(){
 			$(this).toggleClass('active');
+			$('#nav').toggleClass('nav--activo');
 		});
 
 		$('#banner__enviaTuEvento').click(function(){
