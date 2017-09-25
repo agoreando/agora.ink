@@ -8,16 +8,16 @@
 			width: 100%;
 		    height: 100%;
 		    position: relative;
-		    margin-top: 1rem;
+		    margin-top: 3rem;
 		    left: 0;
 		    bottom: 0;
 		    padding: 0 1rem;
 		}
 
 		.columnaTarjetas {
-			-webkit-column-count:1;
-			-moz-column-count:1;
-			column-count:1;
+			-webkit-column-count:2;
+			-moz-column-count:2;
+			column-count:2;
 			-webkit-column-gap:.5rem;
 			-moz-column-gap:.5rem;
 			column-gap:.5rem;
@@ -29,38 +29,46 @@
 		}
 		
 		.tarjeta__contenedor {	
-			grid-template-columns: auto auto auto ;
-			grid-template-rows: auto auto auto auto auto;
+			grid-template-columns: auto 1fr;
+			grid-template-rows: auto auto auto auto auto auto;
 		}
 		
-		.imagenEvento {
-			grid-column: 1/2;
-			grid-row: 1/6;
-		}
-
 		.fechaEvento {
-			grid-column: 2/3;
+			grid-column: 1/2;
 			grid-row: 1;
 		} 
-		
-		.nombreEvento {
+
+		.iconoTipo--tarjeta {
 			grid-column: 2/3;
+			grid-row: 1;
+			justify-content: flex-end;
+		}
+
+		.imagenEvento {
+			grid-column: 1/3;
 			grid-row: 2;
 		}
-
-		.descripcionEvento{
-			grid-column: 2/3;
+		.nombreEvento {
+			grid-column: 1/3;
 			grid-row: 3;
 		}
-
-		.sedeEvento {
-			grid-column: 2/3;
+		.descripcionEvento{
+			grid-column: 1/3;
 			grid-row: 4;
 		}
-
-		.organizadorEvento {
-			grid-column: 2/3;
+		.sedeEvento {
+			grid-column: 1/3;
 			grid-row: 5;
+		}
+		.organizadorEvento {
+			grid-column: 1/2;
+			grid-row: 6;
+		}
+
+		.iconoRedes--tarjeta {
+			grid-column: 2/3;
+			grid-row: 6;
+			justify-content: flex-end;
 		}
 		
 		
@@ -197,35 +205,7 @@
 			width:100%
 		}
 
-		.tarjeta__contenedor {	
-			grid-template-columns: auto auto;
-			grid-template-rows: auto auto auto auto auto auto;
-		}
 		
-		.fechaEvento {
-			grid-column: 1/2;
-			grid-row: 1;
-		} 
-		.imagenEvento {
-			grid-column: 1/3;
-			grid-row: 2;
-		}
-		.nombreEvento {
-			grid-column: 1/3;
-			grid-row: 3;
-		}
-		.descripcionEvento{
-			grid-column: 1/3;
-			grid-row: 4;
-		}
-		.sedeEvento {
-			grid-column: 1/3;
-			grid-row: 5;
-		}
-		.organizadorEvento {
-			grid-column: 1/2;
-			grid-row: 6;
-		}
 }
 
 /*md*//*Cambio pPosición del Menú*/
@@ -256,7 +236,9 @@
 			width:100%
 		}
 		
-		.fechaEvento, .punto, .horaEvento{
+		.fechaEvento, 
+		.punto, 
+		.horaEvento {
 			display: inline-block;
 			font-size: 70%
 		}
@@ -307,7 +289,8 @@
 	      width: 2rem;
 	    }
 
-		.icono--menu:focus, .icono--menu:hover {
+		.icono--menu:focus, 
+		.icono--menu:hover {
 	      color: var(--anaranjado);
 	    }
 
@@ -397,3 +380,72 @@
 		}
 	
 }
+
+
+
+
+
+
+
+
+
+		/*.tarjeta__contenedor {	
+			grid-template-columns: auto auto 1fr ;
+			grid-template-rows: auto auto auto auto auto;
+		}
+		
+		.imagenEvento {
+			grid-column: 1/2;
+			grid-row: 1/6;
+		}
+
+		.fechaEvento {
+			grid-column: 2/3;
+			grid-row: 1;
+		} 
+	
+		.iconoTipo--tarjeta {
+			grid-column: 3/4;
+			grid-row: 1;
+			justify-content: flex-end;
+		}
+
+		.nombreEvento {
+			grid-column: 2/4;
+			grid-row: 2;
+		}
+
+		.descripcionEvento {
+			grid-column: 2/4;
+			grid-row: 3;
+		}
+
+		.sedeEvento {
+			grid-column: 2/4;
+			grid-row: 4;
+		}
+
+		.organizadorEvento {
+			grid-column: 2/3;
+			grid-row: 5;
+		}
+
+		.iconoRedes--tarjeta {
+			grid-column: 3/4;
+			grid-row: 5;
+			justify-content: flex-end;
+		}
+
+		.fechaEvento, 
+		.iconoTipo--tarjeta,
+		.imagenEvento,
+		.nombreEvento,
+		.descripcionEvento,
+		.sedeEvento,
+		.organizadorEvento,
+		.iconoRedes--tarjeta {
+			display: flex;
+			flex-flow: row;
+			align-content: center;
+			line-height: 1;
+		}*/

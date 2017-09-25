@@ -1,5 +1,25 @@
 * {
 	/*border: 1px orange dashed;*/
+	--artistico: rgba(0, 0, 0, 1);
+	--deportivo: rgba(0, 0, 0, 1);
+	--comercial: rgba(0, 0, 0, 1);
+	--cultural: rgba(0, 196, 197, 1);
+}
+
+.artistico {
+	color: var(--artistico);
+}
+
+.deportivo {
+	color: var(--deportivo);
+}
+
+.comercial {
+	color: var(--comercial);
+}
+
+.cultural {
+	color: var(--cultural);
 }
 
 /*////////////////  MENU  ////////////////*/
@@ -31,35 +51,57 @@
 		animation: fondoTarjetaContenedor 0.25s linear forwards;
 	}
 	
-
-	/*.tipoEvento {
-		font-size: 60%;
-		color: var(--tenue);
-		text-align: right;
-		margin: .5rem 0 0 0;
-	}
-
-	.tituloEvento {
-		font-weight: 500;
-	    color: var(--oxford);
-	    font-size: 80%;
-	    line-height: 1;
-	}
-
-	.fechaEvento, .horaEvento, .sedeEvento {
+	.fechaEvento, 
+	.horaEvento {
 		font-weight: 300;
-		line-height: 1;
+		font-size: 80%;
 	}
 
-	.sedeEvento{
-		margin-bottom: .5rem;
+	.iconoTipo--tarjeta {
+		font-size: 80%;
+	}
+	
+	.imagenEvento {}
+
+	.nombreEvento {
+		font-weight: 800;
+	    color: var(--oxford);
+	}
+	
+	.descripcionEvento {
+		font-weight: 300;
+		font-size: 80%;
+	}
+
+	.sedeEvento {
+		font-weight: 300;
+		font-size: 80%;
 	}
 
 	.organizadorEvento {
-		width: 90%;
-		color: var(--gris);
+		font-size: 80%;
+		width: 80%;
+	}
+
+	.iconoRedes--tarjeta {
+		font-size: 80%
+	}
+
+	.fechaEvento, 
+	.iconoTipo--tarjeta,
+	.imagenEvento,
+	.nombreEvento,
+	.descripcionEvento,
+	.sedeEvento,
+	.organizadorEvento,
+	.iconoRedes--tarjeta {
+		display: flex;
+		flex-flow: column;
+		justify-content: center;
+		align-content: center;
 		line-height: 1;
-	}*/
+		padding: .25rem 0;
+	}
 
 /*//////////////// AGREGAR EVENTO ////////////////*/
 
@@ -124,8 +166,5 @@
 			 }
 			
 		}
-
-
-
 
 
