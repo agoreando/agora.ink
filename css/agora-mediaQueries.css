@@ -246,8 +246,8 @@
 }
 
 /*md*//*Cambio pPosición del Menú*/
-/*Se cambio de 768px a 810px por Facebook Tabs*/
-@media (min-width:810px)  {
+/*Se cambio de 768px a 820px por Facebook Tabs*/
+@media (min-width:820px)  {
 
 /*////---- P L A T A F O R M A ----\\\\*/
 	.contenedorTarjetasEventos{
