@@ -62,134 +62,160 @@ body#inicio
 		div.menuNavegacion__items
 			p.menuNavegacion--logo ágora
 			ul.menuNavegacion--ul
-				li: a(href="#"): i.icon-descubre.icono--menu
-				li: a(href="#"): i.icon-explora.icono--menu
-				li: a(href="#"): i.icon-comunica.icono--menu
-				li: a(href="#"): i.icon-beta.icono--menu
 
-		div(href="#menuNavegacion__Extendida").menuNavegacion__botonMenu
-			div.botonMenu#botonMenu 
-				span.top
-				span.middle
-				span.bottom
+		div.menuNavegacion__botonMenu
+			a(href="#nav" aria-label="Open Navigation")
+				div.botonMenu#botonMenu 
+					span.top
+					span.middle
+					span.bottom
 
-	div.menuNavegacion__Extendida
-		div.menuNavegacionExtendida__home
-			a(href="index.html") ágora
-		div.menuNavegacionExtendida__items
-			ul.menuNavegacionExtendida--ul
-				li: a(href="#") Buscar
-				li: a(href="#") Filtro
-				li: a(href="#") Biblioteca
-				li: a(href="#") Fase Alfa
+	div#nav.menuNavegacion__Extendida
+		ul
+			li: a(href="") trxto
 
-		div.menuNavegacionVertical__Terminos
-				a(href="agora_LandingPage.html") T & C
-
-
-
-	//Modal 	
-	//Banner y Modal Subir Tu Evento
-	div#modal__enviaTuEvento.displayNone
-		button#cerrar__bannerEnviaTuEvento.cerrar
-			i.icon-cerrar
-		embed.modal__enviaTuEvento(src="subeTuEvento.html")
-	
-	
-	button#banner__enviaTuEvento.banner__enviaTuEvento Conoce como subir tu Evento +
-	
-			
+		
 	//Back
 	a.back.flexRow(href="#inicio"): i.icon-back.icono--menu
 
 	//Contenedor Tarjetas
 	div.contenedorTarjetasEventos
+		
+		p.fechaColumnaTarjetas 15 de Septiembre 2017
 		div.columnaTarjetas
-			
 			//Tarjeta
 			div.tarjeta
 				div.tarjeta__contenedor
-					div.tarjeta__imagen
-						img.imagen__evento.imagen-fluida(src="images/1.jpg")
-
-					div.tarjeta__informacion
-						p.tipoEvento Convocatoria
-						P.tituloEvento Programa Nacional de Teatro Escolar Veracruz 2017 
-						p
-							span.fechaEvento 7 Jul 2017
-						div.organizadorEvento
-							img.organizadorEvento__imgPerfil.imagen-fluida(src="images/luna.png")
-							div.organizadorEvento__nombre Instituto Veracruzano de Cultura | IVEC
-
+					p.fechaEvento 7 Jul 2017
+					div.iconoTipo--tarjeta(title="Teatro")
+						i.icon-info
+					img.imagenEvento.imagen-fluida(src="images/2.jpg")
+					p.nombreEvento Programa Nacional de Teatro Escolar Veracruz 2017
+					p.sedeEvento ágora de la Ciudad
+					div.organizadorEvento Instituto Veracruzano de Cultura | IVEC
+					div.iconoRedes--tarjeta
+						i.icon-facebook
+			
+			//eventos de relleno
 			div.tarjeta
 				div.tarjeta__contenedor
-					div.tarjeta__imagen
-						img.imagen__evento.imagen-fluida(src="images/2.jpg")
-
-					div.tarjeta__informacion
-						p.tipoEvento Feria
-						P.tituloEvento Feria Nacional del Libro Infantil y Juvenil 2017 
-						p
-							span.fechaEvento 21 Jul 2017
-							small.punto &nbsp &middot &nbsp 
-							span.horaEvento 10:00 hrs
-						p.sedeEvento Colegio Preparatorio de Xalapa
-						div.organizadorEvento
-							img.organizadorEvento__imgPerfil.imagen-fluida(src="images/luna.png")
-							div.organizadorEvento__nombre Instituto Veracruzano de Cultura | IVEC
-
+					p.fechaEvento 4 octubre 2016 &middot; 16:00	
+					div.iconoTipo--tarjeta(title="Visita Guiada")
+					p.nombreEvento Fotografía y Literatura: De la Imagen a la Escritura	
+					p.sedeEvento Ágora de la Ciudad	
+					div.organizadorEvento Ágora de la Ciudad
+					div.iconoRedes--tarjeta
+						i.icon-facebook
 			div.tarjeta
 				div.tarjeta__contenedor
-					div.tarjeta__imagen
-						img.imagen__evento.imagen-fluida(src="images/3.jpg")
-
-					div.tarjeta__informacion
-						p.tipoEvento Curso
-						P.tituloEvento Curso de verano en parque Natura
-						p
-							span.fechaEvento 17 Jul 2017
-							small.punto &nbsp &middot &nbsp 
-							span.horaEvento 9:00 hrs
-						p.sedeEvento Parque Natura
-						div.organizadorEvento
-							img.organizadorEvento__imgPerfil.imagen-fluida(src="images/luna.png")
-							div.organizadorEvento__nombre Candaana Viajes y Campamentos
-
+					p.fechaEvento 11 octubre 2016 &middot; 16:00	
+					div.iconoTipo--tarjeta(title="Visita Guiada")
+					p.nombreEvento Fotografía y Literatura: De la Imagen a la Escritura	
+					p.sedeEvento Ágora de la Ciudad	
+					div.organizadorEvento Ágora de la Ciudad
+					div.iconoRedes--tarjeta
+						i.icon-facebook
 			div.tarjeta
 				div.tarjeta__contenedor
-					div.tarjeta__imagen
-						img.imagen__evento.imagen-fluida(src="images/4.jpg")
-
-					div.tarjeta__informacion
-						p.tipoEvento Curso
-						P.tituloEvento Mis vacaciones en la Biblioteca
-						p
-							span.fechaEvento 24 Jul 2017
-							small.punto &nbsp &middot &nbsp 
-							span.horaEvento 8:00 hrs
-						div.organizadorEvento
-							img.organizadorEvento__imgPerfil.imagen-fluida(src="images/luna.png")
-							div.organizadorEvento__nombre Dirección de Cultura, Educación y Deporte Xalapa
-
-			div#tarjeta.tarjeta
+					p.fechaEvento 18 octubre 2016 &middot; 16:00	
+					div.iconoTipo--tarjeta(title="Visita Guiada")
+					p.nombreEvento Fotografía y Literatura: De la Imagen a la Escritura	
+					p.sedeEvento Ágora de la Ciudad	
+					div.organizadorEvento Ágora de la Ciudad
+					div.iconoRedes--tarjeta
+						i.icon-facebook
+			div.tarjeta
 				div.tarjeta__contenedor
-					div.tarjeta__imagen
-						img.imagen__evento.imagen-fluida(src="images/5.jpg")
-
-					div.tarjeta__informacion
-						p.tipoEvento Ciclo de Cine
-						P.tituloEvento 62 Muestra Internacional de Cine
-						p
-							span.fechaEvento 24 Jul 2017
-							small.punto &nbsp &middot &nbsp
-							span.horaEvento 17:00 hrs
-						p.sedeEvento Ágora de la Ciudad
-						div.organizadorEvento
-							img.organizadorEvento__imgPerfil.imagen-fluida(src="images/luna.png")
-							div.organizadorEvento__nombre Instituto Veracruzano de Cultura | IVEC
-	
-	
-
+					p.fechaEvento 5 octubre 2016 &middot; 19:00	
+					div.iconoTipo--tarjeta(title="Concierto")
+					p.nombreEvento Mi Casio, Mi Ciudad	
+					p.sedeEvento Casino Xalapeño	
+					div.organizadorEvento Universidad Veracruzana
+					div.iconoRedes--tarjeta
+						i.icon-facebook
+			div.tarjeta
+				div.tarjeta__contenedor
+					p.fechaEvento 28 octubre 2016 &middot; 18:00	
+					div.iconoTipo--tarjeta(title="Convocatoria")
+					p.nombreEvento 1er Gran Desfile y Concurso de Catrinas
+					p.sedeEvento Panteón 5 de Febrero - Parque Juárez	
+					div.organizadorEvento H. Ayuntamiento de Xalapa
+					div.iconoRedes--tarjeta
+						i.icon-facebook
+			div.tarjeta
+				div.tarjeta__contenedor
+					p.fechaEvento 1 octubre 2016 &middot; 12:00	
+					div.iconoTipo--tarjeta(title="Ciclo de Cine")
+					p.nombreEvento Matiné Infantil. Ciclo Hayao Miyasaki
+					p.sedeEvento Galería de Arte Contemporáneo de Xalapa | Auditorio	
+					div.organizadorEvento Galería de Arte Contemporáneo de Xalapa
+					div.iconoRedes--tarjeta
+						i.icon-facebook
+			div.tarjeta
+				div.tarjeta__contenedor
+					p.fechaEvento 8 octubre 2016 &middot; 12:00	
+					div.iconoTipo--tarjeta(title="Ciclo de Cine")
+					p.nombreEvento Matiné Infantil. Ciclo Hayao Miyasaki
+					p.sedeEvento Galería de Arte Contemporáneo de Xalapa | Auditorio	
+					div.organizadorEvento Galería de Arte Contemporáneo de Xalapa
+					div.iconoRedes--tarjeta
+						i.icon-facebook
+			div.tarjeta
+				div.tarjeta__contenedor
+					p.fechaEvento 15 octubre 2016 &middot; 12:00	
+					div.iconoTipo--tarjeta(title="Ciclo de Cine")
+					p.nombreEvento Matiné Infantil. Ciclo Hayao Miyasaki
+					p.sedeEvento Galería de Arte Contemporáneo de Xalapa | Auditorio	
+					div.organizadorEvento Galería de Arte Contemporáneo de Xalapa
+					div.iconoRedes--tarjeta
+						i.icon-facebook
+			div.tarjeta
+				div.tarjeta__contenedor
+					p.fechaEvento 22 octubre 2016 &middot; 12:00	
+					div.iconoTipo--tarjeta(title="Ciclo de Cine")
+					p.nombreEvento Matiné Infantil. Ciclo Hayao Miyasaki
+					p.sedeEvento Galería de Arte Contemporáneo de Xalapa | Auditorio	
+					div.organizadorEvento Galería de Arte Contemporáneo de Xalapa
+					div.iconoRedes--tarjeta
+						i.icon-facebook
+			div.tarjeta
+				div.tarjeta__contenedor
+					p.fechaEvento 13 octubre 2016 &middot; 20:30	
+					div.iconoTipo--tarjeta(title="Teatro")
+					p.nombreEvento Muestra Estatal de Teatro Indígena	
+					p.sedeEvento Sala Dagoberto Guillaumin, Teatro del Estado
+			div.tarjeta
+				div.tarjeta__contenedor
+					p.fechaEvento 13 octubre 2016 &middot; 19:30	
+					div.iconoTipo--tarjeta(title="Teatro")
+					p.nombreEvento Muestra Estatal de Teatro Indígena	
+					p.sedeEvento Sala Dagoberto Guillaumin, Teatro del Estado
+			div.tarjeta
+				div.tarjeta__contenedor
+					p.fechaEvento 14 octubre 2016 &middot; 20:30	
+					div.iconoTipo--tarjeta(title="Teatro")
+					p.nombreEvento Muestra Estatal de Teatro Indígena	
+					p.sedeEvento Sala Dagoberto Guillaumin, Teatro del Estado
+			div.tarjeta
+				div.tarjeta__contenedor
+					p.fechaEvento 14 octubre 2016 &middot; 19:30	
+					div.iconoTipo--tarjeta(title="Teatro")
+					p.nombreEvento Muestra Estatal de Teatro Indígena	
+					p.sedeEvento Sala Dagoberto Guillaumin, Teatro del Estado
+			div.tarjeta
+				div.tarjeta__contenedor
+					p.fechaEvento 14 octubre 2016 &middot; 19:00	
+					div.iconoTipo--tarjeta(title="Teatro")
+					p.nombreEvento Muestra Estatal de Teatro Indígena	
+					p.sedeEvento Sala Dagoberto Guillaumin, Teatro del Estado
+			div.tarjeta
+				div.tarjeta__contenedor
+					p.fechaEvento 26 septiembre 2016		
+					div.iconoTipo--tarjeta(title="Convocatoria")
+					p.nombreEvento LUNETA	
+					p.sedeEvento Ágora de la Ciudad
+		
+		
 
 	script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
 
@@ -199,7 +225,7 @@ body#inicio
 
 		$('#botonMenu').click(function(){
 			$(this).toggleClass('active');
-			$('.menuNavegacion__Extendida').toggleClass('extendida--activa');
+			$('#nav').toggleClass('nav--activo');
 		});
 
 		$('#banner__enviaTuEvento').click(function(){

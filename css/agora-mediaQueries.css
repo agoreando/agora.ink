@@ -8,7 +8,7 @@
 			width: 100%;
 		    height: 100%;
 		    position: relative;
-		    margin-top: 1rem;
+		    margin-top: 3rem;
 		    left: 0;
 		    bottom: 0;
 		    padding: 0 1rem;
@@ -18,19 +18,73 @@
 			-webkit-column-count:2;
 			-moz-column-count:2;
 			column-count:2;
-			-webkit-column-gap:.5rem;
-			-moz-column-gap:.5rem;
-			column-gap:.5rem;
+			-webkit-column-gap: 1rem;
+			-moz-column-gap: 1rem;
+			column-gap: 1rem;
 		}
 
 		.tarjeta {
 			display:inline-block;
 			width:100%
 		}
+		
+		.tarjeta__contenedor {	
+			grid-template-columns: 90% 10%;
+			grid-template-rows: auto auto auto auto auto auto;
+		}
+		
+		.fechaEvento {
+			grid-column: 1/2;
+			grid-row: 1;
+			margin-left: .5rem;
+		} 
 
-		.fechaEvento, .punto, .horaEvento, .sedeEvento, .organizadorEvento {
-			display: none;
-			font-size: 50%;
+		.iconoTipo--tarjeta {
+			grid-column: 2/3;
+			grid-row: 1;
+			justify-content: flex-end;
+			margin-right: .5rem;
+		}
+
+		.imagenEvento {
+			grid-column: 1/3;
+			grid-row: 2;
+		}
+
+		.nombreEvento {
+			grid-column: 1/3;
+			grid-row: 3;
+			margin: 0 .5rem;
+		}
+
+		.descripcionEvento{
+			grid-column: 1/3;
+			grid-row: 4;
+			margin: 0 .5rem;
+		}
+
+		.sedeEvento {
+			grid-column: 1/3;
+			grid-row: 5;
+			margin: 0 .5rem;
+		}
+
+		.organizadorEvento {
+			grid-column: 1/2;
+			grid-row: 6;
+			margin-left: .5rem;
+		}
+
+		.iconoRedes--tarjeta {
+			grid-column: 2/3;
+			grid-row: 6;
+			/*justify-content: flex-end;*/
+			margin-right: .5rem;
+		}
+		
+		.plecaEvento {
+			grid-column: 1/3;
+			grid-row: 6;
 		}
 		
 	/* Menu Navegación */
@@ -45,7 +99,7 @@
 	      background-color: var(--blanco);
 	      color: var(--oxford);
 	      z-index: 9; 
-	      border-bottom: 1px solid var(--ahuesado);
+	      border-bottom: 1px solid var(--claro);
 	      top: 0;
 	      line-height: 1;
 	    }
@@ -65,43 +119,26 @@
 	/* Menu Navegación Extendida */
 		.menuNavegacion__Extendida {
 			position: fixed;
-			right: 0;
-			top: 2rem;
+			top: -16rem;
+			padding: 20px;
 			width: 100%;
 			height: auto;
-			padding: .5rem 1rem;
 			display: flex;
-			flex-flow: column;
+			flex-flow: row;
 			justify-content: space-between;
 			align-items: flex-start;
 			background-color: var(--anaranjado);
 			color: var(--blanco); 
+			box-shadow: -3px 0 10px rgba(0,0,0,0.2);
 			text-align: center;
-			z-index: 9;
-			opacity: 0;
-			visibility: hidden;
-			transition: opacity 1s, visibility 1s;
+			z-index: 8;
+			transition: top 1.5s;
 		}
 
-		.extendida--activa {
-			opacity: 1;
-			visibility: visible;
-			transition: opacity 1s, visibility 1s;
+		.nav--activo {
+			top: 2rem;
+			transition: top 1s;
 		}
-		
-		.menuNavegacionExtendida__home {
-			display: none;
-		}
-
-		.menuNavegacionExtendida--ul {
-	      list-style: none;
-	      display: initial;
-	      padding: 0;
-	    }
-		
-	    .menuNavegacionExtendida--ul li {
-	      margin: 1rem 0;
-	    }
 	
 	/*BotonMenu*/
 	    .botonMenu {
@@ -135,7 +172,7 @@
 	      -webkit-transform: translateY(-10px) translateX(0) rotate(-45deg);
 	              transform: translateY(-10px) translateX(0) rotate(-45deg);
 	      background: var(--anaranjado);
-	      top: 24px;
+	      top: 22px;
 	    }
 
 	    .botonMenu span {
@@ -144,7 +181,7 @@
 	      height: 3px;
 	      width: 100%;
 	      position: absolute;
-	      top: 4px;
+	      top: 2px;
 	      left: 0;
 	      -webkit-transition: all .35s ease;
 	      transition: all .35s ease;
@@ -152,243 +189,16 @@
 	    }
 
 	    .botonMenu span:nth-of-type(2) {
-	    top: 12px;
+	    top: 10px;
 	    }
 
 	    .botonMenu span:nth-of-type(3) {
-	    top: 20px;
+	    top: 18px;
 	    }
 
-	    /*.menuOverlay {
-	      position: fixed;
-	      background-color: var(--anaranjado);
-	      left: 0;
-	      width: 100%;
-	      opacity: 1;
-	      visibility: hidden;
-	      -webkit-transition: opacity .35s, visibility .35s, width .35s;
-	      transition: opacity .35s, visibility .35s, width .35s;
-	      z-index: 8;
-	      overflow: auto;
-	      top: 2rem;
-	    }*/
-
-
-		/*Back*/
+	/*Back*/
 	    .back {
 			display: none;
-		}
-
-/*////---- M O D A L ----\\\\*/
-	.contenedor__modal{
-	display: grid;
-	grid-template-columns: 2rem auto 2rem;
-	grid-template-rows: 2rem 1fr 1fr 2rem;
-	}
-
-	.imagenEvento__modal {
-		grid-row:2 / 3;
-		grid-column: 2 / 3;
-		margin: 0;
-	}
-
-	.informacionEvento__modal{
-		grid-row: 3 / 4;
-		grid-column: 2 / 3;	
-		margin: 0;
-	}
-
-/*////---- S U B E - T U  - E V E N T O  ----\\\\*/
-
-	.formas__mediosDeComunicacion{
-		display: grid;
-		grid-template-columns: auto auto;
-		grid-template-rows: auto auto auto;
-	}
-
-	.correoWeb{
-		grid-column: 1;
-		grid-row: 1;
-	}
-
-	.facebook{
-		grid-column: 1;
-		grid-row: 2;
-	}
-
-	.formulario{
-		grid-column: 1;
-		grid-row: 3;
-	}
-	
-	.medioDeComunicacion{
-		display: grid;
-		grid-template-columns: auto auto auto auto;
-		grid-template-rows: auto auto auto auto;
-	}
-
-		.imagen__medio{
-			grid-column: 1/2;
-			grid-row: 1/4;
-			/*background: antiquewhite;*/
-			display: flex;
-			flex-flow: column;
-			justify-content: center;
-			align-items: center;
-		}
-		
-		.nombre__medio {
-			grid-column: 2/4;
-			grid-row: 1/2;
-			/*background: blue;*/
-		}
-
-		.descripcion__medio{
-			grid-column: 2/4;
-			grid-row: 2/3;
-			/*background: red;*/
-		}
-
-		.boton__medio{
-			grid-column: 2/4;
-			grid-row: 3/4;
-			/*background: orange;*/
-		}
-
-	.formas, .sube, .tiempos {
-		width: 100%;
-		/*height: 80%;*/
-	}
-
-	/*///////// INICIO /////////*/
-	/*///////// SUBE /////////*/
-	/*///////// FORMAS /////////*/
-		.medioDeComunicacion {
-			text-align: left;
-		}
-	/*///////// TIEMPOS /////////*/
-
-/*////---- L A N D I N G - P A G E  ----\\\\*/
-
-	.flexBox__Column {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			flex-flow: column;
-			padding: 2rem 1rem;
-	}
-
-	.flexBox__Row {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			flex-flow: column;
-			padding: 2rem 1rem;
-	}
-	
-	.inicio, .agora, .alfa, .descubre, 
-	.explora, .comunica, .crea, .boletos, 
-	.gotoAgora, .equipo, .pie {
-		width: 100%;
-	}
-	
-	/*.descubre, .explora, .comunica, .crea, .boletos {
-		height: 80%;
-	}*/
-
-
-	.moduloIzq {
-		width: 100%;
-		text-align: center;	
-	}
-
-	.moduloDer{
-		width: 100%;
-		text-align: center;
-	}	
-
-	/* Inicio*/
-		.inicio {
-			height: 100%;
-			margin-top: 2rem;
-			text-align: center;
-		}
-		
-		.inicio_imagen {
-			display: none;
-		}
-
-		.inicio__informacion {	
-			align-items: center;
-			padding: 0;
-		}
-
-		.inicio--titulo {
-			font-size: 2rem;
-			font-weight: 400;
-			line-height: 1.1;
-		}
-
-		.inicio--texto {
-			font-size: 80%;
-			margin-top: 1rem;
-			font-weight: 300;
-		}
-	
-	/* ágora */
-		.agora--imagen {
-			margin: .5rem;
-			width: 90%;
-		}
-		
-		.agora--texto {
-			margin: .5rem;
-			font-size: 1rem;
-			font-weight: 400;
-			line-height: 1.1;
-		}
-
-	/* Equipo */
-	.equipo__tarjetas {
-		display: flex;
-		flex-flow: column;
-		justify-content: flex-start;
-		align-items: center;
-	}
-
-	.equipo__perfil {
-		/*justify-content: space-between;*/
-	}
-
-	.equipo__imagen {
-	}
-
-	.descripcion__integrante {
-		font-size: 80%;
-	}
-	
-	/* Pie */
-		.pie {
-			display: flex;
-			flex-flow: column;
-			justify-content: center;
-			align-items: center;
-			padding: .5rem;
-		}
-
-		.pie__dReservados{
-			width: 80%;
-			text-align: center;
-			display: none;
-		}
-
-		.pie__logo{
-			width: 80%;
-		}
-
-		.pie__redesSociales{
-			width: 80%;
-			text-align: center;
 		}
 
 /*sm*/
@@ -396,13 +206,13 @@
 
 /*////---- P L A T A F O R M A ----\\\\*/
 
-	.columnaTarjetas {
+		.columnaTarjetas {
 			-webkit-column-count:3;
 			-moz-column-count:3;
 			column-count:3;
-			-webkit-column-gap:.5rem;
-			-moz-column-gap:.5rem;
-			column-gap:.5rem;
+			-webkit-column-gap: 1rem;
+			-moz-column-gap: 1rem;
+			column-gap: 1rem;
 		}
 
 		.tarjeta {
@@ -410,56 +220,7 @@
 			width:100%
 		}
 
-/*////---- L A N D I N G - P A G E  ----\\\\*/
-	.flexBox__Column {
-			padding: 2rem;
-	}
-
-	.flexBox__Row {
-			padding: 2rem;
-	}
-
-
-	/**Inicio*/
-	.inicio__informacion {	
-		padding: 0 1rem;
-		text-align: center;
-	}
-
-	/*ágora*/
-	.agora--imagen {
-		margin: 2rem;
-		width: 80%;
-	}
-	
-	.agora--texto {
-		margin: 1rem;
-		font-size: 1.5rem;
-	}
-
-	/* Pie */
-
-	.pie {
-		flex-flow: row;
-		justify-content: center;
-		align-items: center;
-		padding: 1rem;	
-	}
-
-	.pie__dReservados{
-		width: 20%;
-		text-align: left;
-		display: initial;
-	}
-
-	.pie__logo{
-		width: 50%;
-	}
-
-	.pie__redesSociales{
-		width: 30%;
-		text-align: right;
-	}
+		
 }
 
 /*md*//*Cambio pPosición del Menú*/
@@ -480,17 +241,19 @@
 			-webkit-column-count:4;
 			-moz-column-count:4;
 			column-count:4;
-			-webkit-column-gap:.5rem;
-			-moz-column-gap:.5rem;
-			column-gap:.5rem;
+			-webkit-column-gap: 1rem;
+			-moz-column-gap: 1rem;
+			column-gap: 1rem;
 		}
 
 		.tarjeta {
 			display:inline-block;
 			width:100%
 		}
-
-		.fechaEvento, .punto, .horaEvento{
+		
+		.fechaEvento, 
+		.punto, 
+		.horaEvento {
 			display: inline-block;
 			font-size: 70%
 		}
@@ -508,23 +271,16 @@
 
 	/* Menú Navegación */
 		.menuNavegacion {
-			display: flex;
-			position: fixed;
-			right: 0;
 			width: 3rem;
 			height: 100vh;
 			padding: 1rem 0;
 			flex-flow: column;
-			justify-content: space-between;
-			align-items: center;
-			background-color: var(--blanco);
-			color: var(--profundo); 
 			text-align: center;
 			border-left: 1px var(--claro) solid;
-			top: 0;
-			z-index: 9;
+			right: 0;
 		}
 		
+
 		.menuNavegacion__home {
 			display: initial;
 		}
@@ -548,30 +304,30 @@
 	      width: 2rem;
 	    }
 
-		.icono--menu:focus, .icono--menu:hover {
+		.icono--menu:focus, 
+		.icono--menu:hover {
 	      color: var(--anaranjado);
 	    }
 
-	/* Menú Navegación Extendida */
+	/* Menu Navegación Extendida */
 		.menuNavegacion__Extendida {
-			display: flex;
-			position: fixed;
-			right: 3rem;
+			top: 0;
 			width: 16rem;
-			height: 100vh;
-			padding: 1rem 3rem;
+			height: 100vh;		
+			right: -16rem;
 			flex-flow: column;
 			justify-content: space-between;
-			align-items: center;
-			text-align: center;
-			border-left: 1px var(--claro) solid;
-			top: 0;
-			z-index: 9;
+			align-items: flex-start;
+			box-shadow: -3px 0 10px rgba(0,0,0,0.2);
+			transition: right 1.5s;
 		}
 
-		.menuNavegacionExtendida__home {
-			display: initial;
+		.nav--activo {
+			right: 3rem;
+			transition: right 1s;
+			top: 0;
 		}
+		
 
 	/*Back*/
 		.icono--back  {
@@ -591,147 +347,8 @@
 			position: fixed;
 			bottom: .5rem; 
 			right: 3.75rem;
-			z-index: 8;
+			z-index: 7;
 			text-align: center;
-		}
-
-/*////---- M O D A L ----\\\\*/
-	.contenedor__modal{
-		grid-template-columns: 2rem 1fr 1fr 2rem;
-		grid-template-rows: 2rem auto 2rem;
-	}
-
-	.imagenEvento__modal {
-		grid-row: 2 / 3;
-		grid-column: 2 / 3;
-
-	}
-
-	.informacionEvento__modal {
-		grid-row: 2 / 3;
-		grid-column: 3 / 4;
-	}	
-	
-/*////---- S U B E - T U  - E V E N T O  ----\\\\*/
-	
-	.formas__mediosDeComunicacion{
-		display: grid;
-		grid-template-columns: auto auto auto auto;
-		grid-template-rows: auto auto;
-	}
-
-
-	.correoWeb{
-		grid-row: 1/2;
-		grid-column: 1/2;
-	}
-
-
-	.facebook{
-		grid-row: 1/2;
-		grid-column: 2/3;
-	}
-
-	.formulario{
-		grid-row: 1/2;
-		grid-column: 3/4;
-	}
-
-	.medioDeComunicacion{
-		display: grid;
-		grid-template-columns: auto auto;
-		grid-template-rows: auto auto auto auto auto;
-	}
-
-		.imagen__medio{
-			grid-column: 1/2;
-			grid-row: 1/2;
-			/*background: antiquewhite;*/
-			display: flex;
-		}
-		
-		.nombre__medio {
-			grid-column: 1/2;
-			grid-row: 2/3;
-			/*background: blue;*/
-		}
-
-		.descripcion__medio {
-			grid-column: 1/2;
-			grid-row: 3/4;
-			/*background: red;*/
-		}
-
-		.boton__medio{
-			grid-column: 1/2;
-			grid-row: 4/5;
-			/*background: orange;*/
-		}
-
-	.formas, .sube, .tiempos {
-		height: 80vh;
-	}
-	/*///////// INICIO /////////*/
-	/*///////// SUBE /////////*/
-	/*///////// FORMAS /////////*/
-		.medioDeComunicacion {
-			text-align: center;
-		}
-	/*///////// TIEMPOS /////////*/
-
-/*////---- L A N D I N G - P A G E  ----\\\\*/
-	.inicio, .agora, .alfa, .descubre, 
-	.explora, .comunica, .crea, .boletos, 
-	.gotoAgora, .equipo, .pie {
-		width: calc(100% - 3rem);
-	}
-	
-	.descubre, .explora, .comunica, .crea, .boletos {
-		height: 80vh;
-	}
-	
-	/*Inicio*/
-		.inicio {
-			width: 100%;
-		}
-
-		.inicio__informacion {	
-			padding: 0 3rem;
-		}
-
-	/* ágora */
-		.agora--imagen {
-			margin: 2rem;
-			width: 75%;
-		}
-		
-		.agora--texto {
-			margin: 1rem;
-			font-size: 2.5rem;
-			font-weight: 400;
-			line-height: 1.1;
-		}
-
-	/* Pie */
-		.pie {
-			flex-flow: row;
-			justify-content: center;
-			align-items: center;
-			padding: .5rem;	
-		}
-
-		.pie__dReservados{
-			width: 20%;
-			text-align: left;
-		}
-
-		.pie__logo{
-			width: 50%;
-		}
-
-		.pie__redesSociales{
-			width: 30%;
-			text-align: right;
 		}
 }
 
@@ -743,9 +360,9 @@
 			-webkit-column-count:4;
 			-moz-column-count:4;
 			column-count:4;
-			-webkit-column-gap:.5rem;
-			-moz-column-gap:.5rem;
-			column-gap:.5rem;
+			-webkit-column-gap: 1rem;
+			-moz-column-gap: 1rem;
+			column-gap: 1rem;
 		}
 		
 		.tarjeta {
@@ -757,74 +374,6 @@
 			display: flex;
 			font-size: 80%;
 		}
-
-/*////---- L A N D I N G - P A G E  ----\\\\*/
-	.flexBox__Column {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			flex-flow: column;
-			padding: 2rem 4rem;
-	}
-
-	.flexBox__Row {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			flex-flow: row;
-			padding: 2rem 4rem;
-	}
-	
-	.flexBox {
-		flex-flow: row;
-	}
-
-	.moduloIzq {
-		width: 50%;
-		text-align: right;	
-	}
-
-	.moduloDer{
-		width: 50%;
-		text-align: left;
-	}
-
-	/* Inicio*/
-		.inicio {
-			height: 100vh;
-			margin: 0;
-		}
-
-		.inicio__imagen {
-			display: inline;
-		}
-
-		.inicio__informacion {	
-			align-items: flex-start;
-				
-		}
-		
-		.inicio--titulo {
-			font-size: 3.5rem;
-			font-weight: 400;
-			line-height: 1.1;
-		}
-
-		.inicio--texto {
-			margin: .5rem 0;
-			font-size: 1rem;
-		}
-
-	/* Equipo */
-		.equipo__tarjetas {
-			flex-flow: row;
-			justify-content: center;
-			align-items: flex-start;
-		}
-
-		.equipo__perfil {
-			
-		}
 }
 
 /*xl*/
@@ -835,17 +384,14 @@
 			-webkit-column-count:5;
 			-moz-column-count:5;
 			column-count:5;
-			-webkit-column-gap: .25rem;
-			-moz-column-gap: .25rem;
-			column-gap: .25rem;
+			-webkit-column-gap: 1rem;
+			-moz-column-gap: 1rem;
+			column-gap: 1rem;
 		}
 		
 		.tarjeta {
 			display:inline-block;
 			width:100%
 		}
-
-/*////---- L A N D I N G - P A G E  ----\\\\*/
-	
 	
 }

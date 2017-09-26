@@ -1,80 +1,109 @@
 * {
 	/*border: 1px orange dashed;*/
+	--artistico: rgba(0, 0, 0, 1);
+	--deportivo: rgba(0, 0, 0, 1);
+	--comercial: rgba(0, 0, 0, 1);
+	--cultural: rgba(0, 196, 197, 1);
+}
+
+.artistico {
+	color: var(--artistico);
+}
+
+.deportivo {
+	color: var(--deportivo);
+}
+
+.comercial {
+	color: var(--comercial);
+}
+
+.cultural {
+	color: var(--cultural);
 }
 
 /*////////////////  MENU  ////////////////*/
 
 /*////////////////   TARJETAS  ////////////////*/
-
-	.tarjeta__contenedor {
-		position: relative;
-		display: flex;
-		flex-flow: column;
-		background-color: #fff;
-		border-radius: 0.25rem;
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		margin: .5rem 0;
-		padding: .5rem;
+	.fechaColumnaTarjetas {
+		border-bottom: 1px var(--ahuesadoTransparente) solid;
+		width: 100%;	
+		font-weight: 600;
+		color: ;
 	}
 
-	.tarjeta__contenedor:hover{
+	.tarjeta {
+		margin: .25rem 0;	
+			
+	}
+
+	.tarjeta:hover {
 		animation: fondoTarjetaContenedor 0.25s linear forwards;
 	}
 
-	.tarjeta__imagen{
+	.tarjeta__contenedor {	
+		position: relative;
+		display: grid;
+		margin: 1rem 0;
 	}
-
-
-	.imagen__evento{
-	}
-
-	.tarjeta_informacion{}
-
-	.tipoEvento{
-		font-size: 60%;
-		color: var(--tenue);
-		text-align: right;
-		margin: .5rem 0 0 0;
-	}
-
-	.tituloEvento{
-		font-weight: 500;
-	    color: var(--oxford);
-	    font-size: 80%;
-	    line-height: 1;
-	}
-
-	.fechaEvento, .horaEvento, .sedeEvento{
+	
+	
+	.fechaEvento, 
+	.horaEvento {
 		font-weight: 300;
-		line-height: 1;
+		font-size: 80%;
 	}
 
-	.sedeEvento{
-		margin-bottom: .5rem;
+	.iconoTipo--tarjeta {
+		font-size: 80%;
+	}
+	
+	.imagenEvento {
+		border-radius: 4px;
 	}
 
-	.organizadorEvento{
+	.nombreEvento {
+		font-weight: 800;
+	    color: var(--oxford);
+	}
+	
+	.descripcionEvento {
+		font-weight: 300;
+		font-size: 80%;
+	}
+
+	.sedeEvento {
+		font-weight: 300;
+		font-size: 80%;
+	}
+
+	.organizadorEvento {
+		font-size: 80%;
+		width: 80%;
+	}
+
+	.iconoRedes--tarjeta {
+		font-size: 80%
+	}
+
+	.plecaEvento {
+		border-top: 1px var(--tenueTransparente) solid;	
+	}
+
+	.fechaEvento, 
+	.iconoTipo--tarjeta,
+	.imagenEvento,
+	.nombreEvento,
+	.descripcionEvento,
+	.sedeEvento,
+	.organizadorEvento,
+	.iconoRedes--tarjeta {
 		display: flex;
+		flex-flow: column;
 		justify-content: center;
-		align-items: center;
-		border-top: 1px solid var(--marfil);
-	    padding: .5rem 0;
-	    margin-top: .5rem;
-	}
-
-	.organizadorEvento__imgPerfil{
-		border-radius: 40%;
-		width: 1.5rem;
-		height: 1.5rem;
-		overflow: hidden;
-	}
-
-	.organizadorEvento__nombre{
-		width: 90%;
-		padding-left: 1rem;
-		color: var(--gris);
+		align-content: center;
 		line-height: 1;
+		padding: .25rem 0;
 	}
 
 /*//////////////// AGREGAR EVENTO ////////////////*/
@@ -140,9 +169,5 @@
 			 }
 			
 		}
-
-
-
-
 
 
