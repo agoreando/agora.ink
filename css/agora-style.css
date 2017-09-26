@@ -24,32 +24,29 @@
 
 /*////////////////  MENU  ////////////////*/
 
-
-
-	
-
 /*////////////////   TARJETAS  ////////////////*/
-
-	.tarjeta__contenedor {
-		position: relative;
-		/*display: flex;
-		flex-flow: column;
-		background-color: #fff;
-		border-radius: 0.25rem;
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		margin: .5rem 0;
-		padding: .5rem;*/
-	}
-	
-	.tarjeta__contenedor {
-		display: grid;		
+	.fechaColumnaTarjetas {
+		border-bottom: 1px var(--ahuesadoTransparente) solid;
+		width: 100%;	
+		font-weight: 600;
+		color: ;
 	}
 
+	.tarjeta {
+		margin: .25rem 0;	
+			
+	}
 
-	.tarjeta__contenedor:hover {
+	.tarjeta:hover {
 		animation: fondoTarjetaContenedor 0.25s linear forwards;
 	}
+
+	.tarjeta__contenedor {	
+		position: relative;
+		display: grid;
+		margin: 1rem 0;
+	}
+	
 	
 	.fechaEvento, 
 	.horaEvento {
@@ -61,7 +58,9 @@
 		font-size: 80%;
 	}
 	
-	.imagenEvento {}
+	.imagenEvento {
+		border-radius: 4px;
+	}
 
 	.nombreEvento {
 		font-weight: 800;
@@ -85,6 +84,10 @@
 
 	.iconoRedes--tarjeta {
 		font-size: 80%
+	}
+
+	.plecaEvento {
+		border-top: 1px var(--tenueTransparente) solid;	
 	}
 
 	.fechaEvento, 
