@@ -8,7 +8,7 @@
 			width: 100%;
 		    height: 100%;
 		    position: relative;
-		    margin-top: 3rem;
+		    margin-top: 4rem;
 		    left: 0;
 		    bottom: 0;
 		    padding: 0 1rem;
@@ -92,7 +92,7 @@
 		  display: flex;
 	      position: fixed;
 	      width: 100%;
-	      height: 2rem;
+	      height: 3rem;
 	      padding: 0 1rem;
 	      justify-content: space-between;
 	      align-items: center;
@@ -112,7 +112,10 @@
 		  display: initial;
 		}
 
-	    .menuNavegacion--ul {
+	    .item__buscar,
+		.item__filtrar, 
+		.item__historial, 
+		.item__crear  {
 	      display: none;
 	    }
 
@@ -124,7 +127,7 @@
 			width: 100%;
 			height: auto;
 			display: flex;
-			flex-flow: row;
+			flex-flow: column;
 			justify-content: space-between;
 			align-items: flex-start;
 			background-color: var(--anaranjado);
@@ -139,7 +142,11 @@
 			top: 2rem;
 			transition: top 1s;
 		}
-	
+		
+		.iconNavExtendida {
+			visibility: visible;
+		}
+
 	/*BotonMenu*/
 	    .botonMenu {
 	      position: relative;
@@ -154,7 +161,8 @@
 	      background: transparent;
 	    }
 
-	    .botonMenu:hover .botonMenu > span {
+	    .botonMenu:hover 
+	    .botonMenu > span {
 	      background:  var(--anaranjado);
 	    }
 
@@ -189,11 +197,11 @@
 	    }
 
 	    .botonMenu span:nth-of-type(2) {
-	    top: 10px;
+	    	top: 10px;
 	    }
 
 	    .botonMenu span:nth-of-type(3) {
-	    top: 18px;
+	    	top: 18px;
 	    }
 
 	/*Back*/
@@ -297,30 +305,83 @@
 			width: 3rem;
 			height: 100vh;
 			padding: 1rem 0;
-			flex-flow: column;
 			text-align: center;
 			border-left: 1px var(--claro) solid;
 			right: 0;
+			display: grid;
+			grid-template-columns: 100%;
+			grid-template-rows: 30% 10% 10% 10% 10% 30%;
 		}
 		
 
 		.menuNavegacion__home {
-			display: initial;
+			grid-column: 1/2;
+			grid-row: 1;
+			display: flex;
+			flex-flow: column;
+			justify-content: flex-start;
+			align-items: center;
+			width: 100%;
+			height: 100%;
 		}
 		
+		
+		.item__buscar {
+			grid-column: 1/2;
+			grid-row: 2;
+			visibility: hidden;
+		}
+
+		.item__filtrar {
+			grid-column: 1/2;
+			grid-row: 3;
+			visibility: hidden;
+		}
+
+		.item__historial  {
+			grid-column: 1/2;
+			grid-row: 4;
+			visibility: hidden;
+		}
+
+		.item__crear  {
+			grid-column: 1/2;
+			grid-row: 5;
+			visibility: hidden;
+		}
+		
+		.item__oculto {
+			visibility: visible;
+			transition: 2.5s;
+		}
+
+		.item__buscar,
+		.item__filtrar, 
+		.item__historial, 
+		.item__crear  {
+			display: flex;
+			flex-flow: column;
+			justify-content: center;
+			align-content: center;
+			width: 100%;
+			height: 100%;
+			color: var(--profundo);
+		}
+
 		.menuNavegacion--logo {
 			display: none;
 		}
-
-		.menuNavegacion--ul {
+		
+		/*.menuNavegacion--ul {
 	      list-style: none;
 	      display: initial;
 	      padding: 0;
+
 	    }
 
 	    .menuNavegacion--ul li {
 	      margin: 1rem 0;
-	    }
+	    }*/
 		
 	    .icono--menu  {
 	      color: var(--profundo);
@@ -332,17 +393,29 @@
 	      color: var(--anaranjado);
 	    }
 
+	    .menuNavegacion__botonMenu {
+	    	grid-column: 1/2;
+			grid-row: 6;
+			display: flex;
+			flex-flow: column;
+			justify-content: flex-end;
+			align-items: center;
+			width: 100%;
+			height: 100%;
+	    }
+
 	/* Menu Navegación Extendida */
 		.menuNavegacion__Extendida {
 			top: 0;
 			width: 16rem;
 			height: 100vh;		
 			right: -16rem;
-			flex-flow: column;
-			justify-content: space-between;
-			align-items: flex-start;
 			box-shadow: -3px 0 10px rgba(0,0,0,0.2);
 			transition: right 1.5s;
+			display: grid;
+			grid-template-columns: 100%;
+			grid-template-rows: 30% 10% 10% 10% 10% 30%;
+			padding: 1rem 0;
 		}
 
 		.nav--activo {
@@ -350,7 +423,60 @@
 			transition: right 1s;
 			top: 0;
 		}
+		
+		.menuNavExtendida__logo {
+			grid-column: 1/2;
+			grid-row: 1;
+		}
+		
+		.itemNavExtendida__buscar {
+			grid-column: 1/2;
+			grid-row: 2;			
+		}
 
+		.itemNavExtendida__filtrar {
+			grid-column: 1/2;
+			grid-row: 3;
+		}
+
+		.itemNavExtendida__historial {
+			grid-column: 1/2;
+			grid-row: 4;
+		}
+
+		.itemNavExtendida__crear {
+			grid-column: 1/2;
+			grid-row: 5;
+		}
+
+		.itemNavExtendida__buscar, 
+		.itemNavExtendida__filtrar, 
+		.itemNavExtendida__historial, 
+		.itemNavExtendida__crear {
+			display: flex;
+			flex-flow: column;
+			justify-content: center;
+			align-content: center;
+			width: 100%;
+			height: 100%;
+		}
+
+		.iconNavExtendida {
+			visibility: hidden;
+		}
+
+		.menuNavExtendida--faseBeta {
+			grid-column: 1/2;
+			grid-row: 6;
+			display: flex;
+			flex-flow: column;
+			justify-content: flex-end;
+			align-items: center;
+			width: 100%;
+			height: 100%;
+		}
+
+	/*Back*/
 		.back{
 			right: 3.75rem;
 		}

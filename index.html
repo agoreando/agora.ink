@@ -47,17 +47,17 @@
   <!--Barra de Navegación-->
   <nav class="menuNavegacion">
     <div class="menuNavegacion__home"><a href="index.html"><i class="icon-info icono--menu"></i></a></div>
-    <div class="menuNavegacion__items">
-      <p class="menuNavegacion--logo">ágora</p>
-      <ul class="menuNavegacion--ul"></ul>
-    </div>
+    <p class="menuNavegacion--logo">ágora</p><i class="item__buscar icon-info"></i><i class="item__filtrar icon-info"></i><i class="item__historial icon-info"></i><i class="item__crear icon-info"></i>
     <div class="menuNavegacion__botonMenu"><a href="#nav" aria-label="Open Navigation">
         <div class="botonMenu" id="botonMenu"> <span class="top"></span><span class="middle"></span><span class="bottom"></span></div></a></div>
   </nav>
   <div class="menuNavegacion__Extendida" id="nav">
-    <ul>
-      <li><a href="">trxto</a></li>
-    </ul>
+    <div class="menuNavExtendida__logo">ágora</div>
+    <div class="itemNavExtendida__buscar"> <i class="iconNavExtendida icon-info"></i><a href="">Buscar</a></div>
+    <div class="itemNavExtendida__filtrar"> <i class="iconNavExtendida icon-info"></i><a href="">Filtrar</a></div>
+    <div class="itemNavExtendida__historial"> <i class="iconNavExtendida icon-info"></i><a href="">Historial</a></div>
+    <div class="itemNavExtendida__crear"> <i class="iconNavExtendida icon-info"></i><a href="">Crear</a></div>
+    <div class="menuNavExtendida--faseBeta">Fase Beta</div>
   </div>
   <!--Back--><a class="back flexRow" href="#inicio"><i class="icon-back icono--menu"></i></a>
   <!--Contenedor Tarjetas-->
@@ -172,6 +172,7 @@
           <div class="iconoTipo--tarjeta" title="Teatro"></div>
           <p class="nombreEvento">Muestra Estatal de Teatro Indígena	</p>
           <p class="sedeEvento">Sala Dagoberto Guillaumin, Teatro del Estado</p>
+          <div class="iconoRedes--tarjeta"><i class="icon-facebook"></i></div>
         </div>
       </div>
       <div class="tarjeta">
@@ -180,6 +181,7 @@
           <div class="iconoTipo--tarjeta" title="Teatro"></div>
           <p class="nombreEvento">Muestra Estatal de Teatro Indígena	</p>
           <p class="sedeEvento">Sala Dagoberto Guillaumin, Teatro del Estado</p>
+          <div class="iconoRedes--tarjeta"><i class="icon-facebook"></i></div>
         </div>
       </div>
       <div class="tarjeta">
@@ -188,6 +190,7 @@
           <div class="iconoTipo--tarjeta" title="Teatro"></div>
           <p class="nombreEvento">Muestra Estatal de Teatro Indígena	</p>
           <p class="sedeEvento">Sala Dagoberto Guillaumin, Teatro del Estado</p>
+          <div class="iconoRedes--tarjeta"><i class="icon-facebook"></i></div>
         </div>
       </div>
       <div class="tarjeta">
@@ -196,6 +199,7 @@
           <div class="iconoTipo--tarjeta" title="Teatro"></div>
           <p class="nombreEvento">Muestra Estatal de Teatro Indígena	</p>
           <p class="sedeEvento">Sala Dagoberto Guillaumin, Teatro del Estado</p>
+          <div class="iconoRedes--tarjeta"><i class="icon-facebook"></i></div>
         </div>
       </div>
       <div class="tarjeta">
@@ -204,6 +208,7 @@
           <div class="iconoTipo--tarjeta" title="Teatro"></div>
           <p class="nombreEvento">Muestra Estatal de Teatro Indígena	</p>
           <p class="sedeEvento">Sala Dagoberto Guillaumin, Teatro del Estado</p>
+          <div class="iconoRedes--tarjeta"><i class="icon-facebook"></i></div>
         </div>
       </div>
       <div class="tarjeta">
@@ -212,6 +217,7 @@
           <div class="iconoTipo--tarjeta" title="Convocatoria"></div>
           <p class="nombreEvento">LUNETA	</p>
           <p class="sedeEvento">Ágora de la Ciudad</p>
+          <div class="iconoRedes--tarjeta"><i class="icon-facebook"></i></div>
         </div>
       </div>
     </div>
@@ -222,6 +228,7 @@
     $('#botonMenu').click(function(){
     	$(this).toggleClass('active');
     	$('#nav').toggleClass('nav--activo');
+    	$('.item__buscar, .item__filtrar, .item__historial, .item__crear').toggleClass('item__oculto');
     });
     
     $('#banner__enviaTuEvento').click(function(){

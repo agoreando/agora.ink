@@ -59,9 +59,11 @@ body#inicio
 		div.menuNavegacion__home
 			a(href="index.html"): i.icon-info.icono--menu
 
-		div.menuNavegacion__items
-			p.menuNavegacion--logo ágora
-			ul.menuNavegacion--ul
+		p.menuNavegacion--logo ágora
+		i.item__buscar.icon-info
+		i.item__filtrar.icon-info
+		i.item__historial.icon-info
+		i.item__crear.icon-info
 
 		div.menuNavegacion__botonMenu
 			a(href="#nav" aria-label="Open Navigation")
@@ -71,8 +73,27 @@ body#inicio
 					span.bottom
 
 	div#nav.menuNavegacion__Extendida
-		ul
-			li: a(href="") trxto
+		
+		div.menuNavExtendida__logo ágora
+
+		div.itemNavExtendida__buscar 
+			i.iconNavExtendida.icon-info
+			a(href="") Buscar
+
+		div.itemNavExtendida__filtrar 
+			i.iconNavExtendida.icon-info
+			a(href="") Filtrar
+
+		div.itemNavExtendida__historial 
+			i.iconNavExtendida.icon-info
+			a(href="") Historial
+
+		div.itemNavExtendida__crear 
+			i.iconNavExtendida.icon-info
+			a(href="") Crear
+
+
+		div.menuNavExtendida--faseBeta Fase Beta
 
 		
 	//Back
@@ -184,36 +205,48 @@ body#inicio
 					div.iconoTipo--tarjeta(title="Teatro")
 					p.nombreEvento Muestra Estatal de Teatro Indígena	
 					p.sedeEvento Sala Dagoberto Guillaumin, Teatro del Estado
+					div.iconoRedes--tarjeta
+						i.icon-facebook
 			div.tarjeta
 				div.tarjeta__contenedor
 					p.fechaEvento 13 octubre 2016 &middot; 19:30	
 					div.iconoTipo--tarjeta(title="Teatro")
 					p.nombreEvento Muestra Estatal de Teatro Indígena	
 					p.sedeEvento Sala Dagoberto Guillaumin, Teatro del Estado
+					div.iconoRedes--tarjeta
+						i.icon-facebook
 			div.tarjeta
 				div.tarjeta__contenedor
 					p.fechaEvento 14 octubre 2016 &middot; 20:30	
 					div.iconoTipo--tarjeta(title="Teatro")
 					p.nombreEvento Muestra Estatal de Teatro Indígena	
 					p.sedeEvento Sala Dagoberto Guillaumin, Teatro del Estado
+					div.iconoRedes--tarjeta
+						i.icon-facebook
 			div.tarjeta
 				div.tarjeta__contenedor
 					p.fechaEvento 14 octubre 2016 &middot; 19:30	
 					div.iconoTipo--tarjeta(title="Teatro")
 					p.nombreEvento Muestra Estatal de Teatro Indígena	
 					p.sedeEvento Sala Dagoberto Guillaumin, Teatro del Estado
+					div.iconoRedes--tarjeta
+						i.icon-facebook
 			div.tarjeta
 				div.tarjeta__contenedor
 					p.fechaEvento 14 octubre 2016 &middot; 19:00	
 					div.iconoTipo--tarjeta(title="Teatro")
 					p.nombreEvento Muestra Estatal de Teatro Indígena	
 					p.sedeEvento Sala Dagoberto Guillaumin, Teatro del Estado
+					div.iconoRedes--tarjeta
+						i.icon-facebook
 			div.tarjeta
 				div.tarjeta__contenedor
 					p.fechaEvento 26 septiembre 2016		
 					div.iconoTipo--tarjeta(title="Convocatoria")
 					p.nombreEvento LUNETA	
 					p.sedeEvento Ágora de la Ciudad
+					div.iconoRedes--tarjeta
+						i.icon-facebook
 		
 		
 
@@ -226,6 +259,7 @@ body#inicio
 		$('#botonMenu').click(function(){
 			$(this).toggleClass('active');
 			$('#nav').toggleClass('nav--activo');
+			$('.item__buscar, .item__filtrar, .item__historial, .item__crear').toggleClass('item__oculto');
 		});
 
 		$('#banner__enviaTuEvento').click(function(){
