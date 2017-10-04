@@ -44,6 +44,7 @@
 	.tarjeta__contenedor {	
 		position: relative;
 		display: grid;
+		display: -ms-grid;
 		margin: 1rem 0;
 	}
 	
