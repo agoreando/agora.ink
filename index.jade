@@ -57,13 +57,14 @@ body#inicio
 	//Barra de Navegación
 	nav.menuNavegacion
 		div.menuNavegacion__home
-			a(href="index.html"): i.icon-info.icono--menu
+			a(href="index.html"): i.icon-a-logo.icono--menu
 
-		a.menuNavegacion--logo(href=""): p ágora
-		a.item__buscar(href=""): i.icon-info
-		a.item__filtrar(href=""): i.icon-info
-		a.item__historial(href=""): i.icon-info
-		a.item__crear(href=""): i.icon-info
+		a.menuNavegacion--logo(href="")
+			img.imagen-fluida(src="images/agora_logo_anaranjado.svg")
+		a.item__buscar(href=""): i.icon-info.icono--menu
+		a.item__filtrar(href=""): i.icon-info.icono--menu
+		a.item__historial(href=""): i.icon-info.icono--menu
+		a.item__crear(href=""): i.icon-info.icono--menu
 
 		div.menuNavegacion__botonMenu
 			a(href="#nav" aria-label="Open Navigation")
@@ -74,7 +75,8 @@ body#inicio
 
 	div#nav.menuNavegacion__Extendida
 		
-		div.menuNavExtendida__logo ágora
+		div.menuNavExtendida__logo
+			img.imagen-fluida(src="images/agora_logo.svg")
 
 		a.itemNavExtendida__buscar(href="")
 			i.iconNavExtendida.icon-info
@@ -92,7 +94,8 @@ body#inicio
 			i.iconNavExtendida.icon-info
 			p Crear
 
-
+		div.linea
+			
 		div.menuNavExtendida--faseBeta
 			i.iconNavExtendida.icon-info
 			a(href="") Fase Beta
