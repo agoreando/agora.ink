@@ -34,7 +34,7 @@
 
 	.tarjeta {
 		margin: .25rem 0;	
-			
+		width:100%	
 	}
 
 	.tarjeta:hover {
@@ -43,54 +43,22 @@
 
 	.tarjeta__contenedor {	
 		position: relative;
-		display: grid;
-		display: -ms-grid;
+		display: flex;
+		flex-flow: column;
+		justify-content: center;
+		align-content: center;
 		margin: 1rem 0;
 	}
 	
-	
-	.fechaEvento, 
-	.horaEvento {
-		font-weight: 300;
-		font-size: 80%;
-	}
-
-	.iconoTipo--tarjeta {
-		font-size: 80%;
+	.header__tarjeta,
+	.footer__tarjeta {
+		display: flex;
+		flex-flow: row;
+		justify-content: center;
+		align-content: center;
+		
 	}
 	
-	.imagenEvento {
-		border-radius: 4px;
-	}
-
-	.nombreEvento {
-		font-weight: 800;
-	    color: var(--oxford);
-	}
-	
-	.descripcionEvento {
-		font-weight: 300;
-		font-size: 80%;
-	}
-
-	.sedeEvento {
-		font-weight: 300;
-		font-size: 80%;
-	}
-
-	.organizadorEvento {
-		font-size: 80%;
-		width: 80%;
-	}
-
-	.iconoRedes--tarjeta {
-		font-size: 80%
-	}
-
-	.plecaEvento {
-		border-top: 1px var(--tenueTransparente) solid;	
-	}
-
 	.fechaEvento, 
 	.iconoTipo--tarjeta,
 	.imagenEvento,
@@ -100,11 +68,60 @@
 	.organizadorEvento,
 	.iconoRedes--tarjeta {
 		display: flex;
-		flex-flow: column;
-		justify-content: center;
+		flex-flow: row;
+		justify-content: flex-start;
 		align-content: center;
 		line-height: 1;
 		padding: .25rem 0;
+	}
+	
+	.fechaEvento{
+		margin-left: .5rem;
+		width: 80%;
+		font-weight: 300;
+		font-size: 80%;
+	}
+
+	.iconoTipo--tarjeta {
+		font-size: 80%;
+		margin-right: .5rem;
+		width: 20%;
+		justify-content: flex-end;
+	}
+	
+	.imagenEvento {
+		border-radius: 4px;
+	}
+
+	.nombreEvento {
+		font-weight: 800;
+	    color: var(--oxford);
+	    margin: 0 .5rem;
+	}
+	
+	.descripcionEvento {
+		font-weight: 300;
+		font-size: 80%;
+		margin: 0 .5rem;
+	}
+
+	.sedeEvento {
+		font-weight: 300;
+		font-size: 80%;
+		margin: 0 .5rem;
+	}
+
+	.organizadorEvento {
+		font-size: 80%;
+		width: 80%;
+		margin-left: .5rem;
+	}
+
+	.iconoRedes--tarjeta {
+		font-size: 80%;
+		margin-right: .5rem;
+		width: 20%;
+		justify-content: flex-end;
 	}
 
 /*//////////////// AGREGAR EVENTO ////////////////*/
