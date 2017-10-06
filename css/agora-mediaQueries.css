@@ -124,86 +124,43 @@
 	    }
 
 	    .menuNavegacion__home {
-			display: none;
+	    	display: flex;
+		    flex-flow: row;
+		    justify-content: flex-start;
+		    align-items: center;
+		    width: 50%;
+		    height: 100%;
+		    font-size: 1.5rem;	
 		}
 		
-		.menuNavegacion--logo {
-		  	display: initial;
-		  	width: 10%;
-		}
-
-	    .item__buscar,
+		.item__buscar,
 		.item__filtrar, 
 		.item__historial, 
 		.item__crear  {
 	      display: none;
 	    }
 
-	/* Menu Navegación Extendida */
-		.menuNavegacion__Extendida {
-			position: fixed;
-			top: -40rem;
-			padding: 0px;
-			width: 100%;
-			height: auto;
-			display: flex;
-			flex-flow: column;
-			justify-content: space-between;
-			align-items: flex-start;
-			background-color: var(--blanco);
-			color: var(--blanco); 
-			box-shadow: -3px 0 10px rgba(0,0,0,0.2);
-			text-align: center;
-			z-index: 8;
-			transition: top 1.5s;
-		}
 
-		.nav--activo {
-			top: 3rem;
-			transition: top 1s;
-		}
+	    .icono--menu  {
+	      color: var(--profundo);
+	      width: 100%;
+	    }
 
-		.menuNavExtendida__logo {
-			display: none;
-		}
-
-		.itemNavExtendida__buscar {}
-		
-
-		.itemNavExtendida__filtrar {}
-		
-
-		.itemNavExtendida__historial {}
-		
-
-		.itemNavExtendida__crear {}
-
-
-		.itemNavExtendida__buscar,
-		.itemNavExtendida__filtrar,
-		.itemNavExtendida__historial,
-		.itemNavExtendida__crear,
-		.menuNavExtendida--faseBeta {
-			width: 100%;
-			padding: 1rem;
-			display: flex;
-			flex-flow: row;
-			justify-content: flex-start;
-			align-items: center;
-		}
-			
-		.linea {
-			background-color: var(--ahuesado);
-    		width: 100%;
-    		height: 1px;
-		}
-
-		.iconNavExtendida {
-			display: initial;
-			padding-right: 1rem;
-		}
+	    .icono--menu:focus, 
+		.icono--menu:hover {
+	      color: var(--anaranjado);
+	    }
 
 	/*BotonMenu*/
+		.menuNavegacion_botonMenu {
+			width: 50%;
+			height: 100%;
+			display: flex;
+		    flex-flow: row;
+		    justify-content: flex-end;
+		    align-items: center;
+		}
+
 	    .botonMenu {
 	      position: relative;
 	      /*top: 1px;
@@ -259,6 +216,68 @@
 	    .botonMenu span:nth-of-type(3) {
 	    	top: 18px;
 	    }
+
+	/* Menu Navegación Extendida */
+		.menuNavegacion__Extendida {
+			position: fixed;
+			top: -40rem;
+			padding: 0px;
+			width: 100%;
+			height: auto;
+			display: flex;
+			flex-flow: column;
+			justify-content: space-between;
+			align-items: flex-start;
+			background-color: var(--blanco);
+			color: var(--blanco); 
+			box-shadow: -3px 0 10px rgba(0,0,0,0.2);
+			text-align: center;
+			z-index: 8;
+			transition: top 1.5s;
+		}
+
+		.nav--activo {
+			top: 3rem;
+			transition: top 1s;
+		}
+
+		.menuNavExtendida__logo {
+			display: none;
+		}
+
+		.itemNavExtendida__buscar {}
+		
+
+		.itemNavExtendida__filtrar {}
+		
+
+		.itemNavExtendida__historial {}
+		
+
+		.itemNavExtendida__crear {}
+
+
+		.itemNavExtendida__buscar,
+		.itemNavExtendida__filtrar,
+		.itemNavExtendida__historial,
+		.itemNavExtendida__crear,
+		.menuNavExtendida--faseBeta {
+			width: 100%;
+			padding: .75rem;
+			display: flex;
+			flex-flow: row;
+			justify-content: flex-start;
+			align-items: center;
+			color: var(--anaranjado);
+		}
+			
+		.linea {
+			display: initial;
+			background-color: var(--ahuesado);
+    		width: 100%;
+    		height: 1px;
+		}
+	
 
 	/*Back*/
 	    .back {
@@ -378,7 +397,6 @@
 			grid-row: 1;
 			-ms-grid-column: 1/2;
 			-ms-grid-row: 1;
-			display: flex;
 			flex-flow: column;
 			justify-content: flex-start;
 			align-items: center;
@@ -438,21 +456,7 @@
 			height: 100%;
 			color: var(--profundo);
 		}
-
-		.menuNavegacion--logo {
-			display: none;
-		}
 		
-	    .icono--menu  {
-	      color: var(--profundo);
-	      width: 100%;
-	    }
-
-		.icono--menu:focus, 
-		.icono--menu:hover {
-	      color: var(--anaranjado);
-	    }
-
 	    .menuNavegacion__botonMenu {
 	    	grid-column: 1/2;
 			grid-row: 6;
@@ -542,9 +546,10 @@
 			width: 100%;
 			height: 100%;
 			border-top: 0;
+			color: var(--blanco);
 		}
-
-		.iconNavExtendida {
+		
+		.linea {
 			display: none;
 		}
 
