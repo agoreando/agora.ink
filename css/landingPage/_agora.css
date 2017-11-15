@@ -1,0 +1,17 @@
+@charset "UTF-8";
+agora.scss
+.agora {
+  background-color: var(--anaranjado);
+  color: var(--blanco);
+  text-align: center; }
+
+/* ágora */
+.agora--imagen {
+  margin: .5rem;
+  width: 90%; }
+
+.agora--texto {
+  margin: .5rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.1; }

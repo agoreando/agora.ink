@@ -1,0 +1,57 @@
+.descubre {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr;
+	background-color: var(--marfil);
+	padding: 0 2rem;
+	height: auto;
+
+	&__informacion {
+		grid-column: 1/2;
+		grid-row: 2/3;
+		display: flex;
+		flex-flow: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+			
+			
+	&__imagen{
+		grid-column: 1/2;
+		grid-row: 1/2;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-flow: column;
+	}
+
+
+	@include sm {
+		
+	}
+
+	@include md {
+		grid-template-columns: 1fr 1fr ;
+		grid-template-rows: 1fr;
+		grid-gap: 2rem;
+		padding: 0 10%;
+		height: 60vh;
+
+		&__informacion {
+			grid-column: 1/2;
+			grid-row: 1/2;
+			align-items: flex-end;
+			text-align: right;
+		}
+			
+			
+		&__imagen{
+			grid-column: 2/3;
+			grid-row: 1/2;
+			justify-content: center;
+		}
+	}
+
+	@include lg {}
+}

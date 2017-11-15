@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+html(lang="es")
+head
+	meta(charset="UTF-8")
+	meta(http-equiv="X-UA-Compatible" content="IE=edge")
+	meta(name="description" content="agora")
+	meta(name="keywords" content="agora")
+	meta(name="author" content="agora ink")
+	meta(name="viewport" content="width=device-width, initial-scale=1.0")
+	
+	//Facebook and Twitter
+	meta(property="og:title" content="ágora")
+	meta(property="og:image" content="")
+	meta(property="og:url" content="")
+	meta(property="og:site_name" content="ágora")
+	meta(property="og:description" content="Descubre el próximo concierto cerca de ti o los horarios de la obra a la que deseas asistir; crea el espacio para el evento que organizas y que todos lo vean.")
+	meta(name="twitter:title" content="ágora")
+	meta(name="twitter:image" content="")
+	meta(name="twitter:url" content="")
+	meta(property="og:site_name" content="ágora")
+	meta(property="twitter:description" content="Descubre el próximo concierto cerca de ti o los horarios de la obra a la que deseas asistir; crea el espacio para el evento que organizas y que todos lo vean.")
+	
+	// 
+		//////////////////////////////////////////////////////
+		ágora ~ Todos los Eventos, un mismo Lugar
+		Diseño y Desarrollo by kalollero Marro.on 
+    
+		Website:    http://agoraink.com
+		Email:      agoraink@outlook.com
+		Facebook:   https://www.facebook.com/agoraink
+		//////////////////////////////////////////////////////
+
+	title ágora | Descubre el próximo concierto cerca de ti o los horarios de la obra a la que deseas asistir; crea el espacio para el evento que organizas y que todos lo vean
+	
+	//Icono Pestaña
+	link(rel="icon" type="image/png" href="images/icon.png")
+	
+	//Icon Font
+	link(href="https://file.myfontastic.com/q2AGPeQ9fwKP9wnDdWcPfW/icons.css" rel="stylesheet")
+	
+	//Roboto Font
+	link(href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet")
+
+	//Normalize
+	link(href="css/normalize.css" rel="stylesheet")
+
+	//Agora Style
+	link(rel="stylesheet" href="css/agora.css")
+
+	
+
+body
+
+	//Modal Crear
+	div.modal__contenedor.modal__displayNone
+		button.modal__cerrar#cerrar: i.icon-cerrar
+		div.modal__informacion
+			div.modal__portada
+			div.modal__politicas
+				p Los Eventos se aprueban y muestran en la plataforma en un plazo de 24 horas.
+				p Algunos eventos demoran más en la fase de revisión, esto no significa que no se vayan a subir y aprobar.
+		div.modal__mediosDeContacto
+			div.modal__sticker
+				div.modal__facebook
+					i.icon-facebook
+				div.modal__correoWeb
+					i.icon-facebook
+				div.modal__formulario
+					i.icon-facebook
+			
+
+
+
+	//Barra de Navegación
+	nav.menuNavegacion
+		div.menuNavegacion__home
+			a(href="index.html"): i.icon-a-logo
+
+		a.menuNavegacion__eventos(href="index.html"): i#eventos.icon-a-logo.icono--menu
+		a.menuNavegacion__filtrar: i#filtar.icon-filtrar
+		a.menuNavegacion__historial(href="biblioteca.html"): i#historial.icon-historial.icono--menu
+		a.menuNavegacion__crear(role="button"): i#crear.icon-crear.icono--menu
+
+		div.menuNavegacion__botonMenu
+			a(href="#nav" aria-label="Open Navigation")
+				div.botonMenu#botonMenu 
+					span.top
+					span.middle
+					span.bottom
+
+	div#nav.menuNavegacionExtendida
+		
+		div.menuNavegacionExtendida__logo
+			img.imagen-fluida(src="images/agora_logo_blanco.svg")
+
+		a.menuNavegacionExtendida__eventos(href="index.html")
+			p.menuNavegacionExtendida__texto#eventos_ex Eventos
+
+		a.menuNavegacionExtendida__filtrar
+			p.menuNavegacionExtendida__texto#filtar_ex Filtrar
+
+		a.menuNavegacionExtendida__historial(href="biblioteca.html")
+			p.menuNavegacionExtendida__texto#historial_ex Historial
+
+		a.menuNavegacionExtendida__crear
+			p.menuNavegacionExtendida__texto#crear_ex Crear
+
+		div.menuNavegacionExtendida__linea
+			
+		a.menuNavegacionExtendida__faseBeta(href="landingPage.html")
+			p.menuNavegacionExtendida__texto#acerca_ex Acerca de ágora
+
+		
+	//Back
+	a.back(href="#inicio"): i.icon-back.icono--menu
+
+	//Contenedor Tarjetas
+	div.contenedorTarjetasEventos
+		
+		//- para histor
+		//- p.fechaColumnaTarjetas 15 de Septiembre 2017
+		div.columnaTarjetas
+				
+			//Tarjeta
+			div.tarjeta
+				div.tarjeta__contenedor
+					p.tarjeta__fechaEvento 7 Jul 2017
+					div.tarjeta__tipoEvento(title="Teatro"): i.icon-a-logo
+					img.tarjeta__imagenEvento.imagen-fluida(src="images/2.jpg")
+					div.tarjeta__linea
+						div
+					p.tarjeta__nombreEvento Programa Nacional de Teatro Escolar Veracruz 2017 CAMBIO
+					p.tarjeta__sedeEvento ágora de la Ciudad
+					div.tarjeta__redesEvento
+						i.icon-a-logo
+				
+		
+			//eventos de relleno
+			div.tarjeta
+				div.tarjeta__contenedor
+					p.tarjeta__fechaEvento 4 octubre 2016 &middot; 16:00	
+					div.tarjeta__tipoEvento(title="Visita Guiada"): i.icon-a-logo
+					div.tarjeta__linea
+						div
+					p.tarjeta__nombreEvento Fotografía y Literatura: De la Imagen a la Escritura	
+					p.tarjeta__sedeEvento Ágora de la Ciudad	
+					div.tarjeta__redesEvento
+						i.icon-a-logo
+			div.tarjeta
+				div.tarjeta__contenedor
+					p.tarjeta__fechaEvento 11 octubre 2016 &middot; 16:00	
+					div.tarjeta__tipoEvento(title="Visita Guiada"): i.icon-a-logo
+					div.tarjeta__linea
+						div
+					p.tarjeta__nombreEvento Fotografía y Literatura: De la Imagen a la Escritura	
+					p.tarjeta__sedeEvento Ágora de la Ciudad	
+					div.tarjeta__redesEvento
+						i.icon-a-logo
+			div.tarjeta
+				div.tarjeta__contenedor
+					p.tarjeta__fechaEvento 18 octubre 2016 &middot; 16:00	
+					div.tarjeta__tipoEvento(title="Visita Guiada"): i.icon-a-logo
+					div.tarjeta__linea
+						div
+					p.tarjeta__nombreEvento Fotografía y Literatura: De la Imagen a la Escritura	
+					p.tarjeta__sedeEvento Ágora de la Ciudad	
+					div.tarjeta__redesEvento
+						i.icon-a-logo
+			div.tarjeta
+				div.tarjeta__contenedor
+					p.tarjeta__fechaEvento 5 octubre 2016 &middot; 19:00	
+					div.tarjeta__tipoEvento(title="Visita Guiada"): i.icon-a-logo
+					div.tarjeta__linea
+						div
+					p.tarjeta__nombreEvento Mi Casio, Mi Ciudad	
+					p.tarjeta__sedeEvento Casino Xalapeño	
+					div.tarjeta__redesEvento
+						i.icon-a-logo
+			div.tarjeta
+				div.tarjeta__contenedor
+					p.tarjeta__fechaEvento 28 octubre 2016 &middot; 18:00	
+					div.tarjeta__tipoEvento(title="Convocatoria"): i.icon-a-logo
+					div.tarjeta__linea
+						div
+					p.tarjeta__nombreEvento 1er Gran Desfile y Concurso de Catrinas
+					p.tarjeta__sedeEvento Panteón 5 de Febrero - Parque Juárez	
+					div.tarjeta__redesEvento
+						i.icon-a-logo
+			div.tarjeta
+				div.tarjeta__contenedor
+					p.tarjeta__fechaEvento 1 octubre 2016 &middot; 12:00	
+					div.tarjeta__tipoEvento(title="Ciclo de Cine"): i.icon-a-logo
+					div.tarjeta__linea
+						div
+					p.tarjeta__nombreEvento Matiné Infantil. Ciclo Hayao Miyasaki
+					p.tarjeta__sedeEvento Galería de Arte Contemporáneo de Xalapa | Auditorio	
+					div.tarjeta__redesEvento
+						i.icon-a-logo
+			div.tarjeta
+				div.tarjeta__contenedor
+					p.tarjeta__fechaEvento 8 octubre 2016 &middot; 12:00	
+					div.tarjeta__tipoEvento(title="Ciclo de Cine"): i.icon-a-logo
+					div.tarjeta__linea
+						div
+					p.tarjeta__nombreEvento Matiné Infantil. Ciclo Hayao Miyasaki
+					p.tarjeta__sedeEvento Galería de Arte Contemporáneo de Xalapa | Auditorio	
+					div.tarjeta__redesEvento
+						i.icon-a-logo
+			div.tarjeta
+				div.tarjeta__contenedor
+					p.tarjeta__fechaEvento 15 octubre 2016 &middot; 12:00	
+					div.tarjeta__tipoEvento(title="Ciclo de Cine"): i.icon-a-logo
+					div.tarjeta__linea
+						div
+					p.tarjeta__nombreEvento Matiné Infantil. Ciclo Hayao Miyasaki
+					p.tarjeta__sedeEvento Galería de Arte Contemporáneo de Xalapa | Auditorio	
+					div.tarjeta__redesEvento
+						i.icon-a-logo
+			div.tarjeta
+				div.tarjeta__contenedor
+					p.tarjeta__fechaEvento 22 octubre 2016 &middot; 12:00	
+					div.tarjeta__tipoEvento(title="Ciclo de Cine"): i.icon-a-logo
+					div.tarjeta__linea
+						div
+					p.tarjeta__nombreEvento Matiné Infantil. Ciclo Hayao Miyasaki
+					p.tarjeta__sedeEvento Galería de Arte Contemporáneo de Xalapa | Auditorio	
+					div.tarjeta__redesEvento
+						i.icon-a-logo
+			div.tarjeta
+				div.tarjeta__contenedor
+					p.tarjeta__fechaEvento 13 octubre 2016 &middot; 20:30	
+					div.tarjeta__tipoEvento(title="Teatro"): i.icon-a-logo
+					div.tarjeta__linea
+						div
+					p.tarjeta__nombreEvento Muestra Estatal de Teatro Indígena	
+					p.tarjeta__sedeEvento Sala Dagoberto Guillaumin, Teatro del Estado
+					div.tarjeta__redesEvento
+						i.icon-a-logo
+			div.tarjeta
+				div.tarjeta__contenedor
+					p.tarjeta__fechaEvento 13 octubre 2016 &middot; 19:30	
+					div.tarjeta__tipoEvento(title="Teatro"): i.icon-a-logo
+					div.tarjeta__linea
+						div
+					p.tarjeta__nombreEvento Muestra Estatal de Teatro Indígena	
+					p.tarjeta__sedeEvento Sala Dagoberto Guillaumin, Teatro del Estado
+					div.tarjeta__redesEvento
+						i.icon-a-logo
+			div.tarjeta
+				div.tarjeta__contenedor
+					p.tarjeta__fechaEvento 14 octubre 2016 &middot; 20:30	
+					div.tarjeta__tipoEvento(title="Teatro"): i.icon-a-logo
+					div.tarjeta__linea
+						div
+					p.tarjeta__nombreEvento Muestra Estatal de Teatro Indígena	
+					p.tarjeta__sedeEvento Sala Dagoberto Guillaumin, Teatro del Estado
+					div.tarjeta__redesEvento
+						i.icon-a-logo
+			div.tarjeta
+				div.tarjeta__contenedor
+					p.tarjeta__fechaEvento 14 octubre 2016 &middot; 19:30	
+					div.tarjeta__tipoEvento(title="Teatro"): i.icon-a-logo
+					div.tarjeta__linea
+						div
+					p.tarjeta__nombreEvento Muestra Estatal de Teatro Indígena	
+					p.tarjeta__sedeEvento Sala Dagoberto Guillaumin, Teatro del Estado
+					div.tarjeta__redesEvento
+						i.icon-a-logo
+			div.tarjeta
+				div.tarjeta__contenedor
+					p.tarjeta__fechaEvento 14 octubre 2016 &middot; 19:00	
+					div.tarjeta__tipoEvento(title="Teatro"): i.icon-a-logo
+					div.tarjeta__linea
+						div
+					p.tarjeta__nombreEvento Muestra Estatal de Teatro Indígena	
+					p.tarjeta__sedeEvento Sala Dagoberto Guillaumin, Teatro del Estado
+					div.tarjeta__redesEvento
+						i.icon-a-logo
+			div.tarjeta
+				div.tarjeta__contenedor
+					p.tarjeta__fechaEvento 26 septiembre 2016		
+					div.tarjeta__tipoEvento(title="Convocatoria"): i.icon-a-logo
+					div.tarjeta__linea
+						div
+					p.tarjeta__nombreEvento LUNETA	
+					p.tarjeta__sedeEvento Ágora de la Ciudad
+					div.tarjeta__redesEvento
+						i.icon-a-logo
+		
+		
+
+	script(src="js/jquery-3.2.1.min.js")
+
+	//- script(src="js/jquery-ui.min.js")
+
+	script(type='text/javascript').
+	
+		$(document).ready(function(){
+			$('#botonMenu').click(function(){
+				$(this).toggleClass('active');
+				$('#nav').toggleClass('nav--activo');
+				$('.menuNavegacion__eventos, .menuNavegacion__filtrar, .menuNavegacion__historial, .menuNavegacion__crear').toggleClass('displayVisible');
+			});
+			
+
+			$('#crear, #crear_ex').click(function(){
+			  	$('.modal__contenedor').removeClass('modal__displayNone');
+			  	$('body').addClass('modal__activo');
+			});
+
+			$('#cerrar').click(function(){
+			 	$('.modal__contenedor').addClass('modal__displayNone');
+			  	$('body').removeAttr('class');
+			});
+
+			var menuNavegacionExtendida = $('#eventos, #eventos_ex, #filtar, #filtar_ex, #historial, #historial_ex, #crear, #crear_ex, #acerca_ex');
+			
+			$(menuNavegacionExtendida).click(function(){
+				$('#botonMenu').toggleClass('active');
+				$('#nav').toggleClass('nav--activo');
+				$('.menuNavegacion__eventos, .menuNavegacion__filtrar, .menuNavegacion__historial, .menuNavegacion__crear').toggleClass('displayVisible');
+			});
+		});

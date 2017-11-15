@@ -1,0 +1,57 @@
+.botonMenu {
+	position: relative;
+	height: 1.5rem;
+	width: 1.5rem;
+	cursor: pointer;
+	background: transparent;
+
+	&:hover 
+	& > span {
+		background:  var(--anaranjado);
+	}
+
+	&.active .top {
+		-webkit-transform: translateY(10px) translateX(0) rotate(45deg);
+		transform: translateY(10px) translateX(0) rotate(45deg);
+		background: var(--anaranjado);
+	}
+
+	&.active .middle {
+		opacity: 0;
+	}
+
+	&.active .bottom {
+		-webkit-transform: translateY(-10px) translateX(0) rotate(-45deg);
+		transform: translateY(-10px) translateX(0) rotate(-45deg);
+		background: var(--anaranjado);
+		top: 22px;
+	}
+	& span {
+	  	background: var(--profundo);
+	  	border: none;
+	  	height: 3px;
+	  	width: 100%;
+	  	position: absolute;
+	  	top: 2px;
+	  	left: 0;
+	  	-webkit-transition: all 0.35s ease;
+	  	transition: all 0.35s ease;
+	  	cursor: pointer;
+	}
+
+	& span:nth-of-type(2) {
+	  	top: 10px;
+	}
+
+	& span:nth-of-type(3) {
+	  	top: 18px;
+	}
+
+}
+		
+
+	  
+
+	  
+
+	  

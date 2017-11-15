@@ -1,0 +1,22 @@
+.menuNavegacion {
+
+	@include md {
+		display: grid;
+		grid-template-columns: 100%;
+		grid-template-rows: 10% repeat(9,auto) 10%;
+
+
+		&__facebook {
+			grid-column: 1/2;
+			grid-row: 11;
+			display: flex;
+			flex-flow: column;
+			justify-content: flex-end;
+    		height: 100%;
+		}
+
+		&__botonMenu {
+			display: none;
+		}
+	}
+}

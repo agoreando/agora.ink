@@ -1,0 +1,149 @@
+
+.menuNavegacionExtendida {
+	position: fixed;
+	top: -40rem;
+	padding: 0px;
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-flow: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	background-color: var(--blanco);
+	color: var(--blanco); 
+	box-shadow: -3px 0 10px rgba(0,0,0,0.2);
+	text-align: center;
+	z-index: 8;
+	transition: top 1.5s;
+
+	&__logo {
+		display: none;
+	}
+
+	&__eventos {}
+
+	&__filtrar {}
+
+	&__historial {}
+
+	&__crear {
+		cursor: pointer;
+	}
+
+	&__eventos,
+	&__filtrar,
+	&__historial,
+	&__crear,
+	&__faseBeta {
+		width: 100%;
+		padding: 1rem;
+		display: flex;
+		flex-flow: row;
+		justify-content: flex-start;
+		align-items: center;
+		color: var(--anaranjado);
+	}
+
+	&__linea {
+		display: initial;
+		background-color: var(--ahuesado);
+		width: 100%;
+		height: 1px;
+	}
+
+	&__texto {
+		text-align: left;
+	}
+}
+
+.nav--activo {
+	top: 3rem;
+	transition: top 1s;
+}
+
+
+@include md {
+	.menuNavegacionExtendida {
+		top: 0;
+		width: 16rem;
+		height: 100vh;		
+		right: -16rem;
+		box-shadow: -3px 0 10px rgba(0,0,0,0.2);
+		transition: right 1.5s;
+		display: grid;
+		display: -ms-grid;
+		grid-template-columns: 100%;
+		grid-template-rows: 30% 10% 10% 10% 10% 30%;
+		padding: 1rem 0;
+		background-color: var(--anaranjado);
+
+		&__logo {
+			grid-column: 1/2;
+			grid-row: 1/2;
+			display: initial;
+			width: 100%;
+			padding: 0 4.5rem;	
+		}
+
+		&__eventos {
+			grid-column: 1/2;
+			grid-row: 2/3;
+		}
+
+		&__filtrar {
+			grid-column: 1/2;
+			grid-row: 3/4;
+		}
+
+		&__historial {
+			grid-column: 1/2;
+			grid-row: 4/5;
+		}
+
+		&__crear {
+			grid-column: 1/2;
+			grid-row: 5/6;
+		}
+
+		&__eventos, 
+		&__filtrar, 
+		&__historial, 
+		&__crear,
+		&__faseBeta {
+			display: flex;
+			flex-flow: column;
+			justify-content: center;
+			align-content: center;
+			width: 100%;
+			height: 100%;
+			border-top: 0;
+			color: var(--blanco);
+		}
+
+		&__linea {
+			display: none;
+		}
+
+		&__faseBeta {
+			grid-column: 1/2;
+			grid-row: 6/7;
+			justify-content: flex-end;
+			padding: 0;
+		}
+
+		&__icon {
+			display: none;
+		}
+
+		&__texto {
+			width: 100%;
+			text-align: center;
+		}
+	}
+
+	.nav--activo {
+		right: 3rem;
+		transition: right 1s;
+		top: 0;
+	}
+}

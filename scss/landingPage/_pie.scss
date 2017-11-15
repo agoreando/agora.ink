@@ -1,0 +1,77 @@
+.pie {
+		display: grid;
+		grid-template-columns: 20% 1fr;
+		grid-template-rows: 1fr;
+		color: var(--claro);
+		background-color: var(--profundo);
+		width: 100%;
+		padding: 0.5rem 1rem;
+
+	&__derechosReservados,
+	&__logo,
+	&__redesSociales {
+		display: flex;
+		flex-flow: row;
+		align-items: center;
+	}
+	
+	&__derechosReservados {
+		display: none;
+	}
+
+	&__logo {
+		grid-column: 1/2;
+		grid-row: 1/2;
+		justify-content: flex-start;
+	}
+
+	&__redesSociales {
+		grid-column: 2/3;
+		grid-row: 1/2;
+		justify-content: flex-end;
+	}
+		
+	&__redesSociales--icono {
+		margin: 0 0.25rem;
+		font-size: 80%;
+	}
+
+
+
+	@include sm {
+		grid-template-columns: 10% 1fr;
+	}
+
+	@include md {
+		display: grid;
+		grid-template-columns: 1fr 10% 1fr;
+		grid-template-rows: auto;
+		padding: 0.5rem 2rem;
+
+		&__derechosReservados{
+			grid-column: 1/2;
+			grid-row: 1/2;
+			text-align: left;
+			font-size: 50%;
+			font-weight: 400;
+			display: flex;
+			justify-content: flex-start;
+
+		}
+
+		&__logo{
+			grid-column: 2/3;
+			grid-row: 1/2;
+		}
+
+		&__redesSociales{
+			grid-column: 3/4;
+			grid-row: 1/2;
+		}
+	}
+	
+	@include lg {
+		grid-template-columns: 1fr 5% 1fr;
+	}
+
+}

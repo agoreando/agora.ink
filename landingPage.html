@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es"></html>
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="description" content="agora"/>
+  <meta name="keywords" content="agora"/>
+  <meta name="author" content="agora ink"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!--Facebook and Twitter-->
+  <meta property="og:title" content="ágora"/>
+  <meta property="og:image" content=""/>
+  <meta property="og:url" content=""/>
+  <meta property="og:site_name" content="ágora"/>
+  <meta property="og:description" content="Descubre el próximo concierto cerca de ti o los horarios de la obra a la que deseas asistir; crea el espacio para el evento que organizas y que todos lo vean."/>
+  <meta name="twitter:title" content="ágora"/>
+  <meta name="twitter:image" content=""/>
+  <meta name="twitter:url" content=""/>
+  <meta property="og:site_name" content="ágora"/>
+  <meta property="twitter:description" content="Descubre el próximo concierto cerca de ti o los horarios de la obra a la que deseas asistir; crea el espacio para el evento que organizas y que todos lo vean."/>
+  <!-- 
+  //////////////////////////////////////////////////////
+  ágora ~ Todos los Eventos, un mismo Lugar
+  Diseño y Desarrollo by kalollero Marro.on 
+    
+  Website:    http://agoraink.com
+  Email:      agoreando@outlook.com
+  Facebook:   https://www.facebook.com/agoraink
+  //////////////////////////////////////////////////////
+  
+  -->
+  <title>ágora | Landing Page</title>
+  <!--Icono Pestaña-->
+  <link rel="icon" type="image/png" href="images/icon.png"/>
+  <!--Icon Font-->
+  <link href="https://file.myfontastic.com/q2AGPeQ9fwKP9wnDdWcPfW/icons.css" rel="stylesheet"/>
+  <!--Roboto Font-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet"/>
+  <!--Normalize-->
+  <link href="css/normalize.css" rel="stylesheet"/>
+  <!--Landing Page-->
+  <link rel="stylesheet" href="css/landingPage.css"/>
+</head>
+<body>
+  <!--Modal Alfa-->
+  <div class="modal__contenedor modal__displayNone">
+    <button class="modal__cerrar" id="cerrar"><i class="icon-cerrar"></i></button>
+    <div class="modal__informacion">
+      <p>si a dentro no hay nada</p>
+    </div>
+    <div class="modal__imagen"></div>
+  </div>
+  <!--Barra de Navegación
+  nav.menuNavegacion
+  div.menuNavegacion__home
+  	a(href="index.html"): i.icon-a-logo
+  
+  a(href="#agora"): i.icon-agora.icono--menu
+  a(href="#alfa"): i.icon-alfa.icono--menu
+  a(href="#descubre"): i.icon-descubre.icono--menu
+  a(href="#explora"): i.icon-explora.icono--menu
+  a(href="#comunica"): i.icon-comunica.icono--menu
+  a(href="#crea"): i.icon-crea.icono--menu
+  a(href="#boletos"): i.icon-boletos.icono--menu
+  a(href="#gotoAgora"): i.icon-go.icono--menu
+  a(href="#equipo"): i.icon-equipo.icono--menu
+  
+  div.menuNavegacion__facebook
+  	a(href="#inicio"): i.icon-back.icono--menu
+  div.menuNavegacion__botonMenu
+  	a(href="#nav" aria-label="Open Navigation")
+  		div.botonMenu#botonMenu 
+  			span.top
+  			span.middle
+  			span.bottom
+  
+  div#nav.menuNavegacionExtendida
+  
+  div.menuNavegacionExtendida__logo
+  	img.imagen-fluida(src="images/agora_logo_blanco.svg")
+  
+  a.menuNavegacionExtendida__eventos(href="index.html")
+  	p.menuNavegacionExtendida__texto#eventos_ex Eventos
+  
+  a.menuNavegacionExtendida__filtrar
+  	p.menuNavegacionExtendida__texto#filtar_ex Filtrar
+  
+  a.menuNavegacionExtendida__historial(href="biblioteca.html")
+  	p.menuNavegacionExtendida__texto#historial_ex Historial
+  
+  a.menuNavegacionExtendida__crear
+  	p.menuNavegacionExtendida__texto#crear_ex Crear
+  
+  div.menuNavegacionExtendida__linea
+  	
+  a.menuNavegacionExtendida__faseBeta(href="landingPage.html")
+  	p.menuNavegacionExtendida__texto#acerca_ex Acerca de ágora
+  
+  -->
+  <!--SECCIÓN PORTADA -->
+  <header class="portada" id="portada">
+    <div class="portada__imagen"><img class="imagen-fluida" src="images/agora_logo_blanco.svg"/></div>
+    <h1 class="portada__titulo">Descubre. Comunica tu Evento.</h1>
+    <div class="portada__texto"> 
+      <p>Encuentra el próximo concierto cerca de ti o los horarios de la obra a la que deseas asistir; </p>
+      <p>crea el espacio para el evento que organizas y has que todos lo vean.</p>
+    </div>
+    <div class="portada__linea">
+      <div></div>
+    </div>
+    <div class="portada__boton"><a class="naranja" href="index.html">Explorar</a></div>
+    <!--div.agora__contenedor-->
+  </header>
+  <!--SECCIÓN ALFA-->
+  <section class="beta" id="beta">
+    <div class="beta__texto">
+      <h4>Fase Alfa </h4>
+    </div>
+    <div class="beta__mas">
+      <h4>+</h4>
+    </div>
+  </section>
+  <!--SECCIÓN ágora-->
+  <section class="agora" id="agora">
+    <div class="agora__imagen"><img class="imagen-fluida" src="images/agora_logo_negro.svg"/></div>
+    <div class="agora__texto"> 
+      <p>ágora es la plataforma enfocada en difundir los eventos de manera gratuita, mostrándole un catálogo a los usuarios de todas las actividades culturales que suceden a su alrededor	</p>
+    </div>
+  </section>
+  <!--SECCIÓN DESCUBRE-->
+  <section class="descubre" id="descubre">
+    <div class="descubre__informacion">
+      <h2 class="nombre__seccion">Descubre</h2>
+      <p class="informacion__seccion">ágora te muestra las actividades culturales y de entretenimiento a realizarse, dejando atrás la forma aburrida de buscar entre carteleras con eventos atrasados.</p>
+    </div>
+    <div class="descubre__imagen"><img class="imagen-fluida" src="images/agora_logo_negro.svg"/></div>
+  </section>
+  <!--SECCIÓN EXPLORA
+  section#explora.explora.flexBox__Row
+  	div.explora__imagen.moduloIzq
+  		img.imagen-fluida(src="images/explora.svg")
+  	div.explora__info.moduloDer
+  		h2.nombre__seccion 
+  			| Explora
+  			sup: i.icon-info
+  		p.subnombre__seccion: em Tres modos de exploración
+  
+  		div
+  			p.items__seccion.icon-buscar Buscar 
+  			p.informacion__seccion Encuentra eventos mediante la barra de búsqueda utilizando palabras claves, perfecto para cuando buscas algo específico.
+  		
+  		div
+  			p.items__seccion.icon-categorias Categorías
+  			p.informacion__seccion Funciona como un índice general para navegar entre los tipos de eventos y encontrar así lo que buscas.
+  		
+  		div
+  			p.items__seccion.icon-fecha Ciudad y Fecha
+  			p.informacion__seccion Muestra los eventos filtrados por la localización (ciudad, sede) y fecha en que se realizan.
+  	
+  -->
+  <!--SECCIÓN COMUNICA-->
+  <section class="comunica" id="comunica">
+    <div class="comunica__informacion">
+      <h2 class="nombre__seccion">Comunica</h2>
+      <p class="informacion__seccion">Diseñamos el espacio estupendo para tú evento, enfocando ágora para ofrecerte una plataforma especializada en difundir tu evento, en la cual podrás conectar con tus próximos asistentes.</p>
+    </div>
+    <div class="comunica__imagen"><img class="imagen-fluida" src="images/agora_logo_negro.svg"/></div>
+  </section>
+  <!--SECCIÓN CREA
+  section#crea.crea.flexBox__Row
+  	div.crea__imagen.moduloIzq
+  		img.imagen-fluida(src="images/crea.svg")
+  	div.crea__info.moduloDer
+  		h2.nombre__seccion 
+  			| Crea
+  			sup: i.icon-info
+  		p.informacion__seccion La plataforma está dirigida para todos los eventos, por eso utiliza una interfaz intuitiva que permite crear un nuevo evento, modificar su información, cancelar o eliminar y notificarlo a los usuarios.
+  		p.informacion__seccion Así los organizadores tienen la libertad de subir a la plataforma todos sus eventos sin restricción alguna en cantidad o información.
+  
+  -->
+  <!--SECCIÓN Boletos
+  section#boletos.boletos.flexBox__Row
+  		div.boletos__titulo
+  		div.moduloIzq
+  			h2.nombre__seccion
+  				span.small a un click de tus
+  				strong  boletos
+  			p.informacion__seccion Dirige a tus usuarios hacia la plataforma que utilizas, y en donde ellos podran adquirir los accesos de tu evento.
+  
+  			p.informacion__seccion Al crear el espacio de tu evento, ágora te permite ingresar el link que te proporporciona tu servicio de boletaje, o la dirección del sitio web donde pueden encontrarlos.
+  		div.moduloDer
+  			img.imagen-fluida(src="images/boletos_01.svg")
+  
+  //- section#boletos.boletos.flexBox__Row
+  //- 		div.moduloIzq
+  //- 			img.imagen-fluida(src="images/boletos_02.svg")
+  //- 		div.moduloDer
+  //- 			p.informacion__seccion La plataforma te permite también indicarle a tus usuarios si  el acceso a tu evento no tiene un precio
+  		
+  -->
+  <!--SECCIÓN go to ágora-->
+  <section class="explorar" id="explorar"><img class="explorar__imagen imagen-fluida" src="images/agora.svg"/>
+    <div class="explorar__boton"><a href="index.html">Explorar</a></div>
+  </section>
+  <!--SECCIÓN Equipo
+  section#equipo.equipo.flexBox__Column
+  	h2
+  		span.weight100 Equipo 
+  		span.weight400  ágora 
+  	div.equipo__tarjetas
+  		
+  		div.jose.equipo__perfil
+  			div.equipo__marcoImagen
+  				div.equipo__imagen.perfil--jose
+  					img.imagen-fluida(src="images/desarrollador.jpg")
+  			h3.nombre__integrante
+  				span.weight400 Socio 
+  				span.weight100 Desarrollador
+  			p.descripcion__integrante Reseña
+  
+  			div.tags__integrante
+  				div.tag CSS
+  				div.tag Data Base
+  
+  		div.ingrid.equipo__perfil
+  			div.equipo__marcoImagen
+  				div.equipo__imagen.perfil--ingrid
+  					img.imagen-fluida(src="images/ingrid.jpg")
+  			h3.nombre__integrante 
+  						span.weight400 Ingrid 
+  						span.weight100 Rguez
+  
+  
+  			p.descripcion__integrante Reseña
+  			div.tags__integrante
+  				div.tag Public Relation
+  				div.tag Comunnity Manager
+  
+  		div.kalollero.equipo__perfil
+  			div.equipo__marcoImagen
+  				div.equipo__imagen.perfil--kalollero
+  					img.imagen-fluida(src="images/kalollero.jpg")
+  			h3.nombre__integrante 
+  						span.weight400 Kalóllero 
+  						span.weight100 Marro.on
+  
+  
+  			p.descripcion__integrante Loco, Gitano, Soñador & Startopero; con estudios en Imagología y Diseño. Un publicista art nouvo de épocas contemporaneas, experto en Vampiras Modernas.
+  			
+  			div.tags__integrante
+  				div.tag UX Desing
+  				div.tag HTML
+  				div.tag FrontEnd
+  				div.tag CSS
+  				div.tag Advertising
+  				div.tag JavaScript
+  				div.tag Desing
+  				div.tag Prototyping
+  				div.tag UI Desing
+  
+  			div.redesSociales__integrante F & T & L
+  
+  -->
+  <!--SECCIÓN PIE-->
+  <section class="pie">
+    <p class="pie__derechosReservados">DR | 2017<i class="icon-registrado"></i></p>
+    <div class="pie__logo"><img class="imagen-fluida" src="images/agora_logo_blanco.svg"/></div>
+    <div class="pie__redesSociales"><i class="pie__redesSociales--icono icon-a-logo"></i><i class="pie__redesSociales--icono icon-facebook-circulo"></i><i class="pie__redesSociales--icono icon-correo"></i></div>
+  </section>
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+    
+    	$('#botonMenu').click(function(){
+    		$(this).toggleClass('active');
+    		$('#nav').toggleClass('nav--activo');
+    		$('.menuNavegacion__eventos, .menuNavegacion__filtrar, .menuNavegacion__historial, .menuNavegacion__crear').toggleClass('displayVisible');
+    	});
+    
+    
+    $('#beta').click(function(){
+      	$('.modal__contenedor').removeClass('modal__displayNone');
+      	$('body').addClass('modal__activo');
+    });
+    
+    $('#cerrar').click(function(){
+     	$('.modal__contenedor').addClass('modal__displayNone');
+      	$('body').removeAttr('class');
+    });
+    
+    });
+  </script>
+</body>

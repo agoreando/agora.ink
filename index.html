@@ -39,210 +39,269 @@
   <!--Normalize-->
   <link href="css/normalize.css" rel="stylesheet"/>
   <!--Agora Style-->
-  <link rel="stylesheet" href="css/agora-style.css"/>
-  <!--Agora Media Queris-->
-  <link rel="stylesheet" href="css/agora-mediaQueries.css"/>
+  <link rel="stylesheet" href="css/agora.css"/>
 </head>
-<body id="inicio">
+<body>
+  <!--Modal Crear-->
+  <div class="modal__contenedor modal__displayNone">
+    <button class="modal__cerrar" id="cerrar"><i class="icon-cerrar"></i></button>
+    <div class="modal__informacion">
+      <div class="modal__portada"></div>
+      <div class="modal__politicas">
+        <p>Los Eventos se aprueban y muestran en la plataforma en un plazo de 24 horas.</p>
+        <p>Algunos eventos demoran más en la fase de revisión, esto no significa que no se vayan a subir y aprobar.</p>
+      </div>
+    </div>
+    <div class="modal__mediosDeContacto">
+      <div class="modal__sticker">
+        <div class="modal__facebook"><i class="icon-facebook"></i></div>
+        <div class="modal__correoWeb"><i class="icon-facebook"></i></div>
+        <div class="modal__formulario"><i class="icon-facebook"></i></div>
+      </div>
+    </div>
+  </div>
   <!--Barra de Navegación-->
   <nav class="menuNavegacion">
-    <div class="menuNavegacion__home"><a href="index.html"><i class="icon-a-logo icono--menu"></i></a></div><a class="item__buscar" href=""><i class="icon-info icono--menu"></i></a><a class="item__filtrar" href=""><i class="icon-info icono--menu"></i></a><a class="item__historial" href=""><i class="icon-info icono--menu"></i></a><a class="item__crear" href=""><i class="icon-info icono--menu"></i></a>
+    <div class="menuNavegacion__home"><a href="index.html"><i class="icon-a-logo"></i></a></div><a class="menuNavegacion__eventos" href="index.html"><i class="icon-a-logo icono--menu" id="eventos"></i></a><a class="menuNavegacion__filtrar"><i class="icon-filtrar" id="filtar"></i></a><a class="menuNavegacion__historial" href="biblioteca.html"><i class="icon-historial icono--menu" id="historial"></i></a><a class="menuNavegacion__crear" role="button"><i class="icon-crear icono--menu" id="crear"></i></a>
     <div class="menuNavegacion__botonMenu"><a href="#nav" aria-label="Open Navigation">
         <div class="botonMenu" id="botonMenu"> <span class="top"></span><span class="middle"></span><span class="bottom"></span></div></a></div>
   </nav>
-  <div class="menuNavegacion__Extendida" id="nav">
-    <div class="menuNavExtendida__logo"><img class="imagen-fluida" src="images/agora_logo.svg"/></div><a class="itemNavExtendida__buscar" href="">
-      <p>Buscar</p></a><a class="itemNavExtendida__filtrar" href="">
-      <p>Filtrar</p></a><a class="itemNavExtendida__historial" href="">
-      <p>Historial</p></a><a class="itemNavExtendida__crear" href="">
-      <p>Crear</p></a>
-    <div class="linea"></div>
-    <div class="menuNavExtendida--faseBeta"><i class="iconNavExtendida icon-info"></i><a href="">Fase Beta</a></div>
+  <div class="menuNavegacionExtendida" id="nav">
+    <div class="menuNavegacionExtendida__logo"><img class="imagen-fluida" src="images/agora_logo_blanco.svg"/></div><a class="menuNavegacionExtendida__eventos" href="index.html">
+      <p class="menuNavegacionExtendida__texto" id="eventos_ex">Eventos</p></a><a class="menuNavegacionExtendida__filtrar">
+      <p class="menuNavegacionExtendida__texto" id="filtar_ex">Filtrar</p></a><a class="menuNavegacionExtendida__historial" href="biblioteca.html">
+      <p class="menuNavegacionExtendida__texto" id="historial_ex">Historial</p></a><a class="menuNavegacionExtendida__crear">
+      <p class="menuNavegacionExtendida__texto" id="crear_ex">Crear</p></a>
+    <div class="menuNavegacionExtendida__linea"></div><a class="menuNavegacionExtendida__faseBeta" href="landingPage.html">
+      <p class="menuNavegacionExtendida__texto" id="acerca_ex">Acerca de ágora</p></a>
   </div>
-  <!--Back--><a class="back flexRow" href="#inicio"><i class="icon-back icono--menu"></i></a>
+  <!--Back--><a class="back" href="#inicio"><i class="icon-back icono--menu"></i></a>
   <!--Contenedor Tarjetas-->
   <div class="contenedorTarjetasEventos">
-    <p class="fechaColumnaTarjetas">15 de Septiembre 2017</p>
     <div class="columnaTarjetas">
       <!--Tarjeta-->
       <div class="tarjeta">
         <div class="tarjeta__contenedor">
-          <div class="header__tarjeta">
-            <p class="fechaEvento">7 Jul 2017</p>
-            <div class="iconoTipo--tarjeta" title="Teatro"><i class="icon-info"></i></div>
-          </div><img class="imagenEvento imagen-fluida" src="images/2.jpg"/>
-          <p class="nombreEvento">Programa Nacional de Teatro Escolar Veracruz 2017</p>
-          <p class="sedeEvento">ágora de la Ciudad</p>
-          <div class="footer__tarjeta">
-            <div class="organizadorEvento">Instituto Veracruzano de Cultura | IVEC</div>
-            <div class="iconoRedes--tarjeta"><i class="icon-facebook"></i></div>
+          <p class="tarjeta__fechaEvento">7 Jul 2017</p>
+          <div class="tarjeta__tipoEvento" title="Teatro"><i class="icon-a-logo"></i></div><img class="tarjeta__imagenEvento imagen-fluida" src="images/2.jpg"/>
+          <div class="tarjeta__linea">
+            <div></div>
           </div>
+          <p class="tarjeta__nombreEvento">Programa Nacional de Teatro Escolar Veracruz 2017 CAMBIO</p>
+          <p class="tarjeta__sedeEvento">ágora de la Ciudad</p>
+          <div class="tarjeta__redesEvento"><i class="icon-a-logo"></i></div>
         </div>
       </div>
       <!--eventos de relleno-->
       <div class="tarjeta">
         <div class="tarjeta__contenedor">
-          <p class="fechaEvento">4 octubre 2016 &middot; 16:00	</p>
-          <div class="iconoTipo--tarjeta" title="Visita Guiada"></div>
-          <p class="nombreEvento">Fotografía y Literatura: De la Imagen a la Escritura	</p>
-          <p class="sedeEvento">Ágora de la Ciudad	</p>
-          <div class="organizadorEvento">Ágora de la Ciudad</div>
-          <div class="iconoRedes--tarjeta"><i class="icon-facebook"></i></div>
+          <p class="tarjeta__fechaEvento">4 octubre 2016 &middot; 16:00	</p>
+          <div class="tarjeta__tipoEvento" title="Visita Guiada"><i class="icon-a-logo"></i></div>
+          <div class="tarjeta__linea">
+            <div></div>
+          </div>
+          <p class="tarjeta__nombreEvento">Fotografía y Literatura: De la Imagen a la Escritura	</p>
+          <p class="tarjeta__sedeEvento">Ágora de la Ciudad	</p>
+          <div class="tarjeta__redesEvento"><i class="icon-a-logo"></i></div>
         </div>
       </div>
       <div class="tarjeta">
         <div class="tarjeta__contenedor">
-          <p class="fechaEvento">11 octubre 2016 &middot; 16:00	</p>
-          <div class="iconoTipo--tarjeta" title="Visita Guiada"></div>
-          <p class="nombreEvento">Fotografía y Literatura: De la Imagen a la Escritura	</p>
-          <p class="sedeEvento">Ágora de la Ciudad	</p>
-          <div class="organizadorEvento">Ágora de la Ciudad</div>
-          <div class="iconoRedes--tarjeta"><i class="icon-facebook"></i></div>
+          <p class="tarjeta__fechaEvento">11 octubre 2016 &middot; 16:00	</p>
+          <div class="tarjeta__tipoEvento" title="Visita Guiada"><i class="icon-a-logo"></i></div>
+          <div class="tarjeta__linea">
+            <div></div>
+          </div>
+          <p class="tarjeta__nombreEvento">Fotografía y Literatura: De la Imagen a la Escritura	</p>
+          <p class="tarjeta__sedeEvento">Ágora de la Ciudad	</p>
+          <div class="tarjeta__redesEvento"><i class="icon-a-logo"></i></div>
         </div>
       </div>
       <div class="tarjeta">
         <div class="tarjeta__contenedor">
-          <p class="fechaEvento">18 octubre 2016 &middot; 16:00	</p>
-          <div class="iconoTipo--tarjeta" title="Visita Guiada"></div>
-          <p class="nombreEvento">Fotografía y Literatura: De la Imagen a la Escritura	</p>
-          <p class="sedeEvento">Ágora de la Ciudad	</p>
-          <div class="organizadorEvento">Ágora de la Ciudad</div>
-          <div class="iconoRedes--tarjeta"><i class="icon-facebook"></i></div>
+          <p class="tarjeta__fechaEvento">18 octubre 2016 &middot; 16:00	</p>
+          <div class="tarjeta__tipoEvento" title="Visita Guiada"><i class="icon-a-logo"></i></div>
+          <div class="tarjeta__linea">
+            <div></div>
+          </div>
+          <p class="tarjeta__nombreEvento">Fotografía y Literatura: De la Imagen a la Escritura	</p>
+          <p class="tarjeta__sedeEvento">Ágora de la Ciudad	</p>
+          <div class="tarjeta__redesEvento"><i class="icon-a-logo"></i></div>
         </div>
       </div>
       <div class="tarjeta">
         <div class="tarjeta__contenedor">
-          <p class="fechaEvento">5 octubre 2016 &middot; 19:00	</p>
-          <div class="iconoTipo--tarjeta" title="Concierto"></div>
-          <p class="nombreEvento">Mi Casio, Mi Ciudad	</p>
-          <p class="sedeEvento">Casino Xalapeño	</p>
-          <div class="organizadorEvento">Universidad Veracruzana</div>
-          <div class="iconoRedes--tarjeta"><i class="icon-facebook"></i></div>
+          <p class="tarjeta__fechaEvento">5 octubre 2016 &middot; 19:00	</p>
+          <div class="tarjeta__tipoEvento" title="Visita Guiada"><i class="icon-a-logo"></i></div>
+          <div class="tarjeta__linea">
+            <div></div>
+          </div>
+          <p class="tarjeta__nombreEvento">Mi Casio, Mi Ciudad	</p>
+          <p class="tarjeta__sedeEvento">Casino Xalapeño	</p>
+          <div class="tarjeta__redesEvento"><i class="icon-a-logo"></i></div>
         </div>
       </div>
       <div class="tarjeta">
         <div class="tarjeta__contenedor">
-          <p class="fechaEvento">28 octubre 2016 &middot; 18:00	</p>
-          <div class="iconoTipo--tarjeta" title="Convocatoria"></div>
-          <p class="nombreEvento">1er Gran Desfile y Concurso de Catrinas</p>
-          <p class="sedeEvento">Panteón 5 de Febrero - Parque Juárez	</p>
-          <div class="organizadorEvento">H. Ayuntamiento de Xalapa</div>
-          <div class="iconoRedes--tarjeta"><i class="icon-facebook"></i></div>
+          <p class="tarjeta__fechaEvento">28 octubre 2016 &middot; 18:00	</p>
+          <div class="tarjeta__tipoEvento" title="Convocatoria"><i class="icon-a-logo"></i></div>
+          <div class="tarjeta__linea">
+            <div></div>
+          </div>
+          <p class="tarjeta__nombreEvento">1er Gran Desfile y Concurso de Catrinas</p>
+          <p class="tarjeta__sedeEvento">Panteón 5 de Febrero - Parque Juárez	</p>
+          <div class="tarjeta__redesEvento"><i class="icon-a-logo"></i></div>
         </div>
       </div>
       <div class="tarjeta">
         <div class="tarjeta__contenedor">
-          <p class="fechaEvento">1 octubre 2016 &middot; 12:00	</p>
-          <div class="iconoTipo--tarjeta" title="Ciclo de Cine"></div>
-          <p class="nombreEvento">Matiné Infantil. Ciclo Hayao Miyasaki</p>
-          <p class="sedeEvento">Galería de Arte Contemporáneo de Xalapa | Auditorio	</p>
-          <div class="organizadorEvento">Galería de Arte Contemporáneo de Xalapa</div>
-          <div class="iconoRedes--tarjeta"><i class="icon-facebook"></i></div>
+          <p class="tarjeta__fechaEvento">1 octubre 2016 &middot; 12:00	</p>
+          <div class="tarjeta__tipoEvento" title="Ciclo de Cine"><i class="icon-a-logo"></i></div>
+          <div class="tarjeta__linea">
+            <div></div>
+          </div>
+          <p class="tarjeta__nombreEvento">Matiné Infantil. Ciclo Hayao Miyasaki</p>
+          <p class="tarjeta__sedeEvento">Galería de Arte Contemporáneo de Xalapa | Auditorio	</p>
+          <div class="tarjeta__redesEvento"><i class="icon-a-logo"></i></div>
         </div>
       </div>
       <div class="tarjeta">
         <div class="tarjeta__contenedor">
-          <p class="fechaEvento">8 octubre 2016 &middot; 12:00	</p>
-          <div class="iconoTipo--tarjeta" title="Ciclo de Cine"></div>
-          <p class="nombreEvento">Matiné Infantil. Ciclo Hayao Miyasaki</p>
-          <p class="sedeEvento">Galería de Arte Contemporáneo de Xalapa | Auditorio	</p>
-          <div class="organizadorEvento">Galería de Arte Contemporáneo de Xalapa</div>
-          <div class="iconoRedes--tarjeta"><i class="icon-facebook"></i></div>
+          <p class="tarjeta__fechaEvento">8 octubre 2016 &middot; 12:00	</p>
+          <div class="tarjeta__tipoEvento" title="Ciclo de Cine"><i class="icon-a-logo"></i></div>
+          <div class="tarjeta__linea">
+            <div></div>
+          </div>
+          <p class="tarjeta__nombreEvento">Matiné Infantil. Ciclo Hayao Miyasaki</p>
+          <p class="tarjeta__sedeEvento">Galería de Arte Contemporáneo de Xalapa | Auditorio	</p>
+          <div class="tarjeta__redesEvento"><i class="icon-a-logo"></i></div>
         </div>
       </div>
       <div class="tarjeta">
         <div class="tarjeta__contenedor">
-          <p class="fechaEvento">15 octubre 2016 &middot; 12:00	</p>
-          <div class="iconoTipo--tarjeta" title="Ciclo de Cine"></div>
-          <p class="nombreEvento">Matiné Infantil. Ciclo Hayao Miyasaki</p>
-          <p class="sedeEvento">Galería de Arte Contemporáneo de Xalapa | Auditorio	</p>
-          <div class="organizadorEvento">Galería de Arte Contemporáneo de Xalapa</div>
-          <div class="iconoRedes--tarjeta"><i class="icon-facebook"></i></div>
+          <p class="tarjeta__fechaEvento">15 octubre 2016 &middot; 12:00	</p>
+          <div class="tarjeta__tipoEvento" title="Ciclo de Cine"><i class="icon-a-logo"></i></div>
+          <div class="tarjeta__linea">
+            <div></div>
+          </div>
+          <p class="tarjeta__nombreEvento">Matiné Infantil. Ciclo Hayao Miyasaki</p>
+          <p class="tarjeta__sedeEvento">Galería de Arte Contemporáneo de Xalapa | Auditorio	</p>
+          <div class="tarjeta__redesEvento"><i class="icon-a-logo"></i></div>
         </div>
       </div>
       <div class="tarjeta">
         <div class="tarjeta__contenedor">
-          <p class="fechaEvento">22 octubre 2016 &middot; 12:00	</p>
-          <div class="iconoTipo--tarjeta" title="Ciclo de Cine"></div>
-          <p class="nombreEvento">Matiné Infantil. Ciclo Hayao Miyasaki</p>
-          <p class="sedeEvento">Galería de Arte Contemporáneo de Xalapa | Auditorio	</p>
-          <div class="organizadorEvento">Galería de Arte Contemporáneo de Xalapa</div>
-          <div class="iconoRedes--tarjeta"><i class="icon-facebook"></i></div>
+          <p class="tarjeta__fechaEvento">22 octubre 2016 &middot; 12:00	</p>
+          <div class="tarjeta__tipoEvento" title="Ciclo de Cine"><i class="icon-a-logo"></i></div>
+          <div class="tarjeta__linea">
+            <div></div>
+          </div>
+          <p class="tarjeta__nombreEvento">Matiné Infantil. Ciclo Hayao Miyasaki</p>
+          <p class="tarjeta__sedeEvento">Galería de Arte Contemporáneo de Xalapa | Auditorio	</p>
+          <div class="tarjeta__redesEvento"><i class="icon-a-logo"></i></div>
         </div>
       </div>
       <div class="tarjeta">
         <div class="tarjeta__contenedor">
-          <p class="fechaEvento">13 octubre 2016 &middot; 20:30	</p>
-          <div class="iconoTipo--tarjeta" title="Teatro"></div>
-          <p class="nombreEvento">Muestra Estatal de Teatro Indígena	</p>
-          <p class="sedeEvento">Sala Dagoberto Guillaumin, Teatro del Estado</p>
-          <div class="iconoRedes--tarjeta"><i class="icon-facebook"></i></div>
+          <p class="tarjeta__fechaEvento">13 octubre 2016 &middot; 20:30	</p>
+          <div class="tarjeta__tipoEvento" title="Teatro"><i class="icon-a-logo"></i></div>
+          <div class="tarjeta__linea">
+            <div></div>
+          </div>
+          <p class="tarjeta__nombreEvento">Muestra Estatal de Teatro Indígena	</p>
+          <p class="tarjeta__sedeEvento">Sala Dagoberto Guillaumin, Teatro del Estado</p>
+          <div class="tarjeta__redesEvento"><i class="icon-a-logo"></i></div>
         </div>
       </div>
       <div class="tarjeta">
         <div class="tarjeta__contenedor">
-          <p class="fechaEvento">13 octubre 2016 &middot; 19:30	</p>
-          <div class="iconoTipo--tarjeta" title="Teatro"></div>
-          <p class="nombreEvento">Muestra Estatal de Teatro Indígena	</p>
-          <p class="sedeEvento">Sala Dagoberto Guillaumin, Teatro del Estado</p>
-          <div class="iconoRedes--tarjeta"><i class="icon-facebook"></i></div>
+          <p class="tarjeta__fechaEvento">13 octubre 2016 &middot; 19:30	</p>
+          <div class="tarjeta__tipoEvento" title="Teatro"><i class="icon-a-logo"></i></div>
+          <div class="tarjeta__linea">
+            <div></div>
+          </div>
+          <p class="tarjeta__nombreEvento">Muestra Estatal de Teatro Indígena	</p>
+          <p class="tarjeta__sedeEvento">Sala Dagoberto Guillaumin, Teatro del Estado</p>
+          <div class="tarjeta__redesEvento"><i class="icon-a-logo"></i></div>
         </div>
       </div>
       <div class="tarjeta">
         <div class="tarjeta__contenedor">
-          <p class="fechaEvento">14 octubre 2016 &middot; 20:30	</p>
-          <div class="iconoTipo--tarjeta" title="Teatro"></div>
-          <p class="nombreEvento">Muestra Estatal de Teatro Indígena	</p>
-          <p class="sedeEvento">Sala Dagoberto Guillaumin, Teatro del Estado</p>
-          <div class="iconoRedes--tarjeta"><i class="icon-facebook"></i></div>
+          <p class="tarjeta__fechaEvento">14 octubre 2016 &middot; 20:30	</p>
+          <div class="tarjeta__tipoEvento" title="Teatro"><i class="icon-a-logo"></i></div>
+          <div class="tarjeta__linea">
+            <div></div>
+          </div>
+          <p class="tarjeta__nombreEvento">Muestra Estatal de Teatro Indígena	</p>
+          <p class="tarjeta__sedeEvento">Sala Dagoberto Guillaumin, Teatro del Estado</p>
+          <div class="tarjeta__redesEvento"><i class="icon-a-logo"></i></div>
         </div>
       </div>
       <div class="tarjeta">
         <div class="tarjeta__contenedor">
-          <p class="fechaEvento">14 octubre 2016 &middot; 19:30	</p>
-          <div class="iconoTipo--tarjeta" title="Teatro"></div>
-          <p class="nombreEvento">Muestra Estatal de Teatro Indígena	</p>
-          <p class="sedeEvento">Sala Dagoberto Guillaumin, Teatro del Estado</p>
-          <div class="iconoRedes--tarjeta"><i class="icon-facebook"></i></div>
+          <p class="tarjeta__fechaEvento">14 octubre 2016 &middot; 19:30	</p>
+          <div class="tarjeta__tipoEvento" title="Teatro"><i class="icon-a-logo"></i></div>
+          <div class="tarjeta__linea">
+            <div></div>
+          </div>
+          <p class="tarjeta__nombreEvento">Muestra Estatal de Teatro Indígena	</p>
+          <p class="tarjeta__sedeEvento">Sala Dagoberto Guillaumin, Teatro del Estado</p>
+          <div class="tarjeta__redesEvento"><i class="icon-a-logo"></i></div>
         </div>
       </div>
       <div class="tarjeta">
         <div class="tarjeta__contenedor">
-          <p class="fechaEvento">14 octubre 2016 &middot; 19:00	</p>
-          <div class="iconoTipo--tarjeta" title="Teatro"></div>
-          <p class="nombreEvento">Muestra Estatal de Teatro Indígena	</p>
-          <p class="sedeEvento">Sala Dagoberto Guillaumin, Teatro del Estado</p>
-          <div class="iconoRedes--tarjeta"><i class="icon-facebook"></i></div>
+          <p class="tarjeta__fechaEvento">14 octubre 2016 &middot; 19:00	</p>
+          <div class="tarjeta__tipoEvento" title="Teatro"><i class="icon-a-logo"></i></div>
+          <div class="tarjeta__linea">
+            <div></div>
+          </div>
+          <p class="tarjeta__nombreEvento">Muestra Estatal de Teatro Indígena	</p>
+          <p class="tarjeta__sedeEvento">Sala Dagoberto Guillaumin, Teatro del Estado</p>
+          <div class="tarjeta__redesEvento"><i class="icon-a-logo"></i></div>
         </div>
       </div>
       <div class="tarjeta">
         <div class="tarjeta__contenedor">
-          <p class="fechaEvento">26 septiembre 2016		</p>
-          <div class="iconoTipo--tarjeta" title="Convocatoria"></div>
-          <p class="nombreEvento">LUNETA	</p>
-          <p class="sedeEvento">Ágora de la Ciudad</p>
-          <div class="iconoRedes--tarjeta"><i class="icon-facebook"></i></div>
+          <p class="tarjeta__fechaEvento">26 septiembre 2016		</p>
+          <div class="tarjeta__tipoEvento" title="Convocatoria"><i class="icon-a-logo"></i></div>
+          <div class="tarjeta__linea">
+            <div></div>
+          </div>
+          <p class="tarjeta__nombreEvento">LUNETA	</p>
+          <p class="tarjeta__sedeEvento">Ágora de la Ciudad</p>
+          <div class="tarjeta__redesEvento"><i class="icon-a-logo"></i></div>
         </div>
       </div>
     </div>
   </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="js/jquery-3.2.1.slim.min.js"></script>
+  <script src="js/jquery-3.2.1.min.js"></script>
   <script type="text/javascript">
-    $('#botonMenu').click(function(){
-    	$(this).toggleClass('active');
-    	$('#nav').toggleClass('nav--activo');
-    	$('.item__buscar, .item__filtrar, .item__historial, .item__crear').toggleClass('item__oculto');
-    });
+    $(document).ready(function(){
+    	$('#botonMenu').click(function(){
+    		$(this).toggleClass('active');
+    		$('#nav').toggleClass('nav--activo');
+    		$('.menuNavegacion__eventos, .menuNavegacion__filtrar, .menuNavegacion__historial, .menuNavegacion__crear').toggleClass('displayVisible');
+    	});
+    	
     
-    $('#banner__enviaTuEvento').click(function(){
-      	$('#modal__enviaTuEvento').removeClass('displayNone').addClass('modal__enviaTuEvento');
-      	$('body').addClass('modal-active');
-    });
+    	$('#crear, #crear_ex').click(function(){
+    	  	$('.modal__contenedor').removeClass('modal__displayNone');
+    	  	$('body').addClass('modal__activo');
+    	});
     
-    $('#cerrar__bannerEnviaTuEvento').click(function(){
-     	$('#modal__enviaTuEvento').removeClass('modal__enviaTuEvento').addClass('displayNone');
-      	$('body').removeAttr('class');
+    	$('#cerrar').click(function(){
+    	 	$('.modal__contenedor').addClass('modal__displayNone');
+    	  	$('body').removeAttr('class');
+    	});
+    
+    	var menuNavegacionExtendida = $('#eventos, #eventos_ex, #filtar, #filtar_ex, #historial, #historial_ex, #crear, #crear_ex, #acerca_ex');
+    	
+    	$(menuNavegacionExtendida).click(function(){
+    		$('#botonMenu').toggleClass('active');
+    		$('#nav').toggleClass('nav--activo');
+    		$('.menuNavegacion__eventos, .menuNavegacion__filtrar, .menuNavegacion__historial, .menuNavegacion__crear').toggleClass('displayVisible');
+    	});
     });
   </script>
 </body>

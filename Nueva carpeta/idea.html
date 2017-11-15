@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.parentContainer {
+	width: 100%;
+	padding: 7% 70px;
+	margin: 0 auto;
+	box-sizing: border-box;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+.stickyContainer {
+  position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	width: 41.66667%;
+}
+
+img {
+	width: 50%;
+  max-width: 645px;
+}
+
+/* Text styling only */
+body {font-family: "Akagi Pro",sans-serif; background:#fafafa;font-weight:200;font-size:20px;}
+h2, h3 {font-size:52px;margin:17% 0 0.09615em;font-family:"Tisa Pro",sans-serif;letter-spacing:-0.025em;line-height:1.11538;}
+h3 {margin-top:0;margin-bottom:.5em;letter-spacing:-0.035em;font-weight:100;color:#9ea0a6;max-width:7em;}
+p {letter-spacing:.025em;line-height:1.55556;max-width:24em;}
+li{line-height: 2.77778;list-style: none;}
+li::before {content:'• ';color:#1c92cc;}
+	</style>
+</head>
+<body>
+	<div class="parentContainer">
+		<img src="https://cdn.ueno.co/194c76800abfd9aaff28ea5dbc3b65ce.jpg" alt="Lonely Planet Asia screenshot"/>
+		<div class="stickyContainer">
+			<h2>It’s a big world</h2>
+			<h3>Finding your way</h3>
+			<p>Many people’s vacation plans start with Lonely Planet. With so much content about so many destinations, we focused on helping users find what they’re looking for, even when they’re not sure what it is yet.</p>
+			<ul>
+				<li>Inspirational photography</li>
+				<li>Personal quotes from the editors</li>
+				<li>Most popular destinations</li>
+			</ul>
+		</div>
+	</div>
+	
+</body>
+</html>

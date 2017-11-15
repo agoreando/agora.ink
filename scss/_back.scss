@@ -1,0 +1,30 @@
+.back {
+		display: none;
+		justify-content: center;
+		align-items: center;
+		background-color: var(--blanco);
+		color: var(--oxford);
+		border-radius: 50%;
+		width: 2.5rem;
+		height: 2.5rem;
+		line-height: 1;
+		box-shadow: 0 1px 2px var(--claro);   
+		position: fixed;
+		bottom: .5rem; 
+		right: .75rem;
+		z-index: 7;
+		text-align: center;
+
+	@include sm {
+		display: flex;
+			
+		.icono--back  {
+	      color: var(--profundo);
+	      width: 2rem;
+	    }
+	}
+
+	@include md {
+		right: 3.75rem;
+	}
+}

@@ -1,0 +1,98 @@
+//Media Queries
+@import "_media_queries";
+
+/* -------- Beta Modal -------- */
+@import "landingPage/_beta_modal.scss";
+
+/* ================================
+		INICIAN MÓDULOS
+=================================*/
+
+/* --------  -------- */
+
+
+.agora__contenedor {
+	width: 100%;
+    height: 100%;
+    position: relative;
+    // margin-top: 3rem;
+    left: 0;
+    bottom: 0;
+    padding: 0;
+    z-index: 6;
+
+    @include md {
+		width: calc(100% - 3rem);
+	    height: 100%;
+	    position: relative;
+	    margin: 0;
+	    left: 0;
+	    bottom: initial;
+	    padding: 0;
+	}			
+}
+
+.nombre__seccion {
+	font-weight: 300;
+	margin: 0 0 0.5rem 0;
+}
+
+.subNombre__seccion {
+	font-weight: 400;
+	margin: 0 0 1rem 0;
+}
+
+.items__seccion {
+	margin: 0.5rem 0 0 0; 
+	font-weight: 200;
+	font-size: 1.25rem;
+}
+
+.icon-buscar:before, .icon-categorias:before, .icon-fecha:before {
+	font-size: 100;
+	margin: 0 1rem 0 0;
+	color: var(--oxford);
+}
+
+.informacion__seccion {
+	font-weight: 300;
+	margin: 0 0 1rem 0;
+	font-size: 90%;
+}
+
+/* --------  -------- */
+
+/* -------- Barra de Navegación -------- */
+//@import "_menu_navegacion.scss";
+
+/* -------- Barra de Navegación Landing Page -------- */
+//@import "landingPage/_menu_navegacion_landingPage.scss";
+
+
+/* -------- Menú Navegación Extendida -------- */
+//@import "_menu_navegacion_extendida.scss";
+
+
+/* -------- Portada -------- */
+@import "landingPage/_portada.scss";
+
+/* -------- Fase Beta -------- */
+@import "landingPage/_beta.scss";
+
+
+/* -------- ágora -------- */
+@import "landingPage/_agora.scss";
+
+
+/* -------- Descubre -------- */
+@import "landingPage/_descubre.scss";
+
+/* -------- Comunica -------- */
+@import "landingPage/_comunica.scss";
+
+/* -------- Explorar -------- */
+@import "landingPage/_explorar.scss";
+
+/* -------- Pie -------- */
+@import "landingPage/_pie.scss";
+

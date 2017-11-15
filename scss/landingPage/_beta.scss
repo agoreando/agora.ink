@@ -1,0 +1,19 @@
+.beta {
+	background-color: var(--oxford);
+	color: var(--ahuesado);
+	padding: 1rem;
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+
+	&__texto {
+		letter-spacing: 0.5rem;
+	}
+
+	&__mas {
+		padding: 0 1rem;
+	}
+
+}

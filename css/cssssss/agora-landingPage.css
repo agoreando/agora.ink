@@ -7,67 +7,6 @@
 		display: inline-block;
 	}
 
-/* ======== Inicio ======== */
-	.inicio {
-		color: var(--profundo);
-	}
-
-	.inicio__imagen {	
-	}
-
-	.inicio__informacion {	
-		text-align: right;
-		display: flex;
-		flex-flow: column;
-		justify-content: center;
-		align-items: flex-start;		
-	}
-	
-	
-	.linea {
-		margin: 1rem 0;
-		background-color: var(--claro);
-		height: 1px;
-		width: 100%;
-	}
-
-	.boton {
-		padding: .5rem 1rem;
-		border: 1px solid;
-		border-radius: 4px;
-		margin: 1rem 0;
-		align-self: center;
-		font-weight: 600;
-		text-align: center;	
-	}
-
-	.naranja {
-		border-color: var(--anaranjado);
-		color: var(--anaranjado);
-	}
-
-	.naranja:hover {
-		background-color: var(--anaranjado);
-		color: var(--ahuesado);
-	}
-
-
-
-/* ======== ágora ======== */
-	.agora {
-		background-color: var(--anaranjado);
-		color: var(--blanco);
-		text-align: center;
-	}
-
-
-/* ======== Alfa ======== */
-	.alfa {
-		text-align: center;
-		background-color: var(--oxford);
-		color: var(--ahuesado);
-		padding: 1rem;
-	}
 
 
 /* ======== Descubre ======== */
@@ -235,32 +174,7 @@
 
 
 /* ======== Pie ======== */
-	.pie {
-		color: var(--claro);
-		background-color: var(--profundo);
-	}
 	
-	.pie__dReservados{
-		font-size: 50%;
-		font-weight: 400;
-		width: 20%;
-	}
-
-	.pie__logo{
-		width: 50%;
-		text-align: center;
-	}
-
-	.pie__redesSociales{
-		width: 30%;
-		
-	}
-		
-	.pie__redesSociales--icono {
-		text-align: center;
-		margin: 0 .25rem;
-		font-size: 80%;
-	}
 
 
 /*////////////////  MEDIA QUERIES ////////////////*/
@@ -307,148 +221,7 @@
 		text-align: center;
 	}	
 	
-
-	/* Menu Navegación */
-		.menuNavegacionVertical {
-			display: none;
-		}
-		
-		.back {
-			display: none;
-		}
-
-		.menuNavegacionApaisado {
-			display: flex;
-		}
-
-		.botonMenu, .menuOverlay {
-			visibility: visible;
-		}
 	
-	/*Menu Apaisado*/
-		.menuNavegacionApaisado {
-	      position: fixed;
-	      width: 100%;
-	      height: 2rem;
-	      padding: 0 1rem;
-	      justify-content: space-between;
-	      align-items: center;
-	      background-color: var(--blanco);
-	      color: var(--oxford);
-	      z-index: 8; 
-	      border-bottom: 1px solid var(--ahuesado);
-	      top: 0;
-	      line-height: 1;
-	    }
-
-	    .botonMenu {
-	      position: fixed;
-	      top: 1px;
-	      right: 2%;
-	      height: 18px;
-	      width: 23px;
-	      cursor: pointer;
-	      z-index: 100;
-	      -webkit-transition: opacity .25s ease;
-	      transition: opacity .25s ease;
-	    }
-
-	    .botonMenu:hover {
-	      opacity: .7;
-	    }
-
-	    .botonMenu.active .top {
-	      -webkit-transform: translateY(10px) translateX(0) rotate(45deg);
-	              transform: translateY(10px) translateX(0) rotate(45deg);
-	      background: var(--anaranjado);
-	    }
-
-	    .botonMenu.active .middle {
-	      opacity: 0;
-	    }
-
-	    .botonMenu.active .bottom {
-	      -webkit-transform: translateY(-10px) translateX(0) rotate(-45deg);
-	              transform: translateY(-10px) translateX(0) rotate(-45deg);
-	      background: var(--anaranjado);
-	      top: 24px;
-	    }
-
-	    .botonMenu span {
-	      background: var(--anaranjado);
-	      border: none;
-	      height: 3px;
-	      width: 100%;
-	      position: absolute;
-	      top: 4px;
-	      left: 0;
-	      -webkit-transition: all .35s ease;
-	      transition: all .35s ease;
-	      cursor: pointer;
-	    }
-
-	    .botonMenu span:nth-of-type(2) {
-	    top: 12px;
-	    }
-
-	    .botonMenu span:nth-of-type(3) {
-	    top: 20px;
-	    }
-
-	    .menuOverlay {
-	      position: fixed;
-	      background-color: var(--anaranjado);
-	      left: 0;
-	      width: 100%;
-	      opacity: 1;
-	      visibility: hidden;
-	      -webkit-transition: opacity .35s, visibility .35s, width .35s;
-	      transition: opacity .35s, visibility .35s, width .35s;
-	      z-index: 8;
-	      overflow: auto;
-	      top: 2rem;
-	    }
-	
-	/* Inicio*/
-		.inicio {
-			height: 100%;
-			margin-top: 2rem;
-			text-align: center;
-		}
-		
-		.inicio_imagen {
-			display: none;
-		}
-
-		.inicio__informacion {	
-			align-items: center;
-			padding: 0;
-		}
-
-		.inicio--titulo {
-			font-size: 2rem;
-			font-weight: 400;
-			line-height: 1.1;
-		}
-
-		.inicio--texto {
-			font-size: 80%;
-			margin-top: 1rem;
-			font-weight: 300;
-		}
-	
-	/* ágora */
-		.agora--imagen {
-			margin: .5rem;
-			width: 90%;
-		}
-		
-		.agora--texto {
-			margin: .5rem;
-			font-size: 1rem;
-			font-weight: 400;
-			line-height: 1.1;
-		}
 
 	/* Equipo */
 		
@@ -749,27 +522,7 @@
 			}
 
 	/* Pie */
-		.pie {
-			display: flex;
-			flex-flow: row;
-			justify-content: center;
-			align-items: center;
-			padding: .5rem;	
-		}
-
-		.pie__dReservados{
-			width: 20%;
-			text-align: left;
-		}
-
-		.pie__logo{
-			width: 50%;
-		}
-
-		.pie__redesSociales{
-			width: 30%;
-			text-align: right;
-		}
+		
 }
 
 /*lg*/

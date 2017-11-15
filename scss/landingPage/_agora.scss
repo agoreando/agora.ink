@@ -1,0 +1,64 @@
+.agora {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+	background-color: var(--blanco);
+	margin: 1rem;
+	height: 40vh;
+
+	&__imagen {		
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		display: none;
+	}	
+
+	&__texto {		
+		grid-column: 1/2;
+		grid-row: 1/2;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-flow: column;		
+		margin: 0.5rem;
+		color: var(--oxford);
+		text-align: center;
+		font-weight: 500;
+		
+	}
+
+	&__texto p {
+		width: 90%;
+		font-size: 1rem;
+	}
+
+
+	@include md {
+		grid-template-columns: 1fr;
+		grid-template-rows: 50% 50%;
+		height: auto;
+
+		&__imagen {
+			grid-column: 1/2;
+			grid-row: 1/2;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		&__imagen img {
+			
+			width: 50%;
+		}
+
+		&__texto {
+			grid-column: 1/2;
+			grid-row: 2/3;
+		}
+
+		&__texto p {
+			width: 75%;
+			font-size: 2rem;
+		}
+	}
+}
