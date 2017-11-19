@@ -15,19 +15,19 @@
 /* --------  -------- */
 
 /* -------- Barra de Navegación --------*/
-@import "_menu_navegacion.scss";
+@import "index/_menu_navegacion.scss";
 
 /* -------- Menú Navegación Extendida --------*/
-@import "_menu_navegacion_extendida.scss";
+@import "index/_menu_navegacion_extendida.scss";
 
 /* -------- Columnas -------- */
-@import "_columnas.scss";
+@import "index/_columnas.scss";
 
 /* -------- Back --------*/
-@import "_back.scss";
+@import "index/_back.scss";
 
 /* -------- Tarjetas --------*/
-@import "_tarjetas.scss";
+@import "index/_tarjetas.scss";
 
 /* -------- 1 --------*/
 // @import "1.scss";
@@ -36,7 +36,7 @@
 // @import "1.scss";
 
 /* -------- Modal Crear Evento --------*/
-@import "_modal.scss";
+@import "index/_modal.scss";
 
 /* -------- 1 --------*/
 // @import "1.scss";

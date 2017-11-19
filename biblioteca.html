@@ -35,7 +35,7 @@
   <!--Icon Font-->
   <link href="https://file.myfontastic.com/q2AGPeQ9fwKP9wnDdWcPfW/icons.css" rel="stylesheet"/>
   <!--Roboto Font-->
-  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet"/>
   <!--Normalize-->
   <link href="css/normalize.css" rel="stylesheet"/>
   <!--Agora Style-->
@@ -46,9 +46,7 @@
   <div class="modal__contenedor modal__displayNone">
     <button class="modal__cerrar" id="cerrar"><i class="icon-cerrar"></i></button>
     <div class="modal__informacion">
-      <div class="modal__portada">
-        <p>Comunica tu Evento</p>
-      </div>
+      <div class="modal__portada"></div>
       <div class="modal__politicas">
         <p>Los Eventos se aprueban y muestran en la plataforma en un plazo de 24 horas.</p>
         <p>Algunos eventos demoran más en la fase de revisión, esto no significa que no se vayan a subir y aprobar.</p>
@@ -64,15 +62,15 @@
   </div>
   <!--Barra de Navegación-->
   <nav class="menuNavegacion">
-    <div class="menuNavegacion__home"><a href="index.html"><i class="icon-a-logo"></i></a></div><a class="menuNavegacion__eventos" href="index.html"><i class="icon-a-logo icono--menu" id="eventos"></i></a><a class="menuNavegacion__filtrar" title="Disponible en breve"><i class="icon-filtrar icon--bloqueado" id="filtar"></i></a><a class="menuNavegacion__hemeroteca" title="Disponible en breve"><i class="icon-hemeroteca icon--bloqueado" id="hemeroteca"></i></a><a class="menuNavegacion__crear" role="button"><i class="icon-crear icono--menu" id="crear"></i></a>
+    <div class="menuNavegacion__home"><a href="index.html"><i class="icon-a-logo"></i></a></div><a class="menuNavegacion__eventos" href="index.html"><i class="icon-a-logo icono--menu" id="eventos"></i></a><a class="menuNavegacion__filtrar"><i class="icon-filtrar" id="filtar"></i></a><a class="menuNavegacion__historial" href="biblioteca.html"><i class="icon-historial icono--menu" id="historial"></i></a><a class="menuNavegacion__crear" role="button"><i class="icon-crear icono--menu" id="crear"></i></a>
     <div class="menuNavegacion__botonMenu"><a href="#nav" aria-label="Open Navigation">
         <div class="botonMenu" id="botonMenu"> <span class="top"></span><span class="middle"></span><span class="bottom"></span></div></a></div>
   </nav>
   <div class="menuNavegacionExtendida" id="nav">
     <div class="menuNavegacionExtendida__logo"><img class="imagen-fluida" src="images/agora_logo_blanco.svg"/></div><a class="menuNavegacionExtendida__eventos" href="index.html">
-      <p class="menuNavegacionExtendida__texto" id="eventos_ex">Eventos</p></a><a class="menuNavegacionExtendida__filtrar" title="Disponible en breve">
-      <p class="menuNavegacionExtendida__texto" id="filtar_ex">Filtrar</p></a><a class="menuNavegacionExtendida__hemeroteca" title="Disponible en breve">
-      <p class="menuNavegacionExtendida__texto" id="hemeroteca_ex">Hemeroteca</p></a><a class="menuNavegacionExtendida__crear">
+      <p class="menuNavegacionExtendida__texto" id="eventos_ex">Eventos</p></a><a class="menuNavegacionExtendida__filtrar">
+      <p class="menuNavegacionExtendida__texto" id="filtar_ex">Filtrar</p></a><a class="menuNavegacionExtendida__historial" href="biblioteca.html">
+      <p class="menuNavegacionExtendida__texto" id="historial_ex">Historial</p></a><a class="menuNavegacionExtendida__crear">
       <p class="menuNavegacionExtendida__texto" id="crear_ex">Crear</p></a>
     <div class="menuNavegacionExtendida__linea"></div><a class="menuNavegacionExtendida__faseBeta" href="landingPage.html">
       <p class="menuNavegacionExtendida__texto" id="acerca_ex">Acerca de ágora</p></a>
@@ -283,7 +281,7 @@
     	$('#botonMenu').click(function(){
     		$(this).toggleClass('active');
     		$('#nav').toggleClass('nav--activo');
-    		$('.menuNavegacion__eventos, .menuNavegacion__filtrar, .menuNavegacion__hemeroteca, .menuNavegacion__crear').toggleClass('displayVisible');
+    		$('.menuNavegacion__eventos, .menuNavegacion__filtrar, .menuNavegacion__historial, .menuNavegacion__crear').toggleClass('displayVisible');
     	});
     	
     
@@ -297,12 +295,12 @@
     	  	$('body').removeAttr('class');
     	});
     
-    	var menuNavegacionExtendida = $('#eventos, #eventos_ex, #filtar, #filtar_ex, #hemeroteca, #hemeroteca_ex, #crear, #crear_ex, #acerca_ex');
+    	var menuNavegacionExtendida = $('#eventos, #eventos_ex, #filtar, #filtar_ex, #historial, #historial_ex, #crear, #crear_ex, #acerca_ex');
     	
     	$(menuNavegacionExtendida).click(function(){
     		$('#botonMenu').toggleClass('active');
     		$('#nav').toggleClass('nav--activo');
-    		$('.menuNavegacion__eventos, .menuNavegacion__filtrar, .menuNavegacion__hemeroteca, .menuNavegacion__crear').toggleClass('displayVisible');
+    		$('.menuNavegacion__eventos, .menuNavegacion__filtrar, .menuNavegacion__historial, .menuNavegacion__crear').toggleClass('displayVisible');
     	});
     });
   </script>

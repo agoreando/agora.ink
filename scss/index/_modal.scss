@@ -80,8 +80,18 @@
     
     &__portada {
         width: 100%;
-        height: 100vh;
+        height: auto;
         background-color: var(--profundo);
+        background: url("../images/landing_portada_moviles.jpg") no-repeat;
+        background-position: 50% 50%;
+        background-size: cover;
+
+        @include sm {}
+        @include md {
+            height: 100vh;
+        }
+        
+        @include lg {}
     }
 
     &__politicas {

@@ -26,7 +26,7 @@
 
 	&__eventos,
 	&__filtrar, 
-	&__historial, 
+	&__hemeroteca, 
 	&__crear,  {
 		display: none;
 	}
@@ -59,6 +59,10 @@
 .icono--menu:hover {
 	color: var(--anaranjado);
 	cursor: pointer;
+}
+
+.icon--bloqueado {
+	color: var(--tenue);
 }
 
 
@@ -97,7 +101,7 @@
 			grid-row: 3;
 		}
 
-		&__historial  {
+		&__hemeroteca  {
 			grid-column: 1/2;
 			grid-row: 4;
 		}
@@ -109,7 +113,7 @@
 
 		&__eventos,
 		&__filtrar, 
-		&__historial, 
+		&__hemeroteca, 
 		&__crear  {
 			display: flex;
 			flex-flow: column;

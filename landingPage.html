@@ -46,9 +46,13 @@
   <div class="modal__contenedor modal__displayNone">
     <button class="modal__cerrar" id="cerrar"><i class="icon-cerrar"></i></button>
     <div class="modal__informacion">
-      <p>si a dentro no hay nada</p>
+      <h1>Fase Alfa</h1>
+      <h4>En este momento, la plataforma se encuentra en esta etapa, hemos agregado casi todas las características y la aplicación es casi funcional.</h4>
+      <h4>Sin embargo, no está completamente libre de fallos o bugs, por lo que te advertimos de que cosas raras podrían pasar.</h4>
     </div>
-    <div class="modal__imagen"></div>
+    <div class="modal__imagen">
+      <div class="modal__mounstro"></div>
+    </div>
   </div>
   <!--Barra de Navegación
   nav.menuNavegacion
@@ -100,10 +104,9 @@
   <!--SECCIÓN PORTADA -->
   <header class="portada" id="portada">
     <div class="portada__imagen"><img class="imagen-fluida" src="images/agora_logo_blanco.svg"/></div>
-    <h1 class="portada__titulo">Descubre. Comunica tu Evento.</h1>
+    <h1 class="portada__titulo">Descubre. Comunica tu Evento</h1>
     <div class="portada__texto"> 
-      <p>Encuentra el próximo concierto cerca de ti o los horarios de la obra a la que deseas asistir; </p>
-      <p>crea el espacio para el evento que organizas y has que todos lo vean.</p>
+      <p>Encuentra el próximo concierto cerca de ti o los horarios de la obra a la que deseas asistir; </p>crea el espacio para el evento que organizas y has que todos lo vean.
     </div>
     <div class="portada__linea">
       <div></div>
@@ -121,9 +124,9 @@
     </div>
   </section>
   <!--SECCIÓN ágora-->
-  <section class="agora" id="agora">
-    <div class="agora__imagen"><img class="imagen-fluida" src="images/agora_logo_negro.svg"/></div>
-    <div class="agora__texto"> 
+  <section class="descripcion" id="descripcion">
+    <div class="descripcion__imagen"><img class="imagen-fluida" src="images/quotes.svg"/></div>
+    <div class="descripcion__texto">
       <p>ágora es la plataforma enfocada en difundir los eventos de manera gratuita, mostrándole un catálogo a los usuarios de todas las actividades culturales que suceden a su alrededor	</p>
     </div>
   </section>
@@ -133,7 +136,7 @@
       <h2 class="nombre__seccion">Descubre</h2>
       <p class="informacion__seccion">ágora te muestra las actividades culturales y de entretenimiento a realizarse, dejando atrás la forma aburrida de buscar entre carteleras con eventos atrasados.</p>
     </div>
-    <div class="descubre__imagen"><img class="imagen-fluida" src="images/agora_logo_negro.svg"/></div>
+    <div class="descubre__imagen"><img class="imagen-fluida" src="images/compass.svg"/></div>
   </section>
   <!--SECCIÓN EXPLORA
   section#explora.explora.flexBox__Row
@@ -164,7 +167,7 @@
       <h2 class="nombre__seccion">Comunica</h2>
       <p class="informacion__seccion">Diseñamos el espacio estupendo para tú evento, enfocando ágora para ofrecerte una plataforma especializada en difundir tu evento, en la cual podrás conectar con tus próximos asistentes.</p>
     </div>
-    <div class="comunica__imagen"><img class="imagen-fluida" src="images/agora_logo_negro.svg"/></div>
+    <div class="comunica__imagen"><img class="imagen-fluida" src="images/microphone.svg"/></div>
   </section>
   <!--SECCIÓN CREA
   section#crea.crea.flexBox__Row
@@ -196,12 +199,9 @@
   //- 			img.imagen-fluida(src="images/boletos_02.svg")
   //- 		div.moduloDer
   //- 			p.informacion__seccion La plataforma te permite también indicarle a tus usuarios si  el acceso a tu evento no tiene un precio
-  		
+  	
+  
   -->
-  <!--SECCIÓN go to ágora-->
-  <section class="explorar" id="explorar"><img class="explorar__imagen imagen-fluida" src="images/agora.svg"/>
-    <div class="explorar__boton"><a href="index.html">Explorar</a></div>
-  </section>
   <!--SECCIÓN Equipo
   section#equipo.equipo.flexBox__Column
   	h2
@@ -259,13 +259,17 @@
   				div.tag UI Desing
   
   			div.redesSociales__integrante F & T & L
-  
   -->
+  <!--SECCIÓN Explorar-->
+  <section class="explorar" id="explorar">
+    <div class="explorar__boton"><a href="index.html">Explorar</a></div>
+    <div class="explorar__imagen"></div>
+  </section>
   <!--SECCIÓN PIE-->
   <section class="pie">
     <p class="pie__derechosReservados">DR | 2017<i class="icon-registrado"></i></p>
     <div class="pie__logo"><img class="imagen-fluida" src="images/agora_logo_blanco.svg"/></div>
-    <div class="pie__redesSociales"><i class="pie__redesSociales--icono icon-a-logo"></i><i class="pie__redesSociales--icono icon-facebook-circulo"></i><i class="pie__redesSociales--icono icon-correo"></i></div>
+    <div class="pie__redesSociales"><i class="pie__redesSociales--icono icon-a-logo"></i><i class="pie__redesSociales--icono icon-facebook"></i><i class="pie__redesSociales--icono icon-correo"></i></div>
   </section>
   <script src="js/jquery-3.2.1.min.js"></script>
   <script type="text/javascript">

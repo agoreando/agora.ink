@@ -1,4 +1,5 @@
 .modal {
+
     &__activo { //estilo para body
         overflow: hidden;
     } 
@@ -12,19 +13,19 @@
         right: 0;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: auto auto;
+        grid-template-rows: auto 1fr;
         overflow-y: auto;
-        padding: 10% 2%;
+        padding: 10% 5%;
         background-color: var(--profundoTransparente); 
         
         @include md {
             grid-template-columns: 50% 50%;
             grid-template-rows: auto;
-            padding: 5% 2%;
+            padding: 5%;
         }
 
         @include lg {
-            
+            padding: 5% 10%;
             // grid-template-columns: 80% 20%;
             // grid-template-rows: auto;
             
@@ -70,23 +71,102 @@
         width: 100%;
         height: 100%;
         grid-column:1/2;
-        grid-row:1/3;
-        background-color: var(--blanco);
+        grid-row:1/2;
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 1rem;
+        border-radius: 8px 8px 0 0;
+        text-align: center;
+        color: var(--blanco);
+        background-color: var(--melon);
+        // background-color: transparent;
         z-index: 9;
+        
+        @include sm {
+            justify-content: center;
+            padding: 2rem 3rem; 
+            background-color: var(--melon);
+        }
+
         @include md {
             grid-column: 1/2;
             grid-row: 1/2;
+            align-items: flex-start;
+            text-align: left;
+            background-color: var(--melon);
+            border-radius: 8px 0 0 8px;
+        }
+
+        @include lg {
+
+        }
+    }
+
+    &__informacion h1 {
+        margin: 0.5rem 0;
+        font-size: 1.75rem;
+
+        @include sm {
+            font-size: 2.5rem;
+        }
+
+        @include md {
+            margin: 0.5rem 0;
+        }
+
+        @include lg {
+            margin: 1rem 0;
+            width: 80%;
+        }
+    }
+    &__informacion h4 {
+        margin: 0.5rem 0 0 0;
+        font-size: 1rem;
+        font-weight: 300;
+
+        @include sm {
+            font-size: 1.5rem;
+        }
+
+        @include md {
+            margin: 0.5rem 0;
+        }
+
+        @include lg {
+            margin: 1rem 0;
+            width: 80%;
         }
     }
 
     &__imagen {
         grid-column:1/2;
-        grid-row:1/3;
+        grid-row:2/3;
         background-color: var(--melon);
         z-index: 8;
+        border-radius: 0 0 8px 8px;
+
         @include md {
             grid-column: 2/3;
             grid-row: 1/2;
+            background-color: var(--melon);
+            border-radius: 0 8px 8px 0;
         }
     }
+
+    &__mounstro {
+        width: 100%;
+        height: 100%;
+        background: url("../images/mounstro.png") no-repeat;
+        background-size: cover;
+        background-position: 50% 0%;
+
+        @include md {
+            background: url("../images/mounstro.png") no-repeat;
+            background-size: contain;
+            background-position: 50% 100%;
+        }
+    }
+
 }

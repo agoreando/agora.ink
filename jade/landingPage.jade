@@ -54,8 +54,12 @@ body
 	div.modal__contenedor.modal__displayNone
 		button.modal__cerrar#cerrar: i.icon-cerrar
 		div.modal__informacion
-			p si a dentro no hay nada
+			h1 Fase Alfa
+			h4 En este momento, la plataforma se encuentra en esta etapa, hemos agregado casi todas las características y la aplicación es casi funcional.
+			h4 Sin embargo, no está completamente libre de fallos o bugs, por lo que te advertimos de que cosas raras podrían pasar.
+
 		div.modal__imagen
+			div.modal__mounstro
 
 	//Barra de Navegación
 		nav.menuNavegacion
@@ -108,10 +112,10 @@ body
 		div.portada__imagen
 			img.imagen-fluida(src="images/agora_logo_blanco.svg")
 
-		h1.portada__titulo Descubre. Comunica tu Evento.
+		h1.portada__titulo Descubre. Comunica tu Evento
 		div.portada__texto 
 			p Encuentra el próximo concierto cerca de ti o los horarios de la obra a la que deseas asistir; 
-			p crea el espacio para el evento que organizas y has que todos lo vean.
+			| crea el espacio para el evento que organizas y has que todos lo vean.
 		div.portada__linea
 			div
 		div.portada__boton
@@ -127,10 +131,10 @@ body
 			h4 +
 
 	//SECCIÓN ágora
-	section#agora.agora
-		div.agora__imagen
-			img.imagen-fluida(src="images/agora_logo_negro.svg")
-		div.agora__texto 
+	section#descripcion.descripcion
+		div.descripcion__imagen
+			img.imagen-fluida(src="images/quotes.svg")
+		div.descripcion__texto
 			p ágora es la plataforma enfocada en difundir los eventos de manera gratuita, mostrándole un catálogo a los usuarios de todas las actividades culturales que suceden a su alrededor	
 			
 	//SECCIÓN DESCUBRE
@@ -139,7 +143,8 @@ body
 			h2.nombre__seccion Descubre
 			p.informacion__seccion ágora te muestra las actividades culturales y de entretenimiento a realizarse, dejando atrás la forma aburrida de buscar entre carteleras con eventos atrasados.
 		div.descubre__imagen
-			img.imagen-fluida(src="images/agora_logo_negro.svg")
+			img.imagen-fluida(src="images/compass.svg")
+
 
 	//SECCIÓN EXPLORA
 		section#explora.explora.flexBox__Row
@@ -169,7 +174,7 @@ body
 			h2.nombre__seccion Comunica
 			p.informacion__seccion Diseñamos el espacio estupendo para tú evento, enfocando ágora para ofrecerte una plataforma especializada en difundir tu evento, en la cual podrás conectar con tus próximos asistentes.
 		div.comunica__imagen
-			img.imagen-fluida(src="images/agora_logo_negro.svg")
+			img.imagen-fluida(src="images/microphone.svg")
 
 	//SECCIÓN CREA
 		section#crea.crea.flexBox__Row
@@ -200,12 +205,7 @@ body
 		//- 			img.imagen-fluida(src="images/boletos_02.svg")
 		//- 		div.moduloDer
 		//- 			p.informacion__seccion La plataforma te permite también indicarle a tus usuarios si  el acceso a tu evento no tiene un precio
-				
-	//SECCIÓN go to ágora
-	section#explorar.explorar
-		img.explorar__imagen.imagen-fluida(src="images/agora.svg")
-		div.explorar__boton
-			a(href="index.html") Explorar
+			
 
 	//SECCIÓN Equipo
 		section#equipo.equipo.flexBox__Column
@@ -264,7 +264,13 @@ body
 						div.tag UI Desing
 
 					div.redesSociales__integrante F & T & L
+	//SECCIÓN Explorar
+	section#explorar.explorar
+		div.explorar__boton
+			a(href="index.html") Explorar
+		div.explorar__imagen
 
+			
 	//SECCIÓN PIE
 	section.pie
 		p.pie__derechosReservados DR | 2017
@@ -273,7 +279,7 @@ body
 			img.imagen-fluida(src="images/agora_logo_blanco.svg")
 		div.pie__redesSociales
 			i.pie__redesSociales--icono.icon-a-logo
-			i.pie__redesSociales--icono.icon-facebook-circulo
+			i.pie__redesSociales--icono.icon-facebook
 			i.pie__redesSociales--icono.icon-correo
 
 	script(src="js/jquery-3.2.1.min.js")

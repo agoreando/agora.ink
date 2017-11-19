@@ -39,7 +39,7 @@ head
 	link(href="https://file.myfontastic.com/q2AGPeQ9fwKP9wnDdWcPfW/icons.css" rel="stylesheet")
 	
 	//Roboto Font
-	link(href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet")
+	link(href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet")
 
 	//Normalize
 	link(href="css/normalize.css" rel="stylesheet")
@@ -56,6 +56,7 @@ body
 		button.modal__cerrar#cerrar: i.icon-cerrar
 		div.modal__informacion
 			div.modal__portada
+				p Comunica tu Evento
 			div.modal__politicas
 				p Los Eventos se aprueban y muestran en la plataforma en un plazo de 24 horas.
 				p Algunos eventos demoran más en la fase de revisión, esto no significa que no se vayan a subir y aprobar.
@@ -77,8 +78,8 @@ body
 			a(href="index.html"): i.icon-a-logo
 
 		a.menuNavegacion__eventos(href="index.html"): i#eventos.icon-a-logo.icono--menu
-		a.menuNavegacion__filtrar: i#filtar.icon-filtrar
-		a.menuNavegacion__historial(href="biblioteca.html"): i#historial.icon-historial.icono--menu
+		a.menuNavegacion__filtrar(title="Disponible en breve"): i#filtar.icon-filtrar.icon--bloqueado
+		a.menuNavegacion__hemeroteca(title="Disponible en breve"): i#hemeroteca.icon-hemeroteca.icon--bloqueado
 		a.menuNavegacion__crear(role="button"): i#crear.icon-crear.icono--menu
 
 		div.menuNavegacion__botonMenu
@@ -96,11 +97,11 @@ body
 		a.menuNavegacionExtendida__eventos(href="index.html")
 			p.menuNavegacionExtendida__texto#eventos_ex Eventos
 
-		a.menuNavegacionExtendida__filtrar
+		a.menuNavegacionExtendida__filtrar(title="Disponible en breve")
 			p.menuNavegacionExtendida__texto#filtar_ex Filtrar
 
-		a.menuNavegacionExtendida__historial(href="biblioteca.html")
-			p.menuNavegacionExtendida__texto#historial_ex Historial
+		a.menuNavegacionExtendida__hemeroteca(title="Disponible en breve")
+			p.menuNavegacionExtendida__texto#hemeroteca_ex Hemeroteca
 
 		a.menuNavegacionExtendida__crear
 			p.menuNavegacionExtendida__texto#crear_ex Crear
@@ -299,7 +300,7 @@ body
 			$('#botonMenu').click(function(){
 				$(this).toggleClass('active');
 				$('#nav').toggleClass('nav--activo');
-				$('.menuNavegacion__eventos, .menuNavegacion__filtrar, .menuNavegacion__historial, .menuNavegacion__crear').toggleClass('displayVisible');
+				$('.menuNavegacion__eventos, .menuNavegacion__filtrar, .menuNavegacion__hemeroteca, .menuNavegacion__crear').toggleClass('displayVisible');
 			});
 			
 
@@ -313,11 +314,11 @@ body
 			  	$('body').removeAttr('class');
 			});
 
-			var menuNavegacionExtendida = $('#eventos, #eventos_ex, #filtar, #filtar_ex, #historial, #historial_ex, #crear, #crear_ex, #acerca_ex');
+			var menuNavegacionExtendida = $('#eventos, #eventos_ex, #filtar, #filtar_ex, #hemeroteca, #hemeroteca_ex, #crear, #crear_ex, #acerca_ex');
 			
 			$(menuNavegacionExtendida).click(function(){
 				$('#botonMenu').toggleClass('active');
 				$('#nav').toggleClass('nav--activo');
-				$('.menuNavegacion__eventos, .menuNavegacion__filtrar, .menuNavegacion__historial, .menuNavegacion__crear').toggleClass('displayVisible');
+				$('.menuNavegacion__eventos, .menuNavegacion__filtrar, .menuNavegacion__hemeroteca, .menuNavegacion__crear').toggleClass('displayVisible');
 			});
 		});
