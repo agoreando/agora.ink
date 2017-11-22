@@ -33,7 +33,7 @@
   <!--Icono Pestaña-->
   <link rel="icon" type="image/png" href="images/icon.png"/>
   <!--Icon Font-->
-  <link href="https://file.myfontastic.com/q2AGPeQ9fwKP9wnDdWcPfW/icons.css" rel="stylesheet"/>
+  <link href="font/styles.css" rel="stylesheet"/>
   <!--Roboto Font-->
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet"/>
   <!--Normalize-->
@@ -46,19 +46,53 @@
   <div class="modal__contenedor modal__displayNone">
     <button class="modal__cerrar" id="cerrar"><i class="icon-cerrar"></i></button>
     <div class="modal__informacion">
-      <div class="modal__portada">
-        <p>Comunica tu Evento</p>
+      <div class="modal__portada"><img class="modal__logo" src="images/agora_logo_blanco.svg"/>
+        <h3>Envíanos tus eventos próximos a suceder y deja que la plataforma destaque la información importante de forma detallada.</h3>
+        <div class="modal__linea">
+          <div></div>
+        </div>
+        <h5>Envíanos tus eventos que estén próximos a suceder y destaca la información importante de forma detallada.</h5>
+      </div>
+      <div class="modal__datosEvento">
+        <div class="modal__datosImagen"><img class="imagen-fluida" src="images/crear__datos.png"/></div>
+        <div class="modal__datosInformacion">
+          <p>La información que nos debes enviar de tus eventos es:</p>
+          <ul>
+            <li class="modal__itemDatos">Nombre del Evento</li>
+            <li class="modal__itemDatos">Fechas del Evento</li>
+            <li class="modal__itemDatos">Horarios del Evento</li>
+            <li class="modal__itemDatos">Sede del Evento</li>
+            <li class="modal__itemDatos">Enlace del Evento <span>(Facebook, Sitio Web)</span></li>
+            <li class="modal__itemDatos">Cartel del Evento</li>
+          </ul>
+        </div>
       </div>
       <div class="modal__politicas">
-        <p>Los Eventos se aprueban y muestran en la plataforma en un plazo de 24 horas.</p>
-        <p>Algunos eventos demoran más en la fase de revisión, esto no significa que no se vayan a subir y aprobar.</p>
+        <div class="modal__politicasImagen"><img class="imagen-fluida" src="images/crear__politicas.png"/></div>
+        <div class="modal__politicasInformacion">
+          <p>Los Eventos se aprueban y muestran en la plataforma en un plazo de 24 horas.</p>
+          <p>Algunos eventos demoran más en la fase de revisión, esto no significa que no se vayan a subir y aprobar.</p>
+        </div>
+      </div>
+      <div class="modal__pie">
+        <p>ágora | Todos los Eventos, un mismo lugar</p>
       </div>
     </div>
     <div class="modal__mediosDeContacto">
       <div class="modal__sticker">
-        <div class="modal__facebook"><i class="icon-facebook"></i></div>
-        <div class="modal__correoWeb"><i class="icon-facebook"></i></div>
-        <div class="modal__formulario"><i class="icon-facebook"></i></div>
+        <p>Diseñamos tres formas para subir tu evento y así puedas elegir la que más te acomoda</p>
+        <div class="modal__correoWeb">
+          <div class="modal__icono"><img class="imagen-fluida" src="images/crear__correo.png"/></div>
+          <h5 class="modal__medio">Correo Web</h5><a class="modal__linkMedio" href="mailto:agoraeventos@outlook.com">agoraeventos@outlook.com	</a>
+        </div>
+        <div class="modal__facebook">
+          <div class="modal__icono"><img class="imagen-fluida" src="images/crear__facebook.png"/></div>
+          <h5 class="modal__medio">Facebook</h5><a class="modal__linkMedio" href="" target="_blank">Visitar</a>
+        </div>
+        <div class="modal__formulario">
+          <div class="modal__icono"><img class="imagen-fluida" src="images/crear__formulario.png"/></div>
+          <h5 class="modal__medio">Formulario</h5><a class="modal__linkMedio" href="" target="_blank">Mostrar</a>
+        </div>
       </div>
     </div>
   </div>
