@@ -715,7 +715,7 @@
     -ms-flex-pack: end;
     justify-content: flex-end; }
   .pie__redesSociales--icono {
-    margin: 0 0.25rem;
+    margin: 0 0.5rem;
     font-size: 80%; }
   @media (min-width: 576px) {
     .pie {

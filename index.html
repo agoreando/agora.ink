@@ -45,68 +45,19 @@
   <!--Modal Crear-->
   <div class="modal__contenedor modal__displayNone">
     <button class="modal__cerrar" id="cerrar"><i class="icon-cerrar"></i></button>
-    <div class="modal__informacion">
-      <div class="modal__portada"><img class="modal__logo" src="images/agora_logo_blanco.svg"/>
-        <h3>Envíanos tus eventos próximos a suceder y deja que la plataforma destaque la información importante de forma detallada.</h3>
-        <div class="modal__linea">
-          <div></div>
-        </div>
-        <h5>Envíanos tus eventos que estén próximos a suceder y destaca la información importante de forma detallada.</h5>
-      </div>
-      <div class="modal__datosEvento">
-        <div class="modal__datosImagen"><img class="imagen-fluida" src="images/crear__datos.png"/></div>
-        <div class="modal__datosInformacion">
-          <p>La información que nos debes enviar de tus eventos es:</p>
-          <ul>
-            <li class="modal__itemDatos">Nombre del Evento</li>
-            <li class="modal__itemDatos">Fechas del Evento</li>
-            <li class="modal__itemDatos">Horarios del Evento</li>
-            <li class="modal__itemDatos">Sede del Evento</li>
-            <li class="modal__itemDatos">Enlace del Evento <span>(Facebook, Sitio Web)</span></li>
-            <li class="modal__itemDatos">Cartel del Evento</li>
-          </ul>
-        </div>
-      </div>
-      <div class="modal__politicas">
-        <div class="modal__politicasImagen"><img class="imagen-fluida" src="images/crear__politicas.png"/></div>
-        <div class="modal__politicasInformacion">
-          <p>Los Eventos se aprueban y muestran en la plataforma en un plazo de 24 horas.</p>
-          <p>Algunos eventos demoran más en la fase de revisión, esto no significa que no se vayan a subir y aprobar.</p>
-        </div>
-      </div>
-      <div class="modal__pie">
-        <p>ágora | Todos los Eventos, un mismo lugar</p>
-      </div>
-    </div>
-    <div class="modal__mediosDeContacto">
-      <div class="modal__sticker">
-        <p>Diseñamos tres formas para subir tu evento y así puedas elegir la que más te acomoda</p>
-        <div class="modal__correoWeb">
-          <div class="modal__icono"><img class="imagen-fluida" src="images/crear__correo.png"/></div>
-          <h5 class="modal__medio">Correo Web</h5><a class="modal__linkMedio" href="mailto:agoraeventos@outlook.com">agoraeventos@outlook.com	</a>
-        </div>
-        <div class="modal__facebook">
-          <div class="modal__icono"><img class="imagen-fluida" src="images/crear__facebook.png"/></div>
-          <h5 class="modal__medio">Facebook</h5><a class="modal__linkMedio" href="" target="_blank">Visitar</a>
-        </div>
-        <div class="modal__formulario">
-          <div class="modal__icono"><img class="imagen-fluida" src="images/crear__formulario.png"/></div>
-          <h5 class="modal__medio">Formulario</h5><a class="modal__linkMedio" href="" target="_blank">Mostrar</a>
-        </div>
-      </div>
-    </div>
+    <embed class="modal__index" src="modalCrear.html"/>
   </div>
   <!--Barra de Navegación-->
   <nav class="menuNavegacion">
-    <div class="menuNavegacion__home"><a href="index.html"><i class="icon-a-logo"></i></a></div><a class="menuNavegacion__eventos" href="index.html"><i class="icon-a-logo icono--menu" id="eventos"></i></a><a class="menuNavegacion__filtrar" title="Disponible en breve"><i class="icon-filtrar icon--bloqueado" id="filtar"></i></a><a class="menuNavegacion__hemeroteca" title="Disponible en breve"><i class="icon-hemeroteca icon--bloqueado" id="hemeroteca"></i></a><a class="menuNavegacion__crear" role="button"><i class="icon-crear icono--menu" id="crear"></i></a>
+    <div class="menuNavegacion__home"><a href="index.html"><i class="icon-a-logo icono--menu"></i></a></div><a class="menuNavegacion__filtrar" title="Disponible en breve"><i class="icon-filtrar icon--bloqueado" id="filtar"></i></a><a class="menuNavegacion__hemeroteca" title="Disponible en breve"><i class="icon-hemeroteca icon--bloqueado" id="hemeroteca"></i></a><a class="menuNavegacion__sedes" title="Disponible en breve"><i class="icon-sedes icon--bloqueado" id="sedes"></i></a><a class="menuNavegacion__crear" role="button"><i class="icon-crear icono--menu" id="crear"></i></a>
     <div class="menuNavegacion__botonMenu"><a href="#nav" aria-label="Open Navigation">
         <div class="botonMenu" id="botonMenu"> <span class="top"></span><span class="middle"></span><span class="bottom"></span></div></a></div>
   </nav>
   <div class="menuNavegacionExtendida" id="nav">
-    <div class="menuNavegacionExtendida__logo"><img class="imagen-fluida" src="images/agora_logo_blanco.svg"/></div><a class="menuNavegacionExtendida__eventos" href="index.html">
-      <p class="menuNavegacionExtendida__texto" id="eventos_ex">Eventos</p></a><a class="menuNavegacionExtendida__filtrar" title="Disponible en breve">
+    <div class="menuNavegacionExtendida__logo"><img class="imagen-fluida" src="images/agora_logo_blanco.svg"/></div><a class="menuNavegacionExtendida__filtrar" title="Disponible en breve">
       <p class="menuNavegacionExtendida__texto" id="filtar_ex">Filtrar</p></a><a class="menuNavegacionExtendida__hemeroteca" title="Disponible en breve">
-      <p class="menuNavegacionExtendida__texto" id="hemeroteca_ex">Hemeroteca</p></a><a class="menuNavegacionExtendida__crear">
+      <p class="menuNavegacionExtendida__texto" id="hemeroteca_ex">Hemeroteca</p></a><a class="menuNavegacionExtendida__sedes" title="Disponible en breve">
+      <p class="menuNavegacionExtendida__texto" id="sedes_ex">Sedes</p></a><a class="menuNavegacionExtendida__crear">
       <p class="menuNavegacionExtendida__texto" id="crear_ex">Crear</p></a>
     <div class="menuNavegacionExtendida__linea"></div><a class="menuNavegacionExtendida__faseBeta" href="landingPage.html">
       <p class="menuNavegacionExtendida__texto" id="acerca_ex">Acerca de ágora</p></a>
@@ -114,202 +65,22 @@
   <!--Back--><a class="back" href="#inicio"><i class="icon-back icono--menu"></i></a>
   <!--Contenedor Tarjetas-->
   <div class="contenedorTarjetasEventos">
-    <div class="columnaTarjetas">
-      <!--Tarjeta-->
-      <div class="tarjeta">
-        <div class="tarjeta__contenedor">
-          <p class="tarjeta__fechaEvento">7 Jul 2017</p>
-          <div class="tarjeta__tipoEvento" title="Teatro"><i class="icon-a-logo"></i></div><img class="tarjeta__imagenEvento imagen-fluida" src="images/2.jpg"/>
-          <div class="tarjeta__linea">
-            <div></div>
-          </div>
-          <p class="tarjeta__nombreEvento">Programa Nacional de Teatro Escolar Veracruz 2017 CAMBIO</p>
-          <p class="tarjeta__sedeEvento">ágora de la Ciudad</p>
-          <div class="tarjeta__redesEvento"><i class="icon-a-logo"></i></div>
-        </div>
-      </div>
-      <!--eventos de relleno-->
-      <div class="tarjeta">
-        <div class="tarjeta__contenedor">
-          <p class="tarjeta__fechaEvento">4 octubre 2016 &middot; 16:00	</p>
-          <div class="tarjeta__tipoEvento" title="Visita Guiada"><i class="icon-a-logo"></i></div>
-          <div class="tarjeta__linea">
-            <div></div>
-          </div>
-          <p class="tarjeta__nombreEvento">Fotografía y Literatura: De la Imagen a la Escritura	</p>
-          <p class="tarjeta__sedeEvento">Ágora de la Ciudad	</p>
-          <div class="tarjeta__redesEvento"><i class="icon-a-logo"></i></div>
-        </div>
-      </div>
-      <div class="tarjeta">
-        <div class="tarjeta__contenedor">
-          <p class="tarjeta__fechaEvento">11 octubre 2016 &middot; 16:00	</p>
-          <div class="tarjeta__tipoEvento" title="Visita Guiada"><i class="icon-a-logo"></i></div>
-          <div class="tarjeta__linea">
-            <div></div>
-          </div>
-          <p class="tarjeta__nombreEvento">Fotografía y Literatura: De la Imagen a la Escritura	</p>
-          <p class="tarjeta__sedeEvento">Ágora de la Ciudad	</p>
-          <div class="tarjeta__redesEvento"><i class="icon-a-logo"></i></div>
-        </div>
-      </div>
-      <div class="tarjeta">
-        <div class="tarjeta__contenedor">
-          <p class="tarjeta__fechaEvento">18 octubre 2016 &middot; 16:00	</p>
-          <div class="tarjeta__tipoEvento" title="Visita Guiada"><i class="icon-a-logo"></i></div>
-          <div class="tarjeta__linea">
-            <div></div>
-          </div>
-          <p class="tarjeta__nombreEvento">Fotografía y Literatura: De la Imagen a la Escritura	</p>
-          <p class="tarjeta__sedeEvento">Ágora de la Ciudad	</p>
-          <div class="tarjeta__redesEvento"><i class="icon-a-logo"></i></div>
-        </div>
-      </div>
-      <div class="tarjeta">
-        <div class="tarjeta__contenedor">
-          <p class="tarjeta__fechaEvento">5 octubre 2016 &middot; 19:00	</p>
-          <div class="tarjeta__tipoEvento" title="Visita Guiada"><i class="icon-a-logo"></i></div>
-          <div class="tarjeta__linea">
-            <div></div>
-          </div>
-          <p class="tarjeta__nombreEvento">Mi Casio, Mi Ciudad	</p>
-          <p class="tarjeta__sedeEvento">Casino Xalapeño	</p>
-          <div class="tarjeta__redesEvento"><i class="icon-a-logo"></i></div>
-        </div>
-      </div>
-      <div class="tarjeta">
-        <div class="tarjeta__contenedor">
-          <p class="tarjeta__fechaEvento">28 octubre 2016 &middot; 18:00	</p>
-          <div class="tarjeta__tipoEvento" title="Convocatoria"><i class="icon-a-logo"></i></div>
-          <div class="tarjeta__linea">
-            <div></div>
-          </div>
-          <p class="tarjeta__nombreEvento">1er Gran Desfile y Concurso de Catrinas</p>
-          <p class="tarjeta__sedeEvento">Panteón 5 de Febrero - Parque Juárez	</p>
-          <div class="tarjeta__redesEvento"><i class="icon-a-logo"></i></div>
-        </div>
-      </div>
-      <div class="tarjeta">
-        <div class="tarjeta__contenedor">
-          <p class="tarjeta__fechaEvento">1 octubre 2016 &middot; 12:00	</p>
-          <div class="tarjeta__tipoEvento" title="Ciclo de Cine"><i class="icon-a-logo"></i></div>
-          <div class="tarjeta__linea">
-            <div></div>
-          </div>
-          <p class="tarjeta__nombreEvento">Matiné Infantil. Ciclo Hayao Miyasaki</p>
-          <p class="tarjeta__sedeEvento">Galería de Arte Contemporáneo de Xalapa | Auditorio	</p>
-          <div class="tarjeta__redesEvento"><i class="icon-a-logo"></i></div>
-        </div>
-      </div>
-      <div class="tarjeta">
-        <div class="tarjeta__contenedor">
-          <p class="tarjeta__fechaEvento">8 octubre 2016 &middot; 12:00	</p>
-          <div class="tarjeta__tipoEvento" title="Ciclo de Cine"><i class="icon-a-logo"></i></div>
-          <div class="tarjeta__linea">
-            <div></div>
-          </div>
-          <p class="tarjeta__nombreEvento">Matiné Infantil. Ciclo Hayao Miyasaki</p>
-          <p class="tarjeta__sedeEvento">Galería de Arte Contemporáneo de Xalapa | Auditorio	</p>
-          <div class="tarjeta__redesEvento"><i class="icon-a-logo"></i></div>
-        </div>
-      </div>
-      <div class="tarjeta">
-        <div class="tarjeta__contenedor">
-          <p class="tarjeta__fechaEvento">15 octubre 2016 &middot; 12:00	</p>
-          <div class="tarjeta__tipoEvento" title="Ciclo de Cine"><i class="icon-a-logo"></i></div>
-          <div class="tarjeta__linea">
-            <div></div>
-          </div>
-          <p class="tarjeta__nombreEvento">Matiné Infantil. Ciclo Hayao Miyasaki</p>
-          <p class="tarjeta__sedeEvento">Galería de Arte Contemporáneo de Xalapa | Auditorio	</p>
-          <div class="tarjeta__redesEvento"><i class="icon-a-logo"></i></div>
-        </div>
-      </div>
-      <div class="tarjeta">
-        <div class="tarjeta__contenedor">
-          <p class="tarjeta__fechaEvento">22 octubre 2016 &middot; 12:00	</p>
-          <div class="tarjeta__tipoEvento" title="Ciclo de Cine"><i class="icon-a-logo"></i></div>
-          <div class="tarjeta__linea">
-            <div></div>
-          </div>
-          <p class="tarjeta__nombreEvento">Matiné Infantil. Ciclo Hayao Miyasaki</p>
-          <p class="tarjeta__sedeEvento">Galería de Arte Contemporáneo de Xalapa | Auditorio	</p>
-          <div class="tarjeta__redesEvento"><i class="icon-a-logo"></i></div>
-        </div>
-      </div>
-      <div class="tarjeta">
-        <div class="tarjeta__contenedor">
-          <p class="tarjeta__fechaEvento">13 octubre 2016 &middot; 20:30	</p>
-          <div class="tarjeta__tipoEvento" title="Teatro"><i class="icon-a-logo"></i></div>
-          <div class="tarjeta__linea">
-            <div></div>
-          </div>
-          <p class="tarjeta__nombreEvento">Muestra Estatal de Teatro Indígena	</p>
-          <p class="tarjeta__sedeEvento">Sala Dagoberto Guillaumin, Teatro del Estado</p>
-          <div class="tarjeta__redesEvento"><i class="icon-a-logo"></i></div>
-        </div>
-      </div>
-      <div class="tarjeta">
-        <div class="tarjeta__contenedor">
-          <p class="tarjeta__fechaEvento">13 octubre 2016 &middot; 19:30	</p>
-          <div class="tarjeta__tipoEvento" title="Teatro"><i class="icon-a-logo"></i></div>
-          <div class="tarjeta__linea">
-            <div></div>
-          </div>
-          <p class="tarjeta__nombreEvento">Muestra Estatal de Teatro Indígena	</p>
-          <p class="tarjeta__sedeEvento">Sala Dagoberto Guillaumin, Teatro del Estado</p>
-          <div class="tarjeta__redesEvento"><i class="icon-a-logo"></i></div>
-        </div>
-      </div>
-      <div class="tarjeta">
-        <div class="tarjeta__contenedor">
-          <p class="tarjeta__fechaEvento">14 octubre 2016 &middot; 20:30	</p>
-          <div class="tarjeta__tipoEvento" title="Teatro"><i class="icon-a-logo"></i></div>
-          <div class="tarjeta__linea">
-            <div></div>
-          </div>
-          <p class="tarjeta__nombreEvento">Muestra Estatal de Teatro Indígena	</p>
-          <p class="tarjeta__sedeEvento">Sala Dagoberto Guillaumin, Teatro del Estado</p>
-          <div class="tarjeta__redesEvento"><i class="icon-a-logo"></i></div>
-        </div>
-      </div>
-      <div class="tarjeta">
-        <div class="tarjeta__contenedor">
-          <p class="tarjeta__fechaEvento">14 octubre 2016 &middot; 19:30	</p>
-          <div class="tarjeta__tipoEvento" title="Teatro"><i class="icon-a-logo"></i></div>
-          <div class="tarjeta__linea">
-            <div></div>
-          </div>
-          <p class="tarjeta__nombreEvento">Muestra Estatal de Teatro Indígena	</p>
-          <p class="tarjeta__sedeEvento">Sala Dagoberto Guillaumin, Teatro del Estado</p>
-          <div class="tarjeta__redesEvento"><i class="icon-a-logo"></i></div>
-        </div>
-      </div>
-      <div class="tarjeta">
-        <div class="tarjeta__contenedor">
-          <p class="tarjeta__fechaEvento">14 octubre 2016 &middot; 19:00	</p>
-          <div class="tarjeta__tipoEvento" title="Teatro"><i class="icon-a-logo"></i></div>
-          <div class="tarjeta__linea">
-            <div></div>
-          </div>
-          <p class="tarjeta__nombreEvento">Muestra Estatal de Teatro Indígena	</p>
-          <p class="tarjeta__sedeEvento">Sala Dagoberto Guillaumin, Teatro del Estado</p>
-          <div class="tarjeta__redesEvento"><i class="icon-a-logo"></i></div>
-        </div>
-      </div>
-      <div class="tarjeta">
-        <div class="tarjeta__contenedor">
-          <p class="tarjeta__fechaEvento">26 septiembre 2016		</p>
-          <div class="tarjeta__tipoEvento" title="Convocatoria"><i class="icon-a-logo"></i></div>
-          <div class="tarjeta__linea">
-            <div></div>
-          </div>
-          <p class="tarjeta__nombreEvento">LUNETA	</p>
-          <p class="tarjeta__sedeEvento">Ágora de la Ciudad</p>
-          <div class="tarjeta__redesEvento"><i class="icon-a-logo"></i></div>
-        </div>
-      </div>
-    </div>
+    <div class="columnaTarjetas"></div>
+    <!--Tarjeta
+    div.tarjeta
+    	div.tarjeta__contenedor
+    		p.tarjeta__fechaEvento 7 Jul 2017
+    		div.tarjeta__tipoEvento(title="Teatro"): i.icon-a-logo
+    		img.tarjeta__imagenEvento.imagen-fluida(src="images/explorar.jpg")
+    		div.tarjeta__linea
+    			div
+    		p.tarjeta__nombreEvento Programa Nacional de Teatro Escolar Veracruz 2017 CAMBIO
+    		p.tarjeta__sedeEvento ágora de la Ciudad
+    		div.tarjeta__redesEvento
+    			i.icon-a-logo
+    			
+    
+    -->
   </div>
   <script src="js/jquery-3.2.1.min.js"></script>
   <script type="text/javascript">
@@ -317,7 +88,7 @@
     	$('#botonMenu').click(function(){
     		$(this).toggleClass('active');
     		$('#nav').toggleClass('nav--activo');
-    		$('.menuNavegacion__eventos, .menuNavegacion__filtrar, .menuNavegacion__hemeroteca, .menuNavegacion__crear').toggleClass('displayVisible');
+    		$('.menuNavegacion__sedes, .menuNavegacion__filtrar, .menuNavegacion__hemeroteca, .menuNavegacion__crear').toggleClass('displayVisible');
     	});
     	
     
@@ -331,12 +102,12 @@
     	  	$('body').removeAttr('class');
     	});
     
-    	var menuNavegacionExtendida = $('#eventos, #eventos_ex, #filtar, #filtar_ex, #hemeroteca, #hemeroteca_ex, #crear, #crear_ex, #acerca_ex');
+    	var menuNavegacionExtendida = $('#sedes, #sedes_ex, #filtar, #filtar_ex, #hemeroteca, #hemeroteca_ex, #crear, #crear_ex, #acerca_ex');
     	
     	$(menuNavegacionExtendida).click(function(){
     		$('#botonMenu').toggleClass('active');
     		$('#nav').toggleClass('nav--activo');
-    		$('.menuNavegacion__eventos, .menuNavegacion__filtrar, .menuNavegacion__hemeroteca, .menuNavegacion__crear').toggleClass('displayVisible');
+    		$('.menuNavegacion__sedes, .menuNavegacion__filtrar, .menuNavegacion__hemeroteca, .menuNavegacion__crear').toggleClass('displayVisible');
     	});
     });
   </script>

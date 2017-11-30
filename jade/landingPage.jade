@@ -277,9 +277,12 @@ body
 		div.pie__logo
 			img.imagen-fluida(src="images/agora_logo_blanco.svg")
 		div.pie__redesSociales
-			i.pie__redesSociales--icono.icon-a-logo
-			i.pie__redesSociales--icono.icon-facebook
-			i.pie__redesSociales--icono.icon-correo
+			a(href="index.html")
+				i.pie__redesSociales--icono.icon-a-logo
+			a(href="https://www.facebook.com/agoraink/")(target="_blank")
+				i.pie__redesSociales--icono.icon-facebook
+			a(href="mailto:agoraeventos@outlook.com")
+				i.pie__redesSociales--icono.icon-correo
 
 	script(src="js/jquery-3.2.1.min.js")
 	script(type='text/javascript').

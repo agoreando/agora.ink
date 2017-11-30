@@ -54,63 +54,17 @@ body
 	//Modal Crear
 	div.modal__contenedor.modal__displayNone
 		button.modal__cerrar#cerrar: i.icon-cerrar
-		div.modal__informacion
-			div.modal__portada
-				img.modal__logo(src="images/agora_logo_blanco.svg")
-				h3 Envíanos tus eventos próximos a suceder y deja que la plataforma destaque la información importante de forma detallada.
-				div.modal__linea: div
-				h5 Envíanos tus eventos que estén próximos a suceder y destaca la información importante de forma detallada.
-			
-			div.modal__datosEvento
-				div.modal__datosImagen
-					img.imagen-fluida(src="images/crear__datos.png")
-				div.modal__datosInformacion
-					p La información que nos debes enviar de tus eventos es:
-					ul
-						li.modal__itemDatos Nombre del Evento
-						li.modal__itemDatos Fechas del Evento
-						li.modal__itemDatos Horarios del Evento
-						li.modal__itemDatos Sede del Evento
-						li.modal__itemDatos Enlace del Evento 
-							span (Facebook, Sitio Web)
-						li.modal__itemDatos Cartel del Evento
-
-			div.modal__politicas
-				div.modal__politicasImagen
-					img.imagen-fluida(src="images/crear__politicas.png")
-				div.modal__politicasInformacion
-					p Los Eventos se aprueban y muestran en la plataforma en un plazo de 24 horas.
-					p Algunos eventos demoran más en la fase de revisión, esto no significa que no se vayan a subir y aprobar.
-			
-			div.modal__pie
-				p ágora | Todos los Eventos, un mismo lugar
-				
-		div.modal__mediosDeContacto
-			div.modal__sticker
-				p Diseñamos tres formas para subir tu evento y así puedas elegir la que más te acomoda
-				div.modal__correoWeb
-					div.modal__icono: img.imagen-fluida(src="images/crear__correo.png")
-					h5.modal__medio Correo Web
-					a.modal__linkMedio(href="mailto:agoraeventos@outlook.com") agoraeventos@outlook.com	
-				div.modal__facebook
-					div.modal__icono: img.imagen-fluida(src="images/crear__facebook.png")
-					h5.modal__medio Facebook
-					a.modal__linkMedio(href="")(target="_blank") Visitar
-
-				div.modal__formulario
-					div.modal__icono: img.imagen-fluida(src="images/crear__formulario.png")
-					h5.modal__medio Formulario
-					a.modal__linkMedio(href="")(target="_blank") Mostrar
+		embed.modal__index(src="modalCrear.html")
 
 
 	//Barra de Navegación
 	nav.menuNavegacion
 		div.menuNavegacion__home
-			a(href="index.html"): i.icon-a-logo
+			a(href="index.html"): i.icon-a-logo.icono--menu
 
-		a.menuNavegacion__eventos(href="index.html"): i#eventos.icon-a-logo.icono--menu
 		a.menuNavegacion__filtrar(title="Disponible en breve"): i#filtar.icon-filtrar.icon--bloqueado
 		a.menuNavegacion__hemeroteca(title="Disponible en breve"): i#hemeroteca.icon-hemeroteca.icon--bloqueado
+		a.menuNavegacion__sedes(title="Disponible en breve"): i#sedes.icon-sedes.icon--bloqueado
 		a.menuNavegacion__crear(role="button"): i#crear.icon-crear.icono--menu
 
 		div.menuNavegacion__botonMenu
@@ -125,14 +79,14 @@ body
 		div.menuNavegacionExtendida__logo
 			img.imagen-fluida(src="images/agora_logo_blanco.svg")
 
-		a.menuNavegacionExtendida__eventos(href="index.html")
-			p.menuNavegacionExtendida__texto#eventos_ex Eventos
-
 		a.menuNavegacionExtendida__filtrar(title="Disponible en breve")
 			p.menuNavegacionExtendida__texto#filtar_ex Filtrar
 
 		a.menuNavegacionExtendida__hemeroteca(title="Disponible en breve")
 			p.menuNavegacionExtendida__texto#hemeroteca_ex Hemeroteca
+
+		a.menuNavegacionExtendida__sedes(title="Disponible en breve")
+			p.menuNavegacionExtendida__texto#sedes_ex Sedes
 
 		a.menuNavegacionExtendida__crear
 			p.menuNavegacionExtendida__texto#crear_ex Crear
@@ -153,177 +107,21 @@ body
 		//- p.fechaColumnaTarjetas 15 de Septiembre 2017
 		div.columnaTarjetas
 				
-			//Tarjeta
+		//Tarjeta
 			div.tarjeta
 				div.tarjeta__contenedor
 					p.tarjeta__fechaEvento 7 Jul 2017
 					div.tarjeta__tipoEvento(title="Teatro"): i.icon-a-logo
-					img.tarjeta__imagenEvento.imagen-fluida(src="images/2.jpg")
+					img.tarjeta__imagenEvento.imagen-fluida(src="images/explorar.jpg")
 					div.tarjeta__linea
 						div
 					p.tarjeta__nombreEvento Programa Nacional de Teatro Escolar Veracruz 2017 CAMBIO
 					p.tarjeta__sedeEvento ágora de la Ciudad
 					div.tarjeta__redesEvento
 						i.icon-a-logo
-				
-		
-			//eventos de relleno
-			div.tarjeta
-				div.tarjeta__contenedor
-					p.tarjeta__fechaEvento 4 octubre 2016 &middot; 16:00	
-					div.tarjeta__tipoEvento(title="Visita Guiada"): i.icon-a-logo
-					div.tarjeta__linea
-						div
-					p.tarjeta__nombreEvento Fotografía y Literatura: De la Imagen a la Escritura	
-					p.tarjeta__sedeEvento Ágora de la Ciudad	
-					div.tarjeta__redesEvento
-						i.icon-a-logo
-			div.tarjeta
-				div.tarjeta__contenedor
-					p.tarjeta__fechaEvento 11 octubre 2016 &middot; 16:00	
-					div.tarjeta__tipoEvento(title="Visita Guiada"): i.icon-a-logo
-					div.tarjeta__linea
-						div
-					p.tarjeta__nombreEvento Fotografía y Literatura: De la Imagen a la Escritura	
-					p.tarjeta__sedeEvento Ágora de la Ciudad	
-					div.tarjeta__redesEvento
-						i.icon-a-logo
-			div.tarjeta
-				div.tarjeta__contenedor
-					p.tarjeta__fechaEvento 18 octubre 2016 &middot; 16:00	
-					div.tarjeta__tipoEvento(title="Visita Guiada"): i.icon-a-logo
-					div.tarjeta__linea
-						div
-					p.tarjeta__nombreEvento Fotografía y Literatura: De la Imagen a la Escritura	
-					p.tarjeta__sedeEvento Ágora de la Ciudad	
-					div.tarjeta__redesEvento
-						i.icon-a-logo
-			div.tarjeta
-				div.tarjeta__contenedor
-					p.tarjeta__fechaEvento 5 octubre 2016 &middot; 19:00	
-					div.tarjeta__tipoEvento(title="Visita Guiada"): i.icon-a-logo
-					div.tarjeta__linea
-						div
-					p.tarjeta__nombreEvento Mi Casio, Mi Ciudad	
-					p.tarjeta__sedeEvento Casino Xalapeño	
-					div.tarjeta__redesEvento
-						i.icon-a-logo
-			div.tarjeta
-				div.tarjeta__contenedor
-					p.tarjeta__fechaEvento 28 octubre 2016 &middot; 18:00	
-					div.tarjeta__tipoEvento(title="Convocatoria"): i.icon-a-logo
-					div.tarjeta__linea
-						div
-					p.tarjeta__nombreEvento 1er Gran Desfile y Concurso de Catrinas
-					p.tarjeta__sedeEvento Panteón 5 de Febrero - Parque Juárez	
-					div.tarjeta__redesEvento
-						i.icon-a-logo
-			div.tarjeta
-				div.tarjeta__contenedor
-					p.tarjeta__fechaEvento 1 octubre 2016 &middot; 12:00	
-					div.tarjeta__tipoEvento(title="Ciclo de Cine"): i.icon-a-logo
-					div.tarjeta__linea
-						div
-					p.tarjeta__nombreEvento Matiné Infantil. Ciclo Hayao Miyasaki
-					p.tarjeta__sedeEvento Galería de Arte Contemporáneo de Xalapa | Auditorio	
-					div.tarjeta__redesEvento
-						i.icon-a-logo
-			div.tarjeta
-				div.tarjeta__contenedor
-					p.tarjeta__fechaEvento 8 octubre 2016 &middot; 12:00	
-					div.tarjeta__tipoEvento(title="Ciclo de Cine"): i.icon-a-logo
-					div.tarjeta__linea
-						div
-					p.tarjeta__nombreEvento Matiné Infantil. Ciclo Hayao Miyasaki
-					p.tarjeta__sedeEvento Galería de Arte Contemporáneo de Xalapa | Auditorio	
-					div.tarjeta__redesEvento
-						i.icon-a-logo
-			div.tarjeta
-				div.tarjeta__contenedor
-					p.tarjeta__fechaEvento 15 octubre 2016 &middot; 12:00	
-					div.tarjeta__tipoEvento(title="Ciclo de Cine"): i.icon-a-logo
-					div.tarjeta__linea
-						div
-					p.tarjeta__nombreEvento Matiné Infantil. Ciclo Hayao Miyasaki
-					p.tarjeta__sedeEvento Galería de Arte Contemporáneo de Xalapa | Auditorio	
-					div.tarjeta__redesEvento
-						i.icon-a-logo
-			div.tarjeta
-				div.tarjeta__contenedor
-					p.tarjeta__fechaEvento 22 octubre 2016 &middot; 12:00	
-					div.tarjeta__tipoEvento(title="Ciclo de Cine"): i.icon-a-logo
-					div.tarjeta__linea
-						div
-					p.tarjeta__nombreEvento Matiné Infantil. Ciclo Hayao Miyasaki
-					p.tarjeta__sedeEvento Galería de Arte Contemporáneo de Xalapa | Auditorio	
-					div.tarjeta__redesEvento
-						i.icon-a-logo
-			div.tarjeta
-				div.tarjeta__contenedor
-					p.tarjeta__fechaEvento 13 octubre 2016 &middot; 20:30	
-					div.tarjeta__tipoEvento(title="Teatro"): i.icon-a-logo
-					div.tarjeta__linea
-						div
-					p.tarjeta__nombreEvento Muestra Estatal de Teatro Indígena	
-					p.tarjeta__sedeEvento Sala Dagoberto Guillaumin, Teatro del Estado
-					div.tarjeta__redesEvento
-						i.icon-a-logo
-			div.tarjeta
-				div.tarjeta__contenedor
-					p.tarjeta__fechaEvento 13 octubre 2016 &middot; 19:30	
-					div.tarjeta__tipoEvento(title="Teatro"): i.icon-a-logo
-					div.tarjeta__linea
-						div
-					p.tarjeta__nombreEvento Muestra Estatal de Teatro Indígena	
-					p.tarjeta__sedeEvento Sala Dagoberto Guillaumin, Teatro del Estado
-					div.tarjeta__redesEvento
-						i.icon-a-logo
-			div.tarjeta
-				div.tarjeta__contenedor
-					p.tarjeta__fechaEvento 14 octubre 2016 &middot; 20:30	
-					div.tarjeta__tipoEvento(title="Teatro"): i.icon-a-logo
-					div.tarjeta__linea
-						div
-					p.tarjeta__nombreEvento Muestra Estatal de Teatro Indígena	
-					p.tarjeta__sedeEvento Sala Dagoberto Guillaumin, Teatro del Estado
-					div.tarjeta__redesEvento
-						i.icon-a-logo
-			div.tarjeta
-				div.tarjeta__contenedor
-					p.tarjeta__fechaEvento 14 octubre 2016 &middot; 19:30	
-					div.tarjeta__tipoEvento(title="Teatro"): i.icon-a-logo
-					div.tarjeta__linea
-						div
-					p.tarjeta__nombreEvento Muestra Estatal de Teatro Indígena	
-					p.tarjeta__sedeEvento Sala Dagoberto Guillaumin, Teatro del Estado
-					div.tarjeta__redesEvento
-						i.icon-a-logo
-			div.tarjeta
-				div.tarjeta__contenedor
-					p.tarjeta__fechaEvento 14 octubre 2016 &middot; 19:00	
-					div.tarjeta__tipoEvento(title="Teatro"): i.icon-a-logo
-					div.tarjeta__linea
-						div
-					p.tarjeta__nombreEvento Muestra Estatal de Teatro Indígena	
-					p.tarjeta__sedeEvento Sala Dagoberto Guillaumin, Teatro del Estado
-					div.tarjeta__redesEvento
-						i.icon-a-logo
-			div.tarjeta
-				div.tarjeta__contenedor
-					p.tarjeta__fechaEvento 26 septiembre 2016		
-					div.tarjeta__tipoEvento(title="Convocatoria"): i.icon-a-logo
-					div.tarjeta__linea
-						div
-					p.tarjeta__nombreEvento LUNETA	
-					p.tarjeta__sedeEvento Ágora de la Ciudad
-					div.tarjeta__redesEvento
-						i.icon-a-logo
-		
-		
+						
 
 	script(src="js/jquery-3.2.1.min.js")
-
-	//- script(src="js/jquery-ui.min.js")
 
 	script(type='text/javascript').
 	
@@ -331,7 +129,7 @@ body
 			$('#botonMenu').click(function(){
 				$(this).toggleClass('active');
 				$('#nav').toggleClass('nav--activo');
-				$('.menuNavegacion__eventos, .menuNavegacion__filtrar, .menuNavegacion__hemeroteca, .menuNavegacion__crear').toggleClass('displayVisible');
+				$('.menuNavegacion__sedes, .menuNavegacion__filtrar, .menuNavegacion__hemeroteca, .menuNavegacion__crear').toggleClass('displayVisible');
 			});
 			
 
@@ -345,11 +143,11 @@ body
 			  	$('body').removeAttr('class');
 			});
 
-			var menuNavegacionExtendida = $('#eventos, #eventos_ex, #filtar, #filtar_ex, #hemeroteca, #hemeroteca_ex, #crear, #crear_ex, #acerca_ex');
+			var menuNavegacionExtendida = $('#sedes, #sedes_ex, #filtar, #filtar_ex, #hemeroteca, #hemeroteca_ex, #crear, #crear_ex, #acerca_ex');
 			
 			$(menuNavegacionExtendida).click(function(){
 				$('#botonMenu').toggleClass('active');
 				$('#nav').toggleClass('nav--activo');
-				$('.menuNavegacion__eventos, .menuNavegacion__filtrar, .menuNavegacion__hemeroteca, .menuNavegacion__crear').toggleClass('displayVisible');
+				$('.menuNavegacion__sedes, .menuNavegacion__filtrar, .menuNavegacion__hemeroteca, .menuNavegacion__crear').toggleClass('displayVisible');
 			});
 		});

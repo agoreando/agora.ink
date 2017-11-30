@@ -10,22 +10,11 @@
         z-index: 20;
         top: 0;
         right: 0;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto;
-        overflow-y: auto;
-        padding: 1.5rem 5%;
         background-color: var(--profundoTransparente); 
         
-        @include md {
-        }
+        @include md {}
 
-        @include lg {
-            padding: 1rem 5%;
-            grid-template-columns: 70% 30%;
-            grid-template-rows: auto;
-            
-        }
+        @include lg {}
     }
     
     &__displayNone {
@@ -38,16 +27,17 @@
         right: 0.5rem;
         z-index: 8;
         height: 2rem;
-        background-color: var(--profundo);
         color: var(-- blanco);
         border: transparent;
         border-radius: 0 0 4px 4px;
+        cursor: pointer;
+        background-color: transparent;
 
         @include sm {  
             width: 4rem;
             right: 0.5rem;
             top: 0.5rem;
-            background-color: transparent;
+            
         }
 
         @include md {
@@ -62,315 +52,9 @@
             right: 1.5rem;
         }
     }
-
-    &__informacion {
+    
+    &__index {
         width: 100%;
         height: 100%;
-        // margin: 1rem 0;
-        grid-column:1/2;
-        grid-row:1/2;
-        background-color: var(--ahuesado);
-        
-
-        @include lg {
-            grid-column: 1/2;
-            grid-row: 1/2;
-        }
-    }
-    
-    &__portada {
-        width: 100%;
-        height: auto;
-        background-color: var(--profundo);
-        background: url("../images/landing_portada_moviles.jpg") no-repeat;
-        background-position: 50% 50%;
-        background-size: cover;
-        display: flex;
-        flex-flow: column;
-        justify-content: center;
-        align-items: center;
-        color: var(--blanco);
-        text-align: center;
-
-
-        @include sm {}
-
-        @include md {
-            height: 80vh;
-            padding: 10%;
-            font-weight: 300;
-        }
-        
-        @include lg {}
-    }
-
-    &__logo {
-        width: 80%;
-        padding-bottom: 1rem;
-
-        @include md {
-            width: 40%;
-        }
-    }
-
-    &__portada h3 {
-        font-weight: 400;
-    }
-    
-    &__linea {
-        width: 80%;
-    }
-
-    &__linea div {
-        margin: 0.5rem 0;
-        background-color: var(--ahuesadoTransparente);
-        height: 1px;
-        width: 90%;
-    }
-
-    &__portada h5 {
-        font-weight: 300;
-    }
-
-//-----------------------------------------
-
-    &__datosEvento {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 50% 50%;
-        width: 100%;
-        height: auto;
-        background-color: var(--ceniza);
-        
-        @include md {
-            grid-template-columns: 50% 50%;
-            grid-template-rows: 1fr;
-            // height: 50vh;
-            padding: 1rem;
-        }
-    }
-
-    &__datosInformacion {
-        grid-column:  1/2;
-        grid-row:2/3;
-
-        @include md {
-            grid-column: 1/2;
-            grid-row: 1/2;
-        }
-    }
-
-    &__datosImagen{
-        grid-column: 1/2;
-        grid-row:1/2;
-        padding: 0 40%;
-
-        @include md {
-            grid-column:2/3;
-            grid-row: 1/2;
-        }
-    }
-
-    &__politicas { 
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 50% 50%;
-        width: 100%;
-        height: auto;
-        background-color: var(--marfil);
-
-
-        @include md {
-            grid-template-columns: 50% 50%;
-            grid-template-rows: 1fr;            
-            // height: 50vh;
-            padding: 1rem;
-        }
-    }
-
-    &__politicasInformacion {
-        grid-column: 1/2;
-        grid-row:2/3;
-
-        @include md {
-            grid-column:2/3;
-            grid-row: 1/2;
-        }
-    }
-
-    &__politicasImagen{
-        grid-column: 1/2;
-        grid-row:1/2;
-        padding: 0 40%;
-
-        @include md {
-            grid-column:1/2;
-            grid-row: 1/2;
-        }
-    }
-
-//-----------------------------------------
-    &__pie {
-        width: 100%;
-        background-color: var(--navy);
-        color: var(--ahuesado);
-        text-align: center;
-    }
-
-    &__pie p {
-        font-size: 60%;
-    }
-
-
-
-
-//-----------------------------------------
-    &__mediosDeContacto {
-        width: 100%;
-        height: 100%;
-        background-color: var(--blanco);
-        grid-column:1/2;
-        grid-row:2/3;
-        
-        @include lg {
-            grid-column:2/3;
-            grid-row:1/2;
-            // margin: 1rem 0;
-        }
-    }
-
-    &__sticker {
-        position: relative;
-        margin: 0.5rem;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(4,auto);
-        
-        @include sm {
-            grid-template-columns: 50% 50%;
-            grid-template-rows: repeat(3,auto);
-        }
-
-        @include md {
-            position: sticky;
-            top: 0;
-            margin: 1rem 0.5rem;
-        }
-
-        @include lg {
-            grid-template-columns: 1fr;
-            grid-template-rows: repeat(4,auto);
-            margin: 1rem;
-        }
-    }  
-
-    &__sticker p {
-        line-height: 1;
-        font-weight: 300;
-        // padding-top: 1rem;
-        grid-column: 1/2;
-        grid-row: 1/2;
-
-        @include sm {
-            grid-column: 1/3;
-            grid-row: 1/2;
-        }
-
-        @include lg {
-            grid-column: 1/2;
-            grid-row: 1/2;
-        }
-    }
-    
-    &__correoWeb, &__facebook, &__formulario {
-        display: grid;
-        grid-template-columns: 30% 70%;
-        grid-template-rows: 1fr 1fr;
-        margin-top: 0.5rem;
-
-        @include sm {
-            grid-template-columns: 1fr;
-            grid-template-rows: auto auto auto;
-            margin-top: 1rem;
-        }
-
-        @include md {}
-
-        @include lg {
-            grid-template-columns: 30% 70%;
-            grid-template-rows: 1fr 1fr;
-            margin-top: 1.5rem;
-        }
-    }
-
-
-    &__icono {
-        grid-column: 1/2;
-        grid-row: 1/4;
-        display: flex;
-        flex-flow: column;
-        justify-content: center;
-        align-items: center;
-        padding-right: 0.5rem;
-
-        @include sm {
-            grid-column: 1/2;
-            grid-row: 1/2;
-            width: 50%;
-        }
-
-        @include md {}
-
-        @include lg {
-            padding-right: 1rem;
-            grid-column: 1/2;
-            grid-row: 1/4;
-            width: 100%;
-        }
-    }
-
-    &__medio{
-        grid-column: 2/3;
-        grid-row: 1/2;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        font-weight: 400;
-
-        @include sm {
-            grid-column: 1/2;
-            grid-row: 2/3;
-        }
-
-        @include md {}
-        @include lg {
-            grid-column: 2/3;
-            grid-row: 1/2;
-        }
-    }
-
-    &__linkMedio {
-        grid-column: 2/3;
-        grid-row: 2/3;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        color: var(--profundo);
-        text-align: justify;
-        text-justify: inter-word;
-        font-weight: 300;
-
-        @include sm {
-            grid-column: 1/2;
-            grid-row: 3/4;
-        }
-
-        @include md {}
-        @include lg {
-            grid-column: 2/3;
-            grid-row: 2/3;
-        }
-
-        @include xl {}
     }
 }
